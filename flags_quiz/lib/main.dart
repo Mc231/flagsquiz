@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'dart:io';
+
+import 'package:path_provider/path_provider.dart';
 
 void main() {
   runApp(MyApp());
@@ -34,31 +37,38 @@ class MyApp extends StatelessWidget {
 class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    @override
-    Widget build(BuildContext context) {
-      // This method is rerun every time setState is called, for instance as done
-      // by the _incrementCounter method above.
-      //
-      // The Flutter framework has been optimized to make rerunning build methods
-      // fast, so that you can just rebuild anything that needs updating rather
-      // than having to individually change instances of widgets.
-      return Scaffold(
-        appBar: AppBar(
-          // Here we take the value from the MyHomePage object that was created by
-          // the App.build method, and use it to set our appbar title.
-          title: Text("TItle"),
-        ),
-        body: Center(
-            // Center is a layout widget. It takes a single child and positions it
-            // in the middle of the parent.
-            child: Image.asset(
-                'assets/images/afghanistan-flag-country-nation-union-empire-32928.png')),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () => print("sad"),
-          tooltip: 'Increment',
-          child: Icon(Icons.add),
-        ), // This trailing comma makes auto-formatting nicer for build methods.
-      );
-    }
+    // This method is rerun every time setState is called, for instance as done
+    // by the _incrementCounter method above.
+    //
+    // The Flutter framework has been optimized to make rerunning build methods
+    // fast, so that you can just rebuild anything that needs updating rather
+    // than having to individually change instances of widgets.
+    return Scaffold(
+      appBar: AppBar(
+        // Here we take the value from the MyHomePage object that was created by
+        // the App.build method, and use it to set our appbar title.
+        title: Text('TItle'),
+      ),
+      body: Center(
+          // Center is a layout widget. It takes a single child and positions it
+          // in the middle of the parent.
+          child: Image.asset(
+              'assets/images/afghanistan-flag-country-nation-union-empire-32928.png')),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () async  {
+          var documents = await getDirectory();
+          var list = documents.list();
+          var file = File('${documents.path}/assets/images/afghanistan-flag-country-nation-union-empire-32928.png');
+          var c = await file.exists();
+          var b = 231;
+        },
+        tooltip: 'Increment',
+        child: Icon(Icons.add),
+      ), // This trailing comma makes auto-formatting nicer for build methods.
+    );
+  }
+
+  Future<Directory> getDirectory() {
+    return getApplicationDocumentsDirectory();
   }
 }
