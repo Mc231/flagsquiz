@@ -1,4 +1,9 @@
+
+
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'dart:io';
 
 import 'package:path_provider/path_provider.dart';
@@ -56,11 +61,13 @@ class MainScreen extends StatelessWidget {
               'assets/images/afghanistan-flag-country-nation-union-empire-32928.png')),
       floatingActionButton: FloatingActionButton(
         onPressed: () async  {
-          var documents = await getDirectory();
-          var list = documents.list();
-          var file = File('${documents.path}/assets/images/afghanistan-flag-country-nation-union-empire-32928.png');
-          var c = await file.exists();
-          var b = 231;
+          var source = await loadAsset();
+          Map<String, dynamic> countries = jsonDecode(source) as Map<String, dynamic>;
+          var mapped = countries.map((key, value)  {
+            var country = Country.fromJson(value as Map);
+            return MapEntry(key, country);
+          });
+          var c = 231;
         },
         tooltip: 'Increment',
         child: Icon(Icons.add),
@@ -68,7 +75,20 @@ class MainScreen extends StatelessWidget {
     );
   }
 
-  Future<Directory> getDirectory() {
-    return getApplicationDocumentsDirectory();
+  Future<String> loadAsset() async {
+    return await rootBundle.loadString('assets/Countries.json');
   }
+}
+
+
+class Country {
+
+  static const _keyName = 'name';
+  static const _keyContinent = 'continent';
+
+  final String name;
+  final String continent;
+
+  Country.fromJson(Map json): name = json[_keyName] as String,
+        continent = json[_keyContinent] as String;
 }
