@@ -49,6 +49,26 @@ class MainScreen extends StatefulWidget {
 class MainScreenState extends State<MainScreen> {
 
   var _image = 'assets/images/AD.png';
+  var _first = '';
+  var _second = '';
+  var _third = '';
+  var _fourth = '';
+  Map<String, Country> _flags;
+
+  @override
+  void initState()  {
+    super.initState();
+    loadAsset().then((source) {
+      var countries = jsonDecode(source) as Map<String, dynamic>;
+      setState(() {
+        _flags = countries.map((key, value)  {
+          var country = Country.fromJson(value as Map);
+          return MapEntry(key, country);
+        });
+      });
+
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -67,19 +87,29 @@ class MainScreenState extends State<MainScreen> {
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
-          child: Image.asset(_image)),
+          child: Column(
+            children: [
+              Text(_first),
+              Text(_second),
+              Text(_third),
+              Text(_fourth),
+              Text('${_flags?.keys?.length ?? 0}'),
+              Image.asset(_image),
+            ],
+          )),
       floatingActionButton: FloatingActionButton(
         onPressed: () async  {
-          var source = await loadAsset();
-          Map<String, dynamic> countries = jsonDecode(source) as Map<String, dynamic>;
-          var mapped = countries.map((key, value)  {
-            var country = Country.fromJson(value as Map);
-            var image = Image.asset('assets/images/${key}.png');
-            return MapEntry(key, country);
-          });
-          var randomImage = (countries.keys.toList()..shuffle()).first;
+          _flags.remove(_flags.keys.first);
+          var randoms = _flags.keys.toList();
+          randoms.shuffle();
+          randoms = randoms.sublist(0, 4);
+          print(randoms);
           setState(() {
-            _image = 'assets/images/$randomImage.png';
+            _image = 'assets/images/${randoms[2]}.png';
+            _first = _flags[randoms[0]].name;
+            _second = _flags[randoms[1]].name;
+            _third = _flags[randoms[2]].name;
+            _fourth = _flags[randoms[3]].name;
           });
         },
         tooltip: 'Increment',
@@ -92,7 +122,6 @@ class MainScreenState extends State<MainScreen> {
     return await rootBundle.loadString('assets/Countries.json');
   }
 }
-
 
 class Country {
 
