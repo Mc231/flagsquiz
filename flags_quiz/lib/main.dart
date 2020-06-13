@@ -39,7 +39,17 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MainScreen extends StatelessWidget {
+class MainScreen extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    return MainScreenState();
+  }
+}
+
+class MainScreenState extends State<MainScreen> {
+
+  var _image = 'assets/images/AD.png';
+
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -55,19 +65,22 @@ class MainScreen extends StatelessWidget {
         title: Text('TItle'),
       ),
       body: Center(
-          // Center is a layout widget. It takes a single child and positions it
-          // in the middle of the parent.
-          child: Image.asset(
-              'assets/images/afghanistan-flag-country-nation-union-empire-32928.png')),
+        // Center is a layout widget. It takes a single child and positions it
+        // in the middle of the parent.
+          child: Image.asset(_image)),
       floatingActionButton: FloatingActionButton(
         onPressed: () async  {
           var source = await loadAsset();
           Map<String, dynamic> countries = jsonDecode(source) as Map<String, dynamic>;
           var mapped = countries.map((key, value)  {
             var country = Country.fromJson(value as Map);
+            var image = Image.asset('assets/images/${key}.png');
             return MapEntry(key, country);
           });
-          var c = 231;
+          var randomImage = (countries.keys.toList()..shuffle()).first;
+          setState(() {
+            _image = 'assets/images/$randomImage.png';
+          });
         },
         tooltip: 'Increment',
         child: Icon(Icons.add),
