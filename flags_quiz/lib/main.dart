@@ -2,11 +2,14 @@
 
 import 'dart:convert';
 
+import 'package:flagsquiz/countries_data_source.dart';
+import 'package:flagsquiz/countries_provider.dart';
+import 'package:flagsquiz/models/Continent.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'dart:io';
 
-import 'package:path_provider/path_provider.dart';
+
+import 'models/Country.dart';
 
 void main() {
   runApp(MyApp());
@@ -100,6 +103,11 @@ class MainScreenState extends State<MainScreen> {
           )),
       floatingActionButton: FloatingActionButton(
         onPressed: () async  {
+          var provider = CountriesProvider();
+          var result = await provider.provide();
+          var dataSource = CountriesDataSource(result);
+          var eu = dataSource.getByContinent(Continent.OC);
+
           _flags.remove(_flags.keys.first);
           var randoms = _flags.keys.toList();
           randoms.shuffle();
@@ -124,14 +132,4 @@ class MainScreenState extends State<MainScreen> {
   }
 }
 
-class Country {
 
-  static const _keyName = 'name';
-  static const _keyContinent = 'continent';
-
-  final String name;
-  final String continent;
-
-  Country.fromJson(Map json): name = json[_keyName] as String,
-        continent = json[_keyContinent] as String;
-}
