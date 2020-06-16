@@ -5,6 +5,7 @@ import 'dart:convert';
 import 'package:flagsquiz/countries_data_source.dart';
 import 'package:flagsquiz/countries_provider.dart';
 import 'package:flagsquiz/models/Continent.dart';
+import 'package:flagsquiz/ui/main_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -43,14 +44,14 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MainScreen extends StatefulWidget {
+class MainScreen1 extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    return MainScreenState();
+    return MainScreen1State();
   }
 }
 
-class MainScreenState extends State<MainScreen> {
+class MainScreen1State extends State<MainScreen1> {
 
   var _image = 'assets/images/AD.png';
   var _first = '';
