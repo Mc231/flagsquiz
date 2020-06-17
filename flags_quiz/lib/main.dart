@@ -4,11 +4,12 @@ import 'dart:convert';
 
 import 'package:flagsquiz/countries_data_source.dart';
 import 'package:flagsquiz/countries_provider.dart';
+import 'package:flagsquiz/localizations.dart';
 import 'package:flagsquiz/models/Continent.dart';
 import 'package:flagsquiz/ui/main_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'models/Country.dart';
 
@@ -22,6 +23,19 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       darkTheme: ThemeData.dark(),
+      localizationsDelegates: [
+        AppLocalizationsDelegate(),
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ],
+      supportedLocales: [
+        const Locale('en'), // English, no country code
+        const Locale('uk'), // Hebrew, no country code
+        // ... other locales the app supports
+      ],
+      localeResolutionCallback: (Locale locale, Iterable<Locale> supportedLocales) {
+        return locale;
+      },
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.

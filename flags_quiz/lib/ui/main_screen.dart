@@ -1,3 +1,4 @@
+import 'package:flagsquiz/localizations.dart';
 import 'package:flagsquiz/ui/base_button.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +13,7 @@ class MainScreen extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           BaseButton(
-              title: 'Start',
+              title: AppLocalizations.of(context).start,
               onClickListener: () {
                 print('Start');
               }),
