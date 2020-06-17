@@ -1,0 +1,9 @@
+{
+  "@@locale": "en",
+  "start": "Start",
+  "@start": {
+    "description": "Title of start button",
+    "type": "text",
+    "placeholders": {}
+  }
+}
