@@ -54,7 +54,7 @@ class AppLocalizations {
   String get selectRegion {
     return Intl.message(
       'Select Region',
-      name: 'select_region',
+      name: 'selectRegion',
       locale: localeName,
     );
   }
@@ -94,7 +94,7 @@ class AppLocalizations {
   String get northAmerica {
     return Intl.message(
       'North America',
-      name: 'north_america',
+      name: 'northAmerica',
       locale: localeName,
     );
   }
@@ -102,7 +102,7 @@ class AppLocalizations {
   String get southAmerica {
     return Intl.message(
       'South America',
-      name: 'south_america',
+      name: 'southAmerica',
       locale: localeName,
     );
   }

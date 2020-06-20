@@ -2,7 +2,6 @@
   "@@locale": "en",
   "start": "Start",
   "@start": {
-    "description": "Title of start button",
     "type": "text",
     "placeholders": {}
   },
@@ -13,7 +12,41 @@
   },
   "about": "About",
   "@about": {
-    "description": "Title of start button",
+    "type": "text",
+    "placeholders": {}
+  },
+  "all": "All",
+  "@all": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "europe": "Europe",
+  "@europe": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "asia": "Asia",
+  "@asia": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "africa": "Africa",
+  "@africa": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "northAmerica": "North America",
+  "@northAmerica": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "southAmerica": "South America",
+  "@southAmerica": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "oceania": "Oceania",
+  "@oceania": {
     "type": "text",
     "placeholders": {}
   }

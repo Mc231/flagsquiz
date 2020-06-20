@@ -16,5 +16,40 @@
     "description": "Title of start button",
     "type": "text",
     "placeholders": {}
+  },
+  "all": "Весь світ",
+  "@all": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "europe": "Європа",
+  "@europe": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "asia": "Азія",
+  "@asia": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "africa": "Африка",
+  "@africa": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "northAmerica": "Північна Америка",
+  "@northAmerica": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "southAmerica": "Південна Америка",
+  "@southAmerica": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "oceania": "Оканія",
+  "@oceania": {
+    "type": "text",
+    "placeholders": {}
   }
 }

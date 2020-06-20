@@ -1,5 +1,6 @@
 import 'package:flagsquiz/localizations.dart';
 import 'package:flagsquiz/ui/base_button.dart';
+import 'package:flagsquiz/ui/continents_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +16,10 @@ class MainScreen extends StatelessWidget {
           BaseButton(
               title: AppLocalizations.of(context).start,
               onClickListener: () {
-                print('Start');
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) {
+                  return ContinentsScreen();
+                }));
               }),
           SizedBox(height: 12),
           BaseButton(
