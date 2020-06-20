@@ -1,5 +1,5 @@
 import 'package:flagsquiz/foundation/iterable_extension.dart';
-import 'package:flagsquiz/models/Continent.dart';
+import 'package:flagsquiz/models/continent.dart';
 
 class Country {
   static const _keyName = 'name';

@@ -1,5 +1,5 @@
-import 'package:flagsquiz/models/Continent.dart';
-import 'package:flagsquiz/models/Country.dart';
+import 'package:flagsquiz/models/continent.dart';
+import 'package:flagsquiz/models/country.dart';
 
 class CountriesDataSource {
   final Map<String, Country> dataSource;

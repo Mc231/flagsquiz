@@ -5,13 +5,13 @@ import 'dart:convert';
 import 'package:flagsquiz/countries_data_source.dart';
 import 'package:flagsquiz/countries_provider.dart';
 import 'package:flagsquiz/localizations.dart';
-import 'package:flagsquiz/models/Continent.dart';
+import 'package:flagsquiz/models/continent.dart';
 import 'package:flagsquiz/ui/main_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
-import 'models/Country.dart';
+import 'models/country.dart';
 
 void main() {
   runApp(MyApp());

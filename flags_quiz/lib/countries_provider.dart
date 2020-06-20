@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:flagsquiz/foundation/resource_provider.dart';
-import 'package:flagsquiz/models/Country.dart';
+import 'package:flagsquiz/models/country.dart';
 
 import 'foundation/asset_provider.dart';
 

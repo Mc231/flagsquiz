@@ -1,5 +1,5 @@
 import 'package:flagsquiz/localizations.dart';
-import 'package:flagsquiz/models/Continent.dart';
+import 'package:flagsquiz/models/continent.dart';
 import 'package:flagsquiz/ui/base_button.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -89,7 +89,8 @@ class ContinentsScreen extends StatelessWidget {
                 var crossAxisCount =
                     orientation == Orientation.portrait ? 1 : 2;
                 var size = MediaQuery.of(context).size;
-                final itemHeight = 56 + (orientation == Orientation.portrait ? 0 : 64);
+                final itemHeight =
+                    56 + (orientation == Orientation.portrait ? 0 : 64);
                 final itemWidth = size.width - 32;
                 return GridView.count(
                     childAspectRatio: (itemWidth / itemHeight),
