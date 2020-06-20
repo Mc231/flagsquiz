@@ -1,7 +1,17 @@
 {
-  "@@last_modified": "2020-06-18T00:04:27.376097",
+  "@@last_modified": "2020-06-20T08:34:34.704397",
   "start": "Start",
   "@start": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "records": "Records",
+  "@records": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "about": "About",
+  "@about": {
     "description": "Title of start button",
     "type": "text",
     "placeholders": {}

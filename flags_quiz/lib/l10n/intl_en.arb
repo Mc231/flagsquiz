@@ -5,5 +5,16 @@
     "description": "Title of start button",
     "type": "text",
     "placeholders": {}
+  },
+  "records": "Records",
+  "@records": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "about": "About",
+  "@about": {
+    "description": "Title of start button",
+    "type": "text",
+    "placeholders": {}
   }
 }

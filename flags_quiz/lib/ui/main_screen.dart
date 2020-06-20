@@ -19,13 +19,13 @@ class MainScreen extends StatelessWidget {
               }),
           SizedBox(height: 12),
           BaseButton(
-              title: 'Records',
+              title: AppLocalizations.of(context).records,
               onClickListener: () {
                 print('Records');
               }),
           SizedBox(height: 12),
           BaseButton(
-              title: 'About',
+              title: AppLocalizations.of(context).about,
               onClickListener: () {
                 print('About');
               }),

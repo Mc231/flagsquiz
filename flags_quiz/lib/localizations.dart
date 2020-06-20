@@ -25,11 +25,92 @@ class AppLocalizations {
 
   final String localeName;
 
+  // Main Screen
   String get start {
     return Intl.message(
       'Start',
       name: 'start',
-      desc: 'Title of start button',
+      locale: localeName,
+    );
+  }
+
+  String get records {
+    return Intl.message(
+      'Records',
+      name: 'records',
+      locale: localeName,
+    );
+  }
+
+  String get about {
+    return Intl.message(
+      'About',
+      name: 'about',
+      locale: localeName,
+    );
+  }
+
+  // Regions Screen
+  String get selectRegion {
+    return Intl.message(
+      'Select Region',
+      name: 'select_region',
+      locale: localeName,
+    );
+  }
+
+  String get all {
+    return Intl.message(
+      'All',
+      name: 'all',
+      locale: localeName,
+    );
+  }
+
+  String get europe {
+    return Intl.message(
+      'Europe',
+      name: 'europe',
+      locale: localeName,
+    );
+  }
+
+  String get asia {
+    return Intl.message(
+      'Asia',
+      name: 'asia',
+      locale: localeName,
+    );
+  }
+
+  String get africa {
+    return Intl.message(
+      'Africa',
+      name: 'africa',
+      locale: localeName,
+    );
+  }
+
+  String get northAmerica {
+    return Intl.message(
+      'North America',
+      name: 'north_america',
+      locale: localeName,
+    );
+  }
+
+  String get southAmerica {
+    return Intl.message(
+      'South America',
+      name: 'south_america',
+      locale: localeName,
+    );
+  }
+
+  String get oceania {
+    return Intl.message(
+      'Oceania',
+      name: 'oceania',
       locale: localeName,
     );
   }
