@@ -14,7 +14,11 @@ class BaseButton extends StatelessWidget {
       child: FractionallySizedBox(
         widthFactor: 0.83,
         child: RaisedButton(
-          child: Text(title, style: TextStyle(fontSize: 24.0),),
+          child: Text(
+            title,
+            style: TextStyle(fontSize: 24.0),
+            textAlign: TextAlign.center,
+          ),
           textColor: Colors.white,
           color: Colors.black,
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),

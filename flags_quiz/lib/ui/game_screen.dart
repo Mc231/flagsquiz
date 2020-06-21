@@ -1,5 +1,6 @@
 import 'package:flagsquiz/bloc/game_bloc.dart';
 import 'package:flagsquiz/foundation/bloc_provider.dart';
+import 'package:flagsquiz/foundation/scrollable_safe_area_container.dart';
 import 'package:flagsquiz/models/country.dart';
 import 'package:flutter/material.dart';
 
@@ -26,49 +27,63 @@ class _GameScreenState extends State<GameScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-          child: StreamBuilder<GameState>(
-        initialData: _bloc.initialState,
-        stream: _bloc.stream,
-        builder: (context, snapshot) {
-          var state = snapshot.data;
-          if (state is LoadingState) {
-            return Center(
-              child: CircularProgressIndicator(),
+          child: ScrollableSafeAreaContainer(
+        child: StreamBuilder<GameState>(
+          initialData: _bloc.initialState,
+          stream: _bloc.stream,
+          builder: (context, snapshot) {
+            var state = snapshot.data;
+            if (state is LoadingState) {
+              return Center(
+                child: CircularProgressIndicator(),
+              );
+            }
+            var questionState = state as QuestionState;
+            var answerImage = questionState.question.answer.flagImage;
+            var options = questionState.question.options;
+            return Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                Image.asset(answerImage),
+                SizedBox(height: 16),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    addOptionButton(options.first),
+                    addOptionButton(options[1]),
+                    addOptionButton(options[2]),
+                    addOptionButton(options.last),
+                  ],
+                ),
+                progressColumn(questionState),
+              ],
             );
-          }
-          var questionState = state as QuestionState;
-          var answerImage =  questionState.question.answer.flagImage;
-          var options = questionState.question.options;
-          return Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            mainAxisSize: MainAxisSize.max,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Image.asset(answerImage),
-              SizedBox(height: 16),
-              Column(
-                mainAxisSize: MainAxisSize.max,
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  addOptionButton(options.first),
-                  addOptionButton(options[1]),
-                  addOptionButton(options[2]),
-                  addOptionButton(options.last),
-                ],
-              ),
-              SizedBox(height: 16),
-              Text('${questionState.progress} / ${questionState.total}'),
-              LinearProgressIndicator(value: (questionState.progress / questionState.total).toDouble() ?? 0,)
-            ],
-          );
-        },
+          },
+        ),
       )),
     );
   }
 
   Widget addOptionButton(Country option) {
-    return BaseButton(title: option.name, onClickListener: () {
-      _bloc.answerQuestion(option);
-    });
+    return Container(
+      margin: EdgeInsets.only(bottom: 16),
+      child: BaseButton(
+          title: option.name,
+          onClickListener: () {
+            _bloc.answerQuestion(option);
+          }),
+    );
+  }
+
+  Widget progressColumn(QuestionState state) {
+    return Column(
+      children: [
+        Text('${state.progress} / ${state.total}'),
+        SizedBox(height: 8),
+        LinearProgressIndicator(value: state.percentageProgress)
+      ],
+    );
   }
 }

@@ -77,40 +77,39 @@ class ContinentsScreen extends StatelessWidget {
             )));
   }
 
+  /// Warning add safe area container
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: Column(
-          children: [
-            Container(
-              margin: EdgeInsets.only(top: 16.0),
-              child: Text(
-                AppLocalizations.of(context).selectRegion,
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 24,
-                  color: Colors.black,
-                ),
+      body: Column(
+        children: [
+          Container(
+            margin: EdgeInsets.only(top: 16.0),
+            child: Text(
+              AppLocalizations.of(context).selectRegion,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 24,
+                color: Colors.black,
               ),
             ),
-            SizedBox(height: 16),
-            Expanded(
-              child: OrientationBuilder(builder: (context, orientation) {
-                var crossAxisCount =
-                    orientation == Orientation.portrait ? 1 : 2;
-                var size = MediaQuery.of(context).size;
-                final itemHeight =
-                    56 + (orientation == Orientation.portrait ? 0 : 64);
-                final itemWidth = size.width - 32;
-                return GridView.count(
-                    childAspectRatio: (itemWidth / itemHeight),
-                    crossAxisCount: crossAxisCount,
-                    children: getItems(context));
-              }),
-            ),
-          ],
-        ),
+          ),
+          SizedBox(height: 16),
+          Expanded(
+            child: OrientationBuilder(builder: (context, orientation) {
+              var crossAxisCount =
+                  orientation == Orientation.portrait ? 1 : 2;
+              var size = MediaQuery.of(context).size;
+              final itemHeight =
+                  56 + (orientation == Orientation.portrait ? 0 : 64);
+              final itemWidth = size.width - 32;
+              return GridView.count(
+                  childAspectRatio: (itemWidth / itemHeight),
+                  crossAxisCount: crossAxisCount,
+                  children: getItems(context));
+            }),
+          ),
+        ],
       ),
     );
   }
