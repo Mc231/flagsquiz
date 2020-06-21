@@ -46,7 +46,9 @@ class GameBloc extends SingleSubscriptionBloc<GameState> {
   void generateQuestion() {
     var randomResult = randomPicker.pick();
     if (randomResult == null) {
-      _currentProgress++;
+      var state =
+          QuestionState(_currentQuestion, _currentProgress, _totalCount);
+      dispatchState(state);
       handleGameOver();
       return;
     }
