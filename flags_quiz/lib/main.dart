@@ -1,11 +1,8 @@
 
 
-import 'dart:convert';
 
-import 'package:flagsquiz/countries_data_source.dart';
 import 'package:flagsquiz/countries_provider.dart';
 import 'package:flagsquiz/localizations.dart';
-import 'package:flagsquiz/models/continent.dart';
 import 'package:flagsquiz/ui/main_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -13,7 +10,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'models/country.dart';
 
-void main() {
+void main() async {
   runApp(MyApp());
 }
 
@@ -38,19 +35,7 @@ class MyApp extends StatelessWidget {
       },
       title: 'Flutter Demo',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
         primarySwatch: Colors.blue,
-        // This makes the visual density adapt to the platform that you run
-        // the app on. For desktop platforms, the controls will be smaller and
-        // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: MainScreen(),
@@ -77,16 +62,16 @@ class MainScreen1State extends State<MainScreen1> {
   @override
   void initState()  {
     super.initState();
-    loadAsset().then((source) {
-      var countries = jsonDecode(source) as Map<String, dynamic>;
-      setState(() {
-        _flags = countries.map((key, value)  {
-          var country = Country.fromJson(value as Map);
-          return MapEntry(key, country);
-        });
-      });
-
-    });
+//    loadAsset().then((source) {
+//      var countries = jsonDecode(source) as Map<String, dynamic>;
+//      setState(() {
+//        _flags = countries.map((key, value)  {
+//          var country = Country.fromJson(value as Map);
+//          return MapEntry(key, country);
+//        });
+//      });
+//
+//    });
   }
 
   @override
@@ -120,21 +105,21 @@ class MainScreen1State extends State<MainScreen1> {
         onPressed: () async  {
           var provider = CountriesProvider();
           var result = await provider.provide();
-          var dataSource = CountriesDataSource(result);
-          var eu = dataSource.getByContinent(Continent.OC);
-
-          _flags.remove(_flags.keys.first);
-          var randoms = _flags.keys.toList();
-          randoms.shuffle();
-          randoms = randoms.sublist(0, 4);
-          print(randoms);
-          setState(() {
-            _image = 'assets/images/${randoms[2]}.png';
-            _first = _flags[randoms[0]].name;
-            _second = _flags[randoms[1]].name;
-            _third = _flags[randoms[2]].name;
-            _fourth = _flags[randoms[3]].name;
-          });
+//          var dataSource = CountriesDataSource(result);
+//          var eu = dataSource.getByContinent(Continent.OC);
+//
+//          _flags.remove(_flags.keys.first);
+//          var randoms = _flags.keys.toList();
+//          randoms.shuffle();
+//          randoms = randoms.sublist(0, 4);
+//          print(randoms);
+//          setState(() {
+//            _image = 'assets/images/${randoms[2]}.png';
+//            _first = _flags[randoms[0]].name;
+//            _second = _flags[randoms[1]].name;
+//            _third = _flags[randoms[2]].name;
+//            _fourth = _flags[randoms[3]].name;
+//          });
         },
         tooltip: 'Increment',
         child: Icon(Icons.add),

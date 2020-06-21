@@ -7,9 +7,13 @@ class Country {
 
   final String name;
   final Continent continent;
+  final String flag;
 
-  Country.fromJson(Map json)
+  String get flagImage => 'assets/images/$flag.png';
+
+  Country.fromJson(Map json, String flag)
       : name = json[_keyName] as String,
         continent =
-            getEnumFromString(Continent.values, json[_keyContinent] as String);
+            getEnumFromString(Continent.values, json[_keyContinent] as String),
+        flag = flag;
 }

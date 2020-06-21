@@ -1,4 +1,4 @@
-import 'package:flagsquiz/models/Country.dart';
+import 'package:flagsquiz/models/country.dart';
 import 'package:flagsquiz/models/question.dart';
 
 class Answer {

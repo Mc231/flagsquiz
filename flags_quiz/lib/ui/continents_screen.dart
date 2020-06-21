@@ -1,8 +1,12 @@
+import 'package:flagsquiz/bloc/game_bloc.dart';
+import 'package:flagsquiz/foundation/bloc_provider.dart';
 import 'package:flagsquiz/localizations.dart';
 import 'package:flagsquiz/models/continent.dart';
 import 'package:flagsquiz/ui/base_button.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+import 'game_screen.dart';
 
 /// Represents continent item
 class ContinentItem {
@@ -56,14 +60,21 @@ class ContinentsScreen extends StatelessWidget {
         margin: EdgeInsets.only(bottom: 16),
         child: BaseButton(
           title: item.title,
-          onClickListener: () => _handleItemClick(item),
+          onClickListener: () => _handleItemClick(item, context),
         ),
       );
     }).toList();
   }
 
-  void _handleItemClick(ContinentItem item) {
-    print(item);
+  void _handleItemClick(ContinentItem item, BuildContext context) {
+    var bloc = GameBloc(item.continent);
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (context) => BlocProvider(
+              bloc: bloc,
+              child: GameScreen(),
+            )));
   }
 
   @override
