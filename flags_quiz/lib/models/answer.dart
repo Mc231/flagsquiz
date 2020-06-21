@@ -8,5 +8,4 @@ class Answer {
   Answer(this.selectedOption, this.question);
 
   bool get isCorrect => question.answer == selectedOption;
-
 }

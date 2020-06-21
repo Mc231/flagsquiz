@@ -72,7 +72,7 @@ class GameBloc extends SingleSubscriptionBloc<GameState> {
     for (var answer in _answers) {
       count += answer.isCorrect ? 1 : 0;
     }
-    print("Yout result is ${count} / $_totalCount");
+    print('Your result is ${count} / $_totalCount');
   }
 
   @override

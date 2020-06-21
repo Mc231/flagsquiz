@@ -72,9 +72,9 @@ class ContinentsScreen extends StatelessWidget {
         context,
         MaterialPageRoute(
             builder: (context) => BlocProvider(
-              bloc: bloc,
-              child: GameScreen(),
-            )));
+                  bloc: bloc,
+                  child: GameScreen(),
+                )));
   }
 
   /// Warning add safe area container
@@ -97,8 +97,7 @@ class ContinentsScreen extends StatelessWidget {
           SizedBox(height: 16),
           Expanded(
             child: OrientationBuilder(builder: (context, orientation) {
-              var crossAxisCount =
-                  orientation == Orientation.portrait ? 1 : 2;
+              var crossAxisCount = orientation == Orientation.portrait ? 1 : 2;
               var size = MediaQuery.of(context).size;
               final itemHeight =
                   56 + (orientation == Orientation.portrait ? 0 : 64);

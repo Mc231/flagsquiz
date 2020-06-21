@@ -2,7 +2,6 @@ import 'package:flagsquiz/foundation/resource_provider.dart';
 import 'package:flutter/services.dart';
 
 class AssetProvider extends ResourceProvider<String> {
-
   final String path;
 
   const AssetProvider(this.path);

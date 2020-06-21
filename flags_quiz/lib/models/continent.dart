@@ -1,3 +1,4 @@
+/// Represents Continent of the world
 enum Continent {
   AF,
   EU,

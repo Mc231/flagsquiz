@@ -26,8 +26,3 @@ class CountriesProvider extends ResourceProvider<List<Country>> {
     });
   }
 }
-
-//return value.map((key, value) {
-//var country = Country.fromJson(value as Map, key);
-//return country;
-//});
