@@ -24,13 +24,13 @@ class RandomCountriesPicker {
       countries.shuffle();
       var answer = (countries..shuffle()).first;
       answered.shuffle();
-      var options = answered.sublist(0, 3);
+      var options = answered.sublist(0, _defaultCount - 1);
       options.add(answer);
       options.shuffle();
       return _createResult(answer, options);
     }
     countries.shuffle();
-    var options = countries.sublist(0, 4);
+    var options = countries.sublist(0, _defaultCount);
     var answer = (options..shuffle()).first;
     options.shuffle();
     return _createResult(answer, options);
