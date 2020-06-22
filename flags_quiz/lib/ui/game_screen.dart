@@ -45,6 +45,7 @@ class _GameScreenState extends State<GameScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               mainAxisSize: MainAxisSize.max,
               children: [
+                // TODO: - Make this reusable
                 Image.asset(answerImage, width: 256, height: 256,),
                 SizedBox(height: 16),
                 Column(
