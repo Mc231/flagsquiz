@@ -15,11 +15,11 @@ class CountriesProvider extends ResourceProvider<List<Country>> {
   Future<List<Country>> provide() {
     return provider
         .provide()
-        .then((source) => jsonDecode(source) as Map<String, dynamic>)
+        .then((source) => jsonDecode(source) as List<dynamic>)
         .then((value) {
       var result = <Country>[];
-      value.forEach((key, value) {
-        var country = Country.fromJson(value as Map, key);
+      value.forEach((element) {
+        var country = Country.fromJson(element as Map);
         result.add(country);
       });
       return result;
