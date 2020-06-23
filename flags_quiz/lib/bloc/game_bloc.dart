@@ -1,4 +1,3 @@
-import 'dart:convert';
 
 import 'package:flagsquiz/bloc/random_countries_picker.dart';
 import 'package:flagsquiz/countries_data_source.dart';
@@ -8,7 +7,6 @@ import 'package:flagsquiz/models/answer.dart';
 import 'package:flagsquiz/models/continent.dart';
 import 'package:flagsquiz/models/country.dart';
 import 'package:flagsquiz/models/question.dart';
-import 'package:flutter/cupertino.dart';
 
 abstract class GameState {}
 
@@ -29,6 +27,8 @@ class GameBloc extends SingleSubscriptionBloc<GameState> {
   final CountriesProvider provider;
   CountriesDataSource dataSource;
   RandomCountriesPicker randomPicker;
+
+  Function(String result) gameOverCallback;
 
   List<Country> _countries = [];
   int _currentProgress = 0;
@@ -75,7 +75,11 @@ class GameBloc extends SingleSubscriptionBloc<GameState> {
     for (var answer in _answers) {
       count += answer.isCorrect ? 1 : 0;
     }
-    print('Your result is ${count} / $_totalCount');
+    var result = '${count} / $_totalCount';
+    if (gameOverCallback != null) {
+      gameOverCallback(result);
+    }
+    print('Your result is $result');
   }
 
   @override

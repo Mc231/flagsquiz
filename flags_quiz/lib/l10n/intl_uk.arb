@@ -51,5 +51,10 @@
   "@oceania": {
     "type": "text",
     "placeholders": {}
+  },
+  "yourScore": "Ваш рахунок",
+  "@yourScore": {
+    "type": "text",
+    "placeholders": {}
   }
 }

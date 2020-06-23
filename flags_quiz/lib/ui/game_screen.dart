@@ -1,6 +1,7 @@
 import 'package:flagsquiz/bloc/game_bloc.dart';
 import 'package:flagsquiz/foundation/bloc_provider.dart';
 import 'package:flagsquiz/foundation/scrollable_safe_area_container.dart';
+import 'package:flagsquiz/localizations.dart';
 import 'package:flagsquiz/models/country.dart';
 import 'package:flutter/material.dart';
 
@@ -20,6 +21,9 @@ class _GameScreenState extends State<GameScreen> {
   void initState() {
     _bloc = BlocProvider.of(context);
     _bloc.initialLoad();
+    _bloc.gameOverCallback = (String result){
+      _showGameOverDialog(result);
+    };
     super.initState();
   }
 
@@ -52,13 +56,13 @@ class _GameScreenState extends State<GameScreen> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    addOptionButton(options.first),
-                    addOptionButton(options[1]),
-                    addOptionButton(options[2]),
-                    addOptionButton(options.last),
+                    _addOptionButton(options.first),
+                    _addOptionButton(options[1]),
+                    _addOptionButton(options[2]),
+                    _addOptionButton(options.last),
                   ],
                 ),
-                progressColumn(questionState),
+                _progressColumn(questionState),
               ],
             );
           },
@@ -67,7 +71,35 @@ class _GameScreenState extends State<GameScreen> {
     );
   }
 
-  Widget addOptionButton(Country option) {
+  void _showGameOverDialog(String message) async {
+    await showDialog<void>(
+      context: context,
+      barrierDismissible: false, // user must tap button!
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text(AppLocalizations.of(context).yourScore),
+          content: SingleChildScrollView(
+            child: ListBody(
+              children: <Widget>[
+                Text(message),
+              ],
+            ),
+          ),
+          actions: <Widget>[
+            FlatButton(
+              child: Text(MaterialLocalizations.of(context).okButtonLabel),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        );
+      },
+    );
+    Navigator.of(context).pop();
+  }
+
+  Widget _addOptionButton(Country option) {
     return Container(
       margin: EdgeInsets.only(bottom: 16),
       child: BaseButton(
@@ -78,7 +110,7 @@ class _GameScreenState extends State<GameScreen> {
     );
   }
 
-  Widget progressColumn(QuestionState state) {
+  Widget _progressColumn(QuestionState state) {
     return Column(
       children: [
         Text('${state.progress} / ${state.total}'),

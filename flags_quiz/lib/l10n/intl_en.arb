@@ -49,5 +49,10 @@
   "@oceania": {
     "type": "text",
     "placeholders": {}
+  },
+  "yourScore": "Your Score",
+  "@yourScore": {
+    "type": "text",
+    "placeholders": {}
   }
 }

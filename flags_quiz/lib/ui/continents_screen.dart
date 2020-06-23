@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flagsquiz/bloc/game_bloc.dart';
 import 'package:flagsquiz/foundation/bloc_provider.dart';
 import 'package:flagsquiz/localizations.dart';
@@ -82,26 +84,28 @@ class ContinentsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Container(
-            margin: EdgeInsets.only(top: 16.0),
-            child: Text(
-              AppLocalizations.of(context).selectRegion,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.black,
-              ),
+          Text(
+            AppLocalizations.of(context).selectRegion,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 24,
+              color: Colors.black,
             ),
           ),
-          SizedBox(height: 16),
           Expanded(
-            child: OrientationBuilder(builder: (context, orientation) {
-              var crossAxisCount = orientation == Orientation.portrait ? 1 : 2;
-              var size = MediaQuery.of(context).size;
+            child: LayoutBuilder(builder: (context, constraints) {
+              var maxWidth = constraints.maxWidth;
+              var maxHeight = constraints.maxHeight;
+              var crossAxisCount = maxHeight > maxWidth ? 1 : 2;
+
               final itemHeight =
-                  56 + (orientation == Orientation.portrait ? 0 : 64);
-              final itemWidth = size.width - 32;
+                  56 + (maxHeight > maxWidth ? 0 : 64);
+
+              final itemWidth = maxWidth - 32;
               return GridView.count(
                   childAspectRatio: (itemWidth / itemHeight),
                   crossAxisCount: crossAxisCount,

@@ -112,6 +112,16 @@ class AppLocalizations {
       locale: localeName,
     );
   }
+
+  /// Result Alert
+
+  String get yourScore {
+    return Intl.message(
+      'Your Score',
+      name: 'yourScore',
+      locale: localeName,
+    );
+  }
 }
 
 class AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
