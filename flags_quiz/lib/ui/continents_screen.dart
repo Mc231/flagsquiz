@@ -84,10 +84,8 @@ class ContinentsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        mainAxisSize: MainAxisSize.min,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
+          SizedBox(height: 56),
           Text(
             AppLocalizations.of(context).selectRegion,
             textAlign: TextAlign.center,
@@ -96,6 +94,7 @@ class ContinentsScreen extends StatelessWidget {
               color: Colors.black,
             ),
           ),
+          SizedBox(height: 16),
           Expanded(
             child: LayoutBuilder(builder: (context, constraints) {
               var maxWidth = constraints.maxWidth;
@@ -107,6 +106,7 @@ class ContinentsScreen extends StatelessWidget {
 
               final itemWidth = maxWidth - 32;
               return GridView.count(
+                shrinkWrap: true,
                   childAspectRatio: (itemWidth / itemHeight),
                   crossAxisCount: crossAxisCount,
                   children: getItems(context));
