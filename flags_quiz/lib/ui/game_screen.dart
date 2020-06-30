@@ -3,6 +3,7 @@ import 'package:flagsquiz/foundation/bloc_provider.dart';
 import 'package:flagsquiz/foundation/scrollable_safe_area_container.dart';
 import 'package:flagsquiz/localizations.dart';
 import 'package:flagsquiz/models/country.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'base_button.dart';
@@ -21,7 +22,7 @@ class _GameScreenState extends State<GameScreen> {
   void initState() {
     _bloc = BlocProvider.of(context);
     _bloc.initialLoad();
-    _bloc.gameOverCallback = (String result){
+    _bloc.gameOverCallback = (String result) {
       _showGameOverDialog(result);
     };
     super.initState();
@@ -45,26 +46,59 @@ class _GameScreenState extends State<GameScreen> {
             var questionState = state as QuestionState;
             var answerImage = questionState.question.answer.flagImage;
             var options = questionState.question.options;
-            return Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              mainAxisSize: MainAxisSize.max,
-              children: [
-                // TODO: - Make this reusable
-                Image.asset(answerImage, width: 256, height: 256,),
-                SizedBox(height: 16),
-                Column(
+            return OrientationBuilder(builder: (context, orientation) {
+              print(orientation);
+              if (orientation == Orientation.portrait) {
+                return Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  mainAxisSize: MainAxisSize.min,
+                  mainAxisSize: MainAxisSize.max,
                   children: [
-                    _addOptionButton(options.first),
-                    _addOptionButton(options[1]),
-                    _addOptionButton(options[2]),
-                    _addOptionButton(options.last),
+                    // TODO: - Make this reusable
+                    Image.asset(
+                      answerImage,
+                      width: 256,
+                      height: 256,
+                    ),
+                    SizedBox(height: 16),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        _addOptionButton(options.first),
+                        _addOptionButton(options[1]),
+                        _addOptionButton(options[2]),
+                        _addOptionButton(options.last),
+                      ],
+                    ),
+                    _progressColumn(questionState),
                   ],
-                ),
-                _progressColumn(questionState),
-              ],
-            );
+                );
+              } else {
+                return Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Image.asset(
+                      answerImage,
+                      width: 256,
+                      height: 256,
+                    ),
+                    SizedBox(height: 16),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        _addOptionButton(options.first),
+                        _addOptionButton(options[1]),
+                        _addOptionButton(options[2]),
+                        _addOptionButton(options.last),
+                      ],
+                    ),
+                    _progressColumn(questionState),
+                  ],
+                );
+              }
+            });
           },
         ),
       )),
