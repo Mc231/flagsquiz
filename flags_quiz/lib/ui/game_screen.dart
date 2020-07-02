@@ -31,77 +31,90 @@ class _GameScreenState extends State<GameScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-          child: ScrollableSafeAreaContainer(
-        child: StreamBuilder<GameState>(
-          initialData: _bloc.initialState,
-          stream: _bloc.stream,
-          builder: (context, snapshot) {
-            var state = snapshot.data;
-            if (state is LoadingState) {
-              return Center(
-                child: CircularProgressIndicator(),
-              );
-            }
-            var questionState = state as QuestionState;
-            var answerImage = questionState.question.answer.flagImage;
-            var options = questionState.question.options;
-            return OrientationBuilder(builder: (context, orientation) {
-              print(orientation);
-              if (orientation == Orientation.portrait) {
-                return Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    // TODO: - Make this reusable
-                    Image.asset(
-                      answerImage,
-                      width: 256,
-                      height: 256,
-                    ),
-                    SizedBox(height: 16),
-                    Column(
+      body: Container(
+        padding: EdgeInsets.all(16),
+        child: SafeArea(
+            child: StreamBuilder<GameState>(
+              initialData: _bloc.initialState,
+              stream: _bloc.stream,
+              builder: (context, snapshot) {
+                var state = snapshot.data;
+                if (state is LoadingState) {
+                  return Center(
+                    child: CircularProgressIndicator(),
+                  );
+                }
+                var questionState = state as QuestionState;
+                var answerImage = questionState.question.answer.flagImage;
+                var options = questionState.question.options;
+                return OrientationBuilder(builder: (context, orientation) {
+                  print(orientation);
+                  if (orientation == Orientation.portrait) {
+                    return Column(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      mainAxisSize: MainAxisSize.min,
+                      mainAxisSize: MainAxisSize.max,
                       children: [
-                        _addOptionButton(options.first),
-                        _addOptionButton(options[1]),
-                        _addOptionButton(options[2]),
-                        _addOptionButton(options.last),
+                        // TODO: - Make this reusable
+                        Image.asset(
+                          answerImage,
+                          width: 256,
+                          height: 256,
+                        ),
+                        SizedBox(height: 16),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            _addOptionButton(options.first),
+                            _addOptionButton(options[1]),
+                            _addOptionButton(options[2]),
+                            _addOptionButton(options.last),
+                          ],
+                        ),
+                        _progressColumn(questionState),
                       ],
-                    ),
-                    _progressColumn(questionState),
-                  ],
-                );
-              } else {
-                return Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    Image.asset(
-                      answerImage,
-                      width: 256,
-                      height: 256,
-                    ),
-                    SizedBox(height: 16),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      mainAxisSize: MainAxisSize.min,
+                    );
+                  } else {
+                    var size = MediaQuery.of(context).size;
+                    var width = size.width * 0.8;
+                    var height = size.height * 0.5633;
+
+                    return Column(
                       children: [
-                        _addOptionButton(options.first),
-                        _addOptionButton(options[1]),
-                        _addOptionButton(options[2]),
-                        _addOptionButton(options.last),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          mainAxisSize: MainAxisSize.max,
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            Image.asset(
+                              answerImage,
+                              width: height,
+                              height: width,
+                            ),
+                            SizedBox(height: 16),
+                            Expanded(
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  _addOptionButton(options.first),
+                                  _addOptionButton(options[1]),
+                                  _addOptionButton(options[2]),
+                                  _addOptionButton(options.last),
+                                ],
+                              ),
+                            ),
+
+                          ],
+                        ),
+                        _progressColumn(questionState),
                       ],
-                    ),
-                    _progressColumn(questionState),
-                  ],
-                );
-              }
-            });
-          },
-        ),
-      )),
+                    );
+                  }
+                });
+              },
+            )),
+      ),
     );
   }
 
