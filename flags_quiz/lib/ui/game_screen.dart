@@ -75,6 +75,7 @@ class _GameScreenState extends State<GameScreen> {
                       ],
                     );
                   } else {
+                    // TODO: - Add correct calculation
                     var size = MediaQuery.of(context).size;
                     var width = size.width * 0.8;
                     var height = size.height * 0.5633;

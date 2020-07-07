@@ -1,5 +1,6 @@
 import 'package:flagsquiz/localizations.dart';
-import 'package:flagsquiz/ui/main_screen.dart';
+import 'package:flagsquiz/ui/continents_screen.dart';
+import 'package:flagsquiz/ui/game_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MainScreen(),
+      home: ContinentsScreen(),
     );
   }
 }
