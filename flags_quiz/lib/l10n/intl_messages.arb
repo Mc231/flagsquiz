@@ -1,20 +1,5 @@
 {
   "@@last_modified": "2020-06-20T20:08:04.260437",
-  "start": "Start",
-  "@start": {
-    "type": "text",
-    "placeholders": {}
-  },
-  "records": "Records",
-  "@records": {
-    "type": "text",
-    "placeholders": {}
-  },
-  "about": "About",
-  "@about": {
-    "type": "text",
-    "placeholders": {}
-  },
   "selectRegion": "Select Region",
   "@selectRegion": {
     "type": "text",

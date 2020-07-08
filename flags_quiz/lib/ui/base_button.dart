@@ -10,10 +10,13 @@ class BaseButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return RaisedButton(
-      child: Text(
-        title,
-        style: TextStyle(fontSize: 24.0),
-        textAlign: TextAlign.center,
+      child: FittedBox(
+        fit: BoxFit.fitWidth,
+        child: Text(
+          title,
+          style: TextStyle(fontSize: 24.0),
+          textAlign: TextAlign.center,
+        ),
       ),
       textColor: Colors.white,
       color: Colors.black,

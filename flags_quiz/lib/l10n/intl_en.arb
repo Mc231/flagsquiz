@@ -1,20 +1,5 @@
 {
   "@@locale": "en",
-  "start": "Start",
-  "@start": {
-    "type": "text",
-    "placeholders": {}
-  },
-  "records": "Records",
-  "@records": {
-    "type": "text",
-    "placeholders": {}
-  },
-  "about": "About",
-  "@about": {
-    "type": "text",
-    "placeholders": {}
-  },
   "all": "All",
   "@all": {
     "type": "text",

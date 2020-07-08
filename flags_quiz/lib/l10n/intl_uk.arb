@@ -1,22 +1,5 @@
 {
   "@@locale": "uk",
-  "start": "Старт",
-  "@start": {
-    "description": "Title of start button",
-    "type": "text",
-    "placeholders": {}
-  },
-  "records": "Рекорди",
-  "@records": {
-    "type": "text",
-    "placeholders": {}
-  },
-  "about": "Про автора",
-  "@about": {
-    "description": "Title of start button",
-    "type": "text",
-    "placeholders": {}
-  },
   "all": "Весь світ",
   "@all": {
     "type": "text",

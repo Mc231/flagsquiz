@@ -1,6 +1,7 @@
+import 'dart:math';
+
 import 'package:flagsquiz/bloc/game_bloc.dart';
 import 'package:flagsquiz/foundation/bloc_provider.dart';
-import 'package:flagsquiz/foundation/scrollable_safe_area_container.dart';
 import 'package:flagsquiz/localizations.dart';
 import 'package:flagsquiz/models/country.dart';
 import 'package:flutter/cupertino.dart';
@@ -16,6 +17,8 @@ class GameScreen extends StatefulWidget {
 }
 
 class _GameScreenState extends State<GameScreen> {
+  static const _imageCoof = 0.68;
+
   GameBloc _bloc;
 
   @override
@@ -35,86 +38,61 @@ class _GameScreenState extends State<GameScreen> {
         padding: EdgeInsets.all(16),
         child: SafeArea(
             child: StreamBuilder<GameState>(
-              initialData: _bloc.initialState,
-              stream: _bloc.stream,
-              builder: (context, snapshot) {
-                var state = snapshot.data;
-                if (state is LoadingState) {
-                  return Center(
-                    child: CircularProgressIndicator(),
-                  );
-                }
-                var questionState = state as QuestionState;
-                var answerImage = questionState.question.answer.flagImage;
-                var options = questionState.question.options;
-                return OrientationBuilder(builder: (context, orientation) {
-                  print(orientation);
-                  if (orientation == Orientation.portrait) {
-                    return Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        // TODO: - Make this reusable
-                        Image.asset(
-                          answerImage,
-                          width: 256,
-                          height: 256,
-                        ),
-                        SizedBox(height: 16),
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            _addOptionButton(options.first),
-                            _addOptionButton(options[1]),
-                            _addOptionButton(options[2]),
-                            _addOptionButton(options.last),
-                          ],
-                        ),
-                        _progressColumn(questionState),
-                      ],
-                    );
-                  } else {
-                    // TODO: - Add correct calculation
-                    var size = MediaQuery.of(context).size;
-                    var width = size.width * 0.8;
-                    var height = size.height * 0.5633;
+          initialData: _bloc.initialState,
+          stream: _bloc.stream,
+          builder: (context, snapshot) {
+            var state = snapshot.data;
+            if (state is LoadingState) {
+              return Center(
+                child: CircularProgressIndicator(),
+              );
+            }
+            var questionState = state as QuestionState;
+            return OrientationBuilder(builder: (context, orientation) {
+              return Column(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  if (orientation == Orientation.portrait)
+                    ..._imageAndButtons(questionState, context),
+                  if (orientation == Orientation.landscape)
+                    Row(
+                      children: _imageAndButtons(questionState, context),
+                    ),
+                  _progressColumn(questionState)
+                ],
+              );
+            });
+          },
+        )),
+      ),
+    );
+  }
 
-                    return Column(
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          mainAxisSize: MainAxisSize.max,
-                          crossAxisAlignment: CrossAxisAlignment.end,
-                          children: [
-                            Image.asset(
-                              answerImage,
-                              width: height,
-                              height: width,
-                            ),
-                            SizedBox(height: 16),
-                            Expanded(
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                mainAxisSize: MainAxisSize.min,
-                                children: [
-                                  _addOptionButton(options.first),
-                                  _addOptionButton(options[1]),
-                                  _addOptionButton(options[2]),
-                                  _addOptionButton(options.last),
-                                ],
-                              ),
-                            ),
+  List<Widget> _imageAndButtons(QuestionState state, BuildContext context) {
+    var width = MediaQuery.of(context).size.width;
+    var height = MediaQuery.of(context).size.height;
+    var size = min(width, height);
+    var imageSize = size * _imageCoof;
+    var answerImage = state.question.answer.flagImage;
+    var image = Image.asset(answerImage, width: imageSize, height: imageSize);
+    return [
+      image,
+      SizedBox(width: 16, height: 16),
+      Expanded(child: _buttonColumn(state.question.options, context))
+    ];
+  }
 
-                          ],
-                        ),
-                        _progressColumn(questionState),
-                      ],
-                    );
-                  }
-                });
-              },
-            )),
+  Widget _buttonColumn(List<Country> options, BuildContext context) {
+    return SingleChildScrollView(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          _addOptionButton(options.first),
+          _addOptionButton(options[1]),
+          _addOptionButton(options[2]),
+          _addOptionButton(options.last),
+        ],
       ),
     );
   }
@@ -149,7 +127,8 @@ class _GameScreenState extends State<GameScreen> {
 
   Widget _addOptionButton(Country option) {
     return Container(
-      margin: EdgeInsets.only(bottom: 16),
+      height: 48,
+      margin: EdgeInsets.only(bottom: 8),
       child: BaseButton(
           title: option.name,
           onClickListener: () {
