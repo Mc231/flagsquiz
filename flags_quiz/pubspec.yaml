@@ -35,6 +35,8 @@ dependencies:
   intl_translation: ^0.17.10
 
 dev_dependencies:
+  test_coverage: ^0.4.2
+  mockito: ^4.1.1
   flutter_test:
     sdk: flutter
 
