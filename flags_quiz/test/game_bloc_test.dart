@@ -1,6 +1,7 @@
 import 'package:flagsquiz/bloc/game_bloc.dart';
 import 'package:flagsquiz/countries_provider.dart';
 import 'package:flagsquiz/models/continent.dart';
+import 'package:flagsquiz/models/country.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 
@@ -23,6 +24,21 @@ void main() {
 
   test('initial state is correct', () {
     expect(bloc.initialState, isInstanceOf<LoadingState>());
+  });
+
+  test('initial load called correctly', () {
+    var expectedDataSource = [
+      Country.fromJson({'name': 'Ukraine', 'continent': 'EU', 'code': 'UK'}),
+      Country.fromJson({'name': 'Poland', 'continent': 'EU', 'code': 'PL'}),
+      Country.fromJson({'name': 'Slovakia', 'continent': 'EU', 'code': 'SK'}),
+      Country.fromJson({'name': 'Romania', 'continent': 'EU', 'code': 'RO'}),
+    ];
+    when(provider.provide())
+        .thenAnswer((realInvocation) => Future.value(expectedDataSource));
+    bloc.initialLoad();
+
+    
+
   });
 //
 //  group('Test resend activation', () {
