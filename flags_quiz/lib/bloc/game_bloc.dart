@@ -25,11 +25,11 @@ class QuestionState extends GameState {
 class GameBloc extends SingleSubscriptionBloc<GameState> {
   final Continent continent;
   final CountriesProvider provider;
-  CountriesDataSource dataSource;
-  RandomCountriesPicker randomPicker;
 
   Function(String result) gameOverCallback;
 
+  CountriesDataSource _dataSource;
+  RandomCountriesPicker _randomPicker;
   List<Country> _countries = [];
   int _currentProgress = 0;
   int _totalCount = 0;
@@ -41,15 +41,15 @@ class GameBloc extends SingleSubscriptionBloc<GameState> {
   /// Called when screen is loaded
   void initialLoad() async {
     var countries = await provider.provide();
-    dataSource = CountriesDataSource(countries);
-    _countries = dataSource.getByContinent(continent);
+    _dataSource = CountriesDataSource(countries);
+    _countries = _dataSource.getByContinent(continent);
     _totalCount = _countries.length;
-    randomPicker = RandomCountriesPicker(_countries);
+    _randomPicker = RandomCountriesPicker(_countries);
     generateQuestion();
   }
 
   void generateQuestion() {
-    var randomResult = randomPicker.pick();
+    var randomResult = _randomPicker.pick();
     if (randomResult == null) {
       var state =
           QuestionState(_currentQuestion, _currentProgress, _totalCount);
