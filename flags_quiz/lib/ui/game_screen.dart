@@ -50,8 +50,6 @@ class _GameScreenState extends State<GameScreen> {
             var questionState = state as QuestionState;
             return OrientationBuilder(builder: (context, orientation) {
               return Column(
-                mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   if (orientation == Orientation.portrait)
                     ..._imageAndButtons(questionState, context),
@@ -84,17 +82,26 @@ class _GameScreenState extends State<GameScreen> {
   }
 
   Widget _buttonColumn(List<Country> options, BuildContext context) {
-    return SingleChildScrollView(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          _addOptionButton(options.first),
-          _addOptionButton(options[1]),
-          _addOptionButton(options[2]),
-          _addOptionButton(options.last),
-        ],
-      ),
-    );
+    return LayoutBuilder(builder: (context, constraints) {
+      var maxWidth = constraints.maxWidth;
+      var maxHeight = constraints.maxHeight;
+      var crossAxisCount = maxHeight > maxWidth ? 1 : 2;
+
+      final itemHeight =
+          46 + (maxHeight > maxWidth ? 0 : 46);
+
+      final itemWidth = maxWidth - 32;
+      return GridView.count(
+          shrinkWrap: true,
+          childAspectRatio: (itemWidth / itemHeight),
+          crossAxisCount: crossAxisCount,
+          children: [
+            _addOptionButton(options.first),
+            _addOptionButton(options[1]),
+            _addOptionButton(options[2]),
+            _addOptionButton(options.last),
+          ]);
+    });
   }
 
   void _showGameOverDialog(String message) async {
@@ -127,8 +134,8 @@ class _GameScreenState extends State<GameScreen> {
 
   Widget _addOptionButton(Country option) {
     return Container(
-      height: 48,
-      margin: EdgeInsets.only(bottom: 8),
+
+      margin: EdgeInsets.only(bottom: 8, right: 8),
       child: BaseButton(
           title: option.name,
           onClickListener: () {
