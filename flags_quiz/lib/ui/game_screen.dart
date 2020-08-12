@@ -18,6 +18,7 @@ class GameScreen extends StatefulWidget {
 
 class _GameScreenState extends State<GameScreen> {
   static const _imageCoof = 0.68;
+  static const _verySmallScreenWidth = 289;
 
   GameBloc _bloc;
 
@@ -85,10 +86,10 @@ class _GameScreenState extends State<GameScreen> {
     return LayoutBuilder(builder: (context, constraints) {
       var maxWidth = constraints.maxWidth;
       var maxHeight = constraints.maxHeight;
-      var crossAxisCount = maxHeight > maxWidth ? 1 : 2;
+      var caseForVerySmallScreens = maxWidth < _verySmallScreenWidth ? 2 : 1;
+      var crossAxisCount = maxHeight > maxWidth ? 1 : caseForVerySmallScreens;
 
-      final itemHeight =
-          46 + (maxHeight > maxWidth ? 0 : 46);
+      final itemHeight = 46;
 
       final itemWidth = maxWidth - 32;
       return GridView.count(
