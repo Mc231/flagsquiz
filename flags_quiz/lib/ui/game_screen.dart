@@ -88,8 +88,9 @@ class _GameScreenState extends State<GameScreen> {
       var maxHeight = constraints.maxHeight;
       var caseForVerySmallScreens = maxWidth < _verySmallScreenWidth ? 2 : 1;
       var crossAxisCount = maxHeight > maxWidth ? 1 : caseForVerySmallScreens;
-
-      final itemHeight = 46;
+      var shortestSide = MediaQuery.of(context).size.shortestSide;
+      // TODO: - Implement this
+      final itemHeight =  shortestSide > 600 ? 92 : 46;
 
       final itemWidth = maxWidth - 32;
       return GridView.count(
