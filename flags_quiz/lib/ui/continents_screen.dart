@@ -54,9 +54,9 @@ class ContinentsScreen extends StatelessWidget {
               var maxWidth = constraints.maxWidth;
               var maxHeight = constraints.maxHeight;
               var crossAxisCount = maxHeight > maxWidth ? 1 : 2;
-
-              final itemHeight =
-                  56 + (maxHeight > maxWidth ? 0 : 64);
+              // TODO: - Implement this
+              var shortestSide = MediaQuery.of(context).size.shortestSide;
+              final itemHeight =  shortestSide > 600 ? 92 : 46;
 
               final itemWidth = maxWidth - 32;
               return GridView.count(
