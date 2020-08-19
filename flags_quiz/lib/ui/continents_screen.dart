@@ -1,29 +1,30 @@
-
 import 'package:flagsquiz/bloc/game_bloc.dart';
 import 'package:flagsquiz/foundation/bloc_provider.dart';
 import 'package:flagsquiz/localizations.dart';
-import 'package:flagsquiz/models/continent_item.dart';
+import 'package:flagsquiz/models/continent.dart';
 import 'package:flagsquiz/ui/base_button.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
+import 'package:flagsquiz/extensions/continent_additions.dart';
+import 'package:flagsquiz/extensions/tablet_utils.dart';
 import 'game_screen.dart';
 
 class ContinentsScreen extends StatelessWidget {
+
   List<Widget> getItems(BuildContext context) {
-    return ContinentItem.allItems(context).map((item) {
+    return Continent.values.map((item) {
       return Container(
         margin: EdgeInsets.only(left: 16.0, right: 16.0, bottom: 16),
         child: BaseButton(
-          title: item.title,
+          title: item.localizedName(context),
           onClickListener: () => _handleItemClick(item, context),
         ),
       );
     }).toList();
   }
 
-  void _handleItemClick(ContinentItem item, BuildContext context) {
-    var bloc = GameBloc(item.continent);
+  void _handleItemClick(Continent continent, BuildContext context) {
+    var bloc = GameBloc(continent);
     Navigator.push(
         context,
         MaterialPageRoute(
@@ -36,31 +37,24 @@ class ContinentsScreen extends StatelessWidget {
   /// Warning add safe area container
   @override
   Widget build(BuildContext context) {
+    final title = AppLocalizations.of(context).selectRegion;
     return Scaffold(
+      appBar: AppBar(
+        title: Text(title),
+      ),
       body: Column(
         children: [
-          SizedBox(height: 56),
-          Text(
-            AppLocalizations.of(context).selectRegion,
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 24,
-              color: Colors.black,
-            ),
-          ),
           SizedBox(height: 16),
           Expanded(
             child: LayoutBuilder(builder: (context, constraints) {
               var maxWidth = constraints.maxWidth;
               var maxHeight = constraints.maxHeight;
               var crossAxisCount = maxHeight > maxWidth ? 1 : 2;
-              // TODO: - Implement this
-              var shortestSide = MediaQuery.of(context).size.shortestSide;
-              final itemHeight =  shortestSide > 600 ? 92 : 46;
-
+              var tabletCondition = MediaQuery.of(context).isTablet();
+              final itemHeight = tabletCondition ? 92 : 46;
               final itemWidth = maxWidth - 32;
               return GridView.count(
-                shrinkWrap: true,
+                  shrinkWrap: true,
                   childAspectRatio: (itemWidth / itemHeight),
                   crossAxisCount: crossAxisCount,
                   children: getItems(context));

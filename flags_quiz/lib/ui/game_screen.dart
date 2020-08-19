@@ -6,6 +6,8 @@ import 'package:flagsquiz/localizations.dart';
 import 'package:flagsquiz/models/country.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flagsquiz/extensions/tablet_utils.dart';
+import 'package:flagsquiz/extensions/continent_additions.dart';
 
 import 'base_button.dart';
 
@@ -17,7 +19,7 @@ class GameScreen extends StatefulWidget {
 }
 
 class _GameScreenState extends State<GameScreen> {
-  static const _imageCoof = 0.68;
+  static const _imageCoof = 0.62;
   static const _verySmallScreenWidth = 289;
 
   GameBloc _bloc;
@@ -35,6 +37,9 @@ class _GameScreenState extends State<GameScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(_bloc.continent.localizedName(context)),
+      ),
       body: Container(
         padding: EdgeInsets.all(16),
         child: SafeArea(
@@ -55,10 +60,12 @@ class _GameScreenState extends State<GameScreen> {
                   if (orientation == Orientation.portrait)
                     ..._imageAndButtons(questionState, context),
                   if (orientation == Orientation.landscape)
-                    Row(
-                      children: _imageAndButtons(questionState, context),
+                    Expanded(
+                      child: Row(
+                        children: _imageAndButtons(questionState, context),
+                      ),
                     ),
-                  _progressColumn(questionState)
+                  _progressColumn(context, questionState)
                 ],
               );
             });
@@ -86,11 +93,13 @@ class _GameScreenState extends State<GameScreen> {
     return LayoutBuilder(builder: (context, constraints) {
       var maxWidth = constraints.maxWidth;
       var maxHeight = constraints.maxHeight;
-      var caseForVerySmallScreens = maxWidth < _verySmallScreenWidth ? 2 : 1;
-      var crossAxisCount = maxHeight > maxWidth ? 1 : caseForVerySmallScreens;
-      var shortestSide = MediaQuery.of(context).size.shortestSide;
-      // TODO: - Implement this
-      final itemHeight =  shortestSide > 600 ? 92 : 46;
+      final verySmallPhone = MediaQuery.of(context).isVerySmallPhone();
+      var smallScreenAxisCount = verySmallPhone? 2 : 1;
+      var crossAxisCount = maxHeight > maxWidth ? 1 : smallScreenAxisCount;
+      var itemHeight = _isTablet(context) ? 92 : 46;
+      if (verySmallPhone) {
+        itemHeight = maxWidth < maxHeight ? 36: 76;
+      }
 
       final itemWidth = maxWidth - 32;
       return GridView.count(
@@ -134,9 +143,12 @@ class _GameScreenState extends State<GameScreen> {
     Navigator.of(context).pop();
   }
 
+  bool _isTablet(BuildContext context) {
+    return MediaQuery.of(context).isTablet();
+  }
+
   Widget _addOptionButton(Country option) {
     return Container(
-
       margin: EdgeInsets.only(bottom: 8, right: 8),
       child: BaseButton(
           title: option.name,
@@ -146,10 +158,14 @@ class _GameScreenState extends State<GameScreen> {
     );
   }
 
-  Widget _progressColumn(QuestionState state) {
+  Widget _progressColumn(BuildContext context, QuestionState state) {
+    final fontSize = _isTablet(context) ? 24.0 : 12.0;
     return Column(
       children: [
-        Text('${state.progress} / ${state.total}'),
+        Text(
+          '${state.progress} / ${state.total}',
+          style: TextStyle(fontSize: fontSize),
+        ),
         SizedBox(height: 8),
         LinearProgressIndicator(value: state.percentageProgress)
       ],
