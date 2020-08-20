@@ -20,7 +20,6 @@ class GameScreen extends StatefulWidget {
 
 class _GameScreenState extends State<GameScreen> {
   static const _imageCoof = 0.62;
-  static const _verySmallScreenWidth = 289;
 
   GameBloc _bloc;
 
@@ -58,11 +57,11 @@ class _GameScreenState extends State<GameScreen> {
               return Column(
                 children: [
                   if (orientation == Orientation.portrait)
-                    ..._imageAndButtons(questionState, context),
+                    ..._imageAndButtons(questionState, context, orientation),
                   if (orientation == Orientation.landscape)
                     Expanded(
                       child: Row(
-                        children: _imageAndButtons(questionState, context),
+                        children: _imageAndButtons(questionState, context, orientation),
                       ),
                     ),
                   _progressColumn(context, questionState)
@@ -75,7 +74,8 @@ class _GameScreenState extends State<GameScreen> {
     );
   }
 
-  List<Widget> _imageAndButtons(QuestionState state, BuildContext context) {
+  List<Widget> _imageAndButtons(QuestionState state, BuildContext context,
+      Orientation orientation) {
     var width = MediaQuery.of(context).size.width;
     var height = MediaQuery.of(context).size.height;
     var size = min(width, height);
@@ -85,34 +85,44 @@ class _GameScreenState extends State<GameScreen> {
     return [
       image,
       SizedBox(width: 16, height: 16),
-      Expanded(child: _buttonColumn(state.question.options, context))
+      Expanded(child: _buttonColumn(state.question.options, context, orientation))
     ];
   }
 
-  Widget _buttonColumn(List<Country> options, BuildContext context) {
-    return LayoutBuilder(builder: (context, constraints) {
-      var maxWidth = constraints.maxWidth;
-      var maxHeight = constraints.maxHeight;
-      final verySmallPhone = MediaQuery.of(context).isVerySmallPhone();
-      var smallScreenAxisCount = verySmallPhone? 2 : 1;
-      var crossAxisCount = maxHeight > maxWidth ? 1 : smallScreenAxisCount;
-      var itemHeight = _isTablet(context) ? 92 : 46;
-      if (verySmallPhone) {
-        itemHeight = maxWidth < maxHeight ? 36: 76;
-      }
+  Widget _buttonColumn(List<Country> options,
+      BuildContext context,
+      Orientation orientation) {
+    final mediaQueryData = MediaQuery.of(context);
+    final verySmallPhone = mediaQueryData.isVerySmallPhone();
+    final isTablet = _isTablet(context);
+    var axisCount = 2;
+    var itemHeight = 46;
+    switch (orientation) {
+      case Orientation.landscape:
+        axisCount = verySmallPhone ? 1 : isTablet ? 1 : 2;
+        itemHeight = isTablet ? 92 : 46;
+        break;
+      case Orientation.portrait:
+        axisCount = verySmallPhone ? 2 : 1;
+        itemHeight = isTablet ? 92 : 56;
+        break;
+    }
 
-      final itemWidth = maxWidth - 32;
-      return GridView.count(
-          shrinkWrap: true,
-          childAspectRatio: (itemWidth / itemHeight),
-          crossAxisCount: crossAxisCount,
-          children: [
-            _addOptionButton(options.first),
-            _addOptionButton(options[1]),
-            _addOptionButton(options[2]),
-            _addOptionButton(options.last),
-          ]);
-    });
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final itemWidth = constraints.maxWidth;
+        return GridView.count(
+            shrinkWrap: true,
+            childAspectRatio: (itemWidth / itemHeight),
+            crossAxisCount: axisCount,
+            children: [
+              _addOptionButton(options.first),
+              _addOptionButton(options[1]),
+              _addOptionButton(options[2]),
+              _addOptionButton(options.last),
+            ]);
+      }
+    );
   }
 
   void _showGameOverDialog(String message) async {
