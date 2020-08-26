@@ -1,5 +1,6 @@
+import 'package:flagsquiz/models/screen_type.dart';
 import 'package:flutter/material.dart';
-import 'package:flagsquiz/extensions/tablet_utils.dart';
+import 'package:flagsquiz/extensions/screen_type_utils.dart';
 
 class BaseButton extends StatelessWidget {
   final String title;
@@ -10,8 +11,8 @@ class BaseButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final tabletCondtion = MediaQuery.of(context).isTablet();
-    final fontSize = tabletCondtion ? 24.0 : 16.0;
+    final tabletCondition = MediaQuery.of(context).screenType == ScreenType.tabletScreen;
+    final fontSize = tabletCondition ? 24.0 : 16.0;
     return RaisedButton(
       child: Text(
         title,

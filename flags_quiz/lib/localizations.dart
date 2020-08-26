@@ -130,6 +130,7 @@ class AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
   @override
   bool isSupported(Locale locale) => ['en', 'uk'].contains(locale.languageCode);
 
+
   @override
   Future<AppLocalizations> load(Locale locale) {
     return AppLocalizations.load(locale);

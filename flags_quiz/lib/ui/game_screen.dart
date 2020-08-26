@@ -4,9 +4,10 @@ import 'package:flagsquiz/bloc/game_bloc.dart';
 import 'package:flagsquiz/foundation/bloc_provider.dart';
 import 'package:flagsquiz/localizations.dart';
 import 'package:flagsquiz/models/country.dart';
+import 'package:flagsquiz/models/screen_type.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flagsquiz/extensions/tablet_utils.dart';
+import 'package:flagsquiz/extensions/screen_type_utils.dart';
 import 'package:flagsquiz/extensions/continent_additions.dart';
 
 import 'base_button.dart';
@@ -93,7 +94,7 @@ class _GameScreenState extends State<GameScreen> {
       BuildContext context,
       Orientation orientation) {
     final mediaQueryData = MediaQuery.of(context);
-    final verySmallPhone = mediaQueryData.isVerySmallPhone();
+    final verySmallPhone = mediaQueryData.screenType == ScreenType.smallScreen;
     final isTablet = _isTablet(context);
     var axisCount = 2;
     var itemHeight = 46;
@@ -154,7 +155,7 @@ class _GameScreenState extends State<GameScreen> {
   }
 
   bool _isTablet(BuildContext context) {
-    return MediaQuery.of(context).isTablet();
+    return MediaQuery.of(context).screenType == ScreenType.tabletScreen;
   }
 
   Widget _addOptionButton(Country option) {

@@ -2,11 +2,12 @@ import 'package:flagsquiz/bloc/game_bloc.dart';
 import 'package:flagsquiz/foundation/bloc_provider.dart';
 import 'package:flagsquiz/localizations.dart';
 import 'package:flagsquiz/models/continent.dart';
+import 'package:flagsquiz/models/screen_type.dart';
 import 'package:flagsquiz/ui/base_button.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flagsquiz/extensions/continent_additions.dart';
-import 'package:flagsquiz/extensions/tablet_utils.dart';
+import 'package:flagsquiz/extensions/screen_type_utils.dart';
 import 'game_screen.dart';
 
 class ContinentsScreen extends StatelessWidget {
@@ -50,7 +51,7 @@ class ContinentsScreen extends StatelessWidget {
               var maxWidth = constraints.maxWidth;
               var maxHeight = constraints.maxHeight;
               var crossAxisCount = maxHeight > maxWidth ? 1 : 2;
-              var tabletCondition = MediaQuery.of(context).isTablet();
+              var tabletCondition = MediaQuery.of(context).screenType == ScreenType.tabletScreen;
               final itemHeight = tabletCondition ? 92 : 46;
               final itemWidth = maxWidth - 32;
               return GridView.count(
