@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:flagsquiz/extensions/continent_additions.dart';
 import 'package:flagsquiz/extensions/screen_type_utils.dart';
 import 'game_screen.dart';
+import 'package:flagsquiz/extensions/boxconstraints_utils.dart';
 
 class ContinentsScreen extends StatelessWidget {
 
@@ -48,17 +49,65 @@ class ContinentsScreen extends StatelessWidget {
           SizedBox(height: 16),
           Expanded(
             child: LayoutBuilder(builder: (context, constraints) {
-              var maxWidth = constraints.maxWidth;
-              var maxHeight = constraints.maxHeight;
-              var crossAxisCount = maxHeight > maxWidth ? 1 : 2;
-              var tabletCondition = MediaQuery.of(context).screenType == ScreenType.tabletScreen;
-              final itemHeight = tabletCondition ? 92 : 46;
-              final itemWidth = maxWidth - 32;
-              return GridView.count(
-                  shrinkWrap: true,
-                  childAspectRatio: (itemWidth / itemHeight),
-                  crossAxisCount: crossAxisCount,
-                  children: getItems(context));
+              final itemWidth = constraints.maxWidth;
+              final screenType = MediaQuery.of(context).screenType;
+              var axisCount = 2;
+              var itemHeight = 46;
+              switch (constraints.orientation) {
+                case Orientation.landscape:
+                  switch (screenType) {
+                    case ScreenType.wearableScreen:
+                      axisCount = 1;
+                      itemHeight = 46;
+                      break;
+                    case ScreenType.smallScreen:
+                      axisCount = 2;
+                      itemHeight = 92;
+                      break;
+                    case ScreenType.phoneScreen:
+                      axisCount = 1;
+                      itemHeight = 56;
+                      break;
+                    case ScreenType.tabletScreen:
+                      axisCount = 1;
+                      itemHeight = 92;
+                      break;
+                    case ScreenType.bigScreen:
+                      axisCount = 1;
+                      itemHeight = 92;
+                      break;
+                  }
+                  break;
+                case Orientation.portrait:
+                  switch (screenType) {
+                    case ScreenType.wearableScreen:
+                      axisCount = 1;
+                      itemHeight = 56;
+                      break;
+                    case ScreenType.smallScreen:
+                      axisCount = 1;
+                      itemHeight = 56;
+                      break;
+                    case ScreenType.phoneScreen:
+                      axisCount = 1;
+                      itemHeight = 56;
+                      break;
+                    case ScreenType.tabletScreen:
+                      axisCount = 1;
+                      itemHeight = 92;
+                      break;
+                    case ScreenType.bigScreen:
+                      axisCount = 1;
+                      itemHeight = 92;
+                      break;
+                  }
+                  break;
+              }
+                return GridView.count(
+                    shrinkWrap: true,
+                    childAspectRatio: (itemWidth / itemHeight),
+                    crossAxisCount: axisCount,
+                    children: getItems(context));
             }),
           ),
         ],

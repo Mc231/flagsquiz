@@ -16,6 +16,8 @@ extension ScreenTypeUtils on MediaQueryData {
       return ScreenType.wearableScreen;
     }else if(shortestSide <  smallScreenSize) {
       return ScreenType.smallScreen;
+    }else if(shortestSide > smallScreenSize && shortestSide < tabletSize) {
+      return ScreenType.phoneScreen;
     }else if(shortestSide > tabletSize && shortestSide < bigScreenSize){
       return ScreenType.tabletScreen;
     }else{

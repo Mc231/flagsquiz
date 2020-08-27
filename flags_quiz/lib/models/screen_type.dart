@@ -2,6 +2,7 @@
 enum ScreenType {
   wearableScreen,
   smallScreen,
+  phoneScreen,
   tabletScreen,
   bigScreen
 }

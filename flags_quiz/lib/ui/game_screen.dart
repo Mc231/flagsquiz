@@ -9,6 +9,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flagsquiz/extensions/screen_type_utils.dart';
 import 'package:flagsquiz/extensions/continent_additions.dart';
+import 'package:flagsquiz/extensions/boxconstraints_utils.dart';
 
 import 'base_button.dart';
 
@@ -20,7 +21,6 @@ class GameScreen extends StatefulWidget {
 }
 
 class _GameScreenState extends State<GameScreen> {
-  static const _imageCoof = 0.62;
 
   GameBloc _bloc;
 
@@ -54,15 +54,18 @@ class _GameScreenState extends State<GameScreen> {
               );
             }
             var questionState = state as QuestionState;
-            return OrientationBuilder(builder: (context, orientation) {
+            final screenType = MediaQuery.of(context).screenType;
+            return LayoutBuilder(builder: (context, constraints) {
+              final orientation = constraints.orientation;
               return Column(
                 children: [
-                  if (orientation == Orientation.portrait)
-                    ..._imageAndButtons(questionState, context, orientation),
+                  if (orientation == Orientation.portrait || screenType == ScreenType.wearableScreen)
+                    ..._imageAndButtons(questionState, context, constraints),
                   if (orientation == Orientation.landscape)
                     Expanded(
                       child: Row(
-                        children: _imageAndButtons(questionState, context, orientation),
+                        children: _imageAndButtons(
+                            questionState, context, constraints),
                       ),
                     ),
                   _progressColumn(context, questionState)
@@ -74,56 +77,93 @@ class _GameScreenState extends State<GameScreen> {
       ),
     );
   }
+  
+  double imageCoof(BuildContext context) {
+    return MediaQuery.of(context).screenType == ScreenType.wearableScreen ? 0.21 : 0.62;
+  }
 
-  List<Widget> _imageAndButtons(QuestionState state, BuildContext context,
-      Orientation orientation) {
+  List<Widget> _imageAndButtons(
+      QuestionState state, BuildContext context, BoxConstraints constraints) {
     var width = MediaQuery.of(context).size.width;
     var height = MediaQuery.of(context).size.height;
     var size = min(width, height);
-    var imageSize = size * _imageCoof;
+    var imageSize = size * imageCoof(context);
     var answerImage = state.question.answer.flagImage;
     var image = Image.asset(answerImage, width: imageSize, height: imageSize);
     return [
       image,
-      SizedBox(width: 16, height: 16),
-      Expanded(child: _buttonColumn(state.question.options, context, orientation))
+      SizedBox(width: 16),
+      Expanded(
+          child: _buttonColumn(state.question.options, context, constraints))
     ];
   }
 
-  Widget _buttonColumn(List<Country> options,
-      BuildContext context,
-      Orientation orientation) {
-    final mediaQueryData = MediaQuery.of(context);
-    final verySmallPhone = mediaQueryData.screenType == ScreenType.smallScreen;
-    final isTablet = _isTablet(context);
+  Widget _buttonColumn(
+      List<Country> options, BuildContext context, BoxConstraints constraints) {
+    final screenType = MediaQuery.of(context).screenType;
     var axisCount = 2;
     var itemHeight = 46;
-    switch (orientation) {
+    switch (constraints.orientation) {
       case Orientation.landscape:
-        axisCount = verySmallPhone ? 1 : isTablet ? 1 : 2;
-        itemHeight = isTablet ? 92 : 46;
+        switch (screenType) {
+          case ScreenType.wearableScreen:
+            axisCount = 2;
+            itemHeight = 36;
+            break;
+          case ScreenType.smallScreen:
+            axisCount = 1;
+            itemHeight = 92;
+            break;
+          case ScreenType.phoneScreen:
+            axisCount = 1;
+            itemHeight = 46;
+            break;
+          case ScreenType.tabletScreen:
+            axisCount = 1;
+            itemHeight = 92;
+            break;
+          case ScreenType.bigScreen:
+            axisCount = 1;
+            itemHeight = 92;
+            break;
+        }
         break;
       case Orientation.portrait:
-        axisCount = verySmallPhone ? 2 : 1;
-        itemHeight = isTablet ? 92 : 56;
+        switch (screenType) {
+          case ScreenType.wearableScreen:
+            axisCount = 2;
+            itemHeight = 46;
+            break;
+          case ScreenType.smallScreen:
+            axisCount = 2;
+            itemHeight = 92;
+            break;
+          case ScreenType.phoneScreen:
+            axisCount = 1;
+            itemHeight = 46;
+            break;
+          case ScreenType.tabletScreen:
+            axisCount = 1;
+            itemHeight = 92;
+            break;
+          case ScreenType.bigScreen:
+            axisCount = 1;
+            itemHeight = 92;
+            break;
+        }
         break;
     }
-
-    return LayoutBuilder(
-      builder: (context, constraints) {
-        final itemWidth = constraints.maxWidth;
-        return GridView.count(
-            shrinkWrap: true,
-            childAspectRatio: (itemWidth / itemHeight),
-            crossAxisCount: axisCount,
-            children: [
-              _addOptionButton(options.first),
-              _addOptionButton(options[1]),
-              _addOptionButton(options[2]),
-              _addOptionButton(options.last),
-            ]);
-      }
-    );
+    final itemWidth = constraints.maxWidth;
+    return GridView.count(
+        shrinkWrap: true,
+        childAspectRatio: (itemWidth / itemHeight),
+        crossAxisCount: axisCount,
+        children: [
+          _addOptionButton(options.first),
+          _addOptionButton(options[1]),
+          _addOptionButton(options[2]),
+          _addOptionButton(options.last),
+        ]);
   }
 
   void _showGameOverDialog(String message) async {

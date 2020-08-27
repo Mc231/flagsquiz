@@ -128,8 +128,10 @@ class AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
   const AppLocalizationsDelegate();
 
   @override
-  bool isSupported(Locale locale) => ['en', 'uk'].contains(locale.languageCode);
+  bool isSupported(Locale locale) => true;
 
+//  @override
+//  bool isSupported(Locale locale) => ['en', 'uk'].contains(locale.languageCode);
 
   @override
   Future<AppLocalizations> load(Locale locale) {
