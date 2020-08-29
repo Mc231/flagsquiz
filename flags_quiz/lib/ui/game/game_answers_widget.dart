@@ -1,21 +1,18 @@
 import 'package:flagsquiz/models/country.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:flagsquiz/extensions/sizing_information_utils.dart';
 import '../option_button.dart';
 import 'game_screen_grid_config.dart';
 
-/// Contains 4 answer options
-class AnswersWidget extends StatelessWidget {
+class GameAnswersWidget extends StatelessWidget {
   final List<Country> options;
   final SizingInformation sizingInformation;
   final Function(Country answer) answerClickListener;
 
-  const AnswersWidget(
-      {Key key,
-      this.options,
-      this.sizingInformation,
-      this.answerClickListener})
+  const GameAnswersWidget(
+      {Key key, this.options, this.sizingInformation, this.answerClickListener})
       : super(key: key);
 
   @override
@@ -30,20 +27,32 @@ class AnswersWidget extends StatelessWidget {
         childAspectRatio: gridConfig.aspectRatio,
         crossAxisCount: gridConfig.axisCount,
         children: [
-          _addOptionButton(options.first),
-          _addOptionButton(options[1]),
-          _addOptionButton(options[2]),
-          _addOptionButton(options.last),
+          _addOptionButton(options.first, context),
+          _addOptionButton(options[1], context),
+          _addOptionButton(options[2], context),
+          _addOptionButton(options.last, context),
         ]);
   }
 
-  Widget _addOptionButton(Country option) {
+  Widget _addOptionButton(Country option, BuildContext context) {
     return Container(
-      // TODO: - Add correct padding
-      margin: EdgeInsets.only(bottom: 4),
+      margin: getButtonMargin(context),
       child: OptionButton(
           title: option.name,
           onClickListener: () => answerClickListener(option)),
     );
+  }
+}
+
+extension GameAnswersWidgetSizes on GameAnswersWidget {
+  static const _defaultButtonMargin = EdgeInsets.only(bottom: 8);
+
+  EdgeInsets getButtonMargin(BuildContext context) {
+    return getValueForScreenType(
+        context: context,
+        mobile: _defaultButtonMargin,
+        tablet: _defaultButtonMargin,
+        desktop: _defaultButtonMargin,
+        watch: EdgeInsets.only(bottom: 4));
   }
 }

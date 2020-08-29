@@ -3,7 +3,7 @@ import 'dart:math';
 import 'package:flagsquiz/bloc/game_bloc.dart';
 import 'package:flagsquiz/foundation/bloc_provider.dart';
 import 'package:flagsquiz/localizations.dart';
-import 'package:flagsquiz/ui/game/answer_widget.dart';
+import 'package:flagsquiz/ui/game/game_answers_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flagsquiz/extensions/continent_additions.dart';
@@ -67,7 +67,7 @@ class _GameScreenState extends State<GameScreen> {
       QuestionState questionState, SizingInformation information) {
     return Column(
       children: [
-       ..._imageAndButtons(questionState, information),
+        ..._imageAndButtons(questionState, information),
         _progressColumn(information, questionState)
       ],
     );
@@ -103,7 +103,7 @@ class _GameScreenState extends State<GameScreen> {
       image,
       SizedBox(width: 16),
       Expanded(
-          child: AnswersWidget(
+          child: GameAnswersWidget(
         options: state.question.options,
         sizingInformation: information,
         answerClickListener: _bloc.processAnswer,
@@ -140,17 +140,25 @@ class _GameScreenState extends State<GameScreen> {
   }
 
   Widget _progressColumn(SizingInformation information, QuestionState state) {
-    final fontSize =
-        information.isTablet || information.isDesktop ? 24.0 : 12.0;
     return Column(
       children: [
         Text(
           '${state.progress} / ${state.total}',
-          style: TextStyle(fontSize: fontSize),
+          style: TextStyle(fontSize: progressFontSize),
         ),
-        SizedBox(height: 8),
+        SizedBox(height: progressMargin),
         LinearProgressIndicator(value: state.percentageProgress)
       ],
     );
   }
+}
+
+extension GameScreenSizes on _GameScreenState {
+
+  double get progressFontSize {
+    return getValueForScreenType(
+        context: context, mobile: 12, tablet: 24, desktop: 24, watch: 8);
+  }
+
+  double get progressMargin => 8;
 }

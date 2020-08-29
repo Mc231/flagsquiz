@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_builder/responsive_builder.dart';
+import 'option_button_sizes.dart';
 
 class OptionButton extends StatelessWidget {
   final String title;
@@ -10,20 +10,16 @@ class OptionButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final mediaQuery = MediaQuery.of(context);
-    final screenType = getDeviceType(mediaQuery.size);
-    // TODO: - Add correct phone
-    final fontSize = screenType == DeviceScreenType.tablet ? 24.0 : (screenType == DeviceScreenType.watch ? 8.0 : 16.0);
     return RaisedButton(
       child: Text(
         title,
-        maxLines: 2,
-        style: TextStyle(fontSize: fontSize),
+        maxLines: maxLines,
+        style: TextStyle(fontSize: getFontSize(context)),
         textAlign: TextAlign.center,
       ),
       textColor: Colors.white,
       color: Colors.black,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+      shape: RoundedRectangleBorder(borderRadius: borderRadius),
       onPressed: onClickListener,
     );
   }

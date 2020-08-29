@@ -8,13 +8,13 @@ import 'package:flutter/material.dart';
 import 'package:flagsquiz/extensions/continent_additions.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import '../game/game_screen.dart';
-import 'continents_screen_grid_config.dart';
+import 'continents_screen_sizes.dart';
 
 class ContinentsScreen extends StatelessWidget {
-  List<Widget> getItems(BuildContext context) {
+  List<Widget> getContinentOptions(BuildContext context) {
     return Continent.values.map((item) {
       return Container(
-        margin: EdgeInsets.only(left: 16.0, right: 16.0, bottom: 16),
+        margin: getButtonMargin(context),
         child: OptionButton(
           title: item.localizedName(context),
           onClickListener: () => _handleItemClick(item, context),
@@ -47,17 +47,12 @@ class ContinentsScreen extends StatelessWidget {
           SizedBox(height: 16),
           Expanded(
             child: ResponsiveBuilder(builder: (context, information) {
-              final orientation = MediaQuery.of(context).orientation;
-              final configuration =
-                  ContinentsScreenGridConfig.fromContext(information);
-              final gridConfig = orientation == Orientation.portrait
-                  ? configuration.portrait
-                  : configuration.landscape;
               return GridView.count(
                   shrinkWrap: true,
-                  childAspectRatio: gridConfig.aspectRatio,
-                  crossAxisCount: gridConfig.axisCount,
-                  children: getItems(context));
+                  childAspectRatio:
+                      getGridChildAspectRatio(context, information),
+                  crossAxisCount: getGridAxisCount(context),
+                  children: getContinentOptions(context));
             }),
           ),
         ],
