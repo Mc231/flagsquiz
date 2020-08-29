@@ -5,11 +5,13 @@ import 'package:flagsquiz/foundation/bloc_provider.dart';
 import 'package:flagsquiz/localizations.dart';
 import 'package:flagsquiz/models/country.dart';
 import 'package:flagsquiz/models/screen_type.dart';
+import 'package:flagsquiz/ui/game_screen_grid_config.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flagsquiz/extensions/screen_type_utils.dart';
 import 'package:flagsquiz/extensions/continent_additions.dart';
 import 'package:flagsquiz/extensions/boxconstraints_utils.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 
 import 'base_button.dart';
 
@@ -54,36 +56,54 @@ class _GameScreenState extends State<GameScreen> {
               );
             }
             var questionState = state as QuestionState;
-            final screenType = MediaQuery.of(context).screenType;
-            return LayoutBuilder(builder: (context, constraints) {
-              final orientation = constraints.orientation;
-              return Column(
-                children: [
-                  if (orientation == Orientation.portrait || screenType == ScreenType.wearableScreen)
-                    ..._imageAndButtons(questionState, context, constraints),
-                  if (orientation == Orientation.landscape)
+            return ResponsiveBuilder(builder: (context, information) {
+              if (!information.isWatch) {
+                return _createBaseLayout(questionState, context, information);
+              }
+                return Column(
+                  children: [
                     Expanded(
-                      child: Row(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: _imageAndButtons(
-                            questionState, context, constraints),
+                            questionState, context, information),
                       ),
                     ),
-                  _progressColumn(context, questionState)
-                ],
-              );
+                    _progressColumn(context, questionState)
+                  ],
+                );
             });
           },
         )),
       ),
     );
   }
-  
+
+  Widget _createBaseLayout(QuestionState questionState, BuildContext context, SizingInformation information) {
+    final orientation = MediaQuery.of(context).orientation;
+    return Column(
+      children: [
+        if (orientation == Orientation.portrait)
+          ..._imageAndButtons(questionState, context, information),
+        if (orientation == Orientation.landscape)
+          Expanded(
+            child: Row(
+              children: _imageAndButtons(
+                  questionState, context, information),
+            ),
+          ),
+        _progressColumn(context, questionState)
+      ],
+    );
+  }
+
   double imageCoof(BuildContext context) {
-    return MediaQuery.of(context).screenType == ScreenType.wearableScreen ? 0.21 : 0.62;
+    return MediaQuery.of(context).screenType == ScreenType.wearableScreen ? 0.23 : 0.62;
   }
 
   List<Widget> _imageAndButtons(
-      QuestionState state, BuildContext context, BoxConstraints constraints) {
+      QuestionState state, BuildContext context, SizingInformation information) {
     var width = MediaQuery.of(context).size.width;
     var height = MediaQuery.of(context).size.height;
     var size = min(width, height);
@@ -94,70 +114,20 @@ class _GameScreenState extends State<GameScreen> {
       image,
       SizedBox(width: 16),
       Expanded(
-          child: _buttonColumn(state.question.options, context, constraints))
+          child: _buttonColumn(state.question.options, context, information))
     ];
   }
 
   Widget _buttonColumn(
-      List<Country> options, BuildContext context, BoxConstraints constraints) {
-    final screenType = MediaQuery.of(context).screenType;
-    var axisCount = 2;
-    var itemHeight = 46;
-    switch (constraints.orientation) {
-      case Orientation.landscape:
-        switch (screenType) {
-          case ScreenType.wearableScreen:
-            axisCount = 2;
-            itemHeight = 36;
-            break;
-          case ScreenType.smallScreen:
-            axisCount = 1;
-            itemHeight = 92;
-            break;
-          case ScreenType.phoneScreen:
-            axisCount = 1;
-            itemHeight = 46;
-            break;
-          case ScreenType.tabletScreen:
-            axisCount = 1;
-            itemHeight = 92;
-            break;
-          case ScreenType.bigScreen:
-            axisCount = 1;
-            itemHeight = 92;
-            break;
-        }
-        break;
-      case Orientation.portrait:
-        switch (screenType) {
-          case ScreenType.wearableScreen:
-            axisCount = 2;
-            itemHeight = 46;
-            break;
-          case ScreenType.smallScreen:
-            axisCount = 2;
-            itemHeight = 92;
-            break;
-          case ScreenType.phoneScreen:
-            axisCount = 1;
-            itemHeight = 46;
-            break;
-          case ScreenType.tabletScreen:
-            axisCount = 1;
-            itemHeight = 92;
-            break;
-          case ScreenType.bigScreen:
-            axisCount = 1;
-            itemHeight = 92;
-            break;
-        }
-        break;
-    }
-    final itemWidth = constraints.maxWidth;
+      List<Country> options, BuildContext context, SizingInformation information) {
+    final mediaQuery = MediaQuery.of(context);
+    final orientation = mediaQuery.orientation;
+    final configuration = GameScreenGridConfig.fromContext(information);
+    final gridConfig = orientation == Orientation.portrait ? configuration.portrait : configuration.landscape;
     return GridView.count(
         shrinkWrap: true,
-        childAspectRatio: (itemWidth / itemHeight),
-        crossAxisCount: axisCount,
+        childAspectRatio: gridConfig.aspectRatio,
+        crossAxisCount: gridConfig.axisCount,
         children: [
           _addOptionButton(options.first),
           _addOptionButton(options[1]),

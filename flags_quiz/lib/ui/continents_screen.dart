@@ -2,17 +2,15 @@ import 'package:flagsquiz/bloc/game_bloc.dart';
 import 'package:flagsquiz/foundation/bloc_provider.dart';
 import 'package:flagsquiz/localizations.dart';
 import 'package:flagsquiz/models/continent.dart';
-import 'package:flagsquiz/models/screen_type.dart';
 import 'package:flagsquiz/ui/base_button.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flagsquiz/extensions/continent_additions.dart';
-import 'package:flagsquiz/extensions/screen_type_utils.dart';
+import 'package:responsive_builder/responsive_builder.dart';
+import 'continents_screen_grid_config.dart';
 import 'game_screen.dart';
-import 'package:flagsquiz/extensions/boxconstraints_utils.dart';
 
 class ContinentsScreen extends StatelessWidget {
-
   List<Widget> getItems(BuildContext context) {
     return Continent.values.map((item) {
       return Container(
@@ -48,66 +46,18 @@ class ContinentsScreen extends StatelessWidget {
         children: [
           SizedBox(height: 16),
           Expanded(
-            child: LayoutBuilder(builder: (context, constraints) {
-              final itemWidth = constraints.maxWidth;
-              final screenType = MediaQuery.of(context).screenType;
-              var axisCount = 2;
-              var itemHeight = 46;
-              switch (constraints.orientation) {
-                case Orientation.landscape:
-                  switch (screenType) {
-                    case ScreenType.wearableScreen:
-                      axisCount = 1;
-                      itemHeight = 46;
-                      break;
-                    case ScreenType.smallScreen:
-                      axisCount = 2;
-                      itemHeight = 92;
-                      break;
-                    case ScreenType.phoneScreen:
-                      axisCount = 1;
-                      itemHeight = 56;
-                      break;
-                    case ScreenType.tabletScreen:
-                      axisCount = 1;
-                      itemHeight = 92;
-                      break;
-                    case ScreenType.bigScreen:
-                      axisCount = 1;
-                      itemHeight = 92;
-                      break;
-                  }
-                  break;
-                case Orientation.portrait:
-                  switch (screenType) {
-                    case ScreenType.wearableScreen:
-                      axisCount = 1;
-                      itemHeight = 56;
-                      break;
-                    case ScreenType.smallScreen:
-                      axisCount = 1;
-                      itemHeight = 56;
-                      break;
-                    case ScreenType.phoneScreen:
-                      axisCount = 1;
-                      itemHeight = 56;
-                      break;
-                    case ScreenType.tabletScreen:
-                      axisCount = 1;
-                      itemHeight = 92;
-                      break;
-                    case ScreenType.bigScreen:
-                      axisCount = 1;
-                      itemHeight = 92;
-                      break;
-                  }
-                  break;
-              }
-                return GridView.count(
-                    shrinkWrap: true,
-                    childAspectRatio: (itemWidth / itemHeight),
-                    crossAxisCount: axisCount,
-                    children: getItems(context));
+            child: ResponsiveBuilder(builder: (context, information) {
+              final orientation = MediaQuery.of(context).orientation;
+              final configuration =
+                  ContinentsScreenGridConfig.fromContext(information);
+              final gridConfig = orientation == Orientation.portrait
+                  ? configuration.portrait
+                  : configuration.landscape;
+              return GridView.count(
+                  shrinkWrap: true,
+                  childAspectRatio: gridConfig.aspectRatio,
+                  crossAxisCount: gridConfig.axisCount,
+                  children: getItems(context));
             }),
           ),
         ],
