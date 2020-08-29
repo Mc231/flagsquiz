@@ -2,7 +2,7 @@ import 'package:flagsquiz/bloc/game_bloc.dart';
 import 'package:flagsquiz/foundation/bloc_provider.dart';
 import 'package:flagsquiz/localizations.dart';
 import 'package:flagsquiz/models/continent.dart';
-import 'package:flagsquiz/ui/base_button.dart';
+import 'package:flagsquiz/ui/option_button.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flagsquiz/extensions/continent_additions.dart';
@@ -15,7 +15,7 @@ class ContinentsScreen extends StatelessWidget {
     return Continent.values.map((item) {
       return Container(
         margin: EdgeInsets.only(left: 16.0, right: 16.0, bottom: 16),
-        child: BaseButton(
+        child: OptionButton(
           title: item.localizedName(context),
           onClickListener: () => _handleItemClick(item, context),
         ),

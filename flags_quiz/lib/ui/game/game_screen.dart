@@ -3,13 +3,12 @@ import 'dart:math';
 import 'package:flagsquiz/bloc/game_bloc.dart';
 import 'package:flagsquiz/foundation/bloc_provider.dart';
 import 'package:flagsquiz/localizations.dart';
-import 'package:flagsquiz/ui/game/game_widget.dart';
+import 'package:flagsquiz/ui/game/answer_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flagsquiz/extensions/continent_additions.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:flagsquiz/extensions/sizing_information_utils.dart';
-
 
 class GameScreen extends StatefulWidget {
   @override
@@ -38,7 +37,8 @@ class _GameScreenState extends State<GameScreen> {
         title: Text(_bloc.continent.localizedName(context)),
       ),
       body: Container(
-        padding: EdgeInsets.all(16),
+        // TODO: - Add correct padding
+        padding: EdgeInsets.all(8),
         child: SafeArea(
             child: StreamBuilder<GameState>(
           initialData: _bloc.initialState,
@@ -53,24 +53,23 @@ class _GameScreenState extends State<GameScreen> {
             var questionState = state as QuestionState;
             return ResponsiveBuilder(builder: (context, information) {
               if (!information.isWatch) {
-                return _createBaseLayout(questionState, information);
+                return _createWatchLayout(questionState, information);
               }
-              return Column(
-                children: [
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: _imageAndButtons(questionState, information),
-                    ),
-                  ),
-                  _progressColumn(information, questionState)
-                ],
-              );
+              return _createBaseLayout(questionState, information);
             });
           },
         )),
       ),
+    );
+  }
+
+  Column _createWatchLayout(
+      QuestionState questionState, SizingInformation information) {
+    return Column(
+      children: [
+       ..._imageAndButtons(questionState, information),
+        _progressColumn(information, questionState)
+      ],
     );
   }
 
@@ -97,17 +96,17 @@ class _GameScreenState extends State<GameScreen> {
     var width = information.localWidgetSize.width;
     var height = information.localWidgetSize.height;
     var size = min(width, height);
-    var imageSize = size * (information.isWatch ? 0.23 : 0.62);
+    var imageSize = size * (information.isWatch ? 0.7 : 0.62);
     var answerImage = state.question.answer.flagImage;
     var image = Image.asset(answerImage, width: imageSize, height: imageSize);
     return [
       image,
       SizedBox(width: 16),
       Expanded(
-          child: GameWidget(
+          child: AnswersWidget(
         options: state.question.options,
         sizingInformation: information,
-        questionClickListener: _bloc.processAnswer,
+        answerClickListener: _bloc.processAnswer,
       ))
     ];
   }

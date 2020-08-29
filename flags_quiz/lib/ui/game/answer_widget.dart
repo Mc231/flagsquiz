@@ -2,20 +2,20 @@ import 'package:flagsquiz/models/country.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:flagsquiz/extensions/sizing_information_utils.dart';
-import '../base_button.dart';
+import '../option_button.dart';
 import 'game_screen_grid_config.dart';
 
-/// Widget with flag and answer options
-class GameWidget extends StatelessWidget {
+/// Contains 4 answer options
+class AnswersWidget extends StatelessWidget {
   final List<Country> options;
   final SizingInformation sizingInformation;
-  final Function(Country answer) questionClickListener;
+  final Function(Country answer) answerClickListener;
 
-  const GameWidget(
+  const AnswersWidget(
       {Key key,
       this.options,
       this.sizingInformation,
-      this.questionClickListener})
+      this.answerClickListener})
       : super(key: key);
 
   @override
@@ -39,10 +39,11 @@ class GameWidget extends StatelessWidget {
 
   Widget _addOptionButton(Country option) {
     return Container(
-      margin: EdgeInsets.only(bottom: 8, right: 8),
-      child: BaseButton(
+      // TODO: - Add correct padding
+      margin: EdgeInsets.only(bottom: 4),
+      child: OptionButton(
           title: option.name,
-          onClickListener: () => questionClickListener(option)),
+          onClickListener: () => answerClickListener(option)),
     );
   }
 }

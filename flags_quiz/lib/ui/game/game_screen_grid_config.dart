@@ -39,11 +39,14 @@ class GameScreenGridConfig {
 
   static GridConfig _landscape(SizingInformation information) {
     final screenType = information.deviceScreenType;
-    final itemWidth = information.localWidgetSize.width;
+    var itemWidth = information.localWidgetSize.width;
     var axisCount = 1;
     var itemHeight = 56.0;
     switch (screenType) {
       case DeviceScreenType.watch:
+        axisCount = 1;
+        itemHeight = 36;
+        break;
       case DeviceScreenType.mobile:
         itemHeight = 56;
         break;
