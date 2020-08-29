@@ -1,5 +1,5 @@
 import 'package:flagsquiz/localizations.dart';
-import 'package:flagsquiz/ui/continents_screen.dart';
+import 'package:flagsquiz/ui/continents/continents_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 

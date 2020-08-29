@@ -2,7 +2,6 @@ import 'package:flagsquiz/models/grid_config.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class GameScreenGridConfig {
-
   static const _verySmallScreen = 300;
 
   final GridConfig portrait;
@@ -10,10 +9,8 @@ class GameScreenGridConfig {
 
   GameScreenGridConfig(this.portrait, this.landscape);
 
-  factory GameScreenGridConfig.fromContext(
-      SizingInformation information) {
-    return GameScreenGridConfig(
-        GameScreenGridConfig._portrait(information),
+  factory GameScreenGridConfig.fromContext(SizingInformation information) {
+    return GameScreenGridConfig(GameScreenGridConfig._portrait(information),
         GameScreenGridConfig._landscape(information));
   }
 
@@ -25,7 +22,9 @@ class GameScreenGridConfig {
     switch (screenType) {
       case DeviceScreenType.watch:
       case DeviceScreenType.mobile:
-        axisCount = information.localWidgetSize.shortestSide > _verySmallScreen ? 1 : 2;;
+        axisCount =
+            information.localWidgetSize.shortestSide > _verySmallScreen ? 1 : 2;
+        ;
         itemHeight = 56;
         break;
       case DeviceScreenType.tablet:

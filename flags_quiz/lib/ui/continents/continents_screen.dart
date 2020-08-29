@@ -7,8 +7,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flagsquiz/extensions/continent_additions.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+import '../game/game_screen.dart';
 import 'continents_screen_grid_config.dart';
-import 'game_screen.dart';
 
 class ContinentsScreen extends StatelessWidget {
   List<Widget> getItems(BuildContext context) {

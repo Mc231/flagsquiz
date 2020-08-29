@@ -63,7 +63,7 @@ class GameBloc extends SingleSubscriptionBloc<GameState> {
     dispatchState(state);
   }
 
-  void answerQuestion(Country country) {
+  void processAnswer(Country country) {
     var answer = Answer(country, _currentQuestion);
     _answers.add(answer);
     _currentProgress++;

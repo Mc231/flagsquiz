@@ -3,17 +3,13 @@ import 'dart:math';
 import 'package:flagsquiz/bloc/game_bloc.dart';
 import 'package:flagsquiz/foundation/bloc_provider.dart';
 import 'package:flagsquiz/localizations.dart';
-import 'package:flagsquiz/models/country.dart';
-import 'package:flagsquiz/models/screen_type.dart';
-import 'package:flagsquiz/ui/game_screen_grid_config.dart';
+import 'package:flagsquiz/ui/game/game_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flagsquiz/extensions/screen_type_utils.dart';
 import 'package:flagsquiz/extensions/continent_additions.dart';
-import 'package:flagsquiz/extensions/boxconstraints_utils.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+import 'package:flagsquiz/extensions/sizing_information_utils.dart';
 
-import 'base_button.dart';
 
 class GameScreen extends StatefulWidget {
   @override
@@ -23,7 +19,6 @@ class GameScreen extends StatefulWidget {
 }
 
 class _GameScreenState extends State<GameScreen> {
-
   GameBloc _bloc;
 
   @override
@@ -58,21 +53,20 @@ class _GameScreenState extends State<GameScreen> {
             var questionState = state as QuestionState;
             return ResponsiveBuilder(builder: (context, information) {
               if (!information.isWatch) {
-                return _createBaseLayout(questionState, context, information);
+                return _createBaseLayout(questionState, information);
               }
-                return Column(
-                  children: [
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.stretch,
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: _imageAndButtons(
-                            questionState, context, information),
-                      ),
+              return Column(
+                children: [
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: _imageAndButtons(questionState, information),
                     ),
-                    _progressColumn(context, questionState)
-                  ],
-                );
+                  ),
+                  _progressColumn(information, questionState)
+                ],
+              );
             });
           },
         )),
@@ -80,60 +74,42 @@ class _GameScreenState extends State<GameScreen> {
     );
   }
 
-  Widget _createBaseLayout(QuestionState questionState, BuildContext context, SizingInformation information) {
-    final orientation = MediaQuery.of(context).orientation;
+  Widget _createBaseLayout(
+      QuestionState questionState, SizingInformation information) {
+    final orientation = information.orientation;
     return Column(
       children: [
         if (orientation == Orientation.portrait)
-          ..._imageAndButtons(questionState, context, information),
+          ..._imageAndButtons(questionState, information),
         if (orientation == Orientation.landscape)
           Expanded(
             child: Row(
-              children: _imageAndButtons(
-                  questionState, context, information),
+              children: _imageAndButtons(questionState, information),
             ),
           ),
-        _progressColumn(context, questionState)
+        _progressColumn(information, questionState)
       ],
     );
   }
 
-  double imageCoof(BuildContext context) {
-    return MediaQuery.of(context).screenType == ScreenType.wearableScreen ? 0.23 : 0.62;
-  }
-
   List<Widget> _imageAndButtons(
-      QuestionState state, BuildContext context, SizingInformation information) {
-    var width = MediaQuery.of(context).size.width;
-    var height = MediaQuery.of(context).size.height;
+      QuestionState state, SizingInformation information) {
+    var width = information.localWidgetSize.width;
+    var height = information.localWidgetSize.height;
     var size = min(width, height);
-    var imageSize = size * imageCoof(context);
+    var imageSize = size * (information.isWatch ? 0.23 : 0.62);
     var answerImage = state.question.answer.flagImage;
     var image = Image.asset(answerImage, width: imageSize, height: imageSize);
     return [
       image,
       SizedBox(width: 16),
       Expanded(
-          child: _buttonColumn(state.question.options, context, information))
+          child: GameWidget(
+        options: state.question.options,
+        sizingInformation: information,
+        questionClickListener: _bloc.processAnswer,
+      ))
     ];
-  }
-
-  Widget _buttonColumn(
-      List<Country> options, BuildContext context, SizingInformation information) {
-    final mediaQuery = MediaQuery.of(context);
-    final orientation = mediaQuery.orientation;
-    final configuration = GameScreenGridConfig.fromContext(information);
-    final gridConfig = orientation == Orientation.portrait ? configuration.portrait : configuration.landscape;
-    return GridView.count(
-        shrinkWrap: true,
-        childAspectRatio: gridConfig.aspectRatio,
-        crossAxisCount: gridConfig.axisCount,
-        children: [
-          _addOptionButton(options.first),
-          _addOptionButton(options[1]),
-          _addOptionButton(options[2]),
-          _addOptionButton(options.last),
-        ]);
   }
 
   void _showGameOverDialog(String message) async {
@@ -164,23 +140,9 @@ class _GameScreenState extends State<GameScreen> {
     Navigator.of(context).pop();
   }
 
-  bool _isTablet(BuildContext context) {
-    return MediaQuery.of(context).screenType == ScreenType.tabletScreen;
-  }
-
-  Widget _addOptionButton(Country option) {
-    return Container(
-      margin: EdgeInsets.only(bottom: 8, right: 8),
-      child: BaseButton(
-          title: option.name,
-          onClickListener: () {
-            _bloc.answerQuestion(option);
-          }),
-    );
-  }
-
-  Widget _progressColumn(BuildContext context, QuestionState state) {
-    final fontSize = _isTablet(context) ? 24.0 : 12.0;
+  Widget _progressColumn(SizingInformation information, QuestionState state) {
+    final fontSize =
+        information.isTablet || information.isDesktop ? 24.0 : 12.0;
     return Column(
       children: [
         Text(
