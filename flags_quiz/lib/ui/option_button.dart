@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'option_button_sizes.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 
 class OptionButton extends StatelessWidget {
   final String title;
@@ -22,5 +22,16 @@ class OptionButton extends StatelessWidget {
       shape: RoundedRectangleBorder(borderRadius: borderRadius),
       onPressed: onClickListener,
     );
+  }
+}
+
+extension on OptionButton {
+  BorderRadius get borderRadius => BorderRadius.circular(8);
+
+  int get maxLines => 2;
+
+  double getFontSize(BuildContext context) {
+    return getValueForScreenType(
+        context: context, mobile: 16, tablet: 24, desktop: 24, watch: 12);
   }
 }

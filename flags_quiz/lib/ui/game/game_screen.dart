@@ -37,8 +37,7 @@ class _GameScreenState extends State<GameScreen> {
         title: Text(_bloc.continent.localizedName(context)),
       ),
       body: Container(
-        // TODO: - Add correct padding
-        padding: EdgeInsets.all(8),
+        padding: getContainerPadding(context),
         child: SafeArea(
             child: StreamBuilder<GameState>(
           initialData: _bloc.initialState,
@@ -50,12 +49,9 @@ class _GameScreenState extends State<GameScreen> {
                 child: CircularProgressIndicator(),
               );
             }
-            var questionState = state as QuestionState;
+            final questionState = state as QuestionState;
             return ResponsiveBuilder(builder: (context, information) {
-              if (!information.isWatch) {
-                return _createWatchLayout(questionState, information);
-              }
-              return _createBaseLayout(questionState, information);
+              return _buildLayout(questionState, information);
             });
           },
         )),
@@ -63,17 +59,7 @@ class _GameScreenState extends State<GameScreen> {
     );
   }
 
-  Column _createWatchLayout(
-      QuestionState questionState, SizingInformation information) {
-    return Column(
-      children: [
-        ..._imageAndButtons(questionState, information),
-        _progressColumn(information, questionState)
-      ],
-    );
-  }
-
-  Widget _createBaseLayout(
+  Widget _buildLayout(
       QuestionState questionState, SizingInformation information) {
     final orientation = information.orientation;
     return Column(
@@ -93,11 +79,8 @@ class _GameScreenState extends State<GameScreen> {
 
   List<Widget> _imageAndButtons(
       QuestionState state, SizingInformation information) {
-    var width = information.localWidgetSize.width;
-    var height = information.localWidgetSize.height;
-    var size = min(width, height);
-    var imageSize = size * (information.isWatch ? 0.7 : 0.62);
     var answerImage = state.question.answer.flagImage;
+    final imageSize = getImageSize(information);
     var image = Image.asset(answerImage, width: imageSize, height: imageSize);
     return [
       image,
@@ -154,6 +137,22 @@ class _GameScreenState extends State<GameScreen> {
 }
 
 extension GameScreenSizes on _GameScreenState {
+  static const _imageWatchCof = 0.7;
+  static const _imageNormalCof = 0.62;
+
+  EdgeInsets getContainerPadding(BuildContext context) {
+    var padding = getValueForScreenType<double>(
+        context: context, mobile: 16, tablet: 16, desktop: 16, watch: 8);
+    return EdgeInsets.all(padding);
+  }
+
+  double getImageSize(SizingInformation information) {
+    final width = information.localWidgetSize.width;
+    final height = information.localWidgetSize.height;
+    final minSize = min(width, height);
+    final cof = information.isWatch ? _imageWatchCof : _imageNormalCof;
+    return minSize * cof;
+  }
 
   double get progressFontSize {
     return getValueForScreenType(

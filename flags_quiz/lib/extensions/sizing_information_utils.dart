@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
-extension SizingInformationUtils on SizingInformation {
+extension SizingInformationExtension on SizingInformation {
 
   Orientation get orientation {
     final size = localWidgetSize;
