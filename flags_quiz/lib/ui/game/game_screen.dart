@@ -8,7 +8,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flagsquiz/extensions/continent_additions.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-import 'package:flagsquiz/extensions/sizing_information_utils.dart';
+import 'package:flagsquiz/extensions/sizing_information_extension.dart';
 
 class GameScreen extends StatefulWidget {
   @override

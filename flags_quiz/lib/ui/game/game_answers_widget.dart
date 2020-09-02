@@ -1,7 +1,7 @@
 import 'package:flagsquiz/models/country.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flagsquiz/extensions/sizing_information_utils.dart';
+import 'package:flagsquiz/extensions/sizing_information_extension.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import '../option_button.dart';
 

@@ -27,9 +27,9 @@ class MyApp extends StatelessWidget {
           (Locale locale, Iterable<Locale> supportedLocales) {
         return locale;
       },
-      title: 'Flutter Demo',
       theme: ThemeData(
         primaryColor: Colors.white,
+        scaffoldBackgroundColor: Colors.white,
         appBarTheme: AppBarTheme(
           elevation: 0,
         ),
