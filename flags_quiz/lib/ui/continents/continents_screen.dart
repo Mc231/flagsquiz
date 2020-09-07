@@ -1,4 +1,5 @@
-import 'package:flagsquiz/bloc/game_bloc.dart';
+
+import 'package:flagsquiz/bussiness_logic/game_bloc.dart';
 import 'package:flagsquiz/foundation/bloc_provider.dart';
 import 'package:flagsquiz/localizations.dart';
 import 'package:flagsquiz/models/continent.dart';
@@ -10,29 +11,6 @@ import 'package:responsive_builder/responsive_builder.dart';
 import '../game/game_screen.dart';
 
 class ContinentsScreen extends StatelessWidget {
-  List<Widget> getContinentOptions(BuildContext context) {
-    return Continent.values.map((item) {
-      return Container(
-        margin: getButtonMargin(context),
-        child: OptionButton(
-          title: item.localizedName(context),
-          onClickListener: () => _handleItemClick(item, context),
-        ),
-      );
-    }).toList();
-  }
-
-  void _handleItemClick(Continent continent, BuildContext context) {
-    var bloc = GameBloc(continent);
-    Navigator.push(
-        context,
-        MaterialPageRoute(
-            builder: (context) => BlocProvider(
-                  bloc: bloc,
-                  child: GameScreen(),
-                )));
-  }
-
   /// Warning add safe area container
   @override
   Widget build(BuildContext context) {
@@ -51,20 +29,42 @@ class ContinentsScreen extends StatelessWidget {
                   childAspectRatio:
                       getGridChildAspectRatio(context, information),
                   crossAxisCount: getGridAxisCount(context),
-                  children: getContinentOptions(context));
+                  children: _getContinentOptions(context));
             }),
           ),
         ],
       ),
     );
   }
+
+  List<Widget> _getContinentOptions(BuildContext context) {
+    return Continent.values.map((item) {
+      return Container(
+        margin: getButtonMargin(context),
+        child: OptionButton(
+          title: item.localizedName(context),
+          onClickListener: () => _handleItemClick(item, context),
+        ),
+      );
+    }).toList();
+  }
+
+  void _handleItemClick(Continent continent, BuildContext context) {
+    var bloc = GameBloc.standard(continent);
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (context) => BlocProvider(
+                  bloc: bloc,
+                  child: GameScreen(),
+                )));
+  }
 }
 
 /// Contains continents screen related stuff
 extension on ContinentsScreen {
-
   static const _buttonMargin =
-  EdgeInsets.only(left: 16.0, right: 16.0, bottom: 16);
+      EdgeInsets.only(left: 16.0, right: 16.0, bottom: 16);
 
   EdgeInsets getButtonMargin(BuildContext context) {
     return getValueForScreenType(
@@ -72,8 +72,7 @@ extension on ContinentsScreen {
         mobile: _buttonMargin,
         tablet: _buttonMargin,
         desktop: _buttonMargin,
-        watch: EdgeInsets.only(left: 16.0, right: 16.0, bottom: 8)
-    );
+        watch: EdgeInsets.only(left: 16.0, right: 16.0, bottom: 8));
   }
 
   int getGridAxisCount(BuildContext context) {

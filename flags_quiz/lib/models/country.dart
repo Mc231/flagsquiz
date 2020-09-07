@@ -1,4 +1,4 @@
-import 'package:flagsquiz/foundation/iterable_extension.dart';
+import 'package:flagsquiz/extensions/iterable_extension.dart';
 import 'package:flagsquiz/models/continent.dart';
 
 class Country {

@@ -1,6 +1,7 @@
 import 'dart:math';
 
-import 'package:flagsquiz/bloc/game_bloc.dart';
+import 'package:flagsquiz/bussiness_logic/game_bloc.dart';
+import 'package:flagsquiz/bussiness_logic/game_state/game_state.dart';
 import 'package:flagsquiz/foundation/bloc_provider.dart';
 import 'package:flagsquiz/localizations.dart';
 import 'package:flagsquiz/ui/game/game_answers_widget.dart';

@@ -1,26 +1,13 @@
-
-import 'package:flagsquiz/bloc/random_countries_picker.dart';
-import 'package:flagsquiz/countries_data_source.dart';
-import 'package:flagsquiz/countries_provider.dart';
+import 'package:flagsquiz/foundation/random_item_picker.dart';
+import 'package:flagsquiz/bussiness_logic/countries_data_source.dart';
 import 'package:flagsquiz/foundation/single_subscription_bloc.dart';
 import 'package:flagsquiz/models/answer.dart';
 import 'package:flagsquiz/models/continent.dart';
 import 'package:flagsquiz/models/country.dart';
 import 'package:flagsquiz/models/question.dart';
 
-abstract class GameState {}
-
-class LoadingState extends GameState {}
-
-class QuestionState extends GameState {
-  final Question question;
-  final int progress;
-  final int total;
-
-  double get percentageProgress => (progress / total).toDouble();
-
-  QuestionState(this.question, this.progress, this.total);
-}
+import 'countries_provider.dart';
+import 'game_state/game_state.dart';
 
 class GameBloc extends SingleSubscriptionBloc<GameState> {
   final Continent continent;
@@ -29,14 +16,21 @@ class GameBloc extends SingleSubscriptionBloc<GameState> {
   Function(String result) gameOverCallback;
 
   CountriesDataSource _dataSource;
-  RandomCountriesPicker _randomPicker;
+  RandomItemPicker<Country> _randomPicker;
   List<Country> _countries = [];
   int _currentProgress = 0;
   int _totalCount = 0;
   Question _currentQuestion;
   final List<Answer> _answers = [];
 
-  GameBloc(this.continent, [this.provider = const CountriesProvider()]);
+  GameBloc(this.continent, this.provider);
+
+  factory GameBloc.standard(Continent continent) {
+    return GameBloc(continent, CountriesProvider.standard());
+  }
+
+  @override
+  GameState get initialState => LoadingState();
 
   /// Called when screen is loaded
   void initialLoad() async {
@@ -44,7 +38,7 @@ class GameBloc extends SingleSubscriptionBloc<GameState> {
     _dataSource = CountriesDataSource(countries);
     _countries = _dataSource.getByContinent(continent);
     _totalCount = _countries.length;
-    _randomPicker = RandomCountriesPicker(_countries);
+    _randomPicker = RandomItemPicker(_countries);
     generateQuestion();
   }
 
@@ -81,7 +75,4 @@ class GameBloc extends SingleSubscriptionBloc<GameState> {
     }
     print('Your result is $result');
   }
-
-  @override
-  GameState get initialState => LoadingState();
 }

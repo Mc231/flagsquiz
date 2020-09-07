@@ -3,12 +3,17 @@ import 'package:flutter/services.dart';
 
 class AssetProvider extends ResourceProvider<String> {
   final String path;
+  final AssetBundle bundle;
 
-  const AssetProvider(this.path);
+  const AssetProvider(this.path, this.bundle);
+
+  factory AssetProvider.mainBundleAssetProvider(String path) {
+    return AssetProvider(path, rootBundle);
+  }
 
   /// Provide file by its path
   @override
   Future<String> provide() {
-    return rootBundle.loadString(path);
+    return bundle.loadString(path);
   }
 }

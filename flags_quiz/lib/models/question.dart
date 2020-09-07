@@ -1,4 +1,4 @@
-import 'package:flagsquiz/bloc/random_countries_picker.dart';
+import 'package:flagsquiz/foundation/random_pick_result.dart';
 import 'package:flagsquiz/models/country.dart';
 
 class Question {
@@ -7,6 +7,6 @@ class Question {
 
   Question(this.answer, this.options);
 
-  Question.fromRandomResult(RandomCountryResult result)
+  Question.fromRandomResult(RandomPickResult<Country> result)
       : this(result.answer, result.options);
 }

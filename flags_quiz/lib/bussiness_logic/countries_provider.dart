@@ -1,15 +1,18 @@
 import 'dart:convert';
 
+import 'package:flagsquiz/foundation/asset_provider.dart';
 import 'package:flagsquiz/foundation/resource_provider.dart';
 import 'package:flagsquiz/models/country.dart';
-
-import 'foundation/asset_provider.dart';
 
 class CountriesProvider extends ResourceProvider<List<Country>> {
   final AssetProvider provider;
 
-  const CountriesProvider(
-      {this.provider = const AssetProvider('assets/Countries.json')});
+  const CountriesProvider(this.provider);
+
+  factory CountriesProvider.standard([String path = 'assets/Countries.json']) {
+    final countriesProvider = AssetProvider.mainBundleAssetProvider(path);
+    return CountriesProvider(countriesProvider);
+  }
 
   @override
   Future<List<Country>> provide() {
