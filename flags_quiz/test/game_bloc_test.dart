@@ -1,7 +1,6 @@
-
-
-import 'package:flagsquiz/bloc/game_bloc.dart';
-import 'package:flagsquiz/countries_provider.dart';
+import 'package:flagsquiz/bussiness_logic/countries_provider.dart';
+import 'package:flagsquiz/bussiness_logic/game_bloc.dart';
+import 'package:flagsquiz/bussiness_logic/game_state/game_state.dart';
 import 'package:flagsquiz/models/country.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
