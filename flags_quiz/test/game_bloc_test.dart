@@ -1,6 +1,7 @@
 import 'package:flagsquiz/bussiness_logic/countries_provider.dart';
 import 'package:flagsquiz/bussiness_logic/game_bloc.dart';
 import 'package:flagsquiz/bussiness_logic/game_state/game_state.dart';
+import 'package:flagsquiz/models/continent.dart';
 import 'package:flagsquiz/models/country.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
@@ -20,6 +21,16 @@ void main() {
     bloc.dispose();
   });
 
+  test('init standard', () {
+    // Given
+    final continent = Continent.AF;
+    // When
+    final result = GameBloc.standard(continent);
+    // Then
+    expect(result, isNotNull);
+  });
+
+
   test('initial state is correct', () {
     expect(bloc.initialState, isInstanceOf<LoadingState>());
   });
@@ -34,7 +45,7 @@ void main() {
     ];
     when(provider.provide())
         .thenAnswer((realInvocation) => Future.value(expectedDataSource));
-    await bloc.initialLoad();
+    await bloc.performInitialLoad();
     expect(bloc.stream, emitsInOrder([isInstanceOf<QuestionState>()]));
   });
 }

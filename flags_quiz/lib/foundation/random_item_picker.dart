@@ -1,23 +1,32 @@
 import 'package:flagsquiz/foundation/random_pick_result.dart';
 
 class RandomItemPicker<T> {
-  final List<T> answeredItems = [];
+
   final List<T> items;
   final int count;
+
+  final List<T> _answeredItems = [];
+
   static const _defaultCount = 4;
 
   RandomItemPicker(this.items, [this.count = _defaultCount]);
 
+  /// Clear and replace all items
+  void replaceItems(List<T> items) {
+    items.clear();
+    items.addAll(items);
+  }
+
   RandomPickResult<T> pick() {
     if (count >= items.length) {
       if (items.isEmpty) {
-        print('Game Over');
+        print('Items are empty');
         return null;
       }
       items.shuffle();
       var answer = (items..shuffle()).first;
-      answeredItems.shuffle();
-      var options = answeredItems.sublist(0, _defaultCount - 1);
+      _answeredItems.shuffle();
+      var options = _answeredItems.sublist(0, _defaultCount - 1);
       options.add(answer);
       options.shuffle();
       return _createResult(answer, options);
@@ -31,7 +40,7 @@ class RandomItemPicker<T> {
 
   RandomPickResult<T> _createResult(T answer, List<T> options) {
     items.remove(answer);
-    answeredItems.add(answer);
+    _answeredItems.add(answer);
     return RandomPickResult(answer, options);
   }
 }

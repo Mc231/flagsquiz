@@ -24,7 +24,7 @@ class _GameScreenState extends State<GameScreen> {
   @override
   void initState() {
     _bloc = BlocProvider.of(context);
-    _bloc.initialLoad();
+    _bloc.performInitialLoad();
     _bloc.gameOverCallback = (String result) {
       _showGameOverDialog(result);
     };

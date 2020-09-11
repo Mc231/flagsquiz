@@ -12,38 +12,39 @@ import 'game_state/game_state.dart';
 class GameBloc extends SingleSubscriptionBloc<GameState> {
   final Continent continent;
   final CountriesProvider provider;
+  final RandomItemPicker<Country> randomItemPicker;
 
   Function(String result) gameOverCallback;
 
   CountriesDataSource _dataSource;
-  RandomItemPicker<Country> _randomPicker;
   List<Country> _countries = [];
   int _currentProgress = 0;
   int _totalCount = 0;
   Question _currentQuestion;
   final List<Answer> _answers = [];
 
-  GameBloc(this.continent, this.provider);
+  GameBloc(this.continent, this.provider, this.randomItemPicker);
 
   factory GameBloc.standard(Continent continent) {
-    return GameBloc(continent, CountriesProvider.standard());
+    return GameBloc(
+        continent, CountriesProvider.standard(), RandomItemPicker([]));
   }
 
   @override
   GameState get initialState => LoadingState();
 
   /// Called when screen is loaded
-  void initialLoad() async {
+  void performInitialLoad() async {
     var countries = await provider.provide();
     _dataSource = CountriesDataSource(countries);
     _countries = _dataSource.getByContinent(continent);
     _totalCount = _countries.length;
-    _randomPicker = RandomItemPicker(_countries);
+    randomItemPicker.replaceItems(_countries);
     generateQuestion();
   }
 
   void generateQuestion() {
-    var randomResult = _randomPicker.pick();
+    var randomResult = randomItemPicker.pick();
     if (randomResult == null) {
       var state =
           QuestionState(_currentQuestion, _currentProgress, _totalCount);
