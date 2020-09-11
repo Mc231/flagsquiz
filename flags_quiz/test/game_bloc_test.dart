@@ -1,6 +1,7 @@
 import 'package:flagsquiz/bussiness_logic/countries_provider.dart';
 import 'package:flagsquiz/bussiness_logic/game_bloc.dart';
 import 'package:flagsquiz/bussiness_logic/game_state/game_state.dart';
+import 'package:flagsquiz/foundation/random_item_picker.dart';
 import 'package:flagsquiz/models/continent.dart';
 import 'package:flagsquiz/models/country.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -8,13 +9,17 @@ import 'package:mockito/mockito.dart';
 
 class CountriesProviderMock extends Mock implements CountriesProvider {}
 
+class RandomItemPickerMock extends Mock implements RandomItemPicker<Country> {}
+
 void main() {
   GameBloc bloc;
   CountriesProvider provider;
+  RandomItemPicker<Country> randomItemPicker;
 
   setUp(() {
     provider = CountriesProviderMock();
-    bloc = GameBloc(null, provider);
+    randomItemPicker = RandomItemPickerMock();
+    bloc = GameBloc(null, provider, randomItemPicker);
   });
 
   tearDown(() {
