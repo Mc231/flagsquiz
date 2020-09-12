@@ -13,8 +13,8 @@ class RandomItemPicker<T> {
 
   /// Clear and replace all items
   void replaceItems(List<T> items) {
-    items.clear();
-    items.addAll(items);
+    this.items.clear();
+    this.items.addAll(items);
   }
 
   RandomPickResult<T> pick() {
