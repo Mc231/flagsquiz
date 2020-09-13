@@ -26,7 +26,8 @@ class RandomItemPicker<T> {
       items.shuffle();
       var answer = (items..shuffle()).first;
       _answeredItems.shuffle();
-      var options = _answeredItems.sublist(0, _defaultCount - 1);
+      // TODO: - Fix this for edge cases
+      var options =  _answeredItems.sublist(0, count - 1);
       options.add(answer);
       options.shuffle();
       return _createResult(answer, options);

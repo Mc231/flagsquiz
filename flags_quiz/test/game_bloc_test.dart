@@ -69,6 +69,7 @@ void main() {
         .thenAnswer((realInvocation) => randomPickResult);
      bloc.processAnswer(countries.first);
     // Then
+    // TODO: - Figure out how to correctly test emmits in order
     expect(bloc.stream, emitsInOrder([isInstanceOf<QuestionState>()]));
   });
 
