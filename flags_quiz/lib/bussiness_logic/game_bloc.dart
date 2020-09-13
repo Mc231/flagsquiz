@@ -9,6 +9,8 @@ import 'package:flagsquiz/models/question.dart';
 
 import 'countries_provider.dart';
 import 'game_state/game_state.dart';
+import 'game_state/loading_state.dart';
+import 'game_state/question_state.dart';
 
 class GameBloc extends SingleSubscriptionBloc<GameState> {
   final Continent continent;
@@ -21,7 +23,7 @@ class GameBloc extends SingleSubscriptionBloc<GameState> {
   List<Country> _countries = [];
   int _currentProgress = 0;
   int _totalCount = 0;
-  Question _currentQuestion;
+  Question<Country> _currentQuestion;
   final List<Answer> _answers = [];
 
   GameBloc(this.continent, this.provider, this.randomItemPicker);

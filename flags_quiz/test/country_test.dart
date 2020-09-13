@@ -14,6 +14,7 @@ void main() {
       'continent': '$expectedContinent',
       'code': '$expectedCode'
     });
+    // Then
     expect(country.name, equals(expectedName));
     expect(country.continent, equals(Continent.NA));
     expect(country.code, equals(expectedCode));
