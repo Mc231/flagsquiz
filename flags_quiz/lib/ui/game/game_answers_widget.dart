@@ -11,7 +11,10 @@ class GameAnswersWidget extends StatelessWidget {
   final Function(Country answer) answerClickListener;
 
   const GameAnswersWidget(
-      {Key key, this.options, this.sizingInformation, this.answerClickListener})
+      {Key key,
+      @required this.options,
+      @required this.sizingInformation,
+      @required this.answerClickListener})
       : super(key: key);
 
   @override
@@ -22,15 +25,12 @@ class GameAnswersWidget extends StatelessWidget {
         crossAxisSpacing: getAxisSpacing(context),
         childAspectRatio: getGridChildAspectRatio(context, sizingInformation),
         crossAxisCount: getGridAxisCount(context, sizingInformation),
-        children: [
-          _addOptionButton(options.first, context),
-          _addOptionButton(options[1], context),
-          _addOptionButton(options[2], context),
-          _addOptionButton(options.last, context),
-        ]);
+        children: options
+            .map((option) => _createOptionButton(option, context))
+            .toList());
   }
 
-  Widget _addOptionButton(Country option, BuildContext context) {
+  Widget _createOptionButton(Country option, BuildContext context) {
     return Container(
       margin: getButtonMargin(context),
       child: OptionButton(
