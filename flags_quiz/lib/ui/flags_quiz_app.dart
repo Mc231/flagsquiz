@@ -3,9 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 import '../localizations.dart';
-import 'continents/continents_screen.dart';
 
 class FlagsQuizApp extends StatelessWidget {
+  final Widget homeWidget;
+
+  const FlagsQuizApp({Key key, this.homeWidget}) : super(key: key);
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -17,8 +20,8 @@ class FlagsQuizApp extends StatelessWidget {
         AppLocalizationsDelegate(),
       ],
       supportedLocales: [
-        const Locale('en'), // English, no country code
-        const Locale('uk'), // Hebrew, no country code
+        const Locale('en'),
+        const Locale('uk'),
         // ... other locales the app supports
       ],
       localeResolutionCallback:
@@ -33,7 +36,7 @@ class FlagsQuizApp extends StatelessWidget {
         ),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: ContinentsScreen(),
+      home: homeWidget,
     );
   }
 }

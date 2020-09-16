@@ -1,15 +1,20 @@
+import 'package:flagsquiz/models/continent.dart';
 import 'package:flagsquiz/ui/continents/continents_screen.dart';
+import 'package:flagsquiz/ui/flags_quiz_app.dart';
+import 'package:flagsquiz/ui/option_button.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'test_app.dart';
 
 void main() {
   testWidgets('Option button has a title', (WidgetTester tester) async {
-    // When
+    // Given
+    final continetsCount = Continent.values.length - 1;
     await tester.pumpWidget(
-        TestApp(child: ContinentsScreen()));
+        FlagsQuizApp(homeWidget: ContinentsScreen()));
+    // When
+    await tester.pump();
+    final optionButtonsFinder = find.byType(OptionButton);
     // Then
-//    final titleFinder = find.text(title);
-//    expect(titleFinder, findsOneWidget);
+    expect(optionButtonsFinder, findsNWidgets(continetsCount));
   });
 }
