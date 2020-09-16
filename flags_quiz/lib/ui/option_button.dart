@@ -5,7 +5,8 @@ class OptionButton extends StatelessWidget {
   final String title;
   final VoidCallback onClickListener;
 
-  const OptionButton({Key key, this.title, this.onClickListener})
+  const OptionButton(
+      {Key key, @required this.title, @required this.onClickListener})
       : super(key: key);
 
   @override
