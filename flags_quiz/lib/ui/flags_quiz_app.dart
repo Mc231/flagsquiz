@@ -6,8 +6,11 @@ import '../localizations.dart';
 
 class FlagsQuizApp extends StatelessWidget {
   final Widget homeWidget;
+  final List<NavigatorObserver> navigationObservers;
 
-  const FlagsQuizApp({Key key, this.homeWidget}) : super(key: key);
+  const FlagsQuizApp(
+      {Key key, this.homeWidget, this.navigationObservers = const []})
+      : super(key: key);
 
   // This widget is the root of your application.
   @override
@@ -36,6 +39,7 @@ class FlagsQuizApp extends StatelessWidget {
         ),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+      navigatorObservers: navigationObservers,
       home: homeWidget,
     );
   }
