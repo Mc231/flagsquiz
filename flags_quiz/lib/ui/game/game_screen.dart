@@ -82,19 +82,22 @@ class _GameScreenState extends State<GameScreen> {
 
   List<Widget> _imageAndButtons(
       QuestionState state, SizingInformation information) {
-    var answerImage = state.question.answer.flagImage;
-    final imageSize = getImageSize(information);
-    var image = Image.asset(answerImage, width: imageSize, height: imageSize);
-    return [
-      image,
-      SizedBox(width: 16),
-      Expanded(
-          child: GameAnswersWidget(
-        options: state.question.options,
-        sizingInformation: information,
-        answerClickListener: _bloc.processAnswer,
-      ))
-    ];
+    if (state.question != null) {
+      var answerImage = state.question.answer.flagImage;
+      final imageSize = getImageSize(information);
+      var image = Image.asset(answerImage, width: imageSize, height: imageSize);
+      return [
+        image,
+        SizedBox(width: 16),
+        Expanded(
+            child: GameAnswersWidget(
+              options: state.question.options,
+              sizingInformation: information,
+              answerClickListener: _bloc.processAnswer,
+            ))
+      ];
+    }
+    return [];
   }
 
   void _showGameOverDialog(String message) async {

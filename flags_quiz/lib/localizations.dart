@@ -23,31 +23,6 @@ class AppLocalizations {
 
   final String localeName;
 
-  // Main Screen
-  String get start {
-    return Intl.message(
-      'Start',
-      name: 'start',
-      locale: localeName,
-    );
-  }
-
-  String get records {
-    return Intl.message(
-      'Records',
-      name: 'records',
-      locale: localeName,
-    );
-  }
-
-  String get about {
-    return Intl.message(
-      'About',
-      name: 'about',
-      locale: localeName,
-    );
-  }
-
   // Regions Screen
   String get selectRegion {
     return Intl.message(
