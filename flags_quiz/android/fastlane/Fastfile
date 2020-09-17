@@ -24,7 +24,7 @@ platform :android do
 
   desc "Build debug client"
   lane :client_debug do
-    sh('flutter test --coverage && genhtml coverage/lcov.info -o coverage/html')
+    sh('flutter test --coverage')
     gradle(task: "clean bundleDebug")
   end	
 end
