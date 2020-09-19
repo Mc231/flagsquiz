@@ -16,7 +16,6 @@ class CountriesProvider extends ResourceProvider<List<Country>> {
 
   @override
   Future<List<Country>> provide() {
-
     return provider
         .provide()
         .then((source) => jsonDecode(source) as List<dynamic>)

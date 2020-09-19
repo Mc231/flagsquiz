@@ -1,28 +1,27 @@
 import 'package:flagsquiz/models/continent.dart';
+import 'package:flagsquiz/ui/app_strings_delegate.dart';
 import 'package:flutter/cupertino.dart';
-
-import '../localizations.dart';
 
 extension ContinentAdditions on Continent {
 
   // ignore: missing_return
   String localizedName(BuildContext context) {
-    var localizations = AppLocalizations.of(context);
+    final strings = AppStrings.of(context);
     switch (this) {
       case Continent.ALL:
-        return localizations.all;
+        return strings.All;
       case Continent.AF:
-        return localizations.africa;
+        return strings.Africa;
       case Continent.EU:
-        return localizations.europe;
+        return strings.Europe;
       case Continent.AS:
-        return localizations.asia;
+        return strings.Asia;
       case Continent.NA:
-        return localizations.northAmerica;
+        return strings.northAmerica;
       case Continent.SA:
-        return localizations.southAmerica;
+        return strings.southAmerica;
       case Continent.OC:
-        return localizations.oceania;
+        return strings.Oceania;
     }
   }
 }

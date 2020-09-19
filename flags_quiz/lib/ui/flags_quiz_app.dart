@@ -1,8 +1,7 @@
+import 'package:flagsquiz/ui/app_strings_delegate.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-
-import '../localizations.dart';
 
 class FlagsQuizApp extends StatelessWidget {
   final Widget homeWidget;
@@ -20,13 +19,9 @@ class FlagsQuizApp extends StatelessWidget {
       localizationsDelegates: [
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
-        AppLocalizationsDelegate(),
+        AppStringsDelegate(),
       ],
-      supportedLocales: [
-        const Locale('en'),
-        const Locale('uk'),
-        // ... other locales the app supports
-      ],
+      supportedLocales: AppStrings.createSupportedLocale(false),
       localeResolutionCallback:
           (Locale locale, Iterable<Locale> supportedLocales) {
         return locale;

@@ -5,7 +5,7 @@ import 'package:flagsquiz/bussiness_logic/game_state/game_state.dart';
 import 'package:flagsquiz/bussiness_logic/game_state/loading_state.dart';
 import 'package:flagsquiz/bussiness_logic/game_state/question_state.dart';
 import 'package:flagsquiz/foundation/bloc_provider.dart';
-import 'package:flagsquiz/localizations.dart';
+import 'package:flagsquiz/ui/app_strings_delegate.dart';
 import 'package:flagsquiz/ui/game/game_answers_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -106,7 +106,7 @@ class _GameScreenState extends State<GameScreen> {
       barrierDismissible: false, // user must tap button!
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text(AppLocalizations.of(context).yourScore),
+          title: Text(AppStrings.of(context).yourScore),
           content: SingleChildScrollView(
             child: ListBody(
               children: <Widget>[
