@@ -20,7 +20,7 @@ class AppStringsDelegate extends LocalizationsDelegate<AppStrings> {
 
   @override
   bool shouldReload(LocalizationsDelegate<AppStrings> old) {
-    return false;
+    return true;
   }
 }
 
