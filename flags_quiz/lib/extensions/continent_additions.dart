@@ -1,5 +1,5 @@
 import 'package:flagsquiz/models/continent.dart';
-import 'package:flagsquiz/ui/app_strings_delegate.dart';
+import 'package:flagsquiz/app_strings_delegate.dart';
 import 'package:flutter/cupertino.dart';
 
 extension ContinentAdditions on Continent {

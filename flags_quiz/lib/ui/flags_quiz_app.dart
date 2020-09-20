@@ -1,4 +1,4 @@
-import 'package:flagsquiz/ui/app_strings_delegate.dart';
+import 'package:flagsquiz/app_strings_delegate.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';

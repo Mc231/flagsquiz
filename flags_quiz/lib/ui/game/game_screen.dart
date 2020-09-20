@@ -5,7 +5,7 @@ import 'package:flagsquiz/bussiness_logic/game_state/game_state.dart';
 import 'package:flagsquiz/bussiness_logic/game_state/loading_state.dart';
 import 'package:flagsquiz/bussiness_logic/game_state/question_state.dart';
 import 'package:flagsquiz/foundation/bloc_provider.dart';
-import 'package:flagsquiz/ui/app_strings_delegate.dart';
+import 'package:flagsquiz/app_strings_delegate.dart';
 import 'package:flagsquiz/ui/game/game_answers_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';

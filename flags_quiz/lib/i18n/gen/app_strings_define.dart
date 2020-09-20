@@ -12,8 +12,8 @@ class AppStringsDefine {
   }
 
   static List<Locale> createSupportedLocale(bool appendCountryCode){
-    List<Locale> result = [];
-    for (List<String> c in _supportedLocaleMap) {
+    var result = <Locale>[];
+    for (var c in _supportedLocaleMap) {
       result.add(Locale(c[0], appendCountryCode ? c[1] : ''));
     }
     return result;

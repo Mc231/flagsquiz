@@ -2,7 +2,7 @@
 import 'package:flagsquiz/bussiness_logic/game_bloc.dart';
 import 'package:flagsquiz/foundation/bloc_provider.dart';
 import 'package:flagsquiz/models/continent.dart';
-import 'package:flagsquiz/ui/app_strings_delegate.dart';
+import 'package:flagsquiz/app_strings_delegate.dart';
 import 'package:flagsquiz/ui/option_button.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
