@@ -1,12 +1,8 @@
-import 'package:flagsquiz/i18n/gen/app_strings_define.dart';
-import 'package:flagsquiz/i18n/gen/messages_ar.dart';
 import 'package:flagsquiz/models/country.dart';
-import 'package:flagsquiz/app_strings_delegate.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flagsquiz/extensions/sizing_information_extension.dart';
 import 'package:intl/intl.dart';
-import 'package:intl/message_lookup_by_library.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import '../option_button.dart';
 

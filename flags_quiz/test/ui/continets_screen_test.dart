@@ -3,9 +3,7 @@ import 'package:flagsquiz/ui/continents/continents_screen.dart';
 import 'package:flagsquiz/ui/flags_quiz_app.dart';
 import 'package:flagsquiz/ui/game/game_screen.dart';
 import 'package:flagsquiz/ui/option_button.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:mockito/mockito.dart';
 
 void main() {
   testWidgets('Continents screen contains all continents',

@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 import 'package:flagsquiz/foundation/random_item_picker.dart';
 import 'package:flagsquiz/bussiness_logic/countries_data_source.dart';
 import 'package:flagsquiz/foundation/random_pick_result.dart';
@@ -62,7 +60,7 @@ class GameBloc extends SingleSubscriptionBloc<GameState> {
           QuestionState(_currentQuestion, _currentProgress, _totalCount);
       dispatchState(state);
       _notifyGameOver();
-    }else{
+    } else {
       var question = Question.fromRandomResult(randomResult);
       _currentQuestion = question;
       var state = QuestionState(question, _currentProgress, _totalCount);
