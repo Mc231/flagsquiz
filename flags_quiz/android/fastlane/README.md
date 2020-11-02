@@ -21,6 +21,21 @@ or alternatively using `brew install fastlane`
 fastlane android client_debug
 ```
 Build debug client
+### android test_track
+```
+fastlane android test_track
+```
+Deploy a new version to GooglyPlay,  available tracks 'production, beta, alpha, internal'
+### android commit_version
+```
+fastlane android commit_version
+```
+Commit version bump in repository
+### android push_to_remote
+```
+fastlane android push_to_remote
+```
+Push changes to remote repository
 
 ----
 
