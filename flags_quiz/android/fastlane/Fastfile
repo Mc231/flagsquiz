@@ -20,7 +20,7 @@ platform :android do
   # Invoked before lane execution
   before_all do
     update_fastlane
-  end  
+  end
 
   desc "Deploy a new version to GooglyPlay,  available tracks 'production, beta, alpha, internal'"
   lane :test_track do |options|
@@ -88,6 +88,12 @@ platform :android do
       UI.error(ex)
     end
   end
+
+    desc "Push changes to remote repository"
+    lane :tiktok do
+      version_name = last_git_tag
+      puts(version_name)
+    end
 
   desc "Push changes to remote repository"
   lane :push_to_remote do

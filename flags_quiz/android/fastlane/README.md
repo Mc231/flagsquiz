@@ -16,21 +16,36 @@ or alternatively using `brew install fastlane`
 
 # Available Actions
 ## Android
-### android client_debug
-```
-fastlane android client_debug
-```
-Build debug client
 ### android test_track
 ```
 fastlane android test_track
 ```
 Deploy a new version to GooglyPlay,  available tracks 'production, beta, alpha, internal'
-### android commit_version
+### android add_changelog_to_metadata
 ```
-fastlane android commit_version
+fastlane android add_changelog_to_metadata
 ```
-Commit version bump in repository
+Adds changelog to metadata to upload it to play console
+### android read_version_and_build
+```
+fastlane android read_version_and_build
+```
+Get version and build number
+### android get_version_code
+```
+fastlane android get_version_code
+```
+Get version code of project
+### android commit_files
+```
+fastlane android commit_files
+```
+Commit changes in repository
+### android tiktok
+```
+fastlane android tiktok
+```
+Push changes to remote repository
 ### android push_to_remote
 ```
 fastlane android push_to_remote
