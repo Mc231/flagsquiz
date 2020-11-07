@@ -36,23 +36,24 @@ platform :android do
       task: "clean bundle",
       build_type: "Release",
       properties: {
-        "android.injected.signing.store.file" => ENV["KEYSTORE_PATH"],
+        "android.injected.signing.store.file" => ENV["KEYSTORE_FILE"],
         "android.injected.signing.store.password" => ENV["KEYSTORE_PASSWORD"],
-        "android.injected.signing.key.alias" => ENV["KEY_ALIAS"],
-        "android.injected.signing.key.password" => ENV["KEY_PASSWORD"],
+#        "android.injected.signing.key.alias" => ENV["KEY_ALIAS"],
+#        "android.injected.signing.key.password" => ENV["KEY_PASSWORD"],
        }
     )
-    changelog = read_changelog
+    changelog = read_changelog(changelog_path: '../../flags_quiz/CHANGELOG.md')
       if changelog.empty?
-        changelog = "Bug fixing and stability improvments"
+        changelog = "Bug fixing and stability improvements"
       end
     puts(changelog)
     version_and_build = read_version_and_build
-    stamp_changelog(section_identifier: version_and_build)
-    add_changelog_to_metadata(changelog: changelog)
-    upload_to_play_store(track: track)
-    commit_files
-    push_to_remote
+#   stamp_changelog(changelog_path: '../../flags_quiz/CHANGELOG.md',
+#                   section_identifier: version_and_build)
+#    add_changelog_to_metadata(changelog: changelog)
+#    upload_to_play_store(track: track)
+#    commit_files
+#    push_to_remote
   end
 
   desc "Adds changelog to metadata to upload it to play console"
@@ -88,12 +89,6 @@ platform :android do
       UI.error(ex)
     end
   end
-
-    desc "Push changes to remote repository"
-    lane :tiktok do
-      version_name = last_git_tag
-      puts(version_name)
-    end
 
   desc "Push changes to remote repository"
   lane :push_to_remote do
