@@ -22,11 +22,6 @@ platform :android do
     update_fastlane
   end  
 
-  desc "Build debug client"
-  lane :client_debug do
-    gradle(task: "clean bundleDebug")
-  end
-
   desc "Deploy a new version to GooglyPlay,  available tracks 'production, beta, alpha, internal'"
   lane :test_track do |options|
     track = options[:track]
