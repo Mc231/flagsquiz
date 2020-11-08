@@ -69,14 +69,15 @@ platform :android do
 
   desc "Get version and build number"
   lane :read_version_and_build do
-    version = android_get_version_name(gradle_file: "app/build.gradle")
-    build = get_version_code
-    "Version #{version} (#{build})"
+    version = last_git_tag
+    code = get_version_code
+    "Version #{version} (#{code})"
   end
 
   desc "Get version code of project"
   lane :get_version_code do
-    android_get_version_code(gradle_file: "app/build.gradle")
+    sh("chmod 0755 ../../version.sh")
+    sh("../../version.sh get_code ../../pubspec.yaml")
   end
 
   desc "Commit changes in repository"

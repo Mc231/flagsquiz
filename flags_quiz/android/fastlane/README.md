@@ -41,11 +41,6 @@ Get version code of project
 fastlane android commit_files
 ```
 Commit changes in repository
-### android tiktok
-```
-fastlane android tiktok
-```
-Push changes to remote repository
 ### android push_to_remote
 ```
 fastlane android push_to_remote

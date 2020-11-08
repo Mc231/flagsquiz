@@ -5,17 +5,32 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.00028">
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.000298">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: update_fastlane" time="0.114053">
+      <testcase classname="fastlane.lanes" name="1: update_fastlane" time="0.125859">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: last_git_tag" time="0.021381">
+      <testcase classname="fastlane.lanes" name="2: last_git_tag" time="0.021344">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="3: Switch to android get_version_code lane" time="0.000296">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="4: chmod 0755 ../../version.sh" time="0.003134">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="5: ../../version.sh get_code ../../pubspec.yaml" time="0.007908">
         
       </testcase>
     
