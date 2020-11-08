@@ -53,12 +53,4 @@ set_version() {
   echo "Replaced: ${old_version_string} with: ${new_version_string}"
 }
 
-#get_code $1
-
-#get_full_version $1
-
-set_version "$1" "$2" "$3"
-
-
-#result=$(get_code $1)
-#echo result
+"$@"
