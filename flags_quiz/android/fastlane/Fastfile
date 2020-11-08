@@ -29,9 +29,7 @@ platform :android do
       UI.user_error!("Track not passed in parameters")
       next
     end
-    version_name = last_git_tag
-#    android_set_version_name(version_name: version_name ,gradle_file: "app/build.gradle")
-#    android_set_version_code(gradle_file: "app/build.gradle")
+    update_version_and_code
     gradle(
       task: "clean bundle",
       build_type: "Release",
@@ -47,13 +45,19 @@ platform :android do
         changelog = "Bug fixing and stability improvements"
       end
     puts(changelog)
-    version_and_build = read_version_and_build
-#   stamp_changelog(changelog_path: '../../flags_quiz/CHANGELOG.md',
-#                   section_identifier: version_and_build)
 #    add_changelog_to_metadata(changelog: changelog)
 #    upload_to_play_store(track: track)
 #    commit_files
 #    push_to_remote
+  end
+
+  desc "Update version and code in pubspec.yaml version is fetched from last_git_tag code
+   is autoincrement by 1"
+  lane :update_version_and_code do |options|
+    version = last_git_tag
+    code = get_version_code.to_i + 1
+    sh("chmod 0755 ../../version.sh")
+    sh("../../version.sh set_version ../../pubspec.yaml #{version} #{code}")
   end
 
   desc "Adds changelog to metadata to upload it to play console"
@@ -65,13 +69,6 @@ platform :android do
     end
     version = get_version_code
     sh("echo \"#{changelog}\" > ./metadata/android/en-US/changelogs/#{version}.txt")
-  end
-
-  desc "Get version and build number"
-  lane :read_version_and_build do
-    version = last_git_tag
-    code = get_version_code
-    "Version #{version} (#{code})"
   end
 
   desc "Get version code of project"

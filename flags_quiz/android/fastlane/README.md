@@ -21,6 +21,12 @@ or alternatively using `brew install fastlane`
 fastlane android test_track
 ```
 Deploy a new version to GooglyPlay,  available tracks 'production, beta, alpha, internal'
+### android update_version_and_code
+```
+fastlane android update_version_and_code
+```
+Update version and code in pubspec.yaml version is fetched from last_git_tag code
+   is autoincrement by 1
 ### android add_changelog_to_metadata
 ```
 fastlane android add_changelog_to_metadata
