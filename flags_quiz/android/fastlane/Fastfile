@@ -29,7 +29,6 @@ platform :android do
       UI.user_error!("Track not passed in parameters")
       next
     end
-    update_version_and_code
     gradle(
       task: "clean bundle",
       build_type: "Release",
@@ -47,17 +46,6 @@ platform :android do
     puts(changelog)
 #    add_changelog_to_metadata(changelog: changelog)
 #    upload_to_play_store(track: track)
-#    commit_files
-#    push_to_remote
-  end
-
-  desc "Update version and code in pubspec.yaml version is fetched from last_git_tag code
-   is autoincrement by 1"
-  lane :update_version_and_code do |options|
-    version = last_git_tag
-    code = get_version_code.to_i + 1
-    sh("chmod 0755 ../../version.sh")
-    sh("../../version.sh set_version ../../pubspec.yaml #{version} #{code}")
   end
 
   desc "Adds changelog to metadata to upload it to play console"
@@ -75,25 +63,5 @@ platform :android do
   lane :get_version_code do
     sh("chmod 0755 ../../version.sh")
     sh("../../version.sh get_code ../../pubspec.yaml")
-  end
-
-  desc "Commit changes in repository"
-  lane :commit_files do
-    begin
-      version_code = get_version_code
-      git_add
-      sh("git commit -m \"Changes for versionCode #{version_code}\"")
-    rescue => ex
-      UI.error(ex)
-    end
-  end
-
-  desc "Push changes to remote repository"
-  lane :push_to_remote do
-    begin
-      push_to_git_remote
-    rescue => ex
-      UI.error(ex)
-    end
   end
 end

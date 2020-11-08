@@ -26,31 +26,4 @@ get_code() {
   echo "$code"
 }
 
-# Set version in pubspec.yaml, requires 3 paramers
-# S1 - path fo pubspec.yaml 
-# $2 - version (1.0.0)
-# $3 - version code (1)
-set_version() {
-  file_path=$1
-  if [ -z "$file_path" ]; then
-   echo "ERROR_VERSION_FILE_NOT_SPECIFIED" && exit 1
-  fi
-  
-  old_version_string=$(get_full_version "$file_path")
-
-  version=$2
-  if [ -z "$version" ]; then
-    echo "ERROR_VERSION_NOT_SPECIFIED" && exit 1
-  fi
- 
-  code=$3
-  if [ -z "$code" ]; then
-    echo "ERROR_CODE_NOT_SPECIFIED" && exit 1
-  fi 
-
-  new_version_string="version: ${version}+${code}"
-  sed -i '' "s/$old_version_string/$new_version_string/" "$file_path"
-  echo "Replaced: ${old_version_string} with: ${new_version_string}"
-}
-
 "$@"
