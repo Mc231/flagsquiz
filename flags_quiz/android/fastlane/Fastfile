@@ -45,7 +45,7 @@ platform :android do
       end
     puts(changelog)
 #    add_changelog_to_metadata(changelog: changelog)
-#    upload_to_play_store(track: track)
+    upload_to_play_store(track: track)
   end
 
   desc "Adds changelog to metadata to upload it to play console"
