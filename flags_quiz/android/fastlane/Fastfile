@@ -56,7 +56,6 @@ platform :android do
       next
     end
     version = get_version_code.to_i
-    puts(version.class)
     sh("echo \"#{changelog}\" > ./metadata/android/en-US/changelogs/#{version}.txt")
   end
 
