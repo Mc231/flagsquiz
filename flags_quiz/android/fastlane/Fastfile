@@ -44,18 +44,19 @@ platform :android do
         changelog = "Bug fixing and stability improvements"
       end
     puts(changelog)
-    #add_changelog_to_metadata(changelog: changelog)
+    add_changelog_to_metadata(changelog: changelog)
     upload_to_play_store(track: track)
   end
 
   desc "Adds changelog to metadata to upload it to play console"
   lane :add_changelog_to_metadata do |options|
-    changelog = options[:changelog]
+    changelog = read_changelog(changelog_path: '../../flags_quiz/CHANGELOG.md')
     if !changelog
       UI.user_error!("Track not passed in parameters")
       next
     end
-    version = get_version_code
+    version = get_version_code.to_i
+    puts(version.class)
     sh("echo \"#{changelog}\" > ./metadata/android/en-US/changelogs/#{version}.txt")
   end
 
