@@ -45,9 +45,8 @@ platform :android do
       end
     puts(changelog)
     add_changelog_to_metadata(changelog: changelog)
-    version_code = get_version_code.to_i
     upload_to_play_store(track: track,
-                         version_code: version_code)
+                         skip_upload_changelogs: true)
   end
 
   desc "Adds changelog to metadata to upload it to play console"
