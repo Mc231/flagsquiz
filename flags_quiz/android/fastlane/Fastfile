@@ -30,7 +30,7 @@ platform :android do
       next
     end
     gradle(
-      task: "clean bundle",
+      task: "clean build bundle",
       build_type: "Release",
       properties: {
         "android.injected.signing.store.file" => ENV["KEYSTORE_FILE"],
