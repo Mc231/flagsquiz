@@ -43,10 +43,8 @@ platform :android do
       if changelog.empty?
         changelog = "Bug fixing and stability improvements"
       end
-    puts(changelog)
     add_changelog_to_metadata(changelog: changelog)
-    upload_to_play_store(track: track,
-                         skip_upload_changelogs: true)
+    upload_to_play_store(track: track)
   end
 
   desc "Adds changelog to metadata to upload it to play console"
