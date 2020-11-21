@@ -44,7 +44,10 @@ platform :android do
         changelog = "Bug fixing and stability improvements"
       end
     add_changelog_to_metadata(changelog: changelog)
-    upload_to_play_store(track: track)
+    upload_to_play_store(
+      track: track,
+      aab: ../flags_quiz/build/app/outputs/bundle/release/app-release.aab,
+    )
   end
 
   desc "Adds changelog to metadata to upload it to play console"
