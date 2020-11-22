@@ -45,12 +45,17 @@ android {
         versionName flutterVersionName
     }
 
+    def _keyAlias = System.getenv("KEY_ALIAS")
+    def _keyPassword = System.getenv("KEY_PASSWORD")
+    def _storeFile = System.getenv("KEYSTORE_FILE")
+    def _storePassword = System.getenv("KEYSTORE_PASSWORD")
+
     signingConfigs {
         release {
-            keyAlias System.getenv("KEY_ALIAS")
-            keyPassword System.getenv("KEY_PASSWORD")
-            storeFile file(String.valueOf(System.getenv("KEYSTORE_FILE")))
-            storePassword System.getenv("KEYSTORE_PASSWORD")
+            keyAlias "$_keyAlias"
+            keyPassword "$_keyPassword"
+            storeFile file("$_storeFile")
+            storePassword "$_storePassword"
         }
     }
     buildTypes {
