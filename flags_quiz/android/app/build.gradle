@@ -49,10 +49,7 @@ android {
     def _keyPassword = System.getenv("KEY_PASSWORD")
     def _storeFile = System.getenv("KEYSTORE_FILE")
     def _storePassword = System.getenv("KEYSTORE_PASSWORD")
-
-    print("VOva")
-    print(_keyAlias)
-
+    
     signingConfigs {
         release {
             keyAlias "$_keyAlias"
