@@ -53,9 +53,9 @@ android {
     signingConfigs {
         release {
             keyAlias "$_keyAlias"
-            keyPassword "$_keyPassword"
+            keyPassword "$_storePassword"
             storeFile file("$_storeFile")
-            storePassword "$_storePassword"
+            storePassword "$_keyPassword"
         }
     }
     buildTypes {
