@@ -26,11 +26,6 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
-def _keyAlias = System.getenv("KEY_ALIAS")
-def _keyPassword = System.getenv("KEY_PASSWORD")
-def _storeFile = System.getenv("KEYSTORE_FILE")
-def _storePassword = System.getenv("KEYSTORE_PASSWORD")
-
 android {
     compileSdkVersion 29
 
@@ -52,11 +47,12 @@ android {
 
     signingConfigs {
         release {
-            keyAlias "$_keyAlias"
-            keyPassword "$_keyPassword"
-            storeFile file("$_storeFile")
-            storePassword "$_storePassword"
+            storeFile file(System.getenv("KEYSTORE_FILE"))
+            storePassword System.getenv("KEYSTORE_PASSWORD")
+            keyAlias System.getenv("KEY_ALIAS")
+            keyPassword System.getenv("KEY_PASSWORD")
         }
+
     }
     buildTypes {
         release {
