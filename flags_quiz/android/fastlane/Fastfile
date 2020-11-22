@@ -29,6 +29,8 @@ platform :android do
       UI.user_error!("Track not passed in parameters")
       next
     end
+    sh("flutter clean -v")
+    sh("flutter build appbundle -v")
     changelog = read_changelog(changelog_path: '../../flags_quiz/CHANGELOG.md')
       if changelog.empty?
         changelog = "Bug fixing and stability improvements"
