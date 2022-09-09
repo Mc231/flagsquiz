@@ -1,0 +1,61 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:android)
+
+platform :android do
+
+  # Invoked before lane execution
+  before_all do
+    update_fastlane
+  end
+
+  desc "Deploy a new version to GooglyPlay,  available tracks 'production, beta, alpha, internal'"
+  lane :test_track do |options|
+    track = options[:track]
+    if !track
+      UI.user_error!("Track not passed in parameters")
+      next
+    end
+    sh("flutter clean -v")
+    sh("flutter build appbundle -v")
+    changelog = read_changelog(changelog_path: '../../flags_quiz/CHANGELOG.md')
+      if changelog.empty?
+        changelog = "Bug fixing and stability improvements"
+      end
+    add_changelog_to_metadata(changelog: changelog)
+    upload_to_play_store(
+      track: track,
+      aab: '../../flags_quiz/build/app/outputs/bundle/release/app-release.aab',
+    )
+  end
+
+  desc "Adds changelog to metadata to upload it to play console"
+  lane :add_changelog_to_metadata do |options|
+    changelog = read_changelog(changelog_path: '../../flags_quiz/CHANGELOG.md')
+    if !changelog
+      UI.user_error!("Track not passed in parameters")
+      next
+    end
+    version = get_version_code.to_i
+    sh("echo \"#{changelog}\" > ./metadata/android/en-US/changelogs/#{version}.txt")
+  end
+
+  desc "Get version code of project"
+  lane :get_version_code do
+    sh("chmod 0755 ../../version.sh")
+    sh("../../version.sh get_code ../../pubspec.yaml")
+  end
+end
