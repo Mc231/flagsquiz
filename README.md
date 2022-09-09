@@ -1,5 +1,5 @@
 # flagsquiz
-App that is used to test world countries flags knowlage
+App that is used to test world countries flags knowlage, app could be run on any device starting from smart watch ending with 8k TV
 
 ## Fatures
 - Written on Flatter
