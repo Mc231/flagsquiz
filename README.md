@@ -7,6 +7,7 @@ App that is used to test world countries flags knowlage, app could be run on any
 
 ## App Links
 - https://play.google.com/store/apps/details?id=com.quasarius.flagsquiz
+- https://apps.apple.com/us/app/flagstest/id1643561290
 
 
 ## License
