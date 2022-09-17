@@ -6,6 +6,7 @@ import 'package:intl/intl.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import '../option_button.dart';
 
+
 class GameAnswersWidget extends StatelessWidget {
   final List<Country> options;
   final SizingInformation sizingInformation;

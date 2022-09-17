@@ -15,8 +15,9 @@ void main() {
     final sizingInformation = SizingInformation(
         deviceScreenType: DeviceScreenType.mobile,
         screenSize: Size.square(200),
-        localWidgetSize: Size.square(200));
-    var tappedAnswer;
+        localWidgetSize: Size.square(200),
+        refinedSize: null);
+    Country tappedAnswer;
     await tester.pumpWidget(
       FlagsQuizApp(
           homeWidget: GameAnswersWidget(

@@ -10,11 +10,14 @@ class Country {
   final Continent continent;
   final String code;
 
-  String get flagImage => 'assets/images/$code.png';
+  String get flagLocalImage => 'assets/images/$code.png';
+
+  String get flagRemoteImage =>
+      'https://countryflagsapi.com/png/${code.toLowerCase()}';
 
   Country.fromJson(Map json)
       : name = json[_keyName] as String,
-        continent =
-            getEnumFromString(Continent.values, json[_keyContinent] as String),
+        continent = getEnumFromString(
+            Continent.values, (json[_keyContinent] as String).toLowerCase()),
         code = json[_keyCode] as String;
 }

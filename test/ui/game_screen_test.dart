@@ -23,7 +23,7 @@ void main() {
   GameBloc bloc;
 
   setUp(() {
-    continent = Continent.SA;
+    continent = Continent.sa;
     countriesProvider = CountriesProviderMock();
     randomItemPicker = RandomItemPickerMock();
     bloc = GameBloc(continent, countriesProvider, randomItemPicker);

@@ -21,10 +21,10 @@ class CountriesProvider extends ResourceProvider<List<Country>> {
         .then((source) => jsonDecode(source) as List<dynamic>)
         .then((value) {
       var result = <Country>[];
-      value.forEach((element) {
+      for (var element in value) {
         var country = Country.fromJson(element as Map);
         result.add(country);
-      });
+      }
       return result;
     });
   }

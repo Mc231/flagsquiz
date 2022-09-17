@@ -7,17 +7,17 @@ void main() {
     // Given
     final expectedName = 'Antigua and Barbuda';
     final expectedContinent = 'NA';
-    final expectedCode = 'AG';
+    final expectedCode = 'ag';
     // When
     final country = Country.fromJson({
-      'name': '$expectedName',
-      'continent': '$expectedContinent',
-      'code': '$expectedCode'
+      'name': expectedName,
+      'continent': expectedContinent,
+      'code': expectedCode
     });
     // Then
     expect(country.name, equals(expectedName));
-    expect(country.continent, equals(Continent.NA));
+    expect(country.continent, equals(Continent.na));
     expect(country.code, equals(expectedCode));
-    expect(country.flagImage, equals('assets/images/$expectedCode.png'));
+    expect(country.flagRemoteImage, equals('https://countryflagsapi.com/png/$expectedCode'));
   });
 }

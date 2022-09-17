@@ -38,7 +38,7 @@ void main() {
     expect(sut.items, isEmpty);
     // When
     sut.replaceItems(expectedItems);
-    Iterable<int>.generate(4).forEach((_) {sut.pick();});
+    for (var _ in Iterable<int>.generate(4)) {sut.pick();}
     final result = sut.pick();
     // Then
     expect(result, isNotNull);

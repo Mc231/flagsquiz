@@ -38,7 +38,7 @@ void main() {
     var countries = await countriesProvider.provide();
     expect(countries, isNotEmpty);
     expect(countries.first.name, equals('Andorra'));
-    expect(countries.first.continent, equals(Continent.EU));
+    expect(countries.first.continent, equals(Continent.eu));
     expect(countries.first.code, equals('AD'));
   });
 }

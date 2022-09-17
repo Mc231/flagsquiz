@@ -8,19 +8,19 @@ extension ContinentAdditions on Continent {
   String localizedName(BuildContext context) {
     final strings = AppStrings.of(context);
     switch (this) {
-      case Continent.ALL:
+      case Continent.all:
         return strings.All;
-      case Continent.AF:
+      case Continent.af:
         return strings.Africa;
-      case Continent.EU:
+      case Continent.eu:
         return strings.Europe;
-      case Continent.AS:
+      case Continent.as:
         return strings.Asia;
-      case Continent.NA:
+      case Continent.na:
         return strings.northAmerica;
-      case Continent.SA:
+      case Continent.sa:
         return strings.southAmerica;
-      case Continent.OC:
+      case Continent.oc:
         return strings.Oceania;
     }
   }

@@ -8,7 +8,7 @@ class CountriesDataSource {
 
   List<Country> getByContinent(Continent continent) {
     var result = dataSource;
-    if (continent == Continent.ALL) {
+    if (continent == Continent.all) {
       return result;
     }
     result.removeWhere((element) => element.continent != continent);

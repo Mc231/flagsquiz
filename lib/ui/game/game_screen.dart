@@ -7,19 +7,21 @@ import 'package:flagsquiz/bussiness_logic/game_state/question_state.dart';
 import 'package:flagsquiz/foundation/bloc_provider.dart';
 import 'package:flagsquiz/app_strings_delegate.dart';
 import 'package:flagsquiz/ui/game/game_answers_widget.dart';
+import 'package:flagsquiz/ui/game/game_image_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flagsquiz/extensions/continent_additions.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:flagsquiz/extensions/sizing_information_extension.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 
 class GameScreen extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    return _GameScreenState();
+    return GameScreenState();
   }
 }
 
-class _GameScreenState extends State<GameScreen> {
+class GameScreenState extends State<GameScreen> {
   GameBloc _bloc;
 
   @override
@@ -82,11 +84,10 @@ class _GameScreenState extends State<GameScreen> {
   List<Widget> _imageAndButtons(
       QuestionState state, SizingInformation information) {
     if (state.question != null) {
-      var answerImage = state.question.answer.flagImage;
+      var country = state.question.answer;
       final imageSize = getImageSize(information);
-      var image = Image.asset(answerImage, width: imageSize, height: imageSize);
       return [
-        image,
+        GameImageWidget(country: country, width: imageSize, height: imageSize),
         SizedBox(width: 16),
         Expanded(
             child: GameAnswersWidget(
@@ -141,7 +142,7 @@ class _GameScreenState extends State<GameScreen> {
   }
 }
 
-extension GameScreenSizes on _GameScreenState {
+extension GameScreenSizes on GameScreenState {
   static const _imageWatchCof = 0.7;
   static const _imageNormalCof = 0.62;
 

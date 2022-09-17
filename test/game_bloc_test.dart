@@ -40,7 +40,7 @@ void main() {
 
   test('init standard', () {
     // Given
-    final continent = Continent.AF;
+    final continent = Continent.af;
     // When
     final result = GameBloc.standard(continent);
     // Then

@@ -21,7 +21,7 @@ void main() {
 
   test('get all countries', () {
     // Given
-    final expectedContinent = Continent.ALL;
+    final expectedContinent = Continent.all;
     // When
     final result = sut.getByContinent(expectedContinent);
     expect(result, equals(allCountries));
@@ -29,7 +29,7 @@ void main() {
 
   test('get get EU country', () {
     // Given
-    final expectedContinent = Continent.EU;
+    final expectedContinent = Continent.eu;
     // When
     final result = sut.getByContinent(expectedContinent);
     expect(result, equals([country1]));
