@@ -17,7 +17,7 @@ class RandomItemPicker<T> {
     this.items.addAll(items);
   }
 
-  RandomPickResult<T> pick() {
+  RandomPickResult<T>? pick() {
     if (count >= items.length) {
       if (items.isEmpty) {
         print('Items are empty');

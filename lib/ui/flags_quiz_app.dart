@@ -7,7 +7,7 @@ class FlagsQuizApp extends StatelessWidget {
   final List<NavigatorObserver> navigationObservers;
 
   const FlagsQuizApp(
-      {Key key, this.homeWidget, this.navigationObservers = const []})
+      {Key? key, required this.homeWidget, this.navigationObservers = const []})
       : super(key: key);
 
   // This widget is the root of your application.
@@ -23,7 +23,7 @@ class FlagsQuizApp extends StatelessWidget {
       ],
       supportedLocales: AppStrings.createSupportedLocale(false),
       localeResolutionCallback:
-          (Locale locale, Iterable<Locale> supportedLocales) {
+          (Locale? locale, Iterable<Locale> supportedLocales) {
         return locale;
       },
       theme: ThemeData(

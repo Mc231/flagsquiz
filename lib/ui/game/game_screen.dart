@@ -22,7 +22,7 @@ class GameScreen extends StatefulWidget {
 }
 
 class GameScreenState extends State<GameScreen> {
-  GameBloc _bloc;
+  late GameBloc _bloc;
 
   @override
   void initState() {
@@ -38,7 +38,7 @@ class GameScreenState extends State<GameScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(_bloc.continent.localizedName(context)),
+        title: Text(_bloc.continent.localizedName(context) ?? ""),
       ),
       body: Container(
         padding: getContainerPadding(context),
@@ -87,13 +87,14 @@ class GameScreenState extends State<GameScreen> {
       var country = state.question.answer;
       final imageSize = getImageSize(information);
       return [
-        GameImageWidget(country: country, width: imageSize, height: imageSize),
+        GameImageWidget(country: country, width: imageSize, height: imageSize, key: Key(country.code),),
         SizedBox(width: 16),
         Expanded(
             child: GameAnswersWidget(
               options: state.question.options,
               sizingInformation: information,
               answerClickListener: _bloc.processAnswer,
+              key: Key(state.total.toString()),
             ))
       ];
     }
@@ -106,7 +107,7 @@ class GameScreenState extends State<GameScreen> {
       barrierDismissible: false, // user must tap button!
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text(AppStrings.of(context).yourScore),
+          title: Text(AppStrings.of(context)?.yourScore ?? ""),
           content: SingleChildScrollView(
             child: ListBody(
               children: <Widget>[

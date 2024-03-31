@@ -13,10 +13,10 @@ class GameAnswersWidget extends StatelessWidget {
   final Function(Country answer) answerClickListener;
 
   const GameAnswersWidget(
-      {Key key,
-      @required this.options,
-      @required this.sizingInformation,
-      @required this.answerClickListener})
+      {required Key key,
+      required this.options,
+      required this.sizingInformation,
+      required this.answerClickListener})
       : super(key: key);
 
   @override
@@ -38,7 +38,7 @@ class GameAnswersWidget extends StatelessWidget {
       margin: getButtonMargin(context),
       child: OptionButton(
           title: localizedCountryName,
-          onClickListener: () => answerClickListener(option)),
+          onClickListener: () => answerClickListener(option), key: Key(localizedCountryName),),
     );
   }
 }

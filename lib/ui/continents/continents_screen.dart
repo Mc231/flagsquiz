@@ -13,7 +13,7 @@ class ContinentsScreen extends StatelessWidget {
   /// Warning add safe area container
   @override
   Widget build(BuildContext context) {
-    final title = AppStrings.of(context).selectRegion;
+    final title = AppStrings.of(context)?.selectRegion ?? "";
     return Scaffold(
       appBar: AppBar(
         title: Text(title),
@@ -41,7 +41,7 @@ class ContinentsScreen extends StatelessWidget {
       return Container(
         margin: getButtonMargin(context),
         child: OptionButton(
-          title: item.localizedName(context),
+          title: item.localizedName(context) ?? "",
           onClickListener: () => _handleItemClick(item, context),
         ),
       );

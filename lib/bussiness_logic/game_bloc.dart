@@ -17,13 +17,13 @@ class GameBloc extends SingleSubscriptionBloc<GameState> {
   final CountriesProvider provider;
   final RandomItemPicker<Country> randomItemPicker;
 
-  Function(String result) gameOverCallback;
+  late Function(String result) gameOverCallback;
 
-  CountriesDataSource _dataSource;
+  late CountriesDataSource _dataSource;
   List<Country> _countries = [];
   int _currentProgress = 0;
   int _totalCount = 0;
-  Question<Country> _currentQuestion;
+  late Question<Country> _currentQuestion;
   final List<Answer> _answers = [];
 
   GameBloc(this.continent, this.provider, this.randomItemPicker);
@@ -55,16 +55,18 @@ class GameBloc extends SingleSubscriptionBloc<GameState> {
 
   void _pickQuestion() {
     var randomResult = randomItemPicker.pick();
-    if (_isGameOver(randomResult)) {
-      var state =
-          QuestionState(_currentQuestion, _currentProgress, _totalCount);
-      dispatchState(state);
-      _notifyGameOver();
-    } else {
-      var question = Question.fromRandomResult(randomResult);
-      _currentQuestion = question;
-      var state = QuestionState(question, _currentProgress, _totalCount);
-      dispatchState(state);
+    if (randomResult != null) {
+      if (_isGameOver(randomResult)) {
+        var state =
+        QuestionState(_currentQuestion, _currentProgress, _totalCount);
+        dispatchState(state);
+        _notifyGameOver();
+      } else {
+        var question = Question.fromRandomResult(randomResult);
+        _currentQuestion = question;
+        var state = QuestionState(question, _currentProgress, _totalCount);
+        dispatchState(state);
+      }
     }
   }
 

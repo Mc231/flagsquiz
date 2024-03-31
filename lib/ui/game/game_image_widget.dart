@@ -10,10 +10,10 @@ class GameImageWidget extends StatelessWidget {
   final double height;
 
   const GameImageWidget(
-      {Key key,
-        @required this.country,
-        @required this.width,
-        @required this.height})
+      {required Key key,
+        required this.country,
+        required this.width,
+        required this.height})
       : super(key: key);
 
   @override

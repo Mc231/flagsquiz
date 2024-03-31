@@ -18,6 +18,6 @@ class Country {
   Country.fromJson(Map json)
       : name = json[_keyName] as String,
         continent = getEnumFromString(
-            Continent.values, (json[_keyContinent] as String).toLowerCase()),
+            Continent.values, (json[_keyContinent] as String).toLowerCase()) ?? Continent.all,
         code = json[_keyCode] as String;
 }
