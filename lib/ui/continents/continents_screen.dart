@@ -1,10 +1,9 @@
-
 import 'package:flagsquiz/bussiness_logic/game_bloc.dart';
 import 'package:flagsquiz/foundation/bloc_provider.dart';
 import 'package:flagsquiz/models/continent.dart';
-import 'package:flagsquiz/app_strings_delegate.dart';
 import 'package:flagsquiz/ui/option_button.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flagsquiz/extensions/continent_additions.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import '../game/game_screen.dart';
@@ -13,7 +12,7 @@ class ContinentsScreen extends StatelessWidget {
   /// Warning add safe area container
   @override
   Widget build(BuildContext context) {
-    final title = AppStrings.of(context)?.selectRegion ?? "";
+    final title = AppLocalizations.of(context)?.selectRegion ?? "";
     return Scaffold(
       appBar: AppBar(
         title: Text(title),

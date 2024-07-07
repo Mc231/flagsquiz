@@ -4,7 +4,7 @@ import 'package:flagsquiz/models/country.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  CountriesDataSource sut;
+  late CountriesDataSource sut;
   final country1 =
       Country.fromJson({'name': 'Andorra', 'continent': 'EU', 'code': 'AD'});
   final country2 =
@@ -13,10 +13,6 @@ void main() {
 
   setUp(() {
     sut = CountriesDataSource(allCountries);
-  });
-
-  tearDown(() {
-    sut = null;
   });
 
   test('get all countries', () {

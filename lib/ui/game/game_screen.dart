@@ -5,14 +5,13 @@ import 'package:flagsquiz/bussiness_logic/game_state/game_state.dart';
 import 'package:flagsquiz/bussiness_logic/game_state/loading_state.dart';
 import 'package:flagsquiz/bussiness_logic/game_state/question_state.dart';
 import 'package:flagsquiz/foundation/bloc_provider.dart';
-import 'package:flagsquiz/app_strings_delegate.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flagsquiz/ui/game/game_answers_widget.dart';
 import 'package:flagsquiz/ui/game/game_image_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flagsquiz/extensions/continent_additions.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:flagsquiz/extensions/sizing_information_extension.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 
 class GameScreen extends StatefulWidget {
   @override
@@ -83,22 +82,19 @@ class GameScreenState extends State<GameScreen> {
 
   List<Widget> _imageAndButtons(
       QuestionState state, SizingInformation information) {
-    if (state.question != null) {
-      var country = state.question.answer;
-      final imageSize = getImageSize(information);
-      return [
-        GameImageWidget(country: country, width: imageSize, height: imageSize, key: Key(country.code),),
-        SizedBox(width: 16),
-        Expanded(
-            child: GameAnswersWidget(
-              options: state.question.options,
-              sizingInformation: information,
-              answerClickListener: _bloc.processAnswer,
-              key: Key(state.total.toString()),
-            ))
-      ];
-    }
-    return [];
+    var country = state.question.answer;
+    final imageSize = getImageSize(information);
+    return [
+      GameImageWidget(country: country, width: imageSize, height: imageSize, key: Key(country.code),),
+      SizedBox(width: 16),
+      Expanded(
+          child: GameAnswersWidget(
+            options: state.question.options,
+            sizingInformation: information,
+            answerClickListener: _bloc.processAnswer,
+            key: Key(state.total.toString()),
+          ))
+    ];
   }
 
   void _showGameOverDialog(String message) async {
@@ -107,7 +103,7 @@ class GameScreenState extends State<GameScreen> {
       barrierDismissible: false, // user must tap button!
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text(AppStrings.of(context)?.yourScore ?? ""),
+          title: Text(AppLocalizations.of(context)?.yourScore ?? ""),
           content: SingleChildScrollView(
             child: ListBody(
               children: <Widget>[

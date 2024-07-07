@@ -1,7 +1,6 @@
 import 'package:flagsquiz/models/continent.dart';
 import 'package:flagsquiz/ui/continents/continents_screen.dart';
 import 'package:flagsquiz/ui/flags_quiz_app.dart';
-import 'package:flagsquiz/ui/game/game_screen.dart';
 import 'package:flagsquiz/ui/option_button.dart';
 import 'package:flutter_test/flutter_test.dart';
 
@@ -31,7 +30,7 @@ void main() {
     await tester.tap(optionButtonsFinder.first);
     await tester.pump();
     // Then
-    final gameScreenFinder = find.byType(GameScreen);
+   // final gameScreenFinder = find.byType(GameScreen);
     // TODO: - Figure out this
     //expect(gameScreenFinder, findsOneWidget);
   });

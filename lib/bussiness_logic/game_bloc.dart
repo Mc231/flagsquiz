@@ -23,7 +23,7 @@ class GameBloc extends SingleSubscriptionBloc<GameState> {
   List<Country> _countries = [];
   int _currentProgress = 0;
   int _totalCount = 0;
-  late Question<Country> _currentQuestion;
+  late Question<Country> currentQuestion;
   final List<Answer> _answers = [];
 
   GameBloc(this.continent, this.provider, this.randomItemPicker);
@@ -47,7 +47,7 @@ class GameBloc extends SingleSubscriptionBloc<GameState> {
   }
 
   void processAnswer(Country country) {
-    var answer = Answer(country, _currentQuestion);
+    var answer = Answer(country, currentQuestion);
     _answers.add(answer);
     _currentProgress++;
     _pickQuestion();
@@ -55,22 +55,20 @@ class GameBloc extends SingleSubscriptionBloc<GameState> {
 
   void _pickQuestion() {
     var randomResult = randomItemPicker.pick();
-    if (randomResult != null) {
-      if (_isGameOver(randomResult)) {
-        var state =
-        QuestionState(_currentQuestion, _currentProgress, _totalCount);
-        dispatchState(state);
-        _notifyGameOver();
-      } else {
-        var question = Question.fromRandomResult(randomResult);
-        _currentQuestion = question;
-        var state = QuestionState(question, _currentProgress, _totalCount);
-        dispatchState(state);
-      }
+    if (_isGameOver(randomResult)) {
+      var state =
+      QuestionState(currentQuestion, _currentProgress, _totalCount);
+      dispatchState(state);
+      _notifyGameOver();
+    } else {
+      var question = Question.fromRandomResult(randomResult!);
+      currentQuestion = question;
+      var state = QuestionState(question, _currentProgress, _totalCount);
+      dispatchState(state);
     }
   }
 
-  bool _isGameOver(RandomPickResult result) => result == null;
+  bool _isGameOver(RandomPickResult? result) => result == null;
 
   void _notifyGameOver() {
     var count = 0;
@@ -78,9 +76,7 @@ class GameBloc extends SingleSubscriptionBloc<GameState> {
       count += answer.isCorrect ? 1 : 0;
     }
     var result = '$count / $_totalCount';
-    if (gameOverCallback != null) {
-      gameOverCallback(result);
-    }
+    gameOverCallback(result);
     print('Your result is $result');
   }
 }

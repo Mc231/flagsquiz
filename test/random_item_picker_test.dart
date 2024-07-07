@@ -2,14 +2,10 @@ import 'package:flagsquiz/foundation/random_item_picker.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  RandomItemPicker<int> sut;
+  late RandomItemPicker<int> sut;
 
   setUp(() {
     sut = RandomItemPicker([]);
-  });
-
-  tearDown(() {
-    sut = null;
   });
 
   test('replace items', () {

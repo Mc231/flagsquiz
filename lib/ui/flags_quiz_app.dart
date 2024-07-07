@@ -1,6 +1,5 @@
-import 'package:flagsquiz/app_strings_delegate.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class FlagsQuizApp extends StatelessWidget {
   final Widget homeWidget;
@@ -16,17 +15,14 @@ class FlagsQuizApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       darkTheme: ThemeData.dark(),
-      localizationsDelegates: [
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-        AppStringsDelegate(),
-      ],
-      supportedLocales: AppStrings.createSupportedLocale(false),
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
       localeResolutionCallback:
           (Locale? locale, Iterable<Locale> supportedLocales) {
         return locale;
       },
       theme: ThemeData(
+        useMaterial3: false,
         primaryColor: Colors.white,
         scaffoldBackgroundColor: Colors.white,
         appBarTheme: AppBarTheme(

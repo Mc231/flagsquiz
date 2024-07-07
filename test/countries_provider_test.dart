@@ -3,21 +3,18 @@ import 'package:flagsquiz/foundation/asset_provider.dart';
 import 'package:flagsquiz/models/continent.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
+import 'package:mockito/annotations.dart';
 
-class AssetProviderMock extends Mock implements AssetProvider {}
+@GenerateNiceMocks([MockSpec<AssetProvider>()])
+import 'countries_provider_test.mocks.dart';
 
 void main() {
-  AssetProvider assetProvider;
-  CountriesProvider countriesProvider;
+  late AssetProvider assetProvider;
+  late CountriesProvider countriesProvider;
 
   setUp(() {
-    assetProvider = AssetProviderMock();
+    assetProvider = MockAssetProvider();
     countriesProvider = CountriesProvider(assetProvider);
-  });
-
-  tearDown(() {
-    assetProvider = null;
-    countriesProvider = null;
   });
 
   test('default provider', () {

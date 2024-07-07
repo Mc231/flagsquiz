@@ -9,7 +9,7 @@ void main() {
     // When
     await tester.pumpWidget(
       FlagsQuizApp(
-          homeWidget: OptionButton(title: title, onClickListener: null)),
+          homeWidget: OptionButton(title: title, onClickListener: () {})),
     );
     await tester.pump();
     // Then

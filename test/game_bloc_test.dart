@@ -10,21 +10,22 @@ import 'package:flagsquiz/models/question.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 
-class CountriesProviderMock extends Mock implements CountriesProvider {}
+import 'package:mockito/annotations.dart';
 
-class RandomItemPickerMock extends Mock implements RandomItemPicker<Country> {}
+@GenerateNiceMocks([MockSpec<CountriesProvider>(), MockSpec<RandomItemPicker<Country>>()])
+import 'game_bloc_test.mocks.dart';
 
 void main() {
-  GameBloc bloc;
-  CountriesProvider provider;
-  RandomItemPicker<Country> randomItemPicker;
+  late GameBloc bloc;
+  late CountriesProvider provider;
+  late RandomItemPicker<Country> randomItemPicker;
 
-  List<Country> countries;
+  List<Country> countries = [];
 
   setUp(() {
-    provider = CountriesProviderMock();
-    randomItemPicker = RandomItemPickerMock();
-    bloc = GameBloc(null, provider, randomItemPicker);
+    provider = MockCountriesProvider();
+    randomItemPicker = MockRandomItemPicker();
+    bloc = GameBloc(Continent.all, provider, randomItemPicker);
     countries = [
       Country.fromJson({'name': 'Ukraine', 'continent': 'EU', 'code': 'UK'}),
       Country.fromJson({'name': 'Poland', 'continent': 'EU', 'code': 'PL'}),
@@ -53,6 +54,7 @@ void main() {
   });
 
   test('initial load called correctly', () {
+    when(randomItemPicker.pick()).thenAnswer((_) => RandomPickResult(countries.first, countries));
     when(provider.provide())
         .thenAnswer((realInvocation) => Future.value(countries));
     bloc.performInitialLoad();
@@ -62,7 +64,7 @@ void main() {
   test('process answer', () {
     // Given
     final question = Question(countries.first, countries);
-    final expectedState = QuestionState(question, 0, countries.length);
+    bloc.currentQuestion = question;
     countries.removeLast();
     final randomPickResult = RandomPickResult(countries.first, countries);
     // When
@@ -78,12 +80,14 @@ void main() {
     // Given
     final answer = countries.first;
     final expectedScore = '0 / 0';
+    bloc.currentQuestion = Question(countries.last, countries);
     bloc.gameOverCallback = (score) {
       // Then
       expect(score, equals(expectedScore));
       expect(bloc.stream, emitsInOrder([isInstanceOf<QuestionState>()]));
     };
     // When
+
     when(randomItemPicker.pick())
         .thenAnswer((realInvocation) => null);
     bloc.processAnswer(answer);

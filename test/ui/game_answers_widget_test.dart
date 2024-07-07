@@ -16,8 +16,8 @@ void main() {
         deviceScreenType: DeviceScreenType.mobile,
         screenSize: Size.square(200),
         localWidgetSize: Size.square(200),
-        refinedSize: null);
-    Country tappedAnswer;
+        refinedSize: RefinedSize.small);
+    Country? tappedAnswer;
     await tester.pumpWidget(
       FlagsQuizApp(
           homeWidget: GameAnswersWidget(
@@ -25,7 +25,7 @@ void main() {
               sizingInformation: sizingInformation,
               answerClickListener: (answer) {
                 tappedAnswer = answer;
-              })),
+              }, key: Key("Test"),)),
     );
     await tester.pump();
     final buttonFinder = find.byType(OptionButton);
