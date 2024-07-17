@@ -1,0 +1,38 @@
+name: Flutter CI
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        flutter_version: [3.3.9]
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: ${{ matrix.flutter_version }}
+
+    - name: Install dependencies
+      run: flutter pub get
+
+    - name: Install lcov
+      run: sudo apt-get install -y lcov
+
+    - name: Run tests with coverage
+      run: |
+        flutter test --coverage
+        genhtml coverage/lcov.info -o coverage/html
+
+    - name: Archive test results
+      uses: actions/upload-artifact@v3
+      with:
+        name: test-results
+        path: coverage/html
+        retention-days: 5
