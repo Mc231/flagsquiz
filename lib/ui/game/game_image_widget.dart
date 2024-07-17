@@ -1,4 +1,3 @@
-
 import 'package:flagsquiz/models/country.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -11,9 +10,9 @@ class GameImageWidget extends StatelessWidget {
 
   const GameImageWidget(
       {required Key key,
-        required this.country,
-        required this.width,
-        required this.height})
+      required this.country,
+      required this.width,
+      required this.height})
       : super(key: key);
 
   @override
@@ -23,6 +22,7 @@ class GameImageWidget extends StatelessWidget {
 
   Widget _webWidget() {
     return CachedNetworkImage(
+      key: Key("image_${country.code.toLowerCase()}"),
       imageUrl: country.flagRemoteImage,
       width: width,
       height: height,
@@ -32,6 +32,7 @@ class GameImageWidget extends StatelessWidget {
   }
 
   Widget _normalWidget() {
-    return Image.asset(country.flagLocalImage, width: width, height: height);
+    return Image.asset(country.flagLocalImage,
+        key: Key("image_${country.code.toLowerCase()}"), width: width, height: height);
   }
 }

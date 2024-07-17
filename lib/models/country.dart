@@ -13,7 +13,7 @@ class Country {
   String get flagLocalImage => 'assets/images/$code.png';
 
   String get flagRemoteImage =>
-      'https://countryflagsapi.com/png/${code.toLowerCase()}';
+      'https://flagsapi.com/${code.toUpperCase()}/flat/64.png';
 
   Country.fromJson(Map json)
       : name = json[_keyName] as String,

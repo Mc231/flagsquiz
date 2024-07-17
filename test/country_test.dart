@@ -18,6 +18,6 @@ void main() {
     expect(country.name, equals(expectedName));
     expect(country.continent, equals(Continent.na));
     expect(country.code, equals(expectedCode));
-    expect(country.flagRemoteImage, equals('https://countryflagsapi.com/png/$expectedCode'));
+    expect(country.flagRemoteImage, equals('https://flagsapi.com/${expectedCode.toUpperCase()}/flat/64.png'));
   });
 }

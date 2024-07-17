@@ -9,13 +9,15 @@ import 'package:responsive_builder/responsive_builder.dart';
 import '../game/game_screen.dart';
 
 class ContinentsScreen extends StatelessWidget {
-  /// Warning add safe area container
+
+  static const mainScreenTitleKey = Key("main_screen_title");
+
   @override
   Widget build(BuildContext context) {
     final title = AppLocalizations.of(context)?.selectRegion ?? "";
     return Scaffold(
       appBar: AppBar(
-        title: Text(title),
+        title: Text(title, key: mainScreenTitleKey),
       ),
       body: Column(
         children: [
@@ -40,6 +42,7 @@ class ContinentsScreen extends StatelessWidget {
       return Container(
         margin: getButtonMargin(context),
         child: OptionButton(
+          key: Key("continent_${item.index}"),
           title: item.localizedName(context) ?? "",
           onClickListener: () => _handleItemClick(item, context),
         ),
