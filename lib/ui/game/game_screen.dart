@@ -14,6 +14,8 @@ import 'package:responsive_builder/responsive_builder.dart';
 import 'package:flagsquiz/extensions/sizing_information_extension.dart';
 
 class GameScreen extends StatefulWidget {
+  static const okButtonKey = Key("ok_button");
+
   @override
   State<StatefulWidget> createState() {
     return GameScreenState();
@@ -85,15 +87,20 @@ class GameScreenState extends State<GameScreen> {
     var country = state.question.answer;
     final imageSize = getImageSize(information);
     return [
-      GameImageWidget(country: country, width: imageSize, height: imageSize, key: Key(country.code),),
+      GameImageWidget(
+        country: country,
+        width: imageSize,
+        height: imageSize,
+        key: Key(country.code),
+      ),
       SizedBox(width: 16),
       Expanded(
           child: GameAnswersWidget(
-            options: state.question.options,
-            sizingInformation: information,
-            answerClickListener: _bloc.processAnswer,
-            key: Key(state.total.toString()),
-          ))
+        options: state.question.options,
+        sizingInformation: information,
+        answerClickListener: _bloc.processAnswer,
+        key: Key(state.total.toString()),
+      ))
     ];
   }
 
@@ -113,7 +120,8 @@ class GameScreenState extends State<GameScreen> {
           ),
           actions: <Widget>[
             TextButton(
-              child: Text(MaterialLocalizations.of(context).okButtonLabel),
+              child: Text(MaterialLocalizations.of(context).okButtonLabel,
+                  key: GameScreen.okButtonKey),
               onPressed: () {
                 Navigator.of(context).pop();
               },

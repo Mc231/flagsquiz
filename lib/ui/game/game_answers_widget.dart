@@ -6,7 +6,6 @@ import 'package:intl/intl.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import '../option_button.dart';
 
-
 class GameAnswersWidget extends StatelessWidget {
   final List<Country> options;
   final SizingInformation sizingInformation;
@@ -37,8 +36,10 @@ class GameAnswersWidget extends StatelessWidget {
     return Container(
       margin: getButtonMargin(context),
       child: OptionButton(
-          title: localizedCountryName,
-          onClickListener: () => answerClickListener(option), key: Key(localizedCountryName),),
+        title: localizedCountryName,
+        onClickListener: () => answerClickListener(option),
+        key: Key("button_${option.code.toLowerCase()}"),
+      ),
     );
   }
 }
@@ -56,7 +57,9 @@ extension on GameAnswersWidget {
     final orientation = information.orientation;
     final mobileAxisCount = orientation == Orientation.landscape
         ? 1
-        : information.localWidgetSize.shortestSide > _verySmallScreen ? 1 : 2;
+        : information.localWidgetSize.shortestSide > _verySmallScreen
+            ? 1
+            : 2;
     return getValueForScreenType(
         context: context,
         mobile: mobileAxisCount,
