@@ -1,38 +1,38 @@
 name: Flutter CI
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   test:
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        flutter_version: [3.3.9]
+    runs-on: self-hosted
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Setup Flutter
-      uses: subosito/flutter-action@v2
-      with:
-        flutter-version: ${{ matrix.flutter_version }}
+      - name: Set up Flutter
+        run: echo "Flutter is already installed on the self-hosted runner"
 
-    - name: Install dependencies
-      run: flutter pub get
+      - name: Install dependencies
+        run: flutter pub get
 
-    - name: Install lcov
-      run: sudo apt-get install -y lcov
+      - name: Install lcov
+        run: sudo apt-get install -y lcov
 
-    - name: Run tests with coverage
-      run: |
-        flutter test --coverage
-        genhtml coverage/lcov.info -o coverage/html
+      - name: Run tests with coverage
+        run: |
+          flutter test --coverage
+          genhtml coverage/lcov.info -o coverage/html
 
-    - name: Archive test results
-      uses: actions/upload-artifact@v3
-      with:
-        name: test-results
-        path: coverage/html
-        retention-days: 5
+      - name: Archive test results
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-results
+          path: coverage/html
+          retention-days: 5
