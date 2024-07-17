@@ -22,9 +22,6 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
-      - name: Install lcov
-        run: sudo apt-get install -y lcov
-
       - name: Run tests with coverage
         run: |
           flutter test --coverage
