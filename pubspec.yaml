@@ -43,6 +43,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   lints: ^3.0.0
+  coverage: ^1.8.0
 
 flutter_icons:
   android: "launcher_icon"
