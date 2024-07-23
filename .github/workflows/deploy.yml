@@ -13,5 +13,6 @@ jobs:
 
       - name: Deploy Android
         run: |
+          cd android
           bundle install
           bundle exec fastlane android test_track track:internal
