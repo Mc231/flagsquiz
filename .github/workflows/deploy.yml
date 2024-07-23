@@ -11,6 +11,25 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Run tests with coverage
+        run: |
+          flutter test --coverage
+          genhtml coverage/lcov.info -o coverage/html
+
+      - name: Archive test results
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-results
+          path: coverage/html
+          retention-days: 5
+
+      - name: Bump Up version
+        run: |
+          sh ./version.sh bump_version ./pubspec.yaml  
+
       - name: Deploy Android
         run: |
           cd android
