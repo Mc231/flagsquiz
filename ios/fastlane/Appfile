@@ -1,0 +1,1 @@
+app_identifier(ENV["IOS_PACKAGE_NAME"])
