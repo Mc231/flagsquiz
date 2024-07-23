@@ -28,10 +28,22 @@ jobs:
 
       - name: Bump Up version
         run: |
-          sh ./version.sh bump_version ./pubspec.yaml  
+          sh ./version.sh bump_version ./pubspec.yaml
+
+      - name: Deploy iOS
+        run: |
+         cd ios
+         bundle install
+         bundle exec fastlane beta
+        env:
+          IOS_PACKAGE_NAME: ${{ secrets.IOS_PACKAGE_NAME }}
+          FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD: ${{ secrets.FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD }}
 
       - name: Deploy Android
         run: |
           cd android
           bundle install
           bundle exec fastlane android test_track track:internal
+        env:
+          ANDROID_PACKAGE_NAME: ${{ secrets.ANDROID_PACKAGE_NAME }}
+          GOOGLE_PLAY_JSON: ${{ secrets.GOOGLE_PLAY_JSON }}
