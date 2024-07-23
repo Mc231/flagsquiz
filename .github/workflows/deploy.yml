@@ -1,0 +1,17 @@
+name: Deploy
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Deploy Android
+        run: |
+          bundle install
+          bundle exec fastlane android test_track track:internal
