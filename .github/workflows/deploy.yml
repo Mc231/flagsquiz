@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 env:
-  ANDROID_KEYSTORE_FILE_PATH: './android/release-key.jks'
+  ANDROID_KEYSTORE_FILE_PATH: ${{ github.workspace }}/android/app/release-key.jks
 
 jobs:
   build:
