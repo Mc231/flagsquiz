@@ -3,6 +3,9 @@ name: Deploy
 on:
   workflow_dispatch:
 
+env:
+  ANDROID_KEYSTORE_FILE_PATH: './android/app/release-key.jks'
+
 jobs:
   build:
     runs-on: self-hosted
@@ -32,12 +35,18 @@ jobs:
 
       - name: Deploy iOS
         run: |
-         cd ios
-         bundle install
-         bundle exec fastlane beta
+          cd ios
+          bundle install
+          bundle exec fastlane beta
         env:
           IOS_PACKAGE_NAME: ${{ secrets.IOS_PACKAGE_NAME }}
           FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD: ${{ secrets.FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD }}
+
+      - name: Create Android Keystore
+        run: |
+          echo $ANDROID_BASE_64_KEY_STORE | base64 --decode > $ANDROID_KEYSTORE_FILE_PATH
+        env:
+          ANDROID_BASE_64_KEY_STORE: ${{ secrets.ANDROID_BASE_64_KEY_STORE }}
 
       - name: Deploy Android
         run: |
@@ -47,3 +56,9 @@ jobs:
         env:
           ANDROID_PACKAGE_NAME: ${{ secrets.ANDROID_PACKAGE_NAME }}
           GOOGLE_PLAY_JSON: ${{ secrets.GOOGLE_PLAY_JSON }}
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+
+      - name: Remove Android Keystore
+        run: rm -f $ANDROID_KEYSTORE_FILE_PATH
