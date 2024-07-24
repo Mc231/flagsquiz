@@ -3,21 +3,25 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 
+import '../../foundation/is_web_checker.dart';
+
 class GameImageWidget extends StatelessWidget {
   final Country country;
   final double width;
   final double height;
+  final IsWebChecker isWebChecker;
 
   const GameImageWidget(
       {required Key key,
       required this.country,
       required this.width,
-      required this.height})
+      required this.height,
+      this.isWebChecker = const IsWebCheckerImpl()})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return kIsWeb ? _webWidget() : _normalWidget();
+    return isWebChecker.isWeb() ? _webWidget() : _normalWidget();
   }
 
   Widget _webWidget() {
@@ -27,12 +31,13 @@ class GameImageWidget extends StatelessWidget {
       width: width,
       height: height,
       placeholder: (context, url) => CircularProgressIndicator(),
-      errorWidget: (context, url, error) => Icon(Icons.error),
     );
   }
 
   Widget _normalWidget() {
     return Image.asset(country.flagLocalImage,
-        key: Key("image_${country.code.toLowerCase()}"), width: width, height: height);
+        key: Key("image_${country.code.toLowerCase()}"),
+        width: width,
+        height: height);
   }
 }

@@ -30,28 +30,6 @@ void main() {
     bloc = GameBloc(continent, countriesProvider, randomItemPicker);
   });
 
-  testWidgets('Progress indicator showing', (WidgetTester tester) async {
-    // Given
-    final country1 = Country.fromJson(
-        {'name': 'Argentina', 'continent': 'SA', 'code': 'AR'});
-    final country2 =
-        Country.fromJson({'name': 'Bolivia', 'continent': 'SA', 'code': 'BO'});
-    final countries = [country1, country2];
-    final randomPickResult = RandomPickResult(countries.first, countries);
-    // When
-    when(randomItemPicker.pick()).thenReturn(randomPickResult);
-    when(countriesProvider.provide())
-        .thenAnswer((_) => Future.value(countries));
-    await tester.pumpWidget(
-      FlagsQuizApp(homeWidget: BlocProvider(bloc: bloc, child: GameScreen())),
-    );
-    await tester.pump();
-    // Then
-    // TODO: - Fix this
-   // find.byType(CircularProgressIndicator);
-  //  expect(progressIndicatorFinder, findsOneWidget);
-  });
-
   testWidgets('Question showing', (WidgetTester tester) async {
     // Given
     final country1 = Country.fromJson(

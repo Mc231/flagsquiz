@@ -10,16 +10,7 @@ class BlocProvider<T extends Bloc> extends StatefulWidget {
 
   static T of<T extends Bloc>(BuildContext context) {
     final BlocProvider<T>? provider = context.findAncestorWidgetOfExactType();
-    if (provider == null) {
-      throw FlutterError(
-          'BlocProvider.of() called with a context that does not contain a BlocProvider of type $T.\n'
-              'No ancestor could be found starting from the context that was passed to BlocProvider.of<$T>(). '
-              'This can happen if the context you use comes from a widget above the BlocProvider.\n'
-              'The context used was: $context'
-      );
-    }
-
-    return provider.bloc;
+    return provider!.bloc;
   }
 
   @override

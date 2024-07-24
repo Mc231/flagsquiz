@@ -2,6 +2,7 @@ import 'package:flagsquiz/models/continent.dart';
 import 'package:flagsquiz/ui/continents/continents_screen.dart';
 import 'package:flagsquiz/ui/flags_quiz_app.dart';
 import 'package:flagsquiz/ui/option_button.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
@@ -28,10 +29,14 @@ void main() {
     final optionButtonsFinder = find.byType(OptionButton);
     expect(optionButtonsFinder, findsWidgets);
     await tester.tap(optionButtonsFinder.first);
-    await tester.pump();
+    await tester.pumpAndSettle();
     // Then
-   // final gameScreenFinder = find.byType(GameScreen);
-    // TODO: - Figure out this
-    //expect(gameScreenFinder, findsOneWidget);
+    final scoreFinder = find.byWidgetPredicate((widget) =>
+    widget is Text &&
+        widget.data != null &&
+        widget.data!.contains(RegExp(r'^\d+ / \d+$')));
+
+    // Verify that the score text is found
+    expect(scoreFinder, findsOneWidget);
   });
 }
