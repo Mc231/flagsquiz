@@ -17,42 +17,40 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
-#      - name: Run tests with coverage
-#        run: |
-#          flutter test --coverage
-#          genhtml coverage/lcov.info -o coverage/html
-#
-#      - name: Archive test results
-#        uses: actions/upload-artifact@v3
-#        with:
-#          name: test-results
-#          path: coverage/html
-#          retention-days: 5
-#
-#      - name: Bump Up version
-#        run: |
-#          sh ./version.sh bump_version ./pubspec.yaml
-#
-#      - name: Deploy iOS
-#        run: |
-#          cd ios
-#          bundle install
-#          bundle exec fastlane beta
-#        env:
-#          IOS_PACKAGE_NAME: ${{ secrets.IOS_PACKAGE_NAME }}
-#          FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD: ${{ secrets.FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD }}
+      - name: Run tests with coverage
+        run: |
+          flutter test --coverage
+          genhtml coverage/lcov.info -o coverage/html
+
+      - name: Archive test results
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-results
+          path: coverage/html
+          retention-days: 5
+
+      - name: Bump Up version
+        run: |
+          sh ./version.sh bump_version ./pubspec.yaml
+
+      - name: Deploy iOS
+        run: |
+          cd ios
+          bundle install
+          bundle exec fastlane beta
+        env:
+          IOS_PACKAGE_NAME: ${{ secrets.IOS_PACKAGE_NAME }}
+          FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD: ${{ secrets.FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD }}
 
       - name: Create Android Keystore
         run: |
           echo $ANDROID_BASE_64_KEY_STORE | base64 --decode > $ANDROID_KEYSTORE_FILE_PATH
-          ls -l $ANDROID_KEYSTORE_FILE_PATH
         env:
           ANDROID_BASE_64_KEY_STORE: ${{ secrets.ANDROID_BASE_64_KEY_STORE }}
 
       - name: Deploy Android
         run: |
           cd android
-          ls -l
           bundle install
           bundle exec fastlane android test_track track:internal
         env:
