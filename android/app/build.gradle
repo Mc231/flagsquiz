@@ -44,10 +44,10 @@ android {
 
     signingConfigs {
         release {
-            storeFile file(System.getenv("KEYSTORE_FILE") ?: "1")
-            storePassword System.getenv("KEYSTORE_PASSWORD" ?: "1")
-            keyAlias System.getenv("KEY_ALIAS" ?: "1")
-            keyPassword System.getenv("KEY_PASSWORD" ?: "1")
+            storeFile file(System.getenv("ANDROID_KEYSTORE_FILE_PATH") ?: "1")
+            storePassword System.getenv("ANDROID_KEYSTORE_PASSWORD" ?: "1")
+            keyAlias System.getenv("ANDROID_KEY_ALIAS" ?: "1")
+            keyPassword System.getenv("ANDROID_KEY_PASSWORD" ?: "1")
         }
 
     }
