@@ -62,3 +62,13 @@ jobs:
 
       - name: Remove Android Keystore
         run: rm -f $ANDROID_KEYSTORE_FILE_PATH
+
+      - name: Deploy Web
+        env:
+          FLAGS_SERVER_SSH_HOST: ${{ secrets.FLAGS_SERVER_SSH_HOST }}
+          FLAGS_SERVER_SSH_USERNAME: ${{ secrets.FLAGS_SERVER_SSH_USERNAME }}
+          FLAGS_SERVER_SSH_PASSWORD: ${{ secrets.FLAGS_SERVER_SSH_PASSWORD }}
+          FLAGS_SERVER_TARGET_PATH: ${{ secrets.FLAGS_SERVER_TARGET_PATH }}
+        run: |
+          flutter build web --release && \
+          sshpass -p "$FLAGS_SERVER_SSH_PASSWORD" rsync -avz -e "ssh -o StrictHostKeyChecking=no" build/web/ $FLAGS_SERVER_SSH_USERNAME@$FLAGS_SERVER_SSH_HOST:$FLAGS_SERVER_TARGET_PATH
