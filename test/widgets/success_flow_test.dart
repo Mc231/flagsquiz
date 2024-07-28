@@ -1,10 +1,7 @@
-import 'dart:async';
-
 import 'package:flagsquiz/models/continent.dart';
 import 'package:flagsquiz/ui/continents/continents_screen.dart';
 import 'package:flagsquiz/ui/flags_quiz_app.dart';
 import 'package:flagsquiz/ui/game/game_screen.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
