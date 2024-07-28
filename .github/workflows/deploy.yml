@@ -75,7 +75,7 @@ jobs:
 
       - name: Deploy MACOS
         run: |
-          cd ios
+          cd macos
           bundle install
           bundle exec fastlane beta
         env:
