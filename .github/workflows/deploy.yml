@@ -72,3 +72,11 @@ jobs:
         run: |
           flutter build web --release && \
           sshpass -p "$FLAGS_SERVER_SSH_PASSWORD" rsync -avz -e "ssh -o StrictHostKeyChecking=no" build/web/ $FLAGS_SERVER_SSH_USERNAME@$FLAGS_SERVER_SSH_HOST:$FLAGS_SERVER_TARGET_PATH
+
+      - name: Deploy MACOS
+        run: |
+          cd ios
+          bundle install
+          bundle exec fastlane beta
+        env:
+          IOS_PACKAGE_NAME: ${{ secrets.MAC_OS_PACKAGE_NAME }}
