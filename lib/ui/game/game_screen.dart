@@ -1,17 +1,14 @@
-import 'dart:math';
-
 import 'package:flagsquiz/bussiness_logic/game_bloc.dart';
 import 'package:flagsquiz/bussiness_logic/game_state/game_state.dart';
 import 'package:flagsquiz/bussiness_logic/game_state/loading_state.dart';
 import 'package:flagsquiz/bussiness_logic/game_state/question_state.dart';
 import 'package:flagsquiz/foundation/bloc_provider.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:flagsquiz/ui/game/game_answers_widget.dart';
-import 'package:flagsquiz/ui/game/game_image_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flagsquiz/extensions/continent_additions.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-import 'package:flagsquiz/extensions/sizing_information_extension.dart';
+
+import 'game_layout.dart';
 
 class GameScreen extends StatefulWidget {
   static const okButtonKey = Key("ok_button");
@@ -56,52 +53,15 @@ class GameScreenState extends State<GameScreen> {
             }
             final questionState = state as QuestionState;
             return ResponsiveBuilder(builder: (context, information) {
-              return _buildLayout(questionState, information);
+              return GameLayout(
+                  questionState: questionState,
+                  information: information,
+                  processAnswer: _bloc.processAnswer);
             });
           },
         )),
       ),
     );
-  }
-
-  Widget _buildLayout(
-      QuestionState questionState, SizingInformation information) {
-    final orientation = information.orientation;
-    return Column(
-      children: [
-        if (orientation == Orientation.portrait)
-          ..._imageAndButtons(questionState, information),
-        if (orientation == Orientation.landscape)
-          Expanded(
-            child: Row(
-              children: _imageAndButtons(questionState, information),
-            ),
-          ),
-        _progressColumn(information, questionState)
-      ],
-    );
-  }
-
-  List<Widget> _imageAndButtons(
-      QuestionState state, SizingInformation information) {
-    var country = state.question.answer;
-    final imageSize = getImageSize(information);
-    return [
-      GameImageWidget(
-        country: country,
-        width: imageSize,
-        height: imageSize,
-        key: Key(country.code),
-      ),
-      SizedBox(width: 16),
-      Expanded(
-          child: GameAnswersWidget(
-        options: state.question.options,
-        sizingInformation: information,
-        answerClickListener: _bloc.processAnswer,
-        key: Key(state.total.toString()),
-      ))
-    ];
   }
 
   void _showGameOverDialog(String message) async {
@@ -132,43 +92,12 @@ class GameScreenState extends State<GameScreen> {
     );
     Navigator.of(context).pop();
   }
-
-  Widget _progressColumn(SizingInformation information, QuestionState state) {
-    return Column(
-      children: [
-        Text(
-          '${state.progress} / ${state.total}',
-          style: TextStyle(fontSize: progressFontSize),
-        ),
-        SizedBox(height: progressMargin),
-        LinearProgressIndicator(value: state.percentageProgress)
-      ],
-    );
-  }
 }
 
 extension GameScreenSizes on GameScreenState {
-  static const _imageWatchCof = 0.7;
-  static const _imageNormalCof = 0.62;
-
   EdgeInsets getContainerPadding(BuildContext context) {
     var padding = getValueForScreenType<double>(
         context: context, mobile: 16, tablet: 16, desktop: 16, watch: 8);
     return EdgeInsets.all(padding);
   }
-
-  double getImageSize(SizingInformation information) {
-    final width = information.localWidgetSize.width;
-    final height = information.localWidgetSize.height;
-    final minSize = min(width, height);
-    final cof = information.isWatch ? _imageWatchCof : _imageNormalCof;
-    return minSize * cof;
-  }
-
-  double get progressFontSize {
-    return getValueForScreenType(
-        context: context, mobile: 12, tablet: 24, desktop: 24, watch: 8);
-  }
-
-  double get progressMargin => 8;
 }
