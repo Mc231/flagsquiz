@@ -17,59 +17,66 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
-#      - name: Run tests with coverage
-#        run: |
-#          flutter test --coverage
-#          genhtml coverage/lcov.info -o coverage/html
-#
-#      - name: Archive test results
-#        uses: actions/upload-artifact@v3
-#        with:
-#          name: test-results
-#          path: coverage/html
-#          retention-days: 5
-#
-#      - name: Bump Up version
-#        run: |
-#          sh ./version.sh bump_version ./pubspec.yaml
-#
-#      - name: Deploy iOS
-#        run: |
-#          cd ios
-#          bundle install
-#          bundle exec fastlane beta
-#        env:
-#          IOS_PACKAGE_NAME: ${{ secrets.IOS_PACKAGE_NAME }}
-#          FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD: ${{ secrets.FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD }}
-#
-#      - name: Create Android Keystore
-#        run: |
-#          echo $ANDROID_BASE_64_KEY_STORE | base64 --decode > $ANDROID_KEYSTORE_FILE_PATH
-#        env:
-#          ANDROID_BASE_64_KEY_STORE: ${{ secrets.ANDROID_BASE_64_KEY_STORE }}
-#
-#      - name: Deploy Android
-#        run: |
-#          cd android
-#          bundle install
-#          bundle exec fastlane android test_track track:internal
-#        env:
-#          ANDROID_PACKAGE_NAME: ${{ secrets.ANDROID_PACKAGE_NAME }}
-#          GOOGLE_PLAY_JSON: ${{ secrets.GOOGLE_PLAY_JSON }}
-#          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
-#          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
-#          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
-#
-#      - name: Remove Android Keystore
-#        run: rm -f $ANDROID_KEYSTORE_FILE_PATH
+      - name: Run tests with coverage
+        run: |
+          flutter test --coverage
+          genhtml coverage/lcov.info -o coverage/html
+
+      - name: Archive test results
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-results
+          path: coverage/html
+          retention-days: 5
+
+      - name: Bump Up version
+        run: |
+          sh ./version.sh bump_version ./pubspec.yaml
+
+      - name: Deploy iOS
+        run: |
+          cd ios
+          bundle install
+          bundle exec fastlane beta
+        env:
+          IOS_PACKAGE_NAME: ${{ secrets.IOS_PACKAGE_NAME }}
+          FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD: ${{ secrets.FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD }}
+
+      - name: Create Android Keystore
+        run: |
+          echo $ANDROID_BASE_64_KEY_STORE | base64 --decode > $ANDROID_KEYSTORE_FILE_PATH
+        env:
+          ANDROID_BASE_64_KEY_STORE: ${{ secrets.ANDROID_BASE_64_KEY_STORE }}
+
+      - name: Deploy Android
+        run: |
+          cd android
+          bundle install
+          bundle exec fastlane android test_track track:internal
+        env:
+          ANDROID_PACKAGE_NAME: ${{ secrets.ANDROID_PACKAGE_NAME }}
+          GOOGLE_PLAY_JSON: ${{ secrets.GOOGLE_PLAY_JSON }}
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+
+      - name: Remove Android Keystore
+        run: rm -f $ANDROID_KEYSTORE_FILE_PATH
 
       - name: Deploy Web
+        env:
+          FLAGS_SERVER_SSH_HOST: ${{ secrets.FLAGS_SERVER_SSH_HOST }}
+          FLAGS_SERVER_SSH_USERNAME: ${{ secrets.FLAGS_SERVER_SSH_USERNAME }}
+          FLAGS_SERVER_SSH_PASSWORD: ${{ secrets.FLAGS_SERVER_SSH_PASSWORD }}
+          FLAGS_SERVER_TARGET_PATH: ${{ secrets.FLAGS_SERVER_TARGET_PATH }}
         run: |
-          flutter build web --release
-          git clone --branch main git@github.com:Mc231/Mc231.github.io.git gh-pages
-          ls -l
-          rsync -av --delete build/web/ gh-pages/
-          cd gh-pages
-          git add --all
-          git commit -m "Deploy to GitHub Pages"
-          git push
+          flutter build web --release && \
+          sshpass -p "$FLAGS_SERVER_SSH_PASSWORD" rsync -avz -e "ssh -o StrictHostKeyChecking=no" build/web/ $FLAGS_SERVER_SSH_USERNAME@$FLAGS_SERVER_SSH_HOST:$FLAGS_SERVER_TARGET_PATH
+
+      - name: Deploy MACOS
+        run: |
+          cd macos
+          bundle install
+          bundle exec fastlane beta
+        env:
+          MAC_OS_PACKAGE_NAME: ${{ secrets.MAC_OS_PACKAGE_NAME }}
