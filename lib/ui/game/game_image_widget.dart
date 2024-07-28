@@ -21,7 +21,9 @@ class GameImageWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return isWebChecker.isWeb() ? _webWidget() : _normalWidget();
+    return
+     // isWebChecker.isWeb() ? _webWidget() :
+      _normalWidget();
   }
 
   Widget _webWidget() {
