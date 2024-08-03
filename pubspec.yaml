@@ -41,6 +41,8 @@ dev_dependencies:
   flutter_launcher_icons: ^0.13.1
   flutter_test:
     sdk: flutter
+  integration_test:
+    sdk: flutter
   lints: ^3.0.0
   coverage: ^1.6.0
 
