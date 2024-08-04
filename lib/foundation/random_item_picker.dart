@@ -56,7 +56,6 @@ class RandomItemPicker<T> {
   RandomPickResult<T>? pick() {
     if (count >= items.length) {
       if (items.isEmpty) {
-        print('Items are empty');
         return null;
       }
       items.shuffle();
