@@ -1,13 +1,13 @@
-import 'package:flagsquiz/models/question.dart';
-import 'package:flagsquiz/ui/flags_quiz_app.dart';
-import 'package:flagsquiz/ui/game/game_answers_widget.dart';
-import 'package:flagsquiz/ui/game/game_image_widget.dart';
+import 'package:flags_quiz/models/question.dart';
+import 'package:flags_quiz/ui/flags_quiz_app.dart';
+import 'package:flags_quiz/ui/game/game_answers_widget.dart';
+import 'package:flags_quiz/ui/game/game_image_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-import 'package:flagsquiz/models/country.dart';
-import 'package:flagsquiz/bussiness_logic/game_state/question_state.dart';
-import 'package:flagsquiz/ui/game/game_layout.dart';
+import 'package:flags_quiz/models/country.dart';
+import 'package:flags_quiz/business_logic/game_state/question_state.dart';
+import 'package:flags_quiz/ui/game/game_layout.dart';
 
 void main() {
   group('GameLayout', () {

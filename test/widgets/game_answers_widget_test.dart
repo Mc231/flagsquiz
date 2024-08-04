@@ -1,7 +1,7 @@
-import 'package:flagsquiz/models/country.dart';
-import 'package:flagsquiz/ui/flags_quiz_app.dart';
-import 'package:flagsquiz/ui/game/game_answers_widget.dart';
-import 'package:flagsquiz/ui/option_button.dart';
+import 'package:flags_quiz/models/country.dart';
+import 'package:flags_quiz/ui/flags_quiz_app.dart';
+import 'package:flags_quiz/ui/game/game_answers_widget.dart';
+import 'package:flags_quiz/ui/components/option_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:responsive_builder/responsive_builder.dart';

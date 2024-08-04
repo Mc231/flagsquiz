@@ -1,4 +1,4 @@
-name: flagsquiz
+name: flags_quiz
 description: Flags quiz
 
 # The following line prevents the package from being accidentally published to
@@ -54,9 +54,7 @@ flutter_icons:
 
 flutter:
   generate: true
-
   uses-material-design: true
-
   assets:
     - assets/Countries.json
     - assets/images/

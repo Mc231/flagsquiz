@@ -1,4 +1,4 @@
-import 'package:flagsquiz/foundation/random_item_picker.dart';
+import 'package:flags_quiz/foundation/random_item_picker.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

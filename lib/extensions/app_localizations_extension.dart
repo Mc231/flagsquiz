@@ -1,7 +1,27 @@
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
+/// An extension on `AppLocalizations` to facilitate dynamic string resolution.
+///
+/// This extension provides additional functionality for the `AppLocalizations`
+/// class by introducing a mechanism to dynamically resolve localized strings
+/// using a key. It supports a mapping of keys to corresponding localization
+/// properties, allowing easy access to localized content based on string keys.
+///
+/// The extension leverages a static `keyMap` to map string keys to localization
+/// properties, making it possible to resolve localization strings dynamically
+/// at runtime. This is particularly useful when localization keys are determined
+/// programmatically or stored as string identifiers.
 extension AppLocalizationsExtension on AppLocalizations {
 
+  /// A map of string keys to functions that retrieve localization strings.
+  ///
+  /// The map associates string keys with functions that extract the corresponding
+  /// localized string from an `AppLocalizations` instance. This allows the
+  /// dynamic resolution of localization strings based on keys.
+  ///
+  /// Example key-value pairs include:
+  /// - `'selectRegion'`: Resolves to the `selectRegion` localization string.
+  /// - `'all'`: Resolves to the `all` localization string.
   static final Map<String, String Function(AppLocalizations)> keyMap = {
     'selectRegion': (AppLocalizations loc) => loc.selectRegion,
     'all': (AppLocalizations loc) => loc.all,
@@ -264,6 +284,20 @@ extension AppLocalizationsExtension on AppLocalizations {
     'zw': (AppLocalizations loc) => loc.zw
   };
 
+  /// Resolves a localization string for the given [key].
+  ///
+  /// This method attempts to retrieve the localization string associated with
+  /// the provided [key] from the `keyMap`. If the [key] is found, the
+  /// corresponding localization string is returned. If the [key] is not found,
+  /// it attempts to append 'Z' to the [key] and resolve again.
+  ///
+  /// This approach supports a fallback mechanism where keys with appended
+  /// 'Z' are used for localization entries that may have different naming
+  /// conventions.
+  ///
+  /// Returns the resolved localization string.
+  ///
+  /// Throws an error if the [key] or appended key cannot be resolved.
   String resolveKey(String key) {
     if (keyMap.containsKey(key)) {
       return keyMap[key]!(this);
