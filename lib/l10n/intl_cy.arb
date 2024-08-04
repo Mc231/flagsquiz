@@ -1,13 +1,13 @@
 {
-  "selectRegion": "Select Region",
+  "selectRegion": "Dewiswch Rhanbarth",
   "@selectRegion": {
     "description": "text"
   },
-  "all": "All",
+  "all": "Pob un",
   "@all": {
     "description": "text"
   },
-  "europe": "Europe",
+  "europe": "Ewrop",
   "@europe": {
     "description": "text"
   },
@@ -15,15 +15,15 @@
   "@asia": {
     "description": "text"
   },
-  "africa": "Africa",
+  "africa": "Affrica",
   "@africa": {
     "description": "text"
   },
-  "northAmerica": "North America",
+  "northAmerica": "Gogledd America",
   "@northAmerica": {
     "description": "text"
   },
-  "southAmerica": "South America",
+  "southAmerica": "De America",
   "@southAmerica": {
     "description": "text"
   },
@@ -31,7 +31,7 @@
   "@oceania": {
     "description": "text"
   },
-  "yourScore": "Your Score",
+  "yourScore": "Eich Sgôr",
   "@yourScore": {
     "description": "text"
   },
@@ -39,11 +39,11 @@
   "@ad": {
     "description": "text"
   },
-  "ae": "United Arab Emirates",
+  "ae": "Emiradau Arabaidd Unedig",
   "@ae": {
     "description": "text"
   },
-  "ag": "Antigua and Barbuda",
+  "ag": "Antigua a Barbuda",
   "@ag": {
     "description": "text"
   },
@@ -71,19 +71,19 @@
   "@aq": {
     "description": "text"
   },
-  "ar": "Argentina",
+  "ar": "Yr Ariannin",
   "@ar": {
     "description": "text"
   },
-  "as": "American Samoa",
+  "as": "Samoa Americanaidd",
   "@as": {
     "description": "text"
   },
-  "at": "Austria",
+  "at": "Awstria",
   "@at": {
     "description": "text"
   },
-  "au": "Australia",
+  "au": "Awstralia",
   "@au": {
     "description": "text"
   },
@@ -99,7 +99,7 @@
   "@az": {
     "description": "text"
   },
-  "ba": "Bosnia and Herzegovina",
+  "ba": "Bosnia a Herzegovina",
   "@ba": {
     "description": "text"
   },
@@ -111,7 +111,7 @@
   "@bd": {
     "description": "text"
   },
-  "be": "Belgium",
+  "be": "Gwlad Belg",
   "@be": {
     "description": "text"
   },
@@ -119,7 +119,7 @@
   "@bf": {
     "description": "text"
   },
-  "bg": "Bulgaria",
+  "bg": "Bwlgaria",
   "@bg": {
     "description": "text"
   },
@@ -155,7 +155,7 @@
   "@bq": {
     "description": "text"
   },
-  "br": "Brazil",
+  "br": "Brasil",
   "@br": {
     "description": "text"
   },
@@ -167,7 +167,7 @@
   "@bt": {
     "description": "text"
   },
-  "bv": "Bouvet Island",
+  "bv": "Ynys Bouvet",
   "@bv": {
     "description": "text"
   },
@@ -187,31 +187,31 @@
   "@ca": {
     "description": "text"
   },
-  "cc": "Cocos [Keeling] Islands",
+  "cc": "Ynysoedd Cocos [Keeling]",
   "@cc": {
     "description": "text"
   },
-  "cd": "Democratic Republic of the Congo",
+  "cd": "Gweriniaeth Ddemocrataidd y Congo",
   "@cd": {
     "description": "text"
   },
-  "cf": "Central African Republic",
+  "cf": "Gweriniaeth Canolbarth Affrica",
   "@cf": {
     "description": "text"
   },
-  "cg": "Republic of the Congo",
+  "cg": "Gweriniaeth y Congo",
   "@cg": {
     "description": "text"
   },
-  "ch": "Switzerland",
+  "ch": "Y Swistir",
   "@ch": {
     "description": "text"
   },
-  "ci": "Ivory Coast",
+  "ci": "Arfordir Ifori",
   "@ci": {
     "description": "text"
   },
-  "ck": "Cook Islands",
+  "ck": "Ynysoedd Cook",
   "@ck": {
     "description": "text"
   },
@@ -219,11 +219,11 @@
   "@cl": {
     "description": "text"
   },
-  "cm": "Cameroon",
+  "cm": "Camerŵn",
   "@cm": {
     "description": "text"
   },
-  "cn": "China",
+  "cn": "Tsieina",
   "@cn": {
     "description": "text"
   },
@@ -247,11 +247,11 @@
   "@cw": {
     "description": "text"
   },
-  "cx": "Christmas Island",
+  "cx": "Ynys y Nadolig",
   "@cx": {
     "description": "text"
   },
-  "dk": "Denmark",
+  "dk": "Denmarc",
   "@dk": {
     "description": "text"
   },
@@ -259,7 +259,7 @@
   "@dm": {
     "description": "text"
   },
-  "doZ": "Dominican Republic",
+  "doZ": "Gweriniaeth Ddominicaidd",
   "@doZ": {
     "description": "text"
   },
@@ -267,7 +267,7 @@
   "@dz": {
     "description": "text"
   },
-  "ec": "Ecuador",
+  "ec": "Ecwador",
   "@ec": {
     "description": "text"
   },
@@ -275,11 +275,11 @@
   "@ee": {
     "description": "text"
   },
-  "eg": "Egypt",
+  "eg": "Yr Aifft",
   "@eg": {
     "description": "text"
   },
-  "eh": "Western Sahara",
+  "eh": "Gorllewin Sahara",
   "@eh": {
     "description": "text"
   },
@@ -287,7 +287,7 @@
   "@er": {
     "description": "text"
   },
-  "es": "Spain",
+  "es": "Sbaen",
   "@es": {
     "description": "text"
   },
@@ -295,7 +295,7 @@
   "@et": {
     "description": "text"
   },
-  "fi": "Finland",
+  "fi": "Ffindir",
   "@fi": {
     "description": "text"
   },
@@ -303,7 +303,7 @@
   "@fj": {
     "description": "text"
   },
-  "fk": "Falkland Islands",
+  "fk": "Ynysoedd Falkland",
   "@fk": {
     "description": "text"
   },
@@ -311,11 +311,11 @@
   "@fm": {
     "description": "text"
   },
-  "fo": "Faroe Islands",
+  "fo": "Ynysoedd Faroe",
   "@fo": {
     "description": "text"
   },
-  "fr": "France",
+  "fr": "Ffrainc",
   "@fr": {
     "description": "text"
   },
@@ -323,7 +323,7 @@
   "@ga": {
     "description": "text"
   },
-  "gb": "United Kingdom",
+  "gb": "Y Deyrnas Unedig",
   "@gb": {
     "description": "text"
   },
@@ -335,7 +335,7 @@
   "@ge": {
     "description": "text"
   },
-  "gf": "French Guiana",
+  "gf": "Guiana Ffrengig",
   "@gf": {
     "description": "text"
   },
@@ -351,7 +351,7 @@
   "@gi": {
     "description": "text"
   },
-  "gl": "Greenland",
+  "gl": "Yr Ynys Las",
   "@gl": {
     "description": "text"
   },
@@ -359,7 +359,7 @@
   "@gm": {
     "description": "text"
   },
-  "gn": "Guinea",
+  "gn": "Gini",
   "@gn": {
     "description": "text"
   },
@@ -367,15 +367,15 @@
   "@gp": {
     "description": "text"
   },
-  "gq": "Equatorial Guinea",
+  "gq": "Gini Cyhydeddol",
   "@gq": {
     "description": "text"
   },
-  "gr": "Greece",
+  "gr": "Gwlad Groeg",
   "@gr": {
     "description": "text"
   },
-  "gs": "South Georgia and the South Sandwich Islands",
+  "gs": "De Georgia ac Ynysoedd Sandwich y De",
   "@gs": {
     "description": "text"
   },
@@ -387,7 +387,7 @@
   "@gu": {
     "description": "text"
   },
-  "gw": "Guinea-Bissau",
+  "gw": "Guinea Bissau",
   "@gw": {
     "description": "text"
   },
@@ -399,7 +399,7 @@
   "@hk": {
     "description": "text"
   },
-  "hm": "Heard Island and McDonald Islands",
+  "hm": "Ynys Heard ac Ynysoedd McDonald",
   "@hm": {
     "description": "text"
   },
@@ -411,7 +411,7 @@
   "@hr": {
     "description": "text"
   },
-  "cz": "Czech Republic",
+  "cz": "Gweriniaeth Tsiec",
   "@cz": {
     "description": "text"
   },
@@ -423,7 +423,7 @@
   "@cy": {
     "description": "text"
   },
-  "de": "Germany",
+  "de": "Yr Almaen",
   "@de": {
     "description": "text"
   },
@@ -431,7 +431,7 @@
   "@ht": {
     "description": "text"
   },
-  "hu": "Hungary",
+  "hu": "Hwngari",
   "@hu": {
     "description": "text"
   },
@@ -439,7 +439,7 @@
   "@id": {
     "description": "text"
   },
-  "ie": "Ireland",
+  "ie": "Iwerddon",
   "@ie": {
     "description": "text"
   },
@@ -447,7 +447,7 @@
   "@il": {
     "description": "text"
   },
-  "im": "Isle of Man",
+  "im": "Ynys Manaw",
   "@im": {
     "description": "text"
   },
@@ -455,11 +455,11 @@
   "@inZ": {
     "description": "text"
   },
-  "io": "British Indian Ocean Territory",
+  "io": "Tiriogaeth Brydeinig Cefnfor India",
   "@io": {
     "description": "text"
   },
-  "iq": "Iraq",
+  "iq": "Irac",
   "@iq": {
     "description": "text"
   },
@@ -467,11 +467,11 @@
   "@ir": {
     "description": "text"
   },
-  "isZ": "Iceland",
+  "isZ": "Gwlad yr Iâ",
   "@isZ": {
     "description": "text"
   },
-  "it": "Italy",
+  "it": "Yr Eidal",
   "@it": {
     "description": "text"
   },
@@ -511,15 +511,15 @@
   "@km": {
     "description": "text"
   },
-  "kn": "Saint Kitts and Nevis",
+  "kn": "Saint Kitts a Nevis",
   "@kn": {
     "description": "text"
   },
-  "kp": "North Korea",
+  "kp": "Gogledd Corea",
   "@kp": {
     "description": "text"
   },
-  "kr": "South Korea",
+  "kr": "De Korea",
   "@kr": {
     "description": "text"
   },
@@ -527,7 +527,7 @@
   "@kw": {
     "description": "text"
   },
-  "ky": "Cayman Islands",
+  "ky": "Ynysoedd Cayman",
   "@ky": {
     "description": "text"
   },
@@ -539,7 +539,7 @@
   "@la": {
     "description": "text"
   },
-  "lb": "Lebanon",
+  "lb": "Libanus",
   "@lb": {
     "description": "text"
   },
@@ -563,15 +563,15 @@
   "@ls": {
     "description": "text"
   },
-  "lt": "Lithuania",
+  "lt": "Lithwania",
   "@lt": {
     "description": "text"
   },
-  "lu": "Luxembourg",
+  "lu": "Lwcsemburg",
   "@lu": {
     "description": "text"
   },
-  "lv": "Latvia",
+  "lv": "Latfia",
   "@lv": {
     "description": "text"
   },
@@ -579,7 +579,7 @@
   "@ly": {
     "description": "text"
   },
-  "ma": "Morocco",
+  "ma": "Moroco",
   "@ma": {
     "description": "text"
   },
@@ -587,7 +587,7 @@
   "@mc": {
     "description": "text"
   },
-  "md": "Moldova",
+  "md": "Moldofa",
   "@md": {
     "description": "text"
   },
@@ -595,7 +595,7 @@
   "@me": {
     "description": "text"
   },
-  "mf": "Saint Martin",
+  "mf": "Sant Martin",
   "@mf": {
     "description": "text"
   },
@@ -603,11 +603,11 @@
   "@mg": {
     "description": "text"
   },
-  "mh": "Marshall Islands",
+  "mh": "Ynysoedd Marshall",
   "@mh": {
     "description": "text"
   },
-  "mk": "North Macedonia",
+  "mk": "Gogledd Macedonia",
   "@mk": {
     "description": "text"
   },
@@ -627,7 +627,7 @@
   "@mo": {
     "description": "text"
   },
-  "mp": "Northern Mariana Islands",
+  "mp": "Ynysoedd Gogledd Mariana",
   "@mp": {
     "description": "text"
   },
@@ -659,7 +659,7 @@
   "@mw": {
     "description": "text"
   },
-  "mx": "Mexico",
+  "mx": "Mecsico",
   "@mx": {
     "description": "text"
   },
@@ -675,7 +675,7 @@
   "@na": {
     "description": "text"
   },
-  "nc": "New Caledonia",
+  "nc": "Caledonia Newydd",
   "@nc": {
     "description": "text"
   },
@@ -683,7 +683,7 @@
   "@ne": {
     "description": "text"
   },
-  "nf": "Norfolk Island",
+  "nf": "Ynys Norfolk",
   "@nf": {
     "description": "text"
   },
@@ -695,11 +695,11 @@
   "@ni": {
     "description": "text"
   },
-  "nl": "Netherlands",
+  "nl": "Yr Iseldiroedd",
   "@nl": {
     "description": "text"
   },
-  "no": "Norway",
+  "no": "Norwy",
   "@no": {
     "description": "text"
   },
@@ -715,7 +715,7 @@
   "@nu": {
     "description": "text"
   },
-  "nz": "New Zealand",
+  "nz": "Seland Newydd",
   "@nz": {
     "description": "text"
   },
@@ -731,11 +731,11 @@
   "@pe": {
     "description": "text"
   },
-  "pf": "French Polynesia",
+  "pf": "Polynesia Ffrengig",
   "@pf": {
     "description": "text"
   },
-  "pg": "Papua New Guinea",
+  "pg": "Papua Gini Newydd",
   "@pg": {
     "description": "text"
   },
@@ -743,19 +743,19 @@
   "@ph": {
     "description": "text"
   },
-  "pk": "Pakistan",
+  "pk": "Pacistan",
   "@pk": {
     "description": "text"
   },
-  "pl": "Poland",
+  "pl": "Gwlad Pwyl",
   "@pl": {
     "description": "text"
   },
-  "pm": "Saint Pierre and Miquelon",
+  "pm": "Saint Pierre a Miquelon",
   "@pm": {
     "description": "text"
   },
-  "pn": "Pitcairn Islands",
+  "pn": "Ynysoedd Pitcairn",
   "@pn": {
     "description": "text"
   },
@@ -763,11 +763,11 @@
   "@pr": {
     "description": "text"
   },
-  "ps": "Palestine",
+  "ps": "Palesteina",
   "@ps": {
     "description": "text"
   },
-  "pt": "Portugal",
+  "pt": "Portiwgal",
   "@pt": {
     "description": "text"
   },
@@ -783,11 +783,11 @@
   "@qa": {
     "description": "text"
   },
-  "re": "Réunion",
+  "re": "Reunion",
   "@re": {
     "description": "text"
   },
-  "ro": "Romania",
+  "ro": "Rwmania",
   "@ro": {
     "description": "text"
   },
@@ -795,7 +795,7 @@
   "@rs": {
     "description": "text"
   },
-  "ru": "Russia",
+  "ru": "Rwsia",
   "@ru": {
     "description": "text"
   },
@@ -807,7 +807,7 @@
   "@sa": {
     "description": "text"
   },
-  "sb": "Solomon Islands",
+  "sb": "Ynysoedd Solomon",
   "@sb": {
     "description": "text"
   },
@@ -831,15 +831,15 @@
   "@sh": {
     "description": "text"
   },
-  "si": "Slovenia",
+  "si": "Slofenia",
   "@si": {
     "description": "text"
   },
-  "sj": "Svalbard and Jan Mayen",
+  "sj": "Svalbard a Jan Mayen",
   "@sj": {
     "description": "text"
   },
-  "sk": "Slovakia",
+  "sk": "Slofacia",
   "@sk": {
     "description": "text"
   },
@@ -863,11 +863,11 @@
   "@sr": {
     "description": "text"
   },
-  "ss": "South Sudan",
+  "ss": "De Sudan",
   "@ss": {
     "description": "text"
   },
-  "st": "São Tomé and Príncipe",
+  "st": "São Tomé a Príncipe",
   "@st": {
     "description": "text"
   },
@@ -887,7 +887,7 @@
   "@sz": {
     "description": "text"
   },
-  "tc": "Turks and Caicos Islands",
+  "tc": "Ynysoedd Turks a Caicos",
   "@tc": {
     "description": "text"
   },
@@ -895,7 +895,7 @@
   "@td": {
     "description": "text"
   },
-  "tf": "French Southern Territories",
+  "tf": "Tiriogaethau De Ffrainc",
   "@tf": {
     "description": "text"
   },
@@ -903,7 +903,7 @@
   "@tg": {
     "description": "text"
   },
-  "th": "Thailand",
+  "th": "Gwlad Thai",
   "@th": {
     "description": "text"
   },
@@ -915,7 +915,7 @@
   "@tk": {
     "description": "text"
   },
-  "tl": "East Timor",
+  "tl": "Dwyrain Timor",
   "@tl": {
     "description": "text"
   },
@@ -931,11 +931,11 @@
   "@to": {
     "description": "text"
   },
-  "tr": "Turkey",
+  "tr": "Twrci",
   "@tr": {
     "description": "text"
   },
-  "tt": "Trinidad and Tobago",
+  "tt": "Trinidad a Tobago",
   "@tt": {
     "description": "text"
   },
@@ -951,7 +951,7 @@
   "@tz": {
     "description": "text"
   },
-  "ua": "Ukraine",
+  "ua": "Wcráin",
   "@ua": {
     "description": "text"
   },
@@ -959,11 +959,11 @@
   "@ug": {
     "description": "text"
   },
-  "um": "U.S. Minor Outlying Islands",
+  "um": "Mân Ynysoedd Allanol yr Unol Daleithiau",
   "@um": {
     "description": "text"
   },
-  "us": "United States",
+  "us": "Unol Daleithiau",
   "@us": {
     "description": "text"
   },
@@ -975,11 +975,11 @@
   "@uz": {
     "description": "text"
   },
-  "va": "Vatican City",
+  "va": "Dinas y Fatican",
   "@va": {
     "description": "text"
   },
-  "vc": "Saint Vincent and the Grenadines",
+  "vc": "Saint Vincent a'r Grenadines",
   "@vc": {
     "description": "text"
   },
@@ -987,15 +987,15 @@
   "@ve": {
     "description": "text"
   },
-  "vg": "British Virgin Islands",
+  "vg": "Ynysoedd Virgin Prydain",
   "@vg": {
     "description": "text"
   },
-  "vi": "U.S. Virgin Islands",
+  "vi": "Ynysoedd Virgin yr Unol Daleithiau",
   "@vi": {
     "description": "text"
   },
-  "vn": "Vietnam",
+  "vn": "Fietnam",
   "@vn": {
     "description": "text"
   },
@@ -1003,7 +1003,7 @@
   "@vu": {
     "description": "text"
   },
-  "wf": "Wallis and Futuna",
+  "wf": "Wallis a Futuna",
   "@wf": {
     "description": "text"
   },
@@ -1023,7 +1023,7 @@
   "@yt": {
     "description": "text"
   },
-  "za": "South Africa",
+  "za": "De Affrica",
   "@za": {
     "description": "text"
   },

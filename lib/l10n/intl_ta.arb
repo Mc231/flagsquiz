@@ -1,0 +1,1038 @@
+{
+  "selectRegion": "பிராந்தியத்தை தேர்வு",
+  "@selectRegion": {
+    "description": "text"
+  },
+  "all": "அனைத்தும்",
+  "@all": {
+    "description": "text"
+  },
+  "europe": "ஐரோப்பா",
+  "@europe": {
+    "description": "text"
+  },
+  "asia": "ஆசியா",
+  "@asia": {
+    "description": "text"
+  },
+  "africa": "ஆப்ரிக்கா",
+  "@africa": {
+    "description": "text"
+  },
+  "northAmerica": "வட அமெரிக்கா",
+  "@northAmerica": {
+    "description": "text"
+  },
+  "southAmerica": "தென் அமெரிக்கா",
+  "@southAmerica": {
+    "description": "text"
+  },
+  "oceania": "ஓசியானியா",
+  "@oceania": {
+    "description": "text"
+  },
+  "yourScore": "உங்கள் மதிப்பெண்",
+  "@yourScore": {
+    "description": "text"
+  },
+  "ad": "அன்டோரா",
+  "@ad": {
+    "description": "text"
+  },
+  "ae": "ஐக்கிய அரபு அமீரகம்",
+  "@ae": {
+    "description": "text"
+  },
+  "ag": "ஆன்டிகுவா மற்றும் பார்புடா",
+  "@ag": {
+    "description": "text"
+  },
+  "ai": "அங்கியுலா",
+  "@ai": {
+    "description": "text"
+  },
+  "af": "ஆப்கானிஸ்தான்",
+  "@af": {
+    "description": "text"
+  },
+  "al": "அல்பேனியா",
+  "@al": {
+    "description": "text"
+  },
+  "am": "ஆர்மீனியா",
+  "@am": {
+    "description": "text"
+  },
+  "ao": "அங்கோலா",
+  "@ao": {
+    "description": "text"
+  },
+  "aq": "அண்டார்டிகா",
+  "@aq": {
+    "description": "text"
+  },
+  "ar": "அர்ஜென்டீனா",
+  "@ar": {
+    "description": "text"
+  },
+  "as": "அமெரிக்க சமோவா",
+  "@as": {
+    "description": "text"
+  },
+  "at": "ஆஸ்திரியா",
+  "@at": {
+    "description": "text"
+  },
+  "au": "ஆஸ்திரேலியா",
+  "@au": {
+    "description": "text"
+  },
+  "aw": "அரூபா",
+  "@aw": {
+    "description": "text"
+  },
+  "ax": "ஆலண்ட்",
+  "@ax": {
+    "description": "text"
+  },
+  "az": "அஜர்பைஜான்",
+  "@az": {
+    "description": "text"
+  },
+  "ba": "போஸ்னியா மற்றும் ஹெர்சகோ",
+  "@ba": {
+    "description": "text"
+  },
+  "bb": "பார்படோஸ்",
+  "@bb": {
+    "description": "text"
+  },
+  "bd": "பங்களாதேஷ்",
+  "@bd": {
+    "description": "text"
+  },
+  "be": "பெல்ஜியம்",
+  "@be": {
+    "description": "text"
+  },
+  "bf": "புர்கினா பாசோ",
+  "@bf": {
+    "description": "text"
+  },
+  "bg": "பல்கேரியா",
+  "@bg": {
+    "description": "text"
+  },
+  "bh": "பஹ்ரைன்",
+  "@bh": {
+    "description": "text"
+  },
+  "bi": "புருண்டி",
+  "@bi": {
+    "description": "text"
+  },
+  "bj": "பெனின்",
+  "@bj": {
+    "description": "text"
+  },
+  "bl": "செயிண்ட் பார்தெலெமி",
+  "@bl": {
+    "description": "text"
+  },
+  "bm": "பெர்முடா",
+  "@bm": {
+    "description": "text"
+  },
+  "bn": "புரூணை",
+  "@bn": {
+    "description": "text"
+  },
+  "bo": "பொலிவியா",
+  "@bo": {
+    "description": "text"
+  },
+  "bq": "போனைர்",
+  "@bq": {
+    "description": "text"
+  },
+  "br": "பிரேசில்",
+  "@br": {
+    "description": "text"
+  },
+  "bs": "பஹாமாஸ்",
+  "@bs": {
+    "description": "text"
+  },
+  "bt": "பூடான்",
+  "@bt": {
+    "description": "text"
+  },
+  "bv": "பௌவெட் தீவு",
+  "@bv": {
+    "description": "text"
+  },
+  "bw": "போட்ஸ்வானா",
+  "@bw": {
+    "description": "text"
+  },
+  "by": "பெலாரஸ்",
+  "@by": {
+    "description": "text"
+  },
+  "bz": "பெலிஸ்",
+  "@bz": {
+    "description": "text"
+  },
+  "ca": "கனடா",
+  "@ca": {
+    "description": "text"
+  },
+  "cc": "கோகோஸ் [கீலிங்] தீவுகள்",
+  "@cc": {
+    "description": "text"
+  },
+  "cd": "காங்கோ ஜனநாயக குடியரசு",
+  "@cd": {
+    "description": "text"
+  },
+  "cf": "மத்திய ஆப்பிரிக்க குடிய",
+  "@cf": {
+    "description": "text"
+  },
+  "cg": "காங்கோ குடியரசு",
+  "@cg": {
+    "description": "text"
+  },
+  "ch": "சுவிச்சர்லாந்து",
+  "@ch": {
+    "description": "text"
+  },
+  "ci": "ஐவரி கோஸ்ட்",
+  "@ci": {
+    "description": "text"
+  },
+  "ck": "குக் தீவுகள்",
+  "@ck": {
+    "description": "text"
+  },
+  "cl": "சிலி",
+  "@cl": {
+    "description": "text"
+  },
+  "cm": "கேமரூன்",
+  "@cm": {
+    "description": "text"
+  },
+  "cn": "சீனா",
+  "@cn": {
+    "description": "text"
+  },
+  "co": "கொலம்பியா",
+  "@co": {
+    "description": "text"
+  },
+  "cr": "கோஸ்டாரிகா",
+  "@cr": {
+    "description": "text"
+  },
+  "cu": "கியூபா",
+  "@cu": {
+    "description": "text"
+  },
+  "cv": "கேப் வெர்டே",
+  "@cv": {
+    "description": "text"
+  },
+  "cw": "க்யுரஸோ",
+  "@cw": {
+    "description": "text"
+  },
+  "cx": "கிறிஸ்துமஸ் தீ",
+  "@cx": {
+    "description": "text"
+  },
+  "dk": "டென்மார்க்",
+  "@dk": {
+    "description": "text"
+  },
+  "dm": "டொமினிகா",
+  "@dm": {
+    "description": "text"
+  },
+  "doZ": "டொமினிகன் கு",
+  "@doZ": {
+    "description": "text"
+  },
+  "dz": "அல்ஜீரியா",
+  "@dz": {
+    "description": "text"
+  },
+  "ec": "ஈக்வடார்",
+  "@ec": {
+    "description": "text"
+  },
+  "ee": "எஸ்டோனியா",
+  "@ee": {
+    "description": "text"
+  },
+  "eg": "எகிப்து",
+  "@eg": {
+    "description": "text"
+  },
+  "eh": "மேற்கு சஹாரா",
+  "@eh": {
+    "description": "text"
+  },
+  "er": "எரிட்ரியா",
+  "@er": {
+    "description": "text"
+  },
+  "es": "ஸ்பெயின்",
+  "@es": {
+    "description": "text"
+  },
+  "et": "எத்தியோப்பியா",
+  "@et": {
+    "description": "text"
+  },
+  "fi": "பின்லாந்து",
+  "@fi": {
+    "description": "text"
+  },
+  "fj": "பிஜி",
+  "@fj": {
+    "description": "text"
+  },
+  "fk": "பால்க்லேண்ட் தீவுகள்",
+  "@fk": {
+    "description": "text"
+  },
+  "fm": "மைக்ரோனேஷியா",
+  "@fm": {
+    "description": "text"
+  },
+  "fo": "ஃபாரோ தீவுகள்",
+  "@fo": {
+    "description": "text"
+  },
+  "fr": "பிரான்ஸ்",
+  "@fr": {
+    "description": "text"
+  },
+  "ga": "கபான்",
+  "@ga": {
+    "description": "text"
+  },
+  "gb": "ஐக்கிய இராச்சியம்",
+  "@gb": {
+    "description": "text"
+  },
+  "gd": "கிரெனடா",
+  "@gd": {
+    "description": "text"
+  },
+  "ge": "ஜோர்ஜியா",
+  "@ge": {
+    "description": "text"
+  },
+  "gf": "பிரெஞ்சு கயானா",
+  "@gf": {
+    "description": "text"
+  },
+  "gg": "குயெர்ன்சி",
+  "@gg": {
+    "description": "text"
+  },
+  "gh": "கானா",
+  "@gh": {
+    "description": "text"
+  },
+  "gi": "ஜிப்ரால்டர்",
+  "@gi": {
+    "description": "text"
+  },
+  "gl": "கிரீன்லாந்து",
+  "@gl": {
+    "description": "text"
+  },
+  "gm": "காம்பியா",
+  "@gm": {
+    "description": "text"
+  },
+  "gn": "கினி",
+  "@gn": {
+    "description": "text"
+  },
+  "gp": "குவாதலூப்பே",
+  "@gp": {
+    "description": "text"
+  },
+  "gq": "ஈக்வடோரியல் கின",
+  "@gq": {
+    "description": "text"
+  },
+  "gr": "கிரீஸ்",
+  "@gr": {
+    "description": "text"
+  },
+  "gs": "தெற்கு ஜார்ஜியா மற்றும் தெற்கு சாண்ட்விச்",
+  "@gs": {
+    "description": "text"
+  },
+  "gt": "குவாத்தமாலா",
+  "@gt": {
+    "description": "text"
+  },
+  "gu": "குவாம்",
+  "@gu": {
+    "description": "text"
+  },
+  "gw": "கினியா-பிசாவ்",
+  "@gw": {
+    "description": "text"
+  },
+  "gy": "கயானா",
+  "@gy": {
+    "description": "text"
+  },
+  "hk": "ஹாங்காங்",
+  "@hk": {
+    "description": "text"
+  },
+  "hm": "ஹெர்ட் தீவு மற்றும் மெக்டொனால்ட்",
+  "@hm": {
+    "description": "text"
+  },
+  "hn": "ஹோண்டுராஸ்",
+  "@hn": {
+    "description": "text"
+  },
+  "hr": "குரோசியா",
+  "@hr": {
+    "description": "text"
+  },
+  "cz": "செக் குடியரசு",
+  "@cz": {
+    "description": "text"
+  },
+  "dj": "ஜிபூட்டி",
+  "@dj": {
+    "description": "text"
+  },
+  "cy": "சைப்ரஸ்",
+  "@cy": {
+    "description": "text"
+  },
+  "de": "ஜெர்மனி",
+  "@de": {
+    "description": "text"
+  },
+  "ht": "ஹெய்டி",
+  "@ht": {
+    "description": "text"
+  },
+  "hu": "ஹங்கேரி",
+  "@hu": {
+    "description": "text"
+  },
+  "id": "இந்தோனேஷியா",
+  "@id": {
+    "description": "text"
+  },
+  "ie": "அயர்லாந்து",
+  "@ie": {
+    "description": "text"
+  },
+  "il": "இஸ்ரேல்",
+  "@il": {
+    "description": "text"
+  },
+  "im": "ஐல் ஆஃப் மேன்",
+  "@im": {
+    "description": "text"
+  },
+  "inZ": "இந்தியா",
+  "@inZ": {
+    "description": "text"
+  },
+  "io": "பிரித்தானிய இந்திய பெருங்கடல்",
+  "@io": {
+    "description": "text"
+  },
+  "iq": "ஈராக்",
+  "@iq": {
+    "description": "text"
+  },
+  "ir": "ஈரான்",
+  "@ir": {
+    "description": "text"
+  },
+  "isZ": "ஐஸ்லாந்து",
+  "@isZ": {
+    "description": "text"
+  },
+  "it": "இத்தாலி",
+  "@it": {
+    "description": "text"
+  },
+  "je": "ஜெர்சி",
+  "@je": {
+    "description": "text"
+  },
+  "jm": "ஜமைக்கா",
+  "@jm": {
+    "description": "text"
+  },
+  "jo": "ஜோர்டான்",
+  "@jo": {
+    "description": "text"
+  },
+  "jp": "ஜப்பான்",
+  "@jp": {
+    "description": "text"
+  },
+  "ke": "கென்யா",
+  "@ke": {
+    "description": "text"
+  },
+  "kg": "கிர்கிஸ்தான்",
+  "@kg": {
+    "description": "text"
+  },
+  "kh": "கம்போடியா",
+  "@kh": {
+    "description": "text"
+  },
+  "ki": "கிரிபடி",
+  "@ki": {
+    "description": "text"
+  },
+  "km": "கோமரோஸ்",
+  "@km": {
+    "description": "text"
+  },
+  "kn": "செயிண்ட் கிட்ஸ் மற்றும் நெவிஸ்",
+  "@kn": {
+    "description": "text"
+  },
+  "kp": "வட கொரியா",
+  "@kp": {
+    "description": "text"
+  },
+  "kr": "தென் கொரியா",
+  "@kr": {
+    "description": "text"
+  },
+  "kw": "குவைத்",
+  "@kw": {
+    "description": "text"
+  },
+  "ky": "கேமன் தீவுகள்",
+  "@ky": {
+    "description": "text"
+  },
+  "kz": "கஜகஸ்தான்",
+  "@kz": {
+    "description": "text"
+  },
+  "la": "லாவோஸ்",
+  "@la": {
+    "description": "text"
+  },
+  "lb": "லெபனான்",
+  "@lb": {
+    "description": "text"
+  },
+  "lc": "செயிண்ட் லூசியா",
+  "@lc": {
+    "description": "text"
+  },
+  "li": "லிஷென்ஷியர்",
+  "@li": {
+    "description": "text"
+  },
+  "lk": "இலங்கை",
+  "@lk": {
+    "description": "text"
+  },
+  "lr": "லைபீரியா",
+  "@lr": {
+    "description": "text"
+  },
+  "ls": "லெசோதோ",
+  "@ls": {
+    "description": "text"
+  },
+  "lt": "லிதுவேனியா",
+  "@lt": {
+    "description": "text"
+  },
+  "lu": "லக்சம்பர்க்",
+  "@lu": {
+    "description": "text"
+  },
+  "lv": "லாட்வியா",
+  "@lv": {
+    "description": "text"
+  },
+  "ly": "லிபியா",
+  "@ly": {
+    "description": "text"
+  },
+  "ma": "மொரோக்கோ",
+  "@ma": {
+    "description": "text"
+  },
+  "mc": "மொனாக்கோ",
+  "@mc": {
+    "description": "text"
+  },
+  "md": "மால்டோவா",
+  "@md": {
+    "description": "text"
+  },
+  "me": "மாண்டெனக்ரா",
+  "@me": {
+    "description": "text"
+  },
+  "mf": "செயிண்ட் மார்ட்டின்",
+  "@mf": {
+    "description": "text"
+  },
+  "mg": "மடகாஸ்கர்",
+  "@mg": {
+    "description": "text"
+  },
+  "mh": "மார்ஷல் தீவுகள்",
+  "@mh": {
+    "description": "text"
+  },
+  "mk": "வட மாசிடோன",
+  "@mk": {
+    "description": "text"
+  },
+  "ml": "மாலி",
+  "@ml": {
+    "description": "text"
+  },
+  "mm": "மியான்மர் [பர்மா]",
+  "@mm": {
+    "description": "text"
+  },
+  "mn": "மங்கோலியா",
+  "@mn": {
+    "description": "text"
+  },
+  "mo": "மக்காவு",
+  "@mo": {
+    "description": "text"
+  },
+  "mp": "வடக்கு மரியானா தீவுகள்",
+  "@mp": {
+    "description": "text"
+  },
+  "mq": "மார்டினிக்",
+  "@mq": {
+    "description": "text"
+  },
+  "mr": "மவுரித்தேனியா",
+  "@mr": {
+    "description": "text"
+  },
+  "ms": "மொன்செராட்",
+  "@ms": {
+    "description": "text"
+  },
+  "mt": "மால்டா",
+  "@mt": {
+    "description": "text"
+  },
+  "mu": "மொரிஷியஸ்",
+  "@mu": {
+    "description": "text"
+  },
+  "mv": "மாலத்தீவு",
+  "@mv": {
+    "description": "text"
+  },
+  "mw": "மலாவி",
+  "@mw": {
+    "description": "text"
+  },
+  "mx": "மெக்ஸிக்கோ",
+  "@mx": {
+    "description": "text"
+  },
+  "my": "மலேஷியா",
+  "@my": {
+    "description": "text"
+  },
+  "mz": "மொசாம்பிக்",
+  "@mz": {
+    "description": "text"
+  },
+  "na": "நமீபியா",
+  "@na": {
+    "description": "text"
+  },
+  "nc": "நியூ கலெடோனியா",
+  "@nc": {
+    "description": "text"
+  },
+  "ne": "நைஜர்",
+  "@ne": {
+    "description": "text"
+  },
+  "nf": "நோர்போக் தீவு",
+  "@nf": {
+    "description": "text"
+  },
+  "ng": "நைஜீரியா",
+  "@ng": {
+    "description": "text"
+  },
+  "ni": "நிகரகுவா",
+  "@ni": {
+    "description": "text"
+  },
+  "nl": "நெதர்லாந்து",
+  "@nl": {
+    "description": "text"
+  },
+  "no": "நார்வே",
+  "@no": {
+    "description": "text"
+  },
+  "np": "நேபால்",
+  "@np": {
+    "description": "text"
+  },
+  "nr": "நவ்ரூ",
+  "@nr": {
+    "description": "text"
+  },
+  "nu": "நியுவே",
+  "@nu": {
+    "description": "text"
+  },
+  "nz": "நியூசிலாந்து",
+  "@nz": {
+    "description": "text"
+  },
+  "om": "ஓமன்",
+  "@om": {
+    "description": "text"
+  },
+  "pa": "பனாமா",
+  "@pa": {
+    "description": "text"
+  },
+  "pe": "பெரு",
+  "@pe": {
+    "description": "text"
+  },
+  "pf": "பிரெஞ்சு பாலினீசியா",
+  "@pf": {
+    "description": "text"
+  },
+  "pg": "பப்புவா நியூ கின",
+  "@pg": {
+    "description": "text"
+  },
+  "ph": "பிலிப்பைன்ஸ்",
+  "@ph": {
+    "description": "text"
+  },
+  "pk": "பாக்கிஸ்தான்",
+  "@pk": {
+    "description": "text"
+  },
+  "pl": "போலந்து",
+  "@pl": {
+    "description": "text"
+  },
+  "pm": "செயிண்ட் பியர் மற்றும் மிகுவலன்",
+  "@pm": {
+    "description": "text"
+  },
+  "pn": "பிட்கெய்ர்ன் தீவுகள்",
+  "@pn": {
+    "description": "text"
+  },
+  "pr": "புவேர்டோ ரிக்கோ",
+  "@pr": {
+    "description": "text"
+  },
+  "ps": "பாலஸ்தீனம்",
+  "@ps": {
+    "description": "text"
+  },
+  "pt": "போர்ச்சுகல்",
+  "@pt": {
+    "description": "text"
+  },
+  "pw": "பலாவு",
+  "@pw": {
+    "description": "text"
+  },
+  "py": "பராகுவே",
+  "@py": {
+    "description": "text"
+  },
+  "qa": "கத்தார்",
+  "@qa": {
+    "description": "text"
+  },
+  "re": "ரீயூனியன்",
+  "@re": {
+    "description": "text"
+  },
+  "ro": "ருமேனியா",
+  "@ro": {
+    "description": "text"
+  },
+  "rs": "செர்பியா",
+  "@rs": {
+    "description": "text"
+  },
+  "ru": "இரஷ்யா",
+  "@ru": {
+    "description": "text"
+  },
+  "rw": "ருவாண்டா",
+  "@rw": {
+    "description": "text"
+  },
+  "sa": "சவுதி அரேபியா",
+  "@sa": {
+    "description": "text"
+  },
+  "sb": "சாலமன் தீவுகள்",
+  "@sb": {
+    "description": "text"
+  },
+  "sc": "செஷல்ஸ்",
+  "@sc": {
+    "description": "text"
+  },
+  "sd": "சூடான்",
+  "@sd": {
+    "description": "text"
+  },
+  "se": "ஸ்வீடன்",
+  "@se": {
+    "description": "text"
+  },
+  "sg": "சிங்கப்பூர்",
+  "@sg": {
+    "description": "text"
+  },
+  "sh": "செயிண்ட் ஹெலெனா",
+  "@sh": {
+    "description": "text"
+  },
+  "si": "ஸ்லோவேனியா",
+  "@si": {
+    "description": "text"
+  },
+  "sj": "ஸ்வால்பார்ட் மற்றும் ஜான் மேயன்",
+  "@sj": {
+    "description": "text"
+  },
+  "sk": "ஸ்லோவாகியா",
+  "@sk": {
+    "description": "text"
+  },
+  "sl": "சியரா லியோன்",
+  "@sl": {
+    "description": "text"
+  },
+  "sm": "சான் மரினோ",
+  "@sm": {
+    "description": "text"
+  },
+  "sn": "செனகல்",
+  "@sn": {
+    "description": "text"
+  },
+  "so": "சோமாலியா",
+  "@so": {
+    "description": "text"
+  },
+  "sr": "சூரினாம்",
+  "@sr": {
+    "description": "text"
+  },
+  "ss": "தென் சூடான்",
+  "@ss": {
+    "description": "text"
+  },
+  "st": "சாவோ டோமே மற்றும் பிரின்சிப்",
+  "@st": {
+    "description": "text"
+  },
+  "sv": "எல் சால்வடார்",
+  "@sv": {
+    "description": "text"
+  },
+  "sx": "செயின்ட் மார்டன்",
+  "@sx": {
+    "description": "text"
+  },
+  "sy": "சிரியா",
+  "@sy": {
+    "description": "text"
+  },
+  "sz": "ஸ்வாசிலாந்து",
+  "@sz": {
+    "description": "text"
+  },
+  "tc": "டர்க்ஸ் மற்றும் கெய்கோஸ் தீவுகள்",
+  "@tc": {
+    "description": "text"
+  },
+  "td": "சாட்",
+  "@td": {
+    "description": "text"
+  },
+  "tf": "பிரஞ்சு தெற்கு பிரதேச",
+  "@tf": {
+    "description": "text"
+  },
+  "tg": "டோகோ",
+  "@tg": {
+    "description": "text"
+  },
+  "th": "தாய்லாந்து",
+  "@th": {
+    "description": "text"
+  },
+  "tj": "தஜிகிஸ்தான்",
+  "@tj": {
+    "description": "text"
+  },
+  "tk": "டோக்கெலாவ்",
+  "@tk": {
+    "description": "text"
+  },
+  "tl": "கிழக்கு திமோர்",
+  "@tl": {
+    "description": "text"
+  },
+  "tm": "துர்க்மேனிஸ்தான்",
+  "@tm": {
+    "description": "text"
+  },
+  "tn": "துனிசியா",
+  "@tn": {
+    "description": "text"
+  },
+  "to": "டோங்கா",
+  "@to": {
+    "description": "text"
+  },
+  "tr": "துருக்கி",
+  "@tr": {
+    "description": "text"
+  },
+  "tt": "டிரினிடாட் மற்றும் டொபா",
+  "@tt": {
+    "description": "text"
+  },
+  "tv": "துவாலு",
+  "@tv": {
+    "description": "text"
+  },
+  "tw": "தைவான்",
+  "@tw": {
+    "description": "text"
+  },
+  "tz": "தான்சானியா",
+  "@tz": {
+    "description": "text"
+  },
+  "ua": "உக்ரைன்",
+  "@ua": {
+    "description": "text"
+  },
+  "ug": "உகாண்டா",
+  "@ug": {
+    "description": "text"
+  },
+  "um": "அமெரிக்க மைனர் வெளிநாட்டு தீவுகள்",
+  "@um": {
+    "description": "text"
+  },
+  "us": "ஐக்கிய அமெரிக்கா",
+  "@us": {
+    "description": "text"
+  },
+  "uy": "உருகுவே",
+  "@uy": {
+    "description": "text"
+  },
+  "uz": "உஸ்பெகிஸ்தான்",
+  "@uz": {
+    "description": "text"
+  },
+  "va": "வத்திக்கான் நகரம்",
+  "@va": {
+    "description": "text"
+  },
+  "vc": "செயிண்ட் வின்சென்ட் மற்றும் கிரெனடைன்ஸ்",
+  "@vc": {
+    "description": "text"
+  },
+  "ve": "வெனிஸுவெலா",
+  "@ve": {
+    "description": "text"
+  },
+  "vg": "பிரிட்டிஷ் கன்னி",
+  "@vg": {
+    "description": "text"
+  },
+  "vi": "அமெரிக்க விர்ஜின் தீவுகள்",
+  "@vi": {
+    "description": "text"
+  },
+  "vn": "வியட்நாம்",
+  "@vn": {
+    "description": "text"
+  },
+  "vu": "வனுவாட்டு",
+  "@vu": {
+    "description": "text"
+  },
+  "wf": "வாலிஸ் மற்றும் ஃபுடூனா",
+  "@wf": {
+    "description": "text"
+  },
+  "ws": "சமோவா",
+  "@ws": {
+    "description": "text"
+  },
+  "xk": "கொசோவோ",
+  "@xk": {
+    "description": "text"
+  },
+  "ye": "யேமன்",
+  "@ye": {
+    "description": "text"
+  },
+  "yt": "மயாட்",
+  "@yt": {
+    "description": "text"
+  },
+  "za": "தென்னாப்பிரிக்கா",
+  "@za": {
+    "description": "text"
+  },
+  "zm": "ஜாம்பியா",
+  "@zm": {
+    "description": "text"
+  },
+  "zw": "ஜிம்பாப்வே",
+  "@zw": {
+    "description": "text"
+  }
+}

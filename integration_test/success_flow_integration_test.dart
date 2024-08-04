@@ -5,6 +5,7 @@ import 'package:flagsquiz/ui/game/game_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
@@ -94,13 +95,13 @@ void main() {
       expect(selectReginFinder, findsOneWidget);
     }
 
-    testWidgets('Test all app flow', (WidgetTester tester) async {
-      final widget = FlagsQuizApp(
-        homeWidget: ContinentsScreen(),
-      );
-      await tester.pumpWidget(widget);
-      for (var continent in Continent.values) {
-        await verifySuccessFlow(continent, tester);
+    testWidgets('Test all modes in all localizations', (WidgetTester tester) async {
+      for (Locale locale in AppLocalizations.supportedLocales) {
+        final widget = FlagsQuizApp(homeWidget: ContinentsScreen(), locale: locale);
+        await tester.pumpWidget(widget);
+        for (var continent in Continent.values) {
+          await verifySuccessFlow(continent, tester);
+        }
       }
     });
   });

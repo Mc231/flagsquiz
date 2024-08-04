@@ -1,13 +1,13 @@
 {
-  "selectRegion": "Select Region",
+  "selectRegion": "Chagua Mkoa",
   "@selectRegion": {
     "description": "text"
   },
-  "all": "All",
+  "all": "Wote",
   "@all": {
     "description": "text"
   },
-  "europe": "Europe",
+  "europe": "Uropa",
   "@europe": {
     "description": "text"
   },
@@ -15,15 +15,15 @@
   "@asia": {
     "description": "text"
   },
-  "africa": "Africa",
+  "africa": "Afrika",
   "@africa": {
     "description": "text"
   },
-  "northAmerica": "North America",
+  "northAmerica": "Amerika ya Kaskazini",
   "@northAmerica": {
     "description": "text"
   },
-  "southAmerica": "South America",
+  "southAmerica": "Amerika ya Kusini",
   "@southAmerica": {
     "description": "text"
   },
@@ -31,7 +31,7 @@
   "@oceania": {
     "description": "text"
   },
-  "yourScore": "Your Score",
+  "yourScore": "Alama yako",
   "@yourScore": {
     "description": "text"
   },
@@ -39,11 +39,11 @@
   "@ad": {
     "description": "text"
   },
-  "ae": "United Arab Emirates",
+  "ae": "Falme za Kiarabu",
   "@ae": {
     "description": "text"
   },
-  "ag": "Antigua and Barbuda",
+  "ag": "Antigua na Barbuda",
   "@ag": {
     "description": "text"
   },
@@ -55,7 +55,7 @@
   "@af": {
     "description": "text"
   },
-  "al": "Albania",
+  "al": "albania",
   "@al": {
     "description": "text"
   },
@@ -71,11 +71,11 @@
   "@aq": {
     "description": "text"
   },
-  "ar": "Argentina",
+  "ar": "Ajentina",
   "@ar": {
     "description": "text"
   },
-  "as": "American Samoa",
+  "as": "Samoa ya Amerika",
   "@as": {
     "description": "text"
   },
@@ -95,11 +95,11 @@
   "@ax": {
     "description": "text"
   },
-  "az": "Azerbaijan",
+  "az": "Azabajani",
   "@az": {
     "description": "text"
   },
-  "ba": "Bosnia and Herzegovina",
+  "ba": "Bosnia na Herzegovina",
   "@ba": {
     "description": "text"
   },
@@ -111,7 +111,7 @@
   "@bd": {
     "description": "text"
   },
-  "be": "Belgium",
+  "be": "Ubelgiji",
   "@be": {
     "description": "text"
   },
@@ -135,7 +135,7 @@
   "@bj": {
     "description": "text"
   },
-  "bl": "Saint Barthélemy",
+  "bl": "Mtakatifu Barthélemy",
   "@bl": {
     "description": "text"
   },
@@ -155,7 +155,7 @@
   "@bq": {
     "description": "text"
   },
-  "br": "Brazil",
+  "br": "Brazili",
   "@br": {
     "description": "text"
   },
@@ -167,7 +167,7 @@
   "@bt": {
     "description": "text"
   },
-  "bv": "Bouvet Island",
+  "bv": "Kisiwa cha Bouvet",
   "@bv": {
     "description": "text"
   },
@@ -175,7 +175,7 @@
   "@bw": {
     "description": "text"
   },
-  "by": "Belarus",
+  "by": "Belarusi",
   "@by": {
     "description": "text"
   },
@@ -187,23 +187,23 @@
   "@ca": {
     "description": "text"
   },
-  "cc": "Cocos [Keeling] Islands",
+  "cc": "Visiwa vya Cocos [Keeling]",
   "@cc": {
     "description": "text"
   },
-  "cd": "Democratic Republic of the Congo",
+  "cd": "Jamhuri ya Kidemokrasia ya Kongo",
   "@cd": {
     "description": "text"
   },
-  "cf": "Central African Republic",
+  "cf": "Jamhuri ya Afrika ya Kati",
   "@cf": {
     "description": "text"
   },
-  "cg": "Republic of the Congo",
+  "cg": "Jamhuri ya Kongo",
   "@cg": {
     "description": "text"
   },
-  "ch": "Switzerland",
+  "ch": "Uswizi",
   "@ch": {
     "description": "text"
   },
@@ -211,7 +211,7 @@
   "@ci": {
     "description": "text"
   },
-  "ck": "Cook Islands",
+  "ck": "Visiwa vya Cook",
   "@ck": {
     "description": "text"
   },
@@ -219,15 +219,15 @@
   "@cl": {
     "description": "text"
   },
-  "cm": "Cameroon",
+  "cm": "Kamerun",
   "@cm": {
     "description": "text"
   },
-  "cn": "China",
+  "cn": "Uchina",
   "@cn": {
     "description": "text"
   },
-  "co": "Colombia",
+  "co": "Kolombia",
   "@co": {
     "description": "text"
   },
@@ -247,7 +247,7 @@
   "@cw": {
     "description": "text"
   },
-  "cx": "Christmas Island",
+  "cx": "Kisiwa cha Krismasi",
   "@cx": {
     "description": "text"
   },
@@ -259,7 +259,7 @@
   "@dm": {
     "description": "text"
   },
-  "doZ": "Dominican Republic",
+  "doZ": "Jamhuri ya Dominika",
   "@doZ": {
     "description": "text"
   },
@@ -267,7 +267,7 @@
   "@dz": {
     "description": "text"
   },
-  "ec": "Ecuador",
+  "ec": "Ekvado",
   "@ec": {
     "description": "text"
   },
@@ -275,11 +275,11 @@
   "@ee": {
     "description": "text"
   },
-  "eg": "Egypt",
+  "eg": "Misri",
   "@eg": {
     "description": "text"
   },
-  "eh": "Western Sahara",
+  "eh": "Sahara Magharibi",
   "@eh": {
     "description": "text"
   },
@@ -287,7 +287,7 @@
   "@er": {
     "description": "text"
   },
-  "es": "Spain",
+  "es": "Uhispania",
   "@es": {
     "description": "text"
   },
@@ -295,7 +295,7 @@
   "@et": {
     "description": "text"
   },
-  "fi": "Finland",
+  "fi": "Ufini",
   "@fi": {
     "description": "text"
   },
@@ -303,7 +303,7 @@
   "@fj": {
     "description": "text"
   },
-  "fk": "Falkland Islands",
+  "fk": "Visiwa vya Falkland",
   "@fk": {
     "description": "text"
   },
@@ -311,11 +311,11 @@
   "@fm": {
     "description": "text"
   },
-  "fo": "Faroe Islands",
+  "fo": "Visiwa vya Faroe",
   "@fo": {
     "description": "text"
   },
-  "fr": "France",
+  "fr": "Ufaransa",
   "@fr": {
     "description": "text"
   },
@@ -323,7 +323,7 @@
   "@ga": {
     "description": "text"
   },
-  "gb": "United Kingdom",
+  "gb": "Uingereza",
   "@gb": {
     "description": "text"
   },
@@ -335,7 +335,7 @@
   "@ge": {
     "description": "text"
   },
-  "gf": "French Guiana",
+  "gf": "Guiana ya Kifaransa",
   "@gf": {
     "description": "text"
   },
@@ -359,7 +359,7 @@
   "@gm": {
     "description": "text"
   },
-  "gn": "Guinea",
+  "gn": "Gine",
   "@gn": {
     "description": "text"
   },
@@ -367,15 +367,15 @@
   "@gp": {
     "description": "text"
   },
-  "gq": "Equatorial Guinea",
+  "gq": "Guinea ya Equatorial",
   "@gq": {
     "description": "text"
   },
-  "gr": "Greece",
+  "gr": "Ugiriki",
   "@gr": {
     "description": "text"
   },
-  "gs": "South Georgia and the South Sandwich Islands",
+  "gs": "Georgia ya Kusini na Visiwa vya Sandwich Kusini",
   "@gs": {
     "description": "text"
   },
@@ -399,7 +399,7 @@
   "@hk": {
     "description": "text"
   },
-  "hm": "Heard Island and McDonald Islands",
+  "hm": "Kisiwa cha Heard na Visiwa vya McDonald",
   "@hm": {
     "description": "text"
   },
@@ -407,11 +407,11 @@
   "@hn": {
     "description": "text"
   },
-  "hr": "Croatia",
+  "hr": "Kroatia",
   "@hr": {
     "description": "text"
   },
-  "cz": "Czech Republic",
+  "cz": "Jamhuri ya Czech",
   "@cz": {
     "description": "text"
   },
@@ -419,11 +419,11 @@
   "@dj": {
     "description": "text"
   },
-  "cy": "Cyprus",
+  "cy": "Kupro",
   "@cy": {
     "description": "text"
   },
-  "de": "Germany",
+  "de": "Ujerumani",
   "@de": {
     "description": "text"
   },
@@ -431,7 +431,7 @@
   "@ht": {
     "description": "text"
   },
-  "hu": "Hungary",
+  "hu": "Hungari",
   "@hu": {
     "description": "text"
   },
@@ -443,27 +443,27 @@
   "@ie": {
     "description": "text"
   },
-  "il": "Israel",
+  "il": "Israeli",
   "@il": {
     "description": "text"
   },
-  "im": "Isle of Man",
+  "im": "Kisiwa cha Man",
   "@im": {
     "description": "text"
   },
-  "inZ": "India",
+  "inZ": "hindi",
   "@inZ": {
     "description": "text"
   },
-  "io": "British Indian Ocean Territory",
+  "io": "Wilaya ya Bahari Hindi ya Uingereza",
   "@io": {
     "description": "text"
   },
-  "iq": "Iraq",
+  "iq": "Iraki",
   "@iq": {
     "description": "text"
   },
-  "ir": "Iran",
+  "ir": "Irani",
   "@ir": {
     "description": "text"
   },
@@ -471,7 +471,7 @@
   "@isZ": {
     "description": "text"
   },
-  "it": "Italy",
+  "it": "Italia",
   "@it": {
     "description": "text"
   },
@@ -479,11 +479,11 @@
   "@je": {
     "description": "text"
   },
-  "jm": "Jamaica",
+  "jm": "Jamaika",
   "@jm": {
     "description": "text"
   },
-  "jo": "Jordan",
+  "jo": "Yordani",
   "@jo": {
     "description": "text"
   },
@@ -499,7 +499,7 @@
   "@kg": {
     "description": "text"
   },
-  "kh": "Cambodia",
+  "kh": "Kambodia",
   "@kh": {
     "description": "text"
   },
@@ -511,15 +511,15 @@
   "@km": {
     "description": "text"
   },
-  "kn": "Saint Kitts and Nevis",
+  "kn": "Saint Kitts na Nevis",
   "@kn": {
     "description": "text"
   },
-  "kp": "North Korea",
+  "kp": "Korea Kaskazini",
   "@kp": {
     "description": "text"
   },
-  "kr": "South Korea",
+  "kr": "Korea Kusini",
   "@kr": {
     "description": "text"
   },
@@ -527,7 +527,7 @@
   "@kw": {
     "description": "text"
   },
-  "ky": "Cayman Islands",
+  "ky": "Visiwa vya Cayman",
   "@ky": {
     "description": "text"
   },
@@ -543,7 +543,7 @@
   "@lb": {
     "description": "text"
   },
-  "lc": "Saint Lucia",
+  "lc": "Mtakatifu Lucia",
   "@lc": {
     "description": "text"
   },
@@ -579,7 +579,7 @@
   "@ly": {
     "description": "text"
   },
-  "ma": "Morocco",
+  "ma": "Moroko",
   "@ma": {
     "description": "text"
   },
@@ -587,7 +587,7 @@
   "@mc": {
     "description": "text"
   },
-  "md": "Moldova",
+  "md": "Moldavia",
   "@md": {
     "description": "text"
   },
@@ -595,23 +595,23 @@
   "@me": {
     "description": "text"
   },
-  "mf": "Saint Martin",
+  "mf": "Mtakatifu Martin",
   "@mf": {
     "description": "text"
   },
-  "mg": "Madagascar",
+  "mg": "Madagaska",
   "@mg": {
     "description": "text"
   },
-  "mh": "Marshall Islands",
+  "mh": "Visiwa vya Marshall",
   "@mh": {
     "description": "text"
   },
-  "mk": "North Macedonia",
+  "mk": "Makedonia ya Kaskazini",
   "@mk": {
     "description": "text"
   },
-  "ml": "Mali",
+  "ml": "mali",
   "@ml": {
     "description": "text"
   },
@@ -627,7 +627,7 @@
   "@mo": {
     "description": "text"
   },
-  "mp": "Northern Mariana Islands",
+  "mp": "Visiwa vya Mariana Kaskazini",
   "@mp": {
     "description": "text"
   },
@@ -647,7 +647,7 @@
   "@mt": {
     "description": "text"
   },
-  "mu": "Mauritius",
+  "mu": "Morisi",
   "@mu": {
     "description": "text"
   },
@@ -667,7 +667,7 @@
   "@my": {
     "description": "text"
   },
-  "mz": "Mozambique",
+  "mz": "Msumbiji",
   "@mz": {
     "description": "text"
   },
@@ -675,7 +675,7 @@
   "@na": {
     "description": "text"
   },
-  "nc": "New Caledonia",
+  "nc": "Kaledonia Mpya",
   "@nc": {
     "description": "text"
   },
@@ -683,7 +683,7 @@
   "@ne": {
     "description": "text"
   },
-  "nf": "Norfolk Island",
+  "nf": "Kisiwa cha Norfolk",
   "@nf": {
     "description": "text"
   },
@@ -691,11 +691,11 @@
   "@ng": {
     "description": "text"
   },
-  "ni": "Nicaragua",
+  "ni": "Nikaragua",
   "@ni": {
     "description": "text"
   },
-  "nl": "Netherlands",
+  "nl": "Uholanzi",
   "@nl": {
     "description": "text"
   },
@@ -719,7 +719,7 @@
   "@nz": {
     "description": "text"
   },
-  "om": "Oman",
+  "om": "oman",
   "@om": {
     "description": "text"
   },
@@ -731,15 +731,15 @@
   "@pe": {
     "description": "text"
   },
-  "pf": "French Polynesia",
+  "pf": "Polynesia ya Ufaransa",
   "@pf": {
     "description": "text"
   },
-  "pg": "Papua New Guinea",
+  "pg": "Papua Guinea Mpya",
   "@pg": {
     "description": "text"
   },
-  "ph": "Philippines",
+  "ph": "Ufilipino",
   "@ph": {
     "description": "text"
   },
@@ -751,11 +751,11 @@
   "@pl": {
     "description": "text"
   },
-  "pm": "Saint Pierre and Miquelon",
+  "pm": "Saint Pierre na Miquelon",
   "@pm": {
     "description": "text"
   },
-  "pn": "Pitcairn Islands",
+  "pn": "Visiwa vya Pitcairn",
   "@pn": {
     "description": "text"
   },
@@ -763,11 +763,11 @@
   "@pr": {
     "description": "text"
   },
-  "ps": "Palestine",
+  "ps": "Palestina",
   "@ps": {
     "description": "text"
   },
-  "pt": "Portugal",
+  "pt": "Ureno",
   "@pt": {
     "description": "text"
   },
@@ -775,11 +775,11 @@
   "@pw": {
     "description": "text"
   },
-  "py": "Paraguay",
+  "py": "Paragwai",
   "@py": {
     "description": "text"
   },
-  "qa": "Qatar",
+  "qa": "Katari",
   "@qa": {
     "description": "text"
   },
@@ -787,7 +787,7 @@
   "@re": {
     "description": "text"
   },
-  "ro": "Romania",
+  "ro": "romania",
   "@ro": {
     "description": "text"
   },
@@ -795,7 +795,7 @@
   "@rs": {
     "description": "text"
   },
-  "ru": "Russia",
+  "ru": "Urusi",
   "@ru": {
     "description": "text"
   },
@@ -807,19 +807,19 @@
   "@sa": {
     "description": "text"
   },
-  "sb": "Solomon Islands",
+  "sb": "Visiwa vya Solomon",
   "@sb": {
     "description": "text"
   },
-  "sc": "Seychelles",
+  "sc": "Shelisheli",
   "@sc": {
     "description": "text"
   },
-  "sd": "Sudan",
+  "sd": "Sudani",
   "@sd": {
     "description": "text"
   },
-  "se": "Sweden",
+  "se": "Uswidi",
   "@se": {
     "description": "text"
   },
@@ -827,15 +827,15 @@
   "@sg": {
     "description": "text"
   },
-  "sh": "Saint Helena",
+  "sh": "Mtakatifu Helena",
   "@sh": {
     "description": "text"
   },
-  "si": "Slovenia",
+  "si": "Kislovenia",
   "@si": {
     "description": "text"
   },
-  "sj": "Svalbard and Jan Mayen",
+  "sj": "Svalbard na Jan Mayen",
   "@sj": {
     "description": "text"
   },
@@ -863,11 +863,11 @@
   "@sr": {
     "description": "text"
   },
-  "ss": "South Sudan",
+  "ss": "Sudan Kusini",
   "@ss": {
     "description": "text"
   },
-  "st": "São Tomé and Príncipe",
+  "st": "São Tomé na Príncipe",
   "@st": {
     "description": "text"
   },
@@ -887,15 +887,15 @@
   "@sz": {
     "description": "text"
   },
-  "tc": "Turks and Caicos Islands",
+  "tc": "Visiwa vya Turks na Caicos",
   "@tc": {
     "description": "text"
   },
-  "td": "Chad",
+  "td": "Chadi",
   "@td": {
     "description": "text"
   },
-  "tf": "French Southern Territories",
+  "tf": "Wilaya ya Kusini ya Ufar",
   "@tf": {
     "description": "text"
   },
@@ -907,7 +907,7 @@
   "@th": {
     "description": "text"
   },
-  "tj": "Tajikistan",
+  "tj": "Tajikistani",
   "@tj": {
     "description": "text"
   },
@@ -915,7 +915,7 @@
   "@tk": {
     "description": "text"
   },
-  "tl": "East Timor",
+  "tl": "Timor ya Mashariki",
   "@tl": {
     "description": "text"
   },
@@ -931,11 +931,11 @@
   "@to": {
     "description": "text"
   },
-  "tr": "Turkey",
+  "tr": "Uturuki",
   "@tr": {
     "description": "text"
   },
-  "tt": "Trinidad and Tobago",
+  "tt": "Trinidad na Tobago",
   "@tt": {
     "description": "text"
   },
@@ -959,11 +959,11 @@
   "@ug": {
     "description": "text"
   },
-  "um": "U.S. Minor Outlying Islands",
+  "um": "Visiwa vidogo vya mbali vya Marekani",
   "@um": {
     "description": "text"
   },
-  "us": "United States",
+  "us": "Marekani",
   "@us": {
     "description": "text"
   },
@@ -975,11 +975,11 @@
   "@uz": {
     "description": "text"
   },
-  "va": "Vatican City",
+  "va": "Jiji la Vatican",
   "@va": {
     "description": "text"
   },
-  "vc": "Saint Vincent and the Grenadines",
+  "vc": "Saint Vincent na Grenadines",
   "@vc": {
     "description": "text"
   },
@@ -987,11 +987,11 @@
   "@ve": {
     "description": "text"
   },
-  "vg": "British Virgin Islands",
+  "vg": "Visiwa vya Virgin vya Britani",
   "@vg": {
     "description": "text"
   },
-  "vi": "U.S. Virgin Islands",
+  "vi": "Visiwa vya Virgin vya Marekani",
   "@vi": {
     "description": "text"
   },
@@ -1003,7 +1003,7 @@
   "@vu": {
     "description": "text"
   },
-  "wf": "Wallis and Futuna",
+  "wf": "Wallis na Futuna",
   "@wf": {
     "description": "text"
   },
@@ -1015,7 +1015,7 @@
   "@xk": {
     "description": "text"
   },
-  "ye": "Yemen",
+  "ye": "Yemeni",
   "@ye": {
     "description": "text"
   },
@@ -1023,7 +1023,7 @@
   "@yt": {
     "description": "text"
   },
-  "za": "South Africa",
+  "za": "Afrika Kusini",
   "@za": {
     "description": "text"
   },

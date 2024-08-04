@@ -1,0 +1,1038 @@
+{
+  "selectRegion": "ಪ್ರದೇಶವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ",
+  "@selectRegion": {
+    "description": "text"
+  },
+  "all": "ಎಲ್ಲಾ",
+  "@all": {
+    "description": "text"
+  },
+  "europe": "ಯುರೋಪ್",
+  "@europe": {
+    "description": "text"
+  },
+  "asia": "ಏಷ್ಯಾ",
+  "@asia": {
+    "description": "text"
+  },
+  "africa": "ಆಫ್ರಿಕಾ",
+  "@africa": {
+    "description": "text"
+  },
+  "northAmerica": "ಉತ್ತರ ಅಮೆರಿಕ",
+  "@northAmerica": {
+    "description": "text"
+  },
+  "southAmerica": "ದಕ್ಷಿಣ ಅಮೆರಿಕ",
+  "@southAmerica": {
+    "description": "text"
+  },
+  "oceania": "ಓಷಿಯಾನಿಯಾ",
+  "@oceania": {
+    "description": "text"
+  },
+  "yourScore": "ನಿಮ್ಮ ಸ್ಕೋರ್",
+  "@yourScore": {
+    "description": "text"
+  },
+  "ad": "ಅಂಡೋರಾ",
+  "@ad": {
+    "description": "text"
+  },
+  "ae": "ಸಂಯುಕ್ತ ಅರಬ್ ಎಮಿರೇಟ್ಸ್",
+  "@ae": {
+    "description": "text"
+  },
+  "ag": "ಆಂಟಿಗುವಾ ಮತ್ತು ಬಾರ್ಬುಡಾ",
+  "@ag": {
+    "description": "text"
+  },
+  "ai": "ಅಂಗುಯಿಲಾ",
+  "@ai": {
+    "description": "text"
+  },
+  "af": "ಅಫ್ಘಾನಿಸ್ತಾನ",
+  "@af": {
+    "description": "text"
+  },
+  "al": "ಅಲ್ಬೇನಿಯಾ",
+  "@al": {
+    "description": "text"
+  },
+  "am": "ಅರ್ಮೇನಿಯಾ",
+  "@am": {
+    "description": "text"
+  },
+  "ao": "ಅಂಗೋಲಾ",
+  "@ao": {
+    "description": "text"
+  },
+  "aq": "ಅಂಟಾರ್ಕ್ಟಿಕಾ",
+  "@aq": {
+    "description": "text"
+  },
+  "ar": "ಅರ್ಜೆಂಟೀನಾ",
+  "@ar": {
+    "description": "text"
+  },
+  "as": "ಅಮೆರಿಕನ್ ಸಮೋವಾ",
+  "@as": {
+    "description": "text"
+  },
+  "at": "ಆಸ್ಟ್ರಿಯಾ",
+  "@at": {
+    "description": "text"
+  },
+  "au": "ಆಸ್ಟ್ರೇಲಿಯಾ",
+  "@au": {
+    "description": "text"
+  },
+  "aw": "ಅರುಬಾ",
+  "@aw": {
+    "description": "text"
+  },
+  "ax": "ಆಲ್ಯಾಂಡ್",
+  "@ax": {
+    "description": "text"
+  },
+  "az": "ಅಜೆರ್ಬೈಜಾನ್",
+  "@az": {
+    "description": "text"
+  },
+  "ba": "ಬೊಸ್ನಿಯಾ ಮತ್ತು ಹರ್ಜೆ",
+  "@ba": {
+    "description": "text"
+  },
+  "bb": "ಬಾರ್ಬಡೋಸ್",
+  "@bb": {
+    "description": "text"
+  },
+  "bd": "ಬಾಂಗ್ಲಾದೇಶ",
+  "@bd": {
+    "description": "text"
+  },
+  "be": "ಬೆಲ್ಜಿಯಂ",
+  "@be": {
+    "description": "text"
+  },
+  "bf": "ಬುರ್ಕಿನಾ ಫಾಸೊ",
+  "@bf": {
+    "description": "text"
+  },
+  "bg": "ಬಲ್ಗೇರಿಯಾ",
+  "@bg": {
+    "description": "text"
+  },
+  "bh": "ಬಹ್ರೇನ್",
+  "@bh": {
+    "description": "text"
+  },
+  "bi": "ಬುರುಂಡಿ",
+  "@bi": {
+    "description": "text"
+  },
+  "bj": "ಬೆನಿನ್",
+  "@bj": {
+    "description": "text"
+  },
+  "bl": "ಸೇಂಟ್ ಬಾರ್ತೆಲೆಮಿ",
+  "@bl": {
+    "description": "text"
+  },
+  "bm": "ಬರ್ಮುಡಾ",
+  "@bm": {
+    "description": "text"
+  },
+  "bn": "ಬ್ರೂನಿ",
+  "@bn": {
+    "description": "text"
+  },
+  "bo": "ಬೊಲಿವಿಯಾ",
+  "@bo": {
+    "description": "text"
+  },
+  "bq": "ಬೊನೈರ್",
+  "@bq": {
+    "description": "text"
+  },
+  "br": "ಬ್ರೆಜಿಲ್",
+  "@br": {
+    "description": "text"
+  },
+  "bs": "ಬಹಾಮಾಸ್",
+  "@bs": {
+    "description": "text"
+  },
+  "bt": "ಭೂತಾನ್",
+  "@bt": {
+    "description": "text"
+  },
+  "bv": "ಬೌವೆಟ್ ದ್ವೀಪ",
+  "@bv": {
+    "description": "text"
+  },
+  "bw": "ಬೋಟ್ಸ್ವಾನ",
+  "@bw": {
+    "description": "text"
+  },
+  "by": "ಬೆಲಾರಸ್",
+  "@by": {
+    "description": "text"
+  },
+  "bz": "ಬೆಲೀಜ್",
+  "@bz": {
+    "description": "text"
+  },
+  "ca": "ಕೆನಡಾ",
+  "@ca": {
+    "description": "text"
+  },
+  "cc": "ಕೊಕೋಸ್ [ಕೀಲಿಂಗ್] ದ್ವೀಪಗಳು",
+  "@cc": {
+    "description": "text"
+  },
+  "cd": "ಡೆಮಾಕ್ರಟಿಕ್ ರಿಪಬ್ಲಿಕ್ ಆಫ್ ಕಾಂಗೋ",
+  "@cd": {
+    "description": "text"
+  },
+  "cf": "ಮಧ್ಯ ಆಫ್ರಿಕಾದ ಗಣರಾಜ್ಯ",
+  "@cf": {
+    "description": "text"
+  },
+  "cg": "ಕಾಂಗೋ ಗಣರಾಜ್ಯ",
+  "@cg": {
+    "description": "text"
+  },
+  "ch": "ಸ್ವಿಜರ್‌ಲ್ಯಾಂಡ್",
+  "@ch": {
+    "description": "text"
+  },
+  "ci": "ಐವರಿ ಕೋಸ್ಟ್",
+  "@ci": {
+    "description": "text"
+  },
+  "ck": "ಕುಕ್ ದ್ವೀಪಗಳು",
+  "@ck": {
+    "description": "text"
+  },
+  "cl": "ಚಿಲಿ",
+  "@cl": {
+    "description": "text"
+  },
+  "cm": "ಕ್ಯಾಮರೂನ್",
+  "@cm": {
+    "description": "text"
+  },
+  "cn": "ಚೀನಾ",
+  "@cn": {
+    "description": "text"
+  },
+  "co": "ಕೊಲಂಬಿಯಾ",
+  "@co": {
+    "description": "text"
+  },
+  "cr": "ಕೋಸ್ಟರಿಕಾ",
+  "@cr": {
+    "description": "text"
+  },
+  "cu": "ಕ್ಯೂಬಾ",
+  "@cu": {
+    "description": "text"
+  },
+  "cv": "ಕೇಪ್ ವರ್ಡೆ",
+  "@cv": {
+    "description": "text"
+  },
+  "cw": "ಕುರಾಕೊ",
+  "@cw": {
+    "description": "text"
+  },
+  "cx": "ಕ್ರಿಸ್ಮಸ್ ದ್ವೀಪ",
+  "@cx": {
+    "description": "text"
+  },
+  "dk": "ಡೆನ್ಮಾರ್ಕ್",
+  "@dk": {
+    "description": "text"
+  },
+  "dm": "ಡೊಮಿನಿಕಾ",
+  "@dm": {
+    "description": "text"
+  },
+  "doZ": "ಡೊಮಿನಿಕನ್ ಗಣ",
+  "@doZ": {
+    "description": "text"
+  },
+  "dz": "ಅಲ್ಜೀರಿಯಾ",
+  "@dz": {
+    "description": "text"
+  },
+  "ec": "ಈಕ್ವೆಡಾರ್",
+  "@ec": {
+    "description": "text"
+  },
+  "ee": "ಎಸ್ಟೋನಿಯಾ",
+  "@ee": {
+    "description": "text"
+  },
+  "eg": "ಈಜಿಪ್ಟ್",
+  "@eg": {
+    "description": "text"
+  },
+  "eh": "ಪಶ್ಚಿಮ ಸಹಾರಾ",
+  "@eh": {
+    "description": "text"
+  },
+  "er": "ಎರಿಟ್ರಿಯಾ",
+  "@er": {
+    "description": "text"
+  },
+  "es": "ಸ್ಪೇನ್",
+  "@es": {
+    "description": "text"
+  },
+  "et": "ಇಥಿಯೋಪಿಯಾ",
+  "@et": {
+    "description": "text"
+  },
+  "fi": "ಫಿನ್ಲ್ಯಾಂಡ್",
+  "@fi": {
+    "description": "text"
+  },
+  "fj": "ಫಿಜಿ",
+  "@fj": {
+    "description": "text"
+  },
+  "fk": "ಫಾಕ್ಲ್ಯಾಂಡ್ ದ್ವೀಪಗಳು",
+  "@fk": {
+    "description": "text"
+  },
+  "fm": "ಮೈಕ್ರೋನೇಶಿಯಾ",
+  "@fm": {
+    "description": "text"
+  },
+  "fo": "ಫರೋ ದ್ವೀಪಗಳು",
+  "@fo": {
+    "description": "text"
+  },
+  "fr": "ಫ್ರಾನ್ಸ್",
+  "@fr": {
+    "description": "text"
+  },
+  "ga": "ಗ್ಯಾಬೊನ್",
+  "@ga": {
+    "description": "text"
+  },
+  "gb": "ಯುನೈಟೆಡ್ ಕಿಂಗ್ಡ",
+  "@gb": {
+    "description": "text"
+  },
+  "gd": "ಗ್ರೆನಡಾ",
+  "@gd": {
+    "description": "text"
+  },
+  "ge": "ಜಾರ್ಜಿಯಾ",
+  "@ge": {
+    "description": "text"
+  },
+  "gf": "ಫ್ರೆಂಚ್ ಗಯಾನಾ",
+  "@gf": {
+    "description": "text"
+  },
+  "gg": "ಗುರ್ನಸಿ",
+  "@gg": {
+    "description": "text"
+  },
+  "gh": "ಘಾನಾ",
+  "@gh": {
+    "description": "text"
+  },
+  "gi": "ಜಿಬ್ರಾಲ್ಟರ್",
+  "@gi": {
+    "description": "text"
+  },
+  "gl": "ಗ್ರೀನ್‌ಲ್ಯಾಂಡ್",
+  "@gl": {
+    "description": "text"
+  },
+  "gm": "ಗ್ಯಾಂಬಿಯಾ",
+  "@gm": {
+    "description": "text"
+  },
+  "gn": "ಗಿನಿಯಾ",
+  "@gn": {
+    "description": "text"
+  },
+  "gp": "ಗ್ವಾಡೆಲೋಪ್",
+  "@gp": {
+    "description": "text"
+  },
+  "gq": "ಇಕ್ವೆಟೊರಿಯಲ್ ಗಿನಿ",
+  "@gq": {
+    "description": "text"
+  },
+  "gr": "ಗ್ರೀಸ್",
+  "@gr": {
+    "description": "text"
+  },
+  "gs": "ದಕ್ಷಿಣ ಜಾರ್ಜಿಯಾ ಮತ್ತು ದಕ್ಷಿಣ ಸ್ಯಾಂಡ್ವಿಚ್ ದ್ವೀಪಗಳು",
+  "@gs": {
+    "description": "text"
+  },
+  "gt": "ಗ್ವಾಟೆಮಾಲಾ",
+  "@gt": {
+    "description": "text"
+  },
+  "gu": "ಗುವಾಮ್",
+  "@gu": {
+    "description": "text"
+  },
+  "gw": "ಗಿನಿಯಾ-ಬಿಸ್ಸೌ",
+  "@gw": {
+    "description": "text"
+  },
+  "gy": "ಗಯಾನಾ",
+  "@gy": {
+    "description": "text"
+  },
+  "hk": "ಹಾಂಗ್ ಕಾಂಗ್",
+  "@hk": {
+    "description": "text"
+  },
+  "hm": "ಹರ್ಡ್ ದ್ವೀಪ ಮತ್ತು ಮೆಕ್ಡೊನಾಲ್ಡ್",
+  "@hm": {
+    "description": "text"
+  },
+  "hn": "ಹೊಂಡುರಾಸ್",
+  "@hn": {
+    "description": "text"
+  },
+  "hr": "ಕ್ರೊಯೇಷಿಯಾ",
+  "@hr": {
+    "description": "text"
+  },
+  "cz": "ಜೆಕ್ ಗಣರಾಜ್ಯ",
+  "@cz": {
+    "description": "text"
+  },
+  "dj": "ಜಿಬೌಟಿ",
+  "@dj": {
+    "description": "text"
+  },
+  "cy": "ಸೈಪ್ರಸ್",
+  "@cy": {
+    "description": "text"
+  },
+  "de": "ಜರ್ಮನಿ",
+  "@de": {
+    "description": "text"
+  },
+  "ht": "ಹೈಟಿ",
+  "@ht": {
+    "description": "text"
+  },
+  "hu": "ಹಂಗೇರಿ",
+  "@hu": {
+    "description": "text"
+  },
+  "id": "ಇಂಡೋನೇಷ್ಯಾ",
+  "@id": {
+    "description": "text"
+  },
+  "ie": "ಐರ್ಲೆಂಡ್",
+  "@ie": {
+    "description": "text"
+  },
+  "il": "ಇಸ್ರೇಲ್",
+  "@il": {
+    "description": "text"
+  },
+  "im": "ಐಲ್ ಆಫ್ ಮ್ಯಾನ್",
+  "@im": {
+    "description": "text"
+  },
+  "inZ": "ಭಾರತ",
+  "@inZ": {
+    "description": "text"
+  },
+  "io": "ಬ್ರಿಟಿಷ್ ಹಿಂದೂ ಮಹಾಸಾಗರದ ಪ್ರದೇಶ",
+  "@io": {
+    "description": "text"
+  },
+  "iq": "ಇರಾಕ್",
+  "@iq": {
+    "description": "text"
+  },
+  "ir": "ಇರಾನ್",
+  "@ir": {
+    "description": "text"
+  },
+  "isZ": "ಐಸ್ಲ್ಯಾಂಡ್",
+  "@isZ": {
+    "description": "text"
+  },
+  "it": "ಇಟಲಿ",
+  "@it": {
+    "description": "text"
+  },
+  "je": "ಜರ್ಸಿ",
+  "@je": {
+    "description": "text"
+  },
+  "jm": "ಜಮೈಕಾ",
+  "@jm": {
+    "description": "text"
+  },
+  "jo": "ಜೋರ್ಡಾನ್",
+  "@jo": {
+    "description": "text"
+  },
+  "jp": "ಜಪಾನ್",
+  "@jp": {
+    "description": "text"
+  },
+  "ke": "ಕೀನ್ಯಾ",
+  "@ke": {
+    "description": "text"
+  },
+  "kg": "ಕಿರ್ಗಿಸ್ತಾನ್",
+  "@kg": {
+    "description": "text"
+  },
+  "kh": "ಕಾಂಬೋಡಿಯಾ",
+  "@kh": {
+    "description": "text"
+  },
+  "ki": "ಕಿರಿಬಾಟಿ",
+  "@ki": {
+    "description": "text"
+  },
+  "km": "ಕೊಮೊರೊಸ್",
+  "@km": {
+    "description": "text"
+  },
+  "kn": "ಸೇಂಟ್ ಕಿಟ್ಸ್ ಮತ್ತು ನೆವಿಸ್",
+  "@kn": {
+    "description": "text"
+  },
+  "kp": "ಉತ್ತರ ಕೊರಿಯಾ",
+  "@kp": {
+    "description": "text"
+  },
+  "kr": "ದಕ್ಷಿಣ ಕೊರಿಯಾ",
+  "@kr": {
+    "description": "text"
+  },
+  "kw": "ಕುವೈತ್",
+  "@kw": {
+    "description": "text"
+  },
+  "ky": "ಕೇಮನ್ ದ್ವೀಪಗಳು",
+  "@ky": {
+    "description": "text"
+  },
+  "kz": "ಕಜಕಿಸ್ತಾನ",
+  "@kz": {
+    "description": "text"
+  },
+  "la": "ಲಾವೋಸ್",
+  "@la": {
+    "description": "text"
+  },
+  "lb": "ಲೆಬನಾನ್",
+  "@lb": {
+    "description": "text"
+  },
+  "lc": "ಸೇಂಟ್ ಲೂಸಿಯಾ",
+  "@lc": {
+    "description": "text"
+  },
+  "li": "ಲಿಚ್ಟೆನ್‌ಸ್ಟೈನ್",
+  "@li": {
+    "description": "text"
+  },
+  "lk": "ಶ್ರೀಲಂಕಾ",
+  "@lk": {
+    "description": "text"
+  },
+  "lr": "ಲೈಬೀರಿಯಾ",
+  "@lr": {
+    "description": "text"
+  },
+  "ls": "ಲೆಸೊಥೊ",
+  "@ls": {
+    "description": "text"
+  },
+  "lt": "ಲಿಥುವೇನಿಯಾ",
+  "@lt": {
+    "description": "text"
+  },
+  "lu": "ಲಕ್ಸೆಂಬರ್ಗ್",
+  "@lu": {
+    "description": "text"
+  },
+  "lv": "ಲಾಟ್ವಿಯಾ",
+  "@lv": {
+    "description": "text"
+  },
+  "ly": "ಲಿಬಿಯಾ",
+  "@ly": {
+    "description": "text"
+  },
+  "ma": "ಮೊರಾಕೊ",
+  "@ma": {
+    "description": "text"
+  },
+  "mc": "ಮೊನಾಕೊ",
+  "@mc": {
+    "description": "text"
+  },
+  "md": "ಮೊಲ್ಡೊವಾ",
+  "@md": {
+    "description": "text"
+  },
+  "me": "ಮಾಂಟೆನೆಗ್ರೊ",
+  "@me": {
+    "description": "text"
+  },
+  "mf": "ಸೇಂಟ್ ಮಾರ್ಟಿನ್",
+  "@mf": {
+    "description": "text"
+  },
+  "mg": "ಮಡಗಾಸ್ಕರ್",
+  "@mg": {
+    "description": "text"
+  },
+  "mh": "ಮಾರ್ಷಲ್ ದ್ವೀಪಗಳು",
+  "@mh": {
+    "description": "text"
+  },
+  "mk": "ಉತ್ತರ ಮ್ಯಾಸಿಡೋನಿಯಾ",
+  "@mk": {
+    "description": "text"
+  },
+  "ml": "ಮಾಲಿ",
+  "@ml": {
+    "description": "text"
+  },
+  "mm": "ಮ್ಯಾನ್ಮಾರ್ [ಬರ್ಮಾ]",
+  "@mm": {
+    "description": "text"
+  },
+  "mn": "ಮಂಗೋಲಿಯಾ",
+  "@mn": {
+    "description": "text"
+  },
+  "mo": "ಮಕಾವೊ",
+  "@mo": {
+    "description": "text"
+  },
+  "mp": "ಉತ್ತರ ಮರಿಯಾನಾ ದ್ವೀಪಗಳು",
+  "@mp": {
+    "description": "text"
+  },
+  "mq": "ಮಾರ್ಟಿನಿಕ್",
+  "@mq": {
+    "description": "text"
+  },
+  "mr": "ಮೌರಿಟಾನಿಯಾ",
+  "@mr": {
+    "description": "text"
+  },
+  "ms": "ಮಾಂಟ್ಸೆರಾಟ್",
+  "@ms": {
+    "description": "text"
+  },
+  "mt": "ಮಾಲ್ಟಾ",
+  "@mt": {
+    "description": "text"
+  },
+  "mu": "ಮಾರಿಷಸ್",
+  "@mu": {
+    "description": "text"
+  },
+  "mv": "ಮಾಲ್ಡೀವ್ಸ್",
+  "@mv": {
+    "description": "text"
+  },
+  "mw": "ಮಲಾವಿ",
+  "@mw": {
+    "description": "text"
+  },
+  "mx": "ಮೆಕ್ಸಿಕೊ",
+  "@mx": {
+    "description": "text"
+  },
+  "my": "ಮಲೇಷ್ಯಾ",
+  "@my": {
+    "description": "text"
+  },
+  "mz": "ಮೊಜಾಂಬಿಕ್",
+  "@mz": {
+    "description": "text"
+  },
+  "na": "ನಮೀಬಿಯಾ",
+  "@na": {
+    "description": "text"
+  },
+  "nc": "ನ್ಯೂ ಕ್ಯಾಲೆಡೋನಿಯಾ",
+  "@nc": {
+    "description": "text"
+  },
+  "ne": "ನೈಜರ್",
+  "@ne": {
+    "description": "text"
+  },
+  "nf": "ನಾರ್ಫೋಕ್ ದ್ವೀಪ",
+  "@nf": {
+    "description": "text"
+  },
+  "ng": "ನೈಜೀರಿಯಾ",
+  "@ng": {
+    "description": "text"
+  },
+  "ni": "ನಿಕರಾಗುವಾ",
+  "@ni": {
+    "description": "text"
+  },
+  "nl": "ನೆದರ್ಲ್ಯಾಂಡ್ಸ್",
+  "@nl": {
+    "description": "text"
+  },
+  "no": "ನಾರ್ವೆ",
+  "@no": {
+    "description": "text"
+  },
+  "np": "ನೇಪಾಳ",
+  "@np": {
+    "description": "text"
+  },
+  "nr": "ನೌರು",
+  "@nr": {
+    "description": "text"
+  },
+  "nu": "ನಿಯು",
+  "@nu": {
+    "description": "text"
+  },
+  "nz": "ನ್ಯೂಜಿಲೆಂಡ್",
+  "@nz": {
+    "description": "text"
+  },
+  "om": "ಓಮನ್",
+  "@om": {
+    "description": "text"
+  },
+  "pa": "ಪನಾಮ",
+  "@pa": {
+    "description": "text"
+  },
+  "pe": "ಪೆರು",
+  "@pe": {
+    "description": "text"
+  },
+  "pf": "ಫ್ರೆಂಚ್ ಪಾಲಿನೇಷಿಯಾ",
+  "@pf": {
+    "description": "text"
+  },
+  "pg": "ಪಪುವಾ ನ್ಯೂಗಿನಿ",
+  "@pg": {
+    "description": "text"
+  },
+  "ph": "ಫಿಲಿಪೈನ್ಸ್",
+  "@ph": {
+    "description": "text"
+  },
+  "pk": "ಪಾಕಿಸ್ತಾನ",
+  "@pk": {
+    "description": "text"
+  },
+  "pl": "ಪೋಲೆಂಡ್",
+  "@pl": {
+    "description": "text"
+  },
+  "pm": "ಸೇಂಟ್ ಪಿಯರೆ ಮತ್ತು ಮಿಕ್ವೆಲಾನ್",
+  "@pm": {
+    "description": "text"
+  },
+  "pn": "ಪಿಟ್ಕೈರ್ನ್ ದ್ವೀಪಗಳು",
+  "@pn": {
+    "description": "text"
+  },
+  "pr": "ಪೋರ್ಟೊ ರಿಕೊ",
+  "@pr": {
+    "description": "text"
+  },
+  "ps": "ಪ್ಯಾಲೆಸ್ಟೈನ್",
+  "@ps": {
+    "description": "text"
+  },
+  "pt": "ಪೋರ್ಚುಗಲ್",
+  "@pt": {
+    "description": "text"
+  },
+  "pw": "ಫಾಲೋ",
+  "@pw": {
+    "description": "text"
+  },
+  "py": "ಪರಾಗ್ವೆ",
+  "@py": {
+    "description": "text"
+  },
+  "qa": "ಕತಾರ್",
+  "@qa": {
+    "description": "text"
+  },
+  "re": "ರೀಯೂನಿಯನ್",
+  "@re": {
+    "description": "text"
+  },
+  "ro": "ರೊಮೇನಿಯಾ",
+  "@ro": {
+    "description": "text"
+  },
+  "rs": "ಸೆರ್ಬಿಯಾ",
+  "@rs": {
+    "description": "text"
+  },
+  "ru": "ರಷ್ಯಾ",
+  "@ru": {
+    "description": "text"
+  },
+  "rw": "ರುವಾಂಡಾ",
+  "@rw": {
+    "description": "text"
+  },
+  "sa": "ಸೌದಿ ಅರೇಬಿಯಾ",
+  "@sa": {
+    "description": "text"
+  },
+  "sb": "ಸೋಲಮನ್ ದ್ವೀಪ",
+  "@sb": {
+    "description": "text"
+  },
+  "sc": "ಸೀಶೆಲ್ಸ್",
+  "@sc": {
+    "description": "text"
+  },
+  "sd": "ಸುಡಾನ್",
+  "@sd": {
+    "description": "text"
+  },
+  "se": "ಸ್ವೀಡನ್",
+  "@se": {
+    "description": "text"
+  },
+  "sg": "ಸಿಂಗಾಪುರ",
+  "@sg": {
+    "description": "text"
+  },
+  "sh": "ಸೇಂಟ್ ಹೆಲೆನಾ",
+  "@sh": {
+    "description": "text"
+  },
+  "si": "ಸ್ಲೊವೇನಿಯಾ",
+  "@si": {
+    "description": "text"
+  },
+  "sj": "ಸ್ವಾಲ್ಬಾರ್ಡ್ ಮತ್ತು ಜಾನ್ ಮಾಯೆನ್",
+  "@sj": {
+    "description": "text"
+  },
+  "sk": "ಸ್ಲೋವಾಕಿಯಾ",
+  "@sk": {
+    "description": "text"
+  },
+  "sl": "ಸಿಯೆರಾ ಲಿಯೋನ್",
+  "@sl": {
+    "description": "text"
+  },
+  "sm": "ಸ್ಯಾನ್ ಮರಿನೋ",
+  "@sm": {
+    "description": "text"
+  },
+  "sn": "ಸೆನೆಗಲ್",
+  "@sn": {
+    "description": "text"
+  },
+  "so": "ಸೊಮಾಲಿಯಾ",
+  "@so": {
+    "description": "text"
+  },
+  "sr": "ಸುರಿನಾಮ್",
+  "@sr": {
+    "description": "text"
+  },
+  "ss": "ದಕ್ಷಿಣ ಸುಡಾನ್",
+  "@ss": {
+    "description": "text"
+  },
+  "st": "ಸಾವೊ ಟೋಮೆ ಮತ್ತು ಪ್ರಿನ್ಸಿಪಿ",
+  "@st": {
+    "description": "text"
+  },
+  "sv": "ಎಲ್ ಸಾಲ್ವಡಾರ್",
+  "@sv": {
+    "description": "text"
+  },
+  "sx": "ಸೇಂಟ್ ಮಾರ್ಟೆನ್",
+  "@sx": {
+    "description": "text"
+  },
+  "sy": "ಸಿರಿಯಾ",
+  "@sy": {
+    "description": "text"
+  },
+  "sz": "ಸ್ವಾಜಿಲ್ಯಾಂಡ್",
+  "@sz": {
+    "description": "text"
+  },
+  "tc": "ಟರ್ಕ್ಸ್ ಮತ್ತು ಕೈಕೋಸ್ ದ್ವೀಪಗಳು",
+  "@tc": {
+    "description": "text"
+  },
+  "td": "ಚಾಡ್",
+  "@td": {
+    "description": "text"
+  },
+  "tf": "ಫ್ರೆಂಚ್ ದಕ್ಷಿಣ ಪ್ರಾಂತ್ಯಗಳು",
+  "@tf": {
+    "description": "text"
+  },
+  "tg": "ಟೊಗೊ",
+  "@tg": {
+    "description": "text"
+  },
+  "th": "ಥೈಲ್ಯಾಂಡ್",
+  "@th": {
+    "description": "text"
+  },
+  "tj": "ತಜಿಕಿಸ್ತಾನ್",
+  "@tj": {
+    "description": "text"
+  },
+  "tk": "ಟೋಕೆಲಾವ್",
+  "@tk": {
+    "description": "text"
+  },
+  "tl": "ಪೂರ್ವ ಟಿಮೋರ್",
+  "@tl": {
+    "description": "text"
+  },
+  "tm": "ತುರ್ಕಮೆನಿಸ್ತಾನ್",
+  "@tm": {
+    "description": "text"
+  },
+  "tn": "ಟುನೀಶಿಯಾ",
+  "@tn": {
+    "description": "text"
+  },
+  "to": "ಟೋಂಗಾ",
+  "@to": {
+    "description": "text"
+  },
+  "tr": "ಟರ್ಕಿ",
+  "@tr": {
+    "description": "text"
+  },
+  "tt": "ಟ್ರಿನಿಡಾಡ್ ಮತ್ತು ಟೊಬಾಗ",
+  "@tt": {
+    "description": "text"
+  },
+  "tv": "ತುವಾಲು",
+  "@tv": {
+    "description": "text"
+  },
+  "tw": "ತೈವಾನ್",
+  "@tw": {
+    "description": "text"
+  },
+  "tz": "ಟಾಂಜಾನಿಯಾ",
+  "@tz": {
+    "description": "text"
+  },
+  "ua": "ಉಕ್ರೇನ್",
+  "@ua": {
+    "description": "text"
+  },
+  "ug": "ಉಗಾಂಡಾ",
+  "@ug": {
+    "description": "text"
+  },
+  "um": "ಯುಎಸ್ ಮೈನರ್ ಹೊರಭಾಗದ ದ್ವೀಪಗಳು",
+  "@um": {
+    "description": "text"
+  },
+  "us": "ಯುನೈಟೆಡ್ ಸ್ಟೇಟ್ಸ್",
+  "@us": {
+    "description": "text"
+  },
+  "uy": "ಉರುಗ್ವೆ",
+  "@uy": {
+    "description": "text"
+  },
+  "uz": "ಉಜ್ಬೇಕಿಸ್ತಾನ್",
+  "@uz": {
+    "description": "text"
+  },
+  "va": "ವ್ಯಾಟಿಕನ್ ಸಿಟಿ",
+  "@va": {
+    "description": "text"
+  },
+  "vc": "ಸೇಂಟ್ ವಿನ್ಸೆಂಟ್ ಮತ್ತು ಗ್ರೆನಡೈನ್ಸ್",
+  "@vc": {
+    "description": "text"
+  },
+  "ve": "ವೆನೆಜುವೆಲಾ",
+  "@ve": {
+    "description": "text"
+  },
+  "vg": "ಬ್ರಿಟಿಷ್ ವರ್ಜಿನ್ ದ್ವೀ",
+  "@vg": {
+    "description": "text"
+  },
+  "vi": "ಯುಎಸ್ ವರ್ಜಿನ್ ದ್ವೀಪಗಳು",
+  "@vi": {
+    "description": "text"
+  },
+  "vn": "ವಿಯೆಟ್ನಾಂ",
+  "@vn": {
+    "description": "text"
+  },
+  "vu": "ವನೌಟು",
+  "@vu": {
+    "description": "text"
+  },
+  "wf": "ವಾಲಿಸ್ ಮತ್ತು ಫುಟುನಾ",
+  "@wf": {
+    "description": "text"
+  },
+  "ws": "ಸಮೋವಾ",
+  "@ws": {
+    "description": "text"
+  },
+  "xk": "ಕೊಸೊವೊ",
+  "@xk": {
+    "description": "text"
+  },
+  "ye": "ಯೆಮೆನ್",
+  "@ye": {
+    "description": "text"
+  },
+  "yt": "ಮಾಯೊಟ್ಟೆ",
+  "@yt": {
+    "description": "text"
+  },
+  "za": "ದಕ್ಷಿಣ ಆಫ್ರಿಕಾ",
+  "@za": {
+    "description": "text"
+  },
+  "zm": "ಜಾಂಬಿಯಾ",
+  "@zm": {
+    "description": "text"
+  },
+  "zw": "ಜಿಂಬಾಬ್ವೆ",
+  "@zw": {
+    "description": "text"
+  }
+}

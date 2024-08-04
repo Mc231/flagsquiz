@@ -1,8 +1,9 @@
+import 'package:flagsquiz/extensions/app_localizations_extension.dart';
 import 'package:flagsquiz/models/country.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flagsquiz/extensions/sizing_information_extension.dart';
-import 'package:intl/intl.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import '../option_button.dart';
 
@@ -32,7 +33,7 @@ class GameAnswersWidget extends StatelessWidget {
   }
 
   Widget _createOptionButton(Country option, BuildContext context) {
-    final localizedCountryName = Intl.message(option.name, name: option.code);
+    final localizedCountryName = AppLocalizations.of(context)!.resolveKey(option.code.toLowerCase());
     return Container(
       margin: getButtonMargin(context),
       child: OptionButton(

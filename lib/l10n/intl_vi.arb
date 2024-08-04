@@ -1,37 +1,37 @@
 {
-  "selectRegion": "Select Region",
+  "selectRegion": "Chọn khu vực",
   "@selectRegion": {
     "description": "text"
   },
-  "all": "All",
+  "all": "Tất cả",
   "@all": {
     "description": "text"
   },
-  "europe": "Europe",
+  "europe": "Châu Âu",
   "@europe": {
     "description": "text"
   },
-  "asia": "Asia",
+  "asia": "Châu Á",
   "@asia": {
     "description": "text"
   },
-  "africa": "Africa",
+  "africa": "Châu phi",
   "@africa": {
     "description": "text"
   },
-  "northAmerica": "North America",
+  "northAmerica": "Bắc Mỹ",
   "@northAmerica": {
     "description": "text"
   },
-  "southAmerica": "South America",
+  "southAmerica": "Nam Mỹ",
   "@southAmerica": {
     "description": "text"
   },
-  "oceania": "Oceania",
+  "oceania": "Châu Đại Dương",
   "@oceania": {
     "description": "text"
   },
-  "yourScore": "Your Score",
+  "yourScore": "Điểm số của bạn",
   "@yourScore": {
     "description": "text"
   },
@@ -39,11 +39,11 @@
   "@ad": {
     "description": "text"
   },
-  "ae": "United Arab Emirates",
+  "ae": "Các Tiểu vương quốc Ả Rập Thống nhất",
   "@ae": {
     "description": "text"
   },
-  "ag": "Antigua and Barbuda",
+  "ag": "Antigua và Barbuda",
   "@ag": {
     "description": "text"
   },
@@ -67,7 +67,7 @@
   "@ao": {
     "description": "text"
   },
-  "aq": "Antarctica",
+  "aq": "Nam Cực",
   "@aq": {
     "description": "text"
   },
@@ -75,15 +75,15 @@
   "@ar": {
     "description": "text"
   },
-  "as": "American Samoa",
+  "as": "Samoa thuộc Mỹ",
   "@as": {
     "description": "text"
   },
-  "at": "Austria",
+  "at": "Áo",
   "@at": {
     "description": "text"
   },
-  "au": "Australia",
+  "au": "Nước Úc",
   "@au": {
     "description": "text"
   },
@@ -99,7 +99,7 @@
   "@az": {
     "description": "text"
   },
-  "ba": "Bosnia and Herzegovina",
+  "ba": "Bosnia và Herzegovina",
   "@ba": {
     "description": "text"
   },
@@ -111,7 +111,7 @@
   "@bd": {
     "description": "text"
   },
-  "be": "Belgium",
+  "be": "nước Bỉ",
   "@be": {
     "description": "text"
   },
@@ -123,19 +123,19 @@
   "@bg": {
     "description": "text"
   },
-  "bh": "Bahrain",
+  "bh": "Ba-ranh",
   "@bh": {
     "description": "text"
   },
-  "bi": "Burundi",
+  "bi": "Bu-run-đi",
   "@bi": {
     "description": "text"
   },
-  "bj": "Benin",
+  "bj": "Bê-nanh",
   "@bj": {
     "description": "text"
   },
-  "bl": "Saint Barthélemy",
+  "bl": "Thánh Barthélemy",
   "@bl": {
     "description": "text"
   },
@@ -143,11 +143,11 @@
   "@bm": {
     "description": "text"
   },
-  "bn": "Brunei",
+  "bn": "Bru-nây",
   "@bn": {
     "description": "text"
   },
-  "bo": "Bolivia",
+  "bo": "Bôlivia",
   "@bo": {
     "description": "text"
   },
@@ -167,7 +167,7 @@
   "@bt": {
     "description": "text"
   },
-  "bv": "Bouvet Island",
+  "bv": "Đảo Bouvet",
   "@bv": {
     "description": "text"
   },
@@ -175,7 +175,7 @@
   "@bw": {
     "description": "text"
   },
-  "by": "Belarus",
+  "by": "Bêlarut",
   "@by": {
     "description": "text"
   },
@@ -187,43 +187,43 @@
   "@ca": {
     "description": "text"
   },
-  "cc": "Cocos [Keeling] Islands",
+  "cc": "Quần đảo Cocos [Keeling]",
   "@cc": {
     "description": "text"
   },
-  "cd": "Democratic Republic of the Congo",
+  "cd": "Cộng hòa Dân chủ Congo",
   "@cd": {
     "description": "text"
   },
-  "cf": "Central African Republic",
+  "cf": "Cộng hòa Trung Phi",
   "@cf": {
     "description": "text"
   },
-  "cg": "Republic of the Congo",
+  "cg": "Cộng hòa Congo",
   "@cg": {
     "description": "text"
   },
-  "ch": "Switzerland",
+  "ch": "Thụy sĩ",
   "@ch": {
     "description": "text"
   },
-  "ci": "Ivory Coast",
+  "ci": "Bờ Biển Ngà",
   "@ci": {
     "description": "text"
   },
-  "ck": "Cook Islands",
+  "ck": "Quần đảo Cook",
   "@ck": {
     "description": "text"
   },
-  "cl": "Chile",
+  "cl": "Chi-lê",
   "@cl": {
     "description": "text"
   },
-  "cm": "Cameroon",
+  "cm": "Ca-mơ-run",
   "@cm": {
     "description": "text"
   },
-  "cn": "China",
+  "cn": "Trung Quốc",
   "@cn": {
     "description": "text"
   },
@@ -247,11 +247,11 @@
   "@cw": {
     "description": "text"
   },
-  "cx": "Christmas Island",
+  "cx": "Đảo Giáng sinh",
   "@cx": {
     "description": "text"
   },
-  "dk": "Denmark",
+  "dk": "Đan mạch",
   "@dk": {
     "description": "text"
   },
@@ -259,7 +259,7 @@
   "@dm": {
     "description": "text"
   },
-  "doZ": "Dominican Republic",
+  "doZ": "Cộng hòa Dominica",
   "@doZ": {
     "description": "text"
   },
@@ -275,19 +275,19 @@
   "@ee": {
     "description": "text"
   },
-  "eg": "Egypt",
+  "eg": "Ai Cập",
   "@eg": {
     "description": "text"
   },
-  "eh": "Western Sahara",
+  "eh": "Tây Sahara",
   "@eh": {
     "description": "text"
   },
-  "er": "Eritrea",
+  "er": "Ê-ri-tơ-rê-a",
   "@er": {
     "description": "text"
   },
-  "es": "Spain",
+  "es": "Tây Ban Nha",
   "@es": {
     "description": "text"
   },
@@ -295,15 +295,15 @@
   "@et": {
     "description": "text"
   },
-  "fi": "Finland",
+  "fi": "Phần Lan",
   "@fi": {
     "description": "text"
   },
-  "fj": "Fiji",
+  "fj": "Phi-gi",
   "@fj": {
     "description": "text"
   },
-  "fk": "Falkland Islands",
+  "fk": "Quần đảo Falkland",
   "@fk": {
     "description": "text"
   },
@@ -311,11 +311,11 @@
   "@fm": {
     "description": "text"
   },
-  "fo": "Faroe Islands",
+  "fo": "Quần đảo Faroe",
   "@fo": {
     "description": "text"
   },
-  "fr": "France",
+  "fr": "Pháp",
   "@fr": {
     "description": "text"
   },
@@ -323,7 +323,7 @@
   "@ga": {
     "description": "text"
   },
-  "gb": "United Kingdom",
+  "gb": "Vương quốc Anh",
   "@gb": {
     "description": "text"
   },
@@ -335,7 +335,7 @@
   "@ge": {
     "description": "text"
   },
-  "gf": "French Guiana",
+  "gf": "Guiana thuộc Pháp",
   "@gf": {
     "description": "text"
   },
@@ -367,15 +367,15 @@
   "@gp": {
     "description": "text"
   },
-  "gq": "Equatorial Guinea",
+  "gq": "Guinea Xích Đạo",
   "@gq": {
     "description": "text"
   },
-  "gr": "Greece",
+  "gr": "Hy Lạp",
   "@gr": {
     "description": "text"
   },
-  "gs": "South Georgia and the South Sandwich Islands",
+  "gs": "Nam Georgia và Quần đảo Nam Sandwich",
   "@gs": {
     "description": "text"
   },
@@ -395,15 +395,15 @@
   "@gy": {
     "description": "text"
   },
-  "hk": "Hong Kong",
+  "hk": "Hồng Kông",
   "@hk": {
     "description": "text"
   },
-  "hm": "Heard Island and McDonald Islands",
+  "hm": "Đảo Heard và quần đảo McDonald",
   "@hm": {
     "description": "text"
   },
-  "hn": "Honduras",
+  "hn": "Hon-đu-rát",
   "@hn": {
     "description": "text"
   },
@@ -411,7 +411,7 @@
   "@hr": {
     "description": "text"
   },
-  "cz": "Czech Republic",
+  "cz": "Cộng hòa Séc",
   "@cz": {
     "description": "text"
   },
@@ -419,11 +419,11 @@
   "@dj": {
     "description": "text"
   },
-  "cy": "Cyprus",
+  "cy": "Đảo Síp",
   "@cy": {
     "description": "text"
   },
-  "de": "Germany",
+  "de": "nước Đức",
   "@de": {
     "description": "text"
   },
@@ -439,27 +439,27 @@
   "@id": {
     "description": "text"
   },
-  "ie": "Ireland",
+  "ie": "Ai-len",
   "@ie": {
     "description": "text"
   },
-  "il": "Israel",
+  "il": "Ixraen",
   "@il": {
     "description": "text"
   },
-  "im": "Isle of Man",
+  "im": "Đảo Man",
   "@im": {
     "description": "text"
   },
-  "inZ": "India",
+  "inZ": "Ấn Độ",
   "@inZ": {
     "description": "text"
   },
-  "io": "British Indian Ocean Territory",
+  "io": "Lãnh thổ Ấn Độ Dương thuộc Anh",
   "@io": {
     "description": "text"
   },
-  "iq": "Iraq",
+  "iq": "Irac",
   "@iq": {
     "description": "text"
   },
@@ -467,11 +467,11 @@
   "@ir": {
     "description": "text"
   },
-  "isZ": "Iceland",
+  "isZ": "Ai-xơ-len",
   "@isZ": {
     "description": "text"
   },
-  "it": "Italy",
+  "it": "Ý",
   "@it": {
     "description": "text"
   },
@@ -487,7 +487,7 @@
   "@jo": {
     "description": "text"
   },
-  "jp": "Japan",
+  "jp": "Nhật Bản",
   "@jp": {
     "description": "text"
   },
@@ -495,11 +495,11 @@
   "@ke": {
     "description": "text"
   },
-  "kg": "Kyrgyzstan",
+  "kg": "Cư-rơ-gư-xtan",
   "@kg": {
     "description": "text"
   },
-  "kh": "Cambodia",
+  "kh": "Campuchia",
   "@kh": {
     "description": "text"
   },
@@ -507,27 +507,27 @@
   "@ki": {
     "description": "text"
   },
-  "km": "Comoros",
+  "km": "Cô-mô-rô",
   "@km": {
     "description": "text"
   },
-  "kn": "Saint Kitts and Nevis",
+  "kn": "Đảo Thánh Kitt và Nevis",
   "@kn": {
     "description": "text"
   },
-  "kp": "North Korea",
+  "kp": "Bắc Triều Tiên",
   "@kp": {
     "description": "text"
   },
-  "kr": "South Korea",
+  "kr": "Hàn Quốc",
   "@kr": {
     "description": "text"
   },
-  "kw": "Kuwait",
+  "kw": "Cô-oét",
   "@kw": {
     "description": "text"
   },
-  "ky": "Cayman Islands",
+  "ky": "Quần đảo Cayman",
   "@ky": {
     "description": "text"
   },
@@ -535,7 +535,7 @@
   "@kz": {
     "description": "text"
   },
-  "la": "Laos",
+  "la": "Lào",
   "@la": {
     "description": "text"
   },
@@ -547,7 +547,7 @@
   "@lc": {
     "description": "text"
   },
-  "li": "Liechtenstein",
+  "li": "Lích-tên-xtanh",
   "@li": {
     "description": "text"
   },
@@ -555,7 +555,7 @@
   "@lk": {
     "description": "text"
   },
-  "lr": "Liberia",
+  "lr": "Li-bê-ri-a",
   "@lr": {
     "description": "text"
   },
@@ -563,11 +563,11 @@
   "@ls": {
     "description": "text"
   },
-  "lt": "Lithuania",
+  "lt": "Litva",
   "@lt": {
     "description": "text"
   },
-  "lu": "Luxembourg",
+  "lu": "Lúc-xăm-bua",
   "@lu": {
     "description": "text"
   },
@@ -575,11 +575,11 @@
   "@lv": {
     "description": "text"
   },
-  "ly": "Libya",
+  "ly": "Li-bi",
   "@ly": {
     "description": "text"
   },
-  "ma": "Morocco",
+  "ma": "Ma-rốc",
   "@ma": {
     "description": "text"
   },
@@ -595,7 +595,7 @@
   "@me": {
     "description": "text"
   },
-  "mf": "Saint Martin",
+  "mf": "Thánh Martin",
   "@mf": {
     "description": "text"
   },
@@ -603,23 +603,23 @@
   "@mg": {
     "description": "text"
   },
-  "mh": "Marshall Islands",
+  "mh": "Quần đảo Marshall",
   "@mh": {
     "description": "text"
   },
-  "mk": "North Macedonia",
+  "mk": "Bắc Macedonia",
   "@mk": {
     "description": "text"
   },
-  "ml": "Mali",
+  "ml": "mali",
   "@ml": {
     "description": "text"
   },
-  "mm": "Myanmar [Burma]",
+  "mm": "Myanmar [Miến Điện]",
   "@mm": {
     "description": "text"
   },
-  "mn": "Mongolia",
+  "mn": "Mông Cổ",
   "@mn": {
     "description": "text"
   },
@@ -627,7 +627,7 @@
   "@mo": {
     "description": "text"
   },
-  "mp": "Northern Mariana Islands",
+  "mp": "Quần đảo Bắc Mariana",
   "@mp": {
     "description": "text"
   },
@@ -643,11 +643,11 @@
   "@ms": {
     "description": "text"
   },
-  "mt": "Malta",
+  "mt": "Man-ta",
   "@mt": {
     "description": "text"
   },
-  "mu": "Mauritius",
+  "mu": "Mô-ri-xơ",
   "@mu": {
     "description": "text"
   },
@@ -679,11 +679,11 @@
   "@nc": {
     "description": "text"
   },
-  "ne": "Niger",
+  "ne": "Ni-giê",
   "@ne": {
     "description": "text"
   },
-  "nf": "Norfolk Island",
+  "nf": "Đảo Norfolk",
   "@nf": {
     "description": "text"
   },
@@ -695,11 +695,11 @@
   "@ni": {
     "description": "text"
   },
-  "nl": "Netherlands",
+  "nl": "nước Hà Lan",
   "@nl": {
     "description": "text"
   },
-  "no": "Norway",
+  "no": "Na Uy",
   "@no": {
     "description": "text"
   },
@@ -719,7 +719,7 @@
   "@nz": {
     "description": "text"
   },
-  "om": "Oman",
+  "om": "Ô-man",
   "@om": {
     "description": "text"
   },
@@ -731,7 +731,7 @@
   "@pe": {
     "description": "text"
   },
-  "pf": "French Polynesia",
+  "pf": "Polynesia thuộc Pháp",
   "@pf": {
     "description": "text"
   },
@@ -747,15 +747,15 @@
   "@pk": {
     "description": "text"
   },
-  "pl": "Poland",
+  "pl": "Ba Lan",
   "@pl": {
     "description": "text"
   },
-  "pm": "Saint Pierre and Miquelon",
+  "pm": "Saint Pierre và Miquelon",
   "@pm": {
     "description": "text"
   },
-  "pn": "Pitcairn Islands",
+  "pn": "Quần đảo Pitcairn",
   "@pn": {
     "description": "text"
   },
@@ -767,7 +767,7 @@
   "@ps": {
     "description": "text"
   },
-  "pt": "Portugal",
+  "pt": "Bồ Đào Nha",
   "@pt": {
     "description": "text"
   },
@@ -783,11 +783,11 @@
   "@qa": {
     "description": "text"
   },
-  "re": "Réunion",
+  "re": "Reunion",
   "@re": {
     "description": "text"
   },
-  "ro": "Romania",
+  "ro": "Ru-ma-ni",
   "@ro": {
     "description": "text"
   },
@@ -795,7 +795,7 @@
   "@rs": {
     "description": "text"
   },
-  "ru": "Russia",
+  "ru": "Nga",
   "@ru": {
     "description": "text"
   },
@@ -803,11 +803,11 @@
   "@rw": {
     "description": "text"
   },
-  "sa": "Saudi Arabia",
+  "sa": "Ả Rập Xê Út",
   "@sa": {
     "description": "text"
   },
-  "sb": "Solomon Islands",
+  "sb": "Quần đảo Solomon",
   "@sb": {
     "description": "text"
   },
@@ -819,7 +819,7 @@
   "@sd": {
     "description": "text"
   },
-  "se": "Sweden",
+  "se": "Thụy Điển",
   "@se": {
     "description": "text"
   },
@@ -835,7 +835,7 @@
   "@si": {
     "description": "text"
   },
-  "sj": "Svalbard and Jan Mayen",
+  "sj": "Svalbard và Jan Mayen",
   "@sj": {
     "description": "text"
   },
@@ -851,7 +851,7 @@
   "@sm": {
     "description": "text"
   },
-  "sn": "Senegal",
+  "sn": "Sê-nê-gan",
   "@sn": {
     "description": "text"
   },
@@ -859,15 +859,15 @@
   "@so": {
     "description": "text"
   },
-  "sr": "Suriname",
+  "sr": "Xu-ri-nam",
   "@sr": {
     "description": "text"
   },
-  "ss": "South Sudan",
+  "ss": "Nam Sudan",
   "@ss": {
     "description": "text"
   },
-  "st": "São Tomé and Príncipe",
+  "st": "São Tomé và Príncipe",
   "@st": {
     "description": "text"
   },
@@ -887,7 +887,7 @@
   "@sz": {
     "description": "text"
   },
-  "tc": "Turks and Caicos Islands",
+  "tc": "Quần đảo Turks và Caicos",
   "@tc": {
     "description": "text"
   },
@@ -895,7 +895,7 @@
   "@td": {
     "description": "text"
   },
-  "tf": "French Southern Territories",
+  "tf": "Lãnh thổ phía Nam của Pháp",
   "@tf": {
     "description": "text"
   },
@@ -903,7 +903,7 @@
   "@tg": {
     "description": "text"
   },
-  "th": "Thailand",
+  "th": "nước Thái Lan",
   "@th": {
     "description": "text"
   },
@@ -915,7 +915,7 @@
   "@tk": {
     "description": "text"
   },
-  "tl": "East Timor",
+  "tl": "Đông Timor",
   "@tl": {
     "description": "text"
   },
@@ -923,7 +923,7 @@
   "@tm": {
     "description": "text"
   },
-  "tn": "Tunisia",
+  "tn": "Tuy-ni-di",
   "@tn": {
     "description": "text"
   },
@@ -931,11 +931,11 @@
   "@to": {
     "description": "text"
   },
-  "tr": "Turkey",
+  "tr": "gà tây",
   "@tr": {
     "description": "text"
   },
-  "tt": "Trinidad and Tobago",
+  "tt": "Trinidad và Tobago",
   "@tt": {
     "description": "text"
   },
@@ -943,7 +943,7 @@
   "@tv": {
     "description": "text"
   },
-  "tw": "Taiwan",
+  "tw": "Đài Loan",
   "@tw": {
     "description": "text"
   },
@@ -955,15 +955,15 @@
   "@ua": {
     "description": "text"
   },
-  "ug": "Uganda",
+  "ug": "U-gan-đa",
   "@ug": {
     "description": "text"
   },
-  "um": "U.S. Minor Outlying Islands",
+  "um": "Các đảo nhỏ xa xôi của Hoa Kỳ",
   "@um": {
     "description": "text"
   },
-  "us": "United States",
+  "us": "Hoa Kỳ",
   "@us": {
     "description": "text"
   },
@@ -971,31 +971,31 @@
   "@uy": {
     "description": "text"
   },
-  "uz": "Uzbekistan",
+  "uz": "U-dơ-bê-ki-xtan",
   "@uz": {
     "description": "text"
   },
-  "va": "Vatican City",
+  "va": "Thành phố Vatican",
   "@va": {
     "description": "text"
   },
-  "vc": "Saint Vincent and the Grenadines",
+  "vc": "Saint Vincent và Grenadines",
   "@vc": {
     "description": "text"
   },
-  "ve": "Venezuela",
+  "ve": "Vê-nê-du-e-la",
   "@ve": {
     "description": "text"
   },
-  "vg": "British Virgin Islands",
+  "vg": "Quần đảo Virgin thuộc Anh",
   "@vg": {
     "description": "text"
   },
-  "vi": "U.S. Virgin Islands",
+  "vi": "Quần đảo Virgin thuộc Hoa Kỳ",
   "@vi": {
     "description": "text"
   },
-  "vn": "Vietnam",
+  "vn": "Việt Nam",
   "@vn": {
     "description": "text"
   },
@@ -1003,7 +1003,7 @@
   "@vu": {
     "description": "text"
   },
-  "wf": "Wallis and Futuna",
+  "wf": "Wallis và Futuna",
   "@wf": {
     "description": "text"
   },
@@ -1023,11 +1023,11 @@
   "@yt": {
     "description": "text"
   },
-  "za": "South Africa",
+  "za": "Nam Phi",
   "@za": {
     "description": "text"
   },
-  "zm": "Zambia",
+  "zm": "Dăm-bi-a",
   "@zm": {
     "description": "text"
   },

@@ -3,10 +3,11 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class FlagsQuizApp extends StatelessWidget {
   final Widget homeWidget;
+  final Locale? locale;
   final List<NavigatorObserver> navigationObservers;
 
   const FlagsQuizApp(
-      {Key? key, required this.homeWidget, this.navigationObservers = const []})
+      {Key? key, required this.homeWidget, this.locale, this.navigationObservers = const []})
       : super(key: key);
 
   // This widget is the root of your application.
@@ -17,9 +18,10 @@ class FlagsQuizApp extends StatelessWidget {
       darkTheme: ThemeData.dark(useMaterial3: false),
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
+      locale: locale,
       localeResolutionCallback:
           (Locale? locale, Iterable<Locale> supportedLocales) {
-        return locale;
+        return supportedLocales.contains(locale) ? locale : Locale('en');
       },
       theme: ThemeData(
         useMaterial3: false,

@@ -1,0 +1,1038 @@
+{
+  "selectRegion": "เลือกภูมิภาค",
+  "@selectRegion": {
+    "description": "text"
+  },
+  "all": "ทั้งหมด",
+  "@all": {
+    "description": "text"
+  },
+  "europe": "ยุโรป",
+  "@europe": {
+    "description": "text"
+  },
+  "asia": "เอเชีย",
+  "@asia": {
+    "description": "text"
+  },
+  "africa": "แอฟริกา",
+  "@africa": {
+    "description": "text"
+  },
+  "northAmerica": "อเมริกาเหนือ",
+  "@northAmerica": {
+    "description": "text"
+  },
+  "southAmerica": "อเมริกาใต้",
+  "@southAmerica": {
+    "description": "text"
+  },
+  "oceania": "โอเชียเนีย",
+  "@oceania": {
+    "description": "text"
+  },
+  "yourScore": "คะแนนของคุณ",
+  "@yourScore": {
+    "description": "text"
+  },
+  "ad": "อันดอร์รา",
+  "@ad": {
+    "description": "text"
+  },
+  "ae": "สหรัฐอาหรับเอมิเรตส์",
+  "@ae": {
+    "description": "text"
+  },
+  "ag": "แอนติกาและบาร์บูดา",
+  "@ag": {
+    "description": "text"
+  },
+  "ai": "แองกวิลลา",
+  "@ai": {
+    "description": "text"
+  },
+  "af": "อัฟกานิสถาน",
+  "@af": {
+    "description": "text"
+  },
+  "al": "แอลเบเนีย",
+  "@al": {
+    "description": "text"
+  },
+  "am": "อาร์เมเนีย",
+  "@am": {
+    "description": "text"
+  },
+  "ao": "แองโกลา",
+  "@ao": {
+    "description": "text"
+  },
+  "aq": "ทวีปแอนตาร์กติกา",
+  "@aq": {
+    "description": "text"
+  },
+  "ar": "อาร์เจนตินา",
+  "@ar": {
+    "description": "text"
+  },
+  "as": "อเมริกันซามัว",
+  "@as": {
+    "description": "text"
+  },
+  "at": "ออสเตรีย",
+  "@at": {
+    "description": "text"
+  },
+  "au": "ออสเตรเลีย",
+  "@au": {
+    "description": "text"
+  },
+  "aw": "อารูบา",
+  "@aw": {
+    "description": "text"
+  },
+  "ax": "โอลันด์",
+  "@ax": {
+    "description": "text"
+  },
+  "az": "อาเซอร์ไบจาน",
+  "@az": {
+    "description": "text"
+  },
+  "ba": "บอสเนียและเฮอร์เซโก",
+  "@ba": {
+    "description": "text"
+  },
+  "bb": "บาร์เบโดส",
+  "@bb": {
+    "description": "text"
+  },
+  "bd": "บังคลาเทศ",
+  "@bd": {
+    "description": "text"
+  },
+  "be": "เบลเยียม",
+  "@be": {
+    "description": "text"
+  },
+  "bf": "บูร์กินาฟาโซ",
+  "@bf": {
+    "description": "text"
+  },
+  "bg": "บัลแกเรีย",
+  "@bg": {
+    "description": "text"
+  },
+  "bh": "บาห์เรน",
+  "@bh": {
+    "description": "text"
+  },
+  "bi": "บุรุนดี",
+  "@bi": {
+    "description": "text"
+  },
+  "bj": "ประเทศเบนิน",
+  "@bj": {
+    "description": "text"
+  },
+  "bl": "เซนต์บาร์เธเลมี",
+  "@bl": {
+    "description": "text"
+  },
+  "bm": "เบอร์มิวดา",
+  "@bm": {
+    "description": "text"
+  },
+  "bn": "บรูไน",
+  "@bn": {
+    "description": "text"
+  },
+  "bo": "โบลิเวีย",
+  "@bo": {
+    "description": "text"
+  },
+  "bq": "โบแนร์",
+  "@bq": {
+    "description": "text"
+  },
+  "br": "บราซิล",
+  "@br": {
+    "description": "text"
+  },
+  "bs": "บาฮามาส",
+  "@bs": {
+    "description": "text"
+  },
+  "bt": "ภูฏาน",
+  "@bt": {
+    "description": "text"
+  },
+  "bv": "เกาะบูเวต",
+  "@bv": {
+    "description": "text"
+  },
+  "bw": "บอตสวานา",
+  "@bw": {
+    "description": "text"
+  },
+  "by": "เบลารุส",
+  "@by": {
+    "description": "text"
+  },
+  "bz": "เบลีซ",
+  "@bz": {
+    "description": "text"
+  },
+  "ca": "แคนาดา",
+  "@ca": {
+    "description": "text"
+  },
+  "cc": "หมู่เกาะโคโคส [คีลิง]",
+  "@cc": {
+    "description": "text"
+  },
+  "cd": "สาธารณรัฐประชาธิปไตยคองโก",
+  "@cd": {
+    "description": "text"
+  },
+  "cf": "สาธารณรัฐแอฟริกากลาง",
+  "@cf": {
+    "description": "text"
+  },
+  "cg": "สาธารณรัฐคองโก",
+  "@cg": {
+    "description": "text"
+  },
+  "ch": "ประเทศสวิสเซอร์แลนด์",
+  "@ch": {
+    "description": "text"
+  },
+  "ci": "ไอวอรี่โคสต์",
+  "@ci": {
+    "description": "text"
+  },
+  "ck": "หมู่เกาะคุก",
+  "@ck": {
+    "description": "text"
+  },
+  "cl": "ชิลี",
+  "@cl": {
+    "description": "text"
+  },
+  "cm": "แคเมอรูน",
+  "@cm": {
+    "description": "text"
+  },
+  "cn": "ประเทศจีน",
+  "@cn": {
+    "description": "text"
+  },
+  "co": "โคลอมเบีย",
+  "@co": {
+    "description": "text"
+  },
+  "cr": "คอสตาริกา",
+  "@cr": {
+    "description": "text"
+  },
+  "cu": "คิวบา",
+  "@cu": {
+    "description": "text"
+  },
+  "cv": "เคปเวิร์ด",
+  "@cv": {
+    "description": "text"
+  },
+  "cw": "คูราโซ",
+  "@cw": {
+    "description": "text"
+  },
+  "cx": "เกาะคริสต์มาส",
+  "@cx": {
+    "description": "text"
+  },
+  "dk": "เดนมาร์ก",
+  "@dk": {
+    "description": "text"
+  },
+  "dm": "โดมินิกา",
+  "@dm": {
+    "description": "text"
+  },
+  "doZ": "สาธารณรัฐโดมินิกัน",
+  "@doZ": {
+    "description": "text"
+  },
+  "dz": "แอลจีเรีย",
+  "@dz": {
+    "description": "text"
+  },
+  "ec": "เอกวาดอร์",
+  "@ec": {
+    "description": "text"
+  },
+  "ee": "เอสโตเนีย",
+  "@ee": {
+    "description": "text"
+  },
+  "eg": "อียิปต์",
+  "@eg": {
+    "description": "text"
+  },
+  "eh": "ซาฮาราตะวันตก",
+  "@eh": {
+    "description": "text"
+  },
+  "er": "ประเทศเอริเทรีย",
+  "@er": {
+    "description": "text"
+  },
+  "es": "สเปน",
+  "@es": {
+    "description": "text"
+  },
+  "et": "สาธารณรัฐเอธิโอเปีย",
+  "@et": {
+    "description": "text"
+  },
+  "fi": "ฟินแลนด์",
+  "@fi": {
+    "description": "text"
+  },
+  "fj": "ฟิจิ",
+  "@fj": {
+    "description": "text"
+  },
+  "fk": "หมู่เกาะฟอล์กแลนด์",
+  "@fk": {
+    "description": "text"
+  },
+  "fm": "ไมโครนีเซีย",
+  "@fm": {
+    "description": "text"
+  },
+  "fo": "หมู่เกาะแฟโร",
+  "@fo": {
+    "description": "text"
+  },
+  "fr": "ประเทศฝรั่งเศส",
+  "@fr": {
+    "description": "text"
+  },
+  "ga": "ประเทศกาบอง",
+  "@ga": {
+    "description": "text"
+  },
+  "gb": "สหราชอาณาจักร",
+  "@gb": {
+    "description": "text"
+  },
+  "gd": "เกรเนดา",
+  "@gd": {
+    "description": "text"
+  },
+  "ge": "จอร์เจีย",
+  "@ge": {
+    "description": "text"
+  },
+  "gf": "เฟรนช์เกียนา",
+  "@gf": {
+    "description": "text"
+  },
+  "gg": "เกิร์นซีย์",
+  "@gg": {
+    "description": "text"
+  },
+  "gh": "ประเทศกานา",
+  "@gh": {
+    "description": "text"
+  },
+  "gi": "ยิบรอลตา",
+  "@gi": {
+    "description": "text"
+  },
+  "gl": "เกาะกรีนแลนด์",
+  "@gl": {
+    "description": "text"
+  },
+  "gm": "แกมเบีย",
+  "@gm": {
+    "description": "text"
+  },
+  "gn": "ประเทศกินี",
+  "@gn": {
+    "description": "text"
+  },
+  "gp": "กวาเดอลูป",
+  "@gp": {
+    "description": "text"
+  },
+  "gq": "อิเควทอเรียลกินี",
+  "@gq": {
+    "description": "text"
+  },
+  "gr": "กรีซ",
+  "@gr": {
+    "description": "text"
+  },
+  "gs": "เซาท์จอร์เจียและหมู่เกาะเซาท์แซนด์วิช",
+  "@gs": {
+    "description": "text"
+  },
+  "gt": "กัวเตมาลา",
+  "@gt": {
+    "description": "text"
+  },
+  "gu": "กวม",
+  "@gu": {
+    "description": "text"
+  },
+  "gw": "กินี-บิสเซา",
+  "@gw": {
+    "description": "text"
+  },
+  "gy": "กายอานา",
+  "@gy": {
+    "description": "text"
+  },
+  "hk": "ฮ่องกง",
+  "@hk": {
+    "description": "text"
+  },
+  "hm": "เกาะเฮิร์ดและหมู่เกาะแมคโดนัลด์",
+  "@hm": {
+    "description": "text"
+  },
+  "hn": "ฮอนดูรัส",
+  "@hn": {
+    "description": "text"
+  },
+  "hr": "โครเอเชีย",
+  "@hr": {
+    "description": "text"
+  },
+  "cz": "สาธารณรัฐเช็ก",
+  "@cz": {
+    "description": "text"
+  },
+  "dj": "จิบูตี",
+  "@dj": {
+    "description": "text"
+  },
+  "cy": "ประเทศไซปรัส",
+  "@cy": {
+    "description": "text"
+  },
+  "de": "ประเทศเยอรมนี",
+  "@de": {
+    "description": "text"
+  },
+  "ht": "ไฮติ",
+  "@ht": {
+    "description": "text"
+  },
+  "hu": "ฮังการี",
+  "@hu": {
+    "description": "text"
+  },
+  "id": "อินโดนีเซีย",
+  "@id": {
+    "description": "text"
+  },
+  "ie": "ไอร์แลนด์",
+  "@ie": {
+    "description": "text"
+  },
+  "il": "อิสราเอล",
+  "@il": {
+    "description": "text"
+  },
+  "im": "เกาะแมน",
+  "@im": {
+    "description": "text"
+  },
+  "inZ": "อินเดีย",
+  "@inZ": {
+    "description": "text"
+  },
+  "io": "เขตมหาสมุทรบริติชอินเดียน",
+  "@io": {
+    "description": "text"
+  },
+  "iq": "อิรัก",
+  "@iq": {
+    "description": "text"
+  },
+  "ir": "อิหร่าน",
+  "@ir": {
+    "description": "text"
+  },
+  "isZ": "ประเทศไอซ์แลนด์",
+  "@isZ": {
+    "description": "text"
+  },
+  "it": "อิตาลี",
+  "@it": {
+    "description": "text"
+  },
+  "je": "เจอร์ซีย์",
+  "@je": {
+    "description": "text"
+  },
+  "jm": "เกาะจาเมกา",
+  "@jm": {
+    "description": "text"
+  },
+  "jo": "จอร์แดน",
+  "@jo": {
+    "description": "text"
+  },
+  "jp": "ประเทศญี่ปุ่น",
+  "@jp": {
+    "description": "text"
+  },
+  "ke": "ประเทศเคนย่า",
+  "@ke": {
+    "description": "text"
+  },
+  "kg": "คีร์กีสถาน",
+  "@kg": {
+    "description": "text"
+  },
+  "kh": "กัมพูชา",
+  "@kh": {
+    "description": "text"
+  },
+  "ki": "ประเทศคิริบาส",
+  "@ki": {
+    "description": "text"
+  },
+  "km": "คอโมโรส",
+  "@km": {
+    "description": "text"
+  },
+  "kn": "เซนต์คิตส์และเนวิส",
+  "@kn": {
+    "description": "text"
+  },
+  "kp": "เกาหลีเหนือ",
+  "@kp": {
+    "description": "text"
+  },
+  "kr": "เกาหลีใต้",
+  "@kr": {
+    "description": "text"
+  },
+  "kw": "คูเวต",
+  "@kw": {
+    "description": "text"
+  },
+  "ky": "หมู่เกาะเคย์แมน",
+  "@ky": {
+    "description": "text"
+  },
+  "kz": "คาซัคสถาน",
+  "@kz": {
+    "description": "text"
+  },
+  "la": "ลาว",
+  "@la": {
+    "description": "text"
+  },
+  "lb": "เลบานอน",
+  "@lb": {
+    "description": "text"
+  },
+  "lc": "เซนต์ลูเซีย",
+  "@lc": {
+    "description": "text"
+  },
+  "li": "ลิกเตนสไตน์",
+  "@li": {
+    "description": "text"
+  },
+  "lk": "ศรีลังกา",
+  "@lk": {
+    "description": "text"
+  },
+  "lr": "ประเทศไลบีเรีย",
+  "@lr": {
+    "description": "text"
+  },
+  "ls": "เลโซโท",
+  "@ls": {
+    "description": "text"
+  },
+  "lt": "ประเทศลิธัวเนีย",
+  "@lt": {
+    "description": "text"
+  },
+  "lu": "ลักเซมเบิร์ก",
+  "@lu": {
+    "description": "text"
+  },
+  "lv": "ลัตเวีย",
+  "@lv": {
+    "description": "text"
+  },
+  "ly": "ประเทศลิเบีย",
+  "@ly": {
+    "description": "text"
+  },
+  "ma": "โมร็อกโก",
+  "@ma": {
+    "description": "text"
+  },
+  "mc": "โมนาโก",
+  "@mc": {
+    "description": "text"
+  },
+  "md": "มอลโดวา",
+  "@md": {
+    "description": "text"
+  },
+  "me": "มอนเตเนโกร",
+  "@me": {
+    "description": "text"
+  },
+  "mf": "เซนต์มาร์ติน",
+  "@mf": {
+    "description": "text"
+  },
+  "mg": "มาดากัสการ์",
+  "@mg": {
+    "description": "text"
+  },
+  "mh": "หมู่เกาะมาร์แชลล์",
+  "@mh": {
+    "description": "text"
+  },
+  "mk": "มาซิโดเนียเหนือ",
+  "@mk": {
+    "description": "text"
+  },
+  "ml": "มาลี",
+  "@ml": {
+    "description": "text"
+  },
+  "mm": "พม่า [พม่า]",
+  "@mm": {
+    "description": "text"
+  },
+  "mn": "ประเทศมองโกเลีย",
+  "@mn": {
+    "description": "text"
+  },
+  "mo": "มาเก๊า",
+  "@mo": {
+    "description": "text"
+  },
+  "mp": "หมู่เกาะนอร์เทิร์นมาเรียนา",
+  "@mp": {
+    "description": "text"
+  },
+  "mq": "มาร์ตินีก",
+  "@mq": {
+    "description": "text"
+  },
+  "mr": "ประเทศมอริเตเนีย",
+  "@mr": {
+    "description": "text"
+  },
+  "ms": "มอนต์เซอร์รัต",
+  "@ms": {
+    "description": "text"
+  },
+  "mt": "เกาะมอลตา",
+  "@mt": {
+    "description": "text"
+  },
+  "mu": "มอริเชียส",
+  "@mu": {
+    "description": "text"
+  },
+  "mv": "มัลดีฟส์",
+  "@mv": {
+    "description": "text"
+  },
+  "mw": "มาลาวี",
+  "@mw": {
+    "description": "text"
+  },
+  "mx": "เม็กซิโก",
+  "@mx": {
+    "description": "text"
+  },
+  "my": "ประเทศมาเลเซีย",
+  "@my": {
+    "description": "text"
+  },
+  "mz": "ประเทศโมซัมบิก",
+  "@mz": {
+    "description": "text"
+  },
+  "na": "นามิเบีย",
+  "@na": {
+    "description": "text"
+  },
+  "nc": "นิวแคลิโดเนีย",
+  "@nc": {
+    "description": "text"
+  },
+  "ne": "ประเทศไนเจอร์",
+  "@ne": {
+    "description": "text"
+  },
+  "nf": "เกาะนอร์ฟอล์ก",
+  "@nf": {
+    "description": "text"
+  },
+  "ng": "ประเทศไนจีเรีย",
+  "@ng": {
+    "description": "text"
+  },
+  "ni": "นิการากัว",
+  "@ni": {
+    "description": "text"
+  },
+  "nl": "เนเธอร์แลนด์",
+  "@nl": {
+    "description": "text"
+  },
+  "no": "นอร์เวย์",
+  "@no": {
+    "description": "text"
+  },
+  "np": "ประเทศเนปาล",
+  "@np": {
+    "description": "text"
+  },
+  "nr": "ประเทศนาอูรู",
+  "@nr": {
+    "description": "text"
+  },
+  "nu": "นีวเว",
+  "@nu": {
+    "description": "text"
+  },
+  "nz": "นิวซีแลนด์",
+  "@nz": {
+    "description": "text"
+  },
+  "om": "โอมาน",
+  "@om": {
+    "description": "text"
+  },
+  "pa": "ปานามา",
+  "@pa": {
+    "description": "text"
+  },
+  "pe": "เปรู",
+  "@pe": {
+    "description": "text"
+  },
+  "pf": "เฟรนช์โปลินีเซีย",
+  "@pf": {
+    "description": "text"
+  },
+  "pg": "ปาปัวนิวกินี",
+  "@pg": {
+    "description": "text"
+  },
+  "ph": "ฟิลิปปินส์",
+  "@ph": {
+    "description": "text"
+  },
+  "pk": "ปากีสถาน",
+  "@pk": {
+    "description": "text"
+  },
+  "pl": "โปแลนด์",
+  "@pl": {
+    "description": "text"
+  },
+  "pm": "เซนต์ปีแยร์และมิเกลอน",
+  "@pm": {
+    "description": "text"
+  },
+  "pn": "หมู่เกาะพิตแคร์น",
+  "@pn": {
+    "description": "text"
+  },
+  "pr": "เปอร์โตริโก",
+  "@pr": {
+    "description": "text"
+  },
+  "ps": "ปาเลสไตน์",
+  "@ps": {
+    "description": "text"
+  },
+  "pt": "โปรตุเกส",
+  "@pt": {
+    "description": "text"
+  },
+  "pw": "ปาเลา",
+  "@pw": {
+    "description": "text"
+  },
+  "py": "ประเทศปารากวัย",
+  "@py": {
+    "description": "text"
+  },
+  "qa": "กาตาร์",
+  "@qa": {
+    "description": "text"
+  },
+  "re": "เรอูนียง",
+  "@re": {
+    "description": "text"
+  },
+  "ro": "โรมาเนีย",
+  "@ro": {
+    "description": "text"
+  },
+  "rs": "เซอร์เบีย",
+  "@rs": {
+    "description": "text"
+  },
+  "ru": "รัสเซีย",
+  "@ru": {
+    "description": "text"
+  },
+  "rw": "รวันดา",
+  "@rw": {
+    "description": "text"
+  },
+  "sa": "ซาอุดีอาระเบีย",
+  "@sa": {
+    "description": "text"
+  },
+  "sb": "หมู่เกาะโซโลมอน",
+  "@sb": {
+    "description": "text"
+  },
+  "sc": "เซเชลส์",
+  "@sc": {
+    "description": "text"
+  },
+  "sd": "ซูดาน",
+  "@sd": {
+    "description": "text"
+  },
+  "se": "สวีเดน",
+  "@se": {
+    "description": "text"
+  },
+  "sg": "สิงคโปร์",
+  "@sg": {
+    "description": "text"
+  },
+  "sh": "เซนต์เฮเลนา",
+  "@sh": {
+    "description": "text"
+  },
+  "si": "สโลวีเนีย",
+  "@si": {
+    "description": "text"
+  },
+  "sj": "สฟาลบาร์และยานมาเยน",
+  "@sj": {
+    "description": "text"
+  },
+  "sk": "สโลวะเกีย",
+  "@sk": {
+    "description": "text"
+  },
+  "sl": "เซียร์ราลีโอน",
+  "@sl": {
+    "description": "text"
+  },
+  "sm": "ซานมาริโน",
+  "@sm": {
+    "description": "text"
+  },
+  "sn": "ประเทศเซเนกัล",
+  "@sn": {
+    "description": "text"
+  },
+  "so": "โซมาเลีย",
+  "@so": {
+    "description": "text"
+  },
+  "sr": "ซูรินาเม",
+  "@sr": {
+    "description": "text"
+  },
+  "ss": "ซูดานใต้",
+  "@ss": {
+    "description": "text"
+  },
+  "st": "เซาตูเมและปรินซิปี",
+  "@st": {
+    "description": "text"
+  },
+  "sv": "เอลซัลวาดอร์",
+  "@sv": {
+    "description": "text"
+  },
+  "sx": "เซนต์มาร์เทน",
+  "@sx": {
+    "description": "text"
+  },
+  "sy": "ซีเรีย",
+  "@sy": {
+    "description": "text"
+  },
+  "sz": "สวาซิแลนด์",
+  "@sz": {
+    "description": "text"
+  },
+  "tc": "หมู่เกาะเติกส์และหมู่เกาะเคคอส",
+  "@tc": {
+    "description": "text"
+  },
+  "td": "ชาด",
+  "@td": {
+    "description": "text"
+  },
+  "tf": "ดินแดนภาคใต้ของฝรั่งเศส",
+  "@tf": {
+    "description": "text"
+  },
+  "tg": "โตโก",
+  "@tg": {
+    "description": "text"
+  },
+  "th": "ประเทศไทย",
+  "@th": {
+    "description": "text"
+  },
+  "tj": "ทาจิกิสถาน",
+  "@tj": {
+    "description": "text"
+  },
+  "tk": "โตเกเลา",
+  "@tk": {
+    "description": "text"
+  },
+  "tl": "ติมอร์ตะวันออก",
+  "@tl": {
+    "description": "text"
+  },
+  "tm": "เติร์กเมนิสถาน",
+  "@tm": {
+    "description": "text"
+  },
+  "tn": "ตูนิเซีย",
+  "@tn": {
+    "description": "text"
+  },
+  "to": "ตองกา",
+  "@to": {
+    "description": "text"
+  },
+  "tr": "ตุรกี",
+  "@tr": {
+    "description": "text"
+  },
+  "tt": "ตรินิแดดและโตเบโก",
+  "@tt": {
+    "description": "text"
+  },
+  "tv": "ตูวาลู",
+  "@tv": {
+    "description": "text"
+  },
+  "tw": "ไต้หวัน",
+  "@tw": {
+    "description": "text"
+  },
+  "tz": "ประเทศแทนซาเนีย",
+  "@tz": {
+    "description": "text"
+  },
+  "ua": "ยูเครน",
+  "@ua": {
+    "description": "text"
+  },
+  "ug": "ยูกันดา",
+  "@ug": {
+    "description": "text"
+  },
+  "um": "หมู่เกาะเล็กนอกของสหรัฐอเมริกา",
+  "@um": {
+    "description": "text"
+  },
+  "us": "สหรัฐอเมริกา",
+  "@us": {
+    "description": "text"
+  },
+  "uy": "อุรุกวัย",
+  "@uy": {
+    "description": "text"
+  },
+  "uz": "อุซเบกิสถาน",
+  "@uz": {
+    "description": "text"
+  },
+  "va": "นครวาติกัน",
+  "@va": {
+    "description": "text"
+  },
+  "vc": "เซนต์วินเซนต์และเกรนาดีนส์",
+  "@vc": {
+    "description": "text"
+  },
+  "ve": "เวเนซุเอลา",
+  "@ve": {
+    "description": "text"
+  },
+  "vg": "หมู่เกาะบริติชเวอร์จิน",
+  "@vg": {
+    "description": "text"
+  },
+  "vi": "หมู่เกาะเวอร์จินของสหรัฐอเมริกา",
+  "@vi": {
+    "description": "text"
+  },
+  "vn": "เวียดนาม",
+  "@vn": {
+    "description": "text"
+  },
+  "vu": "วานูอาตู",
+  "@vu": {
+    "description": "text"
+  },
+  "wf": "วาลลิสและฟูตูนา",
+  "@wf": {
+    "description": "text"
+  },
+  "ws": "ซามัว",
+  "@ws": {
+    "description": "text"
+  },
+  "xk": "โคโซโว",
+  "@xk": {
+    "description": "text"
+  },
+  "ye": "เยเมน",
+  "@ye": {
+    "description": "text"
+  },
+  "yt": "มายอต",
+  "@yt": {
+    "description": "text"
+  },
+  "za": "แอฟริกาใต้",
+  "@za": {
+    "description": "text"
+  },
+  "zm": "แซมเบีย",
+  "@zm": {
+    "description": "text"
+  },
+  "zw": "ประเทศซิมบับเว",
+  "@zw": {
+    "description": "text"
+  }
+}

@@ -1,37 +1,37 @@
 {
-  "selectRegion": "Select Region",
+  "selectRegion": "Valige piirkond",
   "@selectRegion": {
     "description": "text"
   },
-  "all": "All",
+  "all": "Kõik",
   "@all": {
     "description": "text"
   },
-  "europe": "Europe",
+  "europe": "Euroopa",
   "@europe": {
     "description": "text"
   },
-  "asia": "Asia",
+  "asia": "Aasia",
   "@asia": {
     "description": "text"
   },
-  "africa": "Africa",
+  "africa": "Aafrika",
   "@africa": {
     "description": "text"
   },
-  "northAmerica": "North America",
+  "northAmerica": "Põhja-Ameerika",
   "@northAmerica": {
     "description": "text"
   },
-  "southAmerica": "South America",
+  "southAmerica": "Lõuna-Ameerika",
   "@southAmerica": {
     "description": "text"
   },
-  "oceania": "Oceania",
+  "oceania": "Okeaania",
   "@oceania": {
     "description": "text"
   },
-  "yourScore": "Your Score",
+  "yourScore": "Teie skoor",
   "@yourScore": {
     "description": "text"
   },
@@ -39,11 +39,11 @@
   "@ad": {
     "description": "text"
   },
-  "ae": "United Arab Emirates",
+  "ae": "Araabia Ühendemiraadid",
   "@ae": {
     "description": "text"
   },
-  "ag": "Antigua and Barbuda",
+  "ag": "Antigua ja Barbuda",
   "@ag": {
     "description": "text"
   },
@@ -51,15 +51,15 @@
   "@ai": {
     "description": "text"
   },
-  "af": "Afghanistan",
+  "af": "Afganistan",
   "@af": {
     "description": "text"
   },
-  "al": "Albania",
+  "al": "Albaania",
   "@al": {
     "description": "text"
   },
-  "am": "Armenia",
+  "am": "Armeenia",
   "@am": {
     "description": "text"
   },
@@ -67,15 +67,15 @@
   "@ao": {
     "description": "text"
   },
-  "aq": "Antarctica",
+  "aq": "Antarktika",
   "@aq": {
     "description": "text"
   },
-  "ar": "Argentina",
+  "ar": "Argentiina",
   "@ar": {
     "description": "text"
   },
-  "as": "American Samoa",
+  "as": "Ameerika Samoa",
   "@as": {
     "description": "text"
   },
@@ -83,7 +83,7 @@
   "@at": {
     "description": "text"
   },
-  "au": "Australia",
+  "au": "Austraalia",
   "@au": {
     "description": "text"
   },
@@ -91,15 +91,15 @@
   "@aw": {
     "description": "text"
   },
-  "ax": "Åland",
+  "ax": "Ahvenamaa",
   "@ax": {
     "description": "text"
   },
-  "az": "Azerbaijan",
+  "az": "Aserbaidžaan",
   "@az": {
     "description": "text"
   },
-  "ba": "Bosnia and Herzegovina",
+  "ba": "Bosnia ja Hertsegoviina",
   "@ba": {
     "description": "text"
   },
@@ -111,7 +111,7 @@
   "@bd": {
     "description": "text"
   },
-  "be": "Belgium",
+  "be": "Belgia",
   "@be": {
     "description": "text"
   },
@@ -119,11 +119,11 @@
   "@bf": {
     "description": "text"
   },
-  "bg": "Bulgaria",
+  "bg": "Bulgaaria",
   "@bg": {
     "description": "text"
   },
-  "bh": "Bahrain",
+  "bh": "Bahrein",
   "@bh": {
     "description": "text"
   },
@@ -147,7 +147,7 @@
   "@bn": {
     "description": "text"
   },
-  "bo": "Bolivia",
+  "bo": "Boliivia",
   "@bo": {
     "description": "text"
   },
@@ -155,11 +155,11 @@
   "@bq": {
     "description": "text"
   },
-  "br": "Brazil",
+  "br": "Brasiilia",
   "@br": {
     "description": "text"
   },
-  "bs": "Bahamas",
+  "bs": "Bahama",
   "@bs": {
     "description": "text"
   },
@@ -167,7 +167,7 @@
   "@bt": {
     "description": "text"
   },
-  "bv": "Bouvet Island",
+  "bv": "Bouveti saar",
   "@bv": {
     "description": "text"
   },
@@ -175,7 +175,7 @@
   "@bw": {
     "description": "text"
   },
-  "by": "Belarus",
+  "by": "Valgevene",
   "@by": {
     "description": "text"
   },
@@ -183,51 +183,51 @@
   "@bz": {
     "description": "text"
   },
-  "ca": "Canada",
+  "ca": "Kanada",
   "@ca": {
     "description": "text"
   },
-  "cc": "Cocos [Keeling] Islands",
+  "cc": "Cocos [Keelingi] saared",
   "@cc": {
     "description": "text"
   },
-  "cd": "Democratic Republic of the Congo",
+  "cd": "Kongo Demokraatlik Vabariik",
   "@cd": {
     "description": "text"
   },
-  "cf": "Central African Republic",
+  "cf": "Kesk-Aafrika Vabariik",
   "@cf": {
     "description": "text"
   },
-  "cg": "Republic of the Congo",
+  "cg": "Kongo Vabariik",
   "@cg": {
     "description": "text"
   },
-  "ch": "Switzerland",
+  "ch": "Šveits",
   "@ch": {
     "description": "text"
   },
-  "ci": "Ivory Coast",
+  "ci": "Elevandiluurannik",
   "@ci": {
     "description": "text"
   },
-  "ck": "Cook Islands",
+  "ck": "Cooki saared",
   "@ck": {
     "description": "text"
   },
-  "cl": "Chile",
+  "cl": "Tšilli",
   "@cl": {
     "description": "text"
   },
-  "cm": "Cameroon",
+  "cm": "Kamerun",
   "@cm": {
     "description": "text"
   },
-  "cn": "China",
+  "cn": "Hiina",
   "@cn": {
     "description": "text"
   },
-  "co": "Colombia",
+  "co": "Kolumbia",
   "@co": {
     "description": "text"
   },
@@ -235,23 +235,23 @@
   "@cr": {
     "description": "text"
   },
-  "cu": "Cuba",
+  "cu": "Kuuba",
   "@cu": {
     "description": "text"
   },
-  "cv": "Cape Verde",
+  "cv": "Cabo Verde",
   "@cv": {
     "description": "text"
   },
-  "cw": "Curacao",
+  "cw": "Curaçao",
   "@cw": {
     "description": "text"
   },
-  "cx": "Christmas Island",
+  "cx": "Jõulusaar",
   "@cx": {
     "description": "text"
   },
-  "dk": "Denmark",
+  "dk": "Taani",
   "@dk": {
     "description": "text"
   },
@@ -259,11 +259,11 @@
   "@dm": {
     "description": "text"
   },
-  "doZ": "Dominican Republic",
+  "doZ": "Dominikaani Vabariik",
   "@doZ": {
     "description": "text"
   },
-  "dz": "Algeria",
+  "dz": "Alžeeria",
   "@dz": {
     "description": "text"
   },
@@ -271,15 +271,15 @@
   "@ec": {
     "description": "text"
   },
-  "ee": "Estonia",
+  "ee": "Eesti",
   "@ee": {
     "description": "text"
   },
-  "eg": "Egypt",
+  "eg": "Egiptus",
   "@eg": {
     "description": "text"
   },
-  "eh": "Western Sahara",
+  "eh": "Lääne-Sahara",
   "@eh": {
     "description": "text"
   },
@@ -287,35 +287,35 @@
   "@er": {
     "description": "text"
   },
-  "es": "Spain",
+  "es": "Hispaania",
   "@es": {
     "description": "text"
   },
-  "et": "Ethiopia",
+  "et": "Etioopia",
   "@et": {
     "description": "text"
   },
-  "fi": "Finland",
+  "fi": "Soome",
   "@fi": {
     "description": "text"
   },
-  "fj": "Fiji",
+  "fj": "Fidži",
   "@fj": {
     "description": "text"
   },
-  "fk": "Falkland Islands",
+  "fk": "Falklandi saared",
   "@fk": {
     "description": "text"
   },
-  "fm": "Micronesia",
+  "fm": "Mikroneesia",
   "@fm": {
     "description": "text"
   },
-  "fo": "Faroe Islands",
+  "fo": "Fääri saared",
   "@fo": {
     "description": "text"
   },
-  "fr": "France",
+  "fr": "Prantsusmaa",
   "@fr": {
     "description": "text"
   },
@@ -323,7 +323,7 @@
   "@ga": {
     "description": "text"
   },
-  "gb": "United Kingdom",
+  "gb": "Ühendkuningriik",
   "@gb": {
     "description": "text"
   },
@@ -331,11 +331,11 @@
   "@gd": {
     "description": "text"
   },
-  "ge": "Georgia",
+  "ge": "Gruusia",
   "@ge": {
     "description": "text"
   },
-  "gf": "French Guiana",
+  "gf": "Prantsuse Guajaana",
   "@gf": {
     "description": "text"
   },
@@ -351,7 +351,7 @@
   "@gi": {
     "description": "text"
   },
-  "gl": "Greenland",
+  "gl": "Gröönimaa",
   "@gl": {
     "description": "text"
   },
@@ -367,15 +367,15 @@
   "@gp": {
     "description": "text"
   },
-  "gq": "Equatorial Guinea",
+  "gq": "Ekvatoriaal-Guinea",
   "@gq": {
     "description": "text"
   },
-  "gr": "Greece",
+  "gr": "Kreeka",
   "@gr": {
     "description": "text"
   },
-  "gs": "South Georgia and the South Sandwich Islands",
+  "gs": "Lõuna-Georgia ja Lõuna-Sandwichi saared",
   "@gs": {
     "description": "text"
   },
@@ -391,15 +391,15 @@
   "@gw": {
     "description": "text"
   },
-  "gy": "Guyana",
+  "gy": "Guajaana",
   "@gy": {
     "description": "text"
   },
-  "hk": "Hong Kong",
+  "hk": "Hongkong",
   "@hk": {
     "description": "text"
   },
-  "hm": "Heard Island and McDonald Islands",
+  "hm": "Heardi saar ja McDonaldi saared",
   "@hm": {
     "description": "text"
   },
@@ -407,11 +407,11 @@
   "@hn": {
     "description": "text"
   },
-  "hr": "Croatia",
+  "hr": "Horvaatia",
   "@hr": {
     "description": "text"
   },
-  "cz": "Czech Republic",
+  "cz": "Tšehhi Vabariik",
   "@cz": {
     "description": "text"
   },
@@ -419,11 +419,11 @@
   "@dj": {
     "description": "text"
   },
-  "cy": "Cyprus",
+  "cy": "Küpros",
   "@cy": {
     "description": "text"
   },
-  "de": "Germany",
+  "de": "Saksamaa",
   "@de": {
     "description": "text"
   },
@@ -431,23 +431,23 @@
   "@ht": {
     "description": "text"
   },
-  "hu": "Hungary",
+  "hu": "Ungari",
   "@hu": {
     "description": "text"
   },
-  "id": "Indonesia",
+  "id": "Indoneesia",
   "@id": {
     "description": "text"
   },
-  "ie": "Ireland",
+  "ie": "Iirimaa",
   "@ie": {
     "description": "text"
   },
-  "il": "Israel",
+  "il": "Iisrael",
   "@il": {
     "description": "text"
   },
-  "im": "Isle of Man",
+  "im": "Mani saar",
   "@im": {
     "description": "text"
   },
@@ -455,23 +455,23 @@
   "@inZ": {
     "description": "text"
   },
-  "io": "British Indian Ocean Territory",
+  "io": "Briti India ookeani territoorium",
   "@io": {
     "description": "text"
   },
-  "iq": "Iraq",
+  "iq": "Iraak",
   "@iq": {
     "description": "text"
   },
-  "ir": "Iran",
+  "ir": "Iraan",
   "@ir": {
     "description": "text"
   },
-  "isZ": "Iceland",
+  "isZ": "Island",
   "@isZ": {
     "description": "text"
   },
-  "it": "Italy",
+  "it": "Itaalia",
   "@it": {
     "description": "text"
   },
@@ -483,23 +483,23 @@
   "@jm": {
     "description": "text"
   },
-  "jo": "Jordan",
+  "jo": "Jordaania",
   "@jo": {
     "description": "text"
   },
-  "jp": "Japan",
+  "jp": "Jaapan",
   "@jp": {
     "description": "text"
   },
-  "ke": "Kenya",
+  "ke": "Keenia",
   "@ke": {
     "description": "text"
   },
-  "kg": "Kyrgyzstan",
+  "kg": "Kõrgõzstan",
   "@kg": {
     "description": "text"
   },
-  "kh": "Cambodia",
+  "kh": "Kambodža",
   "@kh": {
     "description": "text"
   },
@@ -507,31 +507,31 @@
   "@ki": {
     "description": "text"
   },
-  "km": "Comoros",
+  "km": "Komoorid",
   "@km": {
     "description": "text"
   },
-  "kn": "Saint Kitts and Nevis",
+  "kn": "Saint Kitts ja Nevis",
   "@kn": {
     "description": "text"
   },
-  "kp": "North Korea",
+  "kp": "Põhja-Korea",
   "@kp": {
     "description": "text"
   },
-  "kr": "South Korea",
+  "kr": "Lõuna-Korea",
   "@kr": {
     "description": "text"
   },
-  "kw": "Kuwait",
+  "kw": "Kuveidi",
   "@kw": {
     "description": "text"
   },
-  "ky": "Cayman Islands",
+  "ky": "Kaimanisaared",
   "@ky": {
     "description": "text"
   },
-  "kz": "Kazakhstan",
+  "kz": "Kasahstan",
   "@kz": {
     "description": "text"
   },
@@ -539,7 +539,7 @@
   "@la": {
     "description": "text"
   },
-  "lb": "Lebanon",
+  "lb": "Liibanon",
   "@lb": {
     "description": "text"
   },
@@ -555,7 +555,7 @@
   "@lk": {
     "description": "text"
   },
-  "lr": "Liberia",
+  "lr": "Libeeria",
   "@lr": {
     "description": "text"
   },
@@ -563,23 +563,23 @@
   "@ls": {
     "description": "text"
   },
-  "lt": "Lithuania",
+  "lt": "Leedu",
   "@lt": {
     "description": "text"
   },
-  "lu": "Luxembourg",
+  "lu": "Luksemburg",
   "@lu": {
     "description": "text"
   },
-  "lv": "Latvia",
+  "lv": "Läti",
   "@lv": {
     "description": "text"
   },
-  "ly": "Libya",
+  "ly": "Liibüa",
   "@ly": {
     "description": "text"
   },
-  "ma": "Morocco",
+  "ma": "Maroko",
   "@ma": {
     "description": "text"
   },
@@ -595,19 +595,19 @@
   "@me": {
     "description": "text"
   },
-  "mf": "Saint Martin",
+  "mf": "Püha Martin",
   "@mf": {
     "description": "text"
   },
-  "mg": "Madagascar",
+  "mg": "Madagaskar",
   "@mg": {
     "description": "text"
   },
-  "mh": "Marshall Islands",
+  "mh": "Marshalli saared",
   "@mh": {
     "description": "text"
   },
-  "mk": "North Macedonia",
+  "mk": "Põhja-Makedoonia",
   "@mk": {
     "description": "text"
   },
@@ -615,19 +615,19 @@
   "@ml": {
     "description": "text"
   },
-  "mm": "Myanmar [Burma]",
+  "mm": "Myanmar [Birma]",
   "@mm": {
     "description": "text"
   },
-  "mn": "Mongolia",
+  "mn": "Mongoolia",
   "@mn": {
     "description": "text"
   },
-  "mo": "Macao",
+  "mo": "Aomeni",
   "@mo": {
     "description": "text"
   },
-  "mp": "Northern Mariana Islands",
+  "mp": "Põhja-Mariana saared",
   "@mp": {
     "description": "text"
   },
@@ -635,7 +635,7 @@
   "@mq": {
     "description": "text"
   },
-  "mr": "Mauritania",
+  "mr": "Mauritaania",
   "@mr": {
     "description": "text"
   },
@@ -651,7 +651,7 @@
   "@mu": {
     "description": "text"
   },
-  "mv": "Maldives",
+  "mv": "Maldiivid",
   "@mv": {
     "description": "text"
   },
@@ -659,23 +659,23 @@
   "@mw": {
     "description": "text"
   },
-  "mx": "Mexico",
+  "mx": "Mehhikos",
   "@mx": {
     "description": "text"
   },
-  "my": "Malaysia",
+  "my": "Malaisia",
   "@my": {
     "description": "text"
   },
-  "mz": "Mozambique",
+  "mz": "Mosambiik",
   "@mz": {
     "description": "text"
   },
-  "na": "Namibia",
+  "na": "Namiibia",
   "@na": {
     "description": "text"
   },
-  "nc": "New Caledonia",
+  "nc": "Uus-Kaledoonia",
   "@nc": {
     "description": "text"
   },
@@ -683,11 +683,11 @@
   "@ne": {
     "description": "text"
   },
-  "nf": "Norfolk Island",
+  "nf": "Norfolki saar",
   "@nf": {
     "description": "text"
   },
-  "ng": "Nigeria",
+  "ng": "Nigeeria",
   "@ng": {
     "description": "text"
   },
@@ -695,11 +695,11 @@
   "@ni": {
     "description": "text"
   },
-  "nl": "Netherlands",
+  "nl": "Holland",
   "@nl": {
     "description": "text"
   },
-  "no": "Norway",
+  "no": "Norra",
   "@no": {
     "description": "text"
   },
@@ -715,11 +715,11 @@
   "@nu": {
     "description": "text"
   },
-  "nz": "New Zealand",
+  "nz": "Uus-Meremaa",
   "@nz": {
     "description": "text"
   },
-  "om": "Oman",
+  "om": "Omaan",
   "@om": {
     "description": "text"
   },
@@ -727,19 +727,19 @@
   "@pa": {
     "description": "text"
   },
-  "pe": "Peru",
+  "pe": "Peruu",
   "@pe": {
     "description": "text"
   },
-  "pf": "French Polynesia",
+  "pf": "Prantsuse Polüneesia",
   "@pf": {
     "description": "text"
   },
-  "pg": "Papua New Guinea",
+  "pg": "Paapua Uus-Guinea",
   "@pg": {
     "description": "text"
   },
-  "ph": "Philippines",
+  "ph": "Filipiinid",
   "@ph": {
     "description": "text"
   },
@@ -747,15 +747,15 @@
   "@pk": {
     "description": "text"
   },
-  "pl": "Poland",
+  "pl": "Poola",
   "@pl": {
     "description": "text"
   },
-  "pm": "Saint Pierre and Miquelon",
+  "pm": "Saint Pierre ja Miquelon",
   "@pm": {
     "description": "text"
   },
-  "pn": "Pitcairn Islands",
+  "pn": "Pitcairni saared",
   "@pn": {
     "description": "text"
   },
@@ -763,7 +763,7 @@
   "@pr": {
     "description": "text"
   },
-  "ps": "Palestine",
+  "ps": "Palestiina",
   "@ps": {
     "description": "text"
   },
@@ -779,7 +779,7 @@
   "@py": {
     "description": "text"
   },
-  "qa": "Qatar",
+  "qa": "Katar",
   "@qa": {
     "description": "text"
   },
@@ -787,7 +787,7 @@
   "@re": {
     "description": "text"
   },
-  "ro": "Romania",
+  "ro": "Rumeenia",
   "@ro": {
     "description": "text"
   },
@@ -795,7 +795,7 @@
   "@rs": {
     "description": "text"
   },
-  "ru": "Russia",
+  "ru": "Venemaa",
   "@ru": {
     "description": "text"
   },
@@ -803,43 +803,43 @@
   "@rw": {
     "description": "text"
   },
-  "sa": "Saudi Arabia",
+  "sa": "Saudi Araabia",
   "@sa": {
     "description": "text"
   },
-  "sb": "Solomon Islands",
+  "sb": "Saalomoni saared",
   "@sb": {
     "description": "text"
   },
-  "sc": "Seychelles",
+  "sc": "Seišellid",
   "@sc": {
     "description": "text"
   },
-  "sd": "Sudan",
+  "sd": "Sudaan",
   "@sd": {
     "description": "text"
   },
-  "se": "Sweden",
+  "se": "Rootsi",
   "@se": {
     "description": "text"
   },
-  "sg": "Singapore",
+  "sg": "Singapur",
   "@sg": {
     "description": "text"
   },
-  "sh": "Saint Helena",
+  "sh": "Püha Helena",
   "@sh": {
     "description": "text"
   },
-  "si": "Slovenia",
+  "si": "Sloveenia",
   "@si": {
     "description": "text"
   },
-  "sj": "Svalbard and Jan Mayen",
+  "sj": "Svalbard ja Jan Mayen",
   "@sj": {
     "description": "text"
   },
-  "sk": "Slovakia",
+  "sk": "Slovakkia",
   "@sk": {
     "description": "text"
   },
@@ -855,7 +855,7 @@
   "@sn": {
     "description": "text"
   },
-  "so": "Somalia",
+  "so": "Somaalia",
   "@so": {
     "description": "text"
   },
@@ -863,11 +863,11 @@
   "@sr": {
     "description": "text"
   },
-  "ss": "South Sudan",
+  "ss": "Lõuna-Sudaan",
   "@ss": {
     "description": "text"
   },
-  "st": "São Tomé and Príncipe",
+  "st": "São Tomé ja Príncipe",
   "@st": {
     "description": "text"
   },
@@ -879,23 +879,23 @@
   "@sx": {
     "description": "text"
   },
-  "sy": "Syria",
+  "sy": "Süüria",
   "@sy": {
     "description": "text"
   },
-  "sz": "Swaziland",
+  "sz": "Svaasimaa",
   "@sz": {
     "description": "text"
   },
-  "tc": "Turks and Caicos Islands",
+  "tc": "Turks ja Caicose saared",
   "@tc": {
     "description": "text"
   },
-  "td": "Chad",
+  "td": "Tšaad",
   "@td": {
     "description": "text"
   },
-  "tf": "French Southern Territories",
+  "tf": "Prantsuse lõunapiirkonnad",
   "@tf": {
     "description": "text"
   },
@@ -903,11 +903,11 @@
   "@tg": {
     "description": "text"
   },
-  "th": "Thailand",
+  "th": "Tai",
   "@th": {
     "description": "text"
   },
-  "tj": "Tajikistan",
+  "tj": "Tadžikistan",
   "@tj": {
     "description": "text"
   },
@@ -915,15 +915,15 @@
   "@tk": {
     "description": "text"
   },
-  "tl": "East Timor",
+  "tl": "Ida-Timor",
   "@tl": {
     "description": "text"
   },
-  "tm": "Turkmenistan",
+  "tm": "Türkmenistan",
   "@tm": {
     "description": "text"
   },
-  "tn": "Tunisia",
+  "tn": "Tuneesia",
   "@tn": {
     "description": "text"
   },
@@ -931,11 +931,11 @@
   "@to": {
     "description": "text"
   },
-  "tr": "Turkey",
+  "tr": "Türgi",
   "@tr": {
     "description": "text"
   },
-  "tt": "Trinidad and Tobago",
+  "tt": "Trinidad ja Tobago",
   "@tt": {
     "description": "text"
   },
@@ -947,11 +947,11 @@
   "@tw": {
     "description": "text"
   },
-  "tz": "Tanzania",
+  "tz": "Tansaania",
   "@tz": {
     "description": "text"
   },
-  "ua": "Ukraine",
+  "ua": "Ukraina",
   "@ua": {
     "description": "text"
   },
@@ -959,11 +959,11 @@
   "@ug": {
     "description": "text"
   },
-  "um": "U.S. Minor Outlying Islands",
+  "um": "USA väikesed äärepoolsed saared",
   "@um": {
     "description": "text"
   },
-  "us": "United States",
+  "us": "Ameerika Ühendriigid",
   "@us": {
     "description": "text"
   },
@@ -971,15 +971,15 @@
   "@uy": {
     "description": "text"
   },
-  "uz": "Uzbekistan",
+  "uz": "Usbekistan",
   "@uz": {
     "description": "text"
   },
-  "va": "Vatican City",
+  "va": "Vatikani linn",
   "@va": {
     "description": "text"
   },
-  "vc": "Saint Vincent and the Grenadines",
+  "vc": "Saint Vincent ja Grenadiinid",
   "@vc": {
     "description": "text"
   },
@@ -987,11 +987,11 @@
   "@ve": {
     "description": "text"
   },
-  "vg": "British Virgin Islands",
+  "vg": "Briti Neitsisaared",
   "@vg": {
     "description": "text"
   },
-  "vi": "U.S. Virgin Islands",
+  "vi": "USA Neitsisaared",
   "@vi": {
     "description": "text"
   },
@@ -1003,7 +1003,7 @@
   "@vu": {
     "description": "text"
   },
-  "wf": "Wallis and Futuna",
+  "wf": "Wallis ja Futuna",
   "@wf": {
     "description": "text"
   },
@@ -1015,7 +1015,7 @@
   "@xk": {
     "description": "text"
   },
-  "ye": "Yemen",
+  "ye": "Jeemen",
   "@ye": {
     "description": "text"
   },
@@ -1023,11 +1023,11 @@
   "@yt": {
     "description": "text"
   },
-  "za": "South Africa",
+  "za": "Lõuna-Aafrika",
   "@za": {
     "description": "text"
   },
-  "zm": "Zambia",
+  "zm": "Sambia",
   "@zm": {
     "description": "text"
   },

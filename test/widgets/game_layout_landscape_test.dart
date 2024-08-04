@@ -1,4 +1,5 @@
 import 'package:flagsquiz/models/question.dart';
+import 'package:flagsquiz/ui/flags_quiz_app.dart';
 import 'package:flagsquiz/ui/game/game_answers_widget.dart';
 import 'package:flagsquiz/ui/game/game_image_widget.dart';
 import 'package:flutter/material.dart';
@@ -11,7 +12,7 @@ import 'package:flagsquiz/ui/game/game_layout.dart';
 void main() {
   group('GameLayout', () {
     Country mockCountry =
-        Country.fromJson({"name": "Test", "continent": "EU", "code": "UA"});
+        Country.fromJson({"name": "Test", "continent": "EU", "code": "ua"});
     QuestionState mockQuestionState =
         QuestionState(Question<Country>(mockCountry, [mockCountry]), 1, 1);
 
@@ -24,8 +25,8 @@ void main() {
         localWidgetSize: Size(800, 600),
       );
 
-      await tester.pumpWidget(MaterialApp(
-        home: GameLayout(
+      await tester.pumpWidget(FlagsQuizApp(
+        homeWidget: GameLayout(
           questionState: mockQuestionState,
           information: sizingInformation,
           processAnswer: (_) {},

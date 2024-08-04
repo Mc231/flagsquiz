@@ -1,1037 +1,1037 @@
 {
-  "selectRegion": "Select Region",
+  "selectRegion": "Изберете регион",
   "@selectRegion": {
     "description": "text"
   },
-  "all": "All",
+  "all": "Всички",
   "@all": {
     "description": "text"
   },
-  "europe": "Europe",
+  "europe": "Европа",
   "@europe": {
     "description": "text"
   },
-  "asia": "Asia",
+  "asia": "Азия",
   "@asia": {
     "description": "text"
   },
-  "africa": "Africa",
+  "africa": "Африка",
   "@africa": {
     "description": "text"
   },
-  "northAmerica": "North America",
+  "northAmerica": "Северна Америка",
   "@northAmerica": {
     "description": "text"
   },
-  "southAmerica": "South America",
+  "southAmerica": "Южна Америка",
   "@southAmerica": {
     "description": "text"
   },
-  "oceania": "Oceania",
+  "oceania": "Океания",
   "@oceania": {
     "description": "text"
   },
-  "yourScore": "Your Score",
+  "yourScore": "Вашият резултат",
   "@yourScore": {
     "description": "text"
   },
-  "ad": "Andorra",
+  "ad": "Андора",
   "@ad": {
     "description": "text"
   },
-  "ae": "United Arab Emirates",
+  "ae": "Обединени арабски емирства",
   "@ae": {
     "description": "text"
   },
-  "ag": "Antigua and Barbuda",
+  "ag": "Антигуа и Барбуда",
   "@ag": {
     "description": "text"
   },
-  "ai": "Anguilla",
+  "ai": "Ангила",
   "@ai": {
     "description": "text"
   },
-  "af": "Afghanistan",
+  "af": "Афганистан",
   "@af": {
     "description": "text"
   },
-  "al": "Albania",
+  "al": "Албания",
   "@al": {
     "description": "text"
   },
-  "am": "Armenia",
+  "am": "Армения",
   "@am": {
     "description": "text"
   },
-  "ao": "Angola",
+  "ao": "Ангола",
   "@ao": {
     "description": "text"
   },
-  "aq": "Antarctica",
+  "aq": "Антарктида",
   "@aq": {
     "description": "text"
   },
-  "ar": "Argentina",
+  "ar": "Аржентина",
   "@ar": {
     "description": "text"
   },
-  "as": "American Samoa",
+  "as": "Американска Самоа",
   "@as": {
     "description": "text"
   },
-  "at": "Austria",
+  "at": "Австрия",
   "@at": {
     "description": "text"
   },
-  "au": "Australia",
+  "au": "Австралия",
   "@au": {
     "description": "text"
   },
-  "aw": "Aruba",
+  "aw": "Аруба",
   "@aw": {
     "description": "text"
   },
-  "ax": "Åland",
+  "ax": "Аланд",
   "@ax": {
     "description": "text"
   },
-  "az": "Azerbaijan",
+  "az": "Азербайджан",
   "@az": {
     "description": "text"
   },
-  "ba": "Bosnia and Herzegovina",
+  "ba": "Босна и Херцеговина",
   "@ba": {
     "description": "text"
   },
-  "bb": "Barbados",
+  "bb": "Барбадос",
   "@bb": {
     "description": "text"
   },
-  "bd": "Bangladesh",
+  "bd": "Бангладеш",
   "@bd": {
     "description": "text"
   },
-  "be": "Belgium",
+  "be": "Белгия",
   "@be": {
     "description": "text"
   },
-  "bf": "Burkina Faso",
+  "bf": "Буркина Фасо",
   "@bf": {
     "description": "text"
   },
-  "bg": "Bulgaria",
+  "bg": "България",
   "@bg": {
     "description": "text"
   },
-  "bh": "Bahrain",
+  "bh": "Бахрейн",
   "@bh": {
     "description": "text"
   },
-  "bi": "Burundi",
+  "bi": "Бурунди",
   "@bi": {
     "description": "text"
   },
-  "bj": "Benin",
+  "bj": "Бенин",
   "@bj": {
     "description": "text"
   },
-  "bl": "Saint Barthélemy",
+  "bl": "Свети Бартелеми",
   "@bl": {
     "description": "text"
   },
-  "bm": "Bermuda",
+  "bm": "Бермудски",
   "@bm": {
     "description": "text"
   },
-  "bn": "Brunei",
+  "bn": "Бруней",
   "@bn": {
     "description": "text"
   },
-  "bo": "Bolivia",
+  "bo": "Боливия",
   "@bo": {
     "description": "text"
   },
-  "bq": "Bonaire",
+  "bq": "Бонайре",
   "@bq": {
     "description": "text"
   },
-  "br": "Brazil",
+  "br": "Бразилия",
   "@br": {
     "description": "text"
   },
-  "bs": "Bahamas",
+  "bs": "Бахамски острови",
   "@bs": {
     "description": "text"
   },
-  "bt": "Bhutan",
+  "bt": "Бутан",
   "@bt": {
     "description": "text"
   },
-  "bv": "Bouvet Island",
+  "bv": "Остров Буве",
   "@bv": {
     "description": "text"
   },
-  "bw": "Botswana",
+  "bw": "Ботсвана",
   "@bw": {
     "description": "text"
   },
-  "by": "Belarus",
+  "by": "Беларус",
   "@by": {
     "description": "text"
   },
-  "bz": "Belize",
+  "bz": "Белиз",
   "@bz": {
     "description": "text"
   },
-  "ca": "Canada",
+  "ca": "Канада",
   "@ca": {
     "description": "text"
   },
-  "cc": "Cocos [Keeling] Islands",
+  "cc": "Острови Кокос [Килинг]",
   "@cc": {
     "description": "text"
   },
-  "cd": "Democratic Republic of the Congo",
+  "cd": "Демократична република Конго",
   "@cd": {
     "description": "text"
   },
-  "cf": "Central African Republic",
+  "cf": "Централноафриканска република",
   "@cf": {
     "description": "text"
   },
-  "cg": "Republic of the Congo",
+  "cg": "Република Конго",
   "@cg": {
     "description": "text"
   },
-  "ch": "Switzerland",
+  "ch": "Швейцария",
   "@ch": {
     "description": "text"
   },
-  "ci": "Ivory Coast",
+  "ci": "Кот д'Ивоар",
   "@ci": {
     "description": "text"
   },
-  "ck": "Cook Islands",
+  "ck": "Острови Кук",
   "@ck": {
     "description": "text"
   },
-  "cl": "Chile",
+  "cl": "Чили",
   "@cl": {
     "description": "text"
   },
-  "cm": "Cameroon",
+  "cm": "Камерун",
   "@cm": {
     "description": "text"
   },
-  "cn": "China",
+  "cn": "Китай",
   "@cn": {
     "description": "text"
   },
-  "co": "Colombia",
+  "co": "Колумбия",
   "@co": {
     "description": "text"
   },
-  "cr": "Costa Rica",
+  "cr": "Коста Рика",
   "@cr": {
     "description": "text"
   },
-  "cu": "Cuba",
+  "cu": "Куба",
   "@cu": {
     "description": "text"
   },
-  "cv": "Cape Verde",
+  "cv": "Кабо Верде",
   "@cv": {
     "description": "text"
   },
-  "cw": "Curacao",
+  "cw": "Кюрасао",
   "@cw": {
     "description": "text"
   },
-  "cx": "Christmas Island",
+  "cx": "Коледен остров",
   "@cx": {
     "description": "text"
   },
-  "dk": "Denmark",
+  "dk": "Дания",
   "@dk": {
     "description": "text"
   },
-  "dm": "Dominica",
+  "dm": "Доминика",
   "@dm": {
     "description": "text"
   },
-  "doZ": "Dominican Republic",
+  "doZ": "Доминиканска република",
   "@doZ": {
     "description": "text"
   },
-  "dz": "Algeria",
+  "dz": "Алжир",
   "@dz": {
     "description": "text"
   },
-  "ec": "Ecuador",
+  "ec": "Еквадор",
   "@ec": {
     "description": "text"
   },
-  "ee": "Estonia",
+  "ee": "Естония",
   "@ee": {
     "description": "text"
   },
-  "eg": "Egypt",
+  "eg": "Египет",
   "@eg": {
     "description": "text"
   },
-  "eh": "Western Sahara",
+  "eh": "Западна Сахара",
   "@eh": {
     "description": "text"
   },
-  "er": "Eritrea",
+  "er": "Еритрея",
   "@er": {
     "description": "text"
   },
-  "es": "Spain",
+  "es": "Испания",
   "@es": {
     "description": "text"
   },
-  "et": "Ethiopia",
+  "et": "Етиопия",
   "@et": {
     "description": "text"
   },
-  "fi": "Finland",
+  "fi": "Финландия",
   "@fi": {
     "description": "text"
   },
-  "fj": "Fiji",
+  "fj": "Фиджи",
   "@fj": {
     "description": "text"
   },
-  "fk": "Falkland Islands",
+  "fk": "Фолкландски острови",
   "@fk": {
     "description": "text"
   },
-  "fm": "Micronesia",
+  "fm": "Микронезия",
   "@fm": {
     "description": "text"
   },
-  "fo": "Faroe Islands",
+  "fo": "Фарьорски острови",
   "@fo": {
     "description": "text"
   },
-  "fr": "France",
+  "fr": "Франция",
   "@fr": {
     "description": "text"
   },
-  "ga": "Gabon",
+  "ga": "Габон",
   "@ga": {
     "description": "text"
   },
-  "gb": "United Kingdom",
+  "gb": "Великобритания",
   "@gb": {
     "description": "text"
   },
-  "gd": "Grenada",
+  "gd": "Гренада",
   "@gd": {
     "description": "text"
   },
-  "ge": "Georgia",
+  "ge": "Грузия",
   "@ge": {
     "description": "text"
   },
-  "gf": "French Guiana",
+  "gf": "Френска Гвиана",
   "@gf": {
     "description": "text"
   },
-  "gg": "Guernsey",
+  "gg": "Гърнзи",
   "@gg": {
     "description": "text"
   },
-  "gh": "Ghana",
+  "gh": "Гана",
   "@gh": {
     "description": "text"
   },
-  "gi": "Gibraltar",
+  "gi": "Гибралтар",
   "@gi": {
     "description": "text"
   },
-  "gl": "Greenland",
+  "gl": "Гренландия",
   "@gl": {
     "description": "text"
   },
-  "gm": "Gambia",
+  "gm": "Гамбия",
   "@gm": {
     "description": "text"
   },
-  "gn": "Guinea",
+  "gn": "Гвинея",
   "@gn": {
     "description": "text"
   },
-  "gp": "Guadeloupe",
+  "gp": "Гваделупа",
   "@gp": {
     "description": "text"
   },
-  "gq": "Equatorial Guinea",
+  "gq": "Екваториална Гвинея",
   "@gq": {
     "description": "text"
   },
-  "gr": "Greece",
+  "gr": "Гърция",
   "@gr": {
     "description": "text"
   },
-  "gs": "South Georgia and the South Sandwich Islands",
+  "gs": "Южна Джорджия и Южните Сандвичеви острови",
   "@gs": {
     "description": "text"
   },
-  "gt": "Guatemala",
+  "gt": "Гватемала",
   "@gt": {
     "description": "text"
   },
-  "gu": "Guam",
+  "gu": "Гуам",
   "@gu": {
     "description": "text"
   },
-  "gw": "Guinea-Bissau",
+  "gw": "Гвинея-Бисау",
   "@gw": {
     "description": "text"
   },
-  "gy": "Guyana",
+  "gy": "Гвиана",
   "@gy": {
     "description": "text"
   },
-  "hk": "Hong Kong",
+  "hk": "Хонг Конг",
   "@hk": {
     "description": "text"
   },
-  "hm": "Heard Island and McDonald Islands",
+  "hm": "Остров Хърд и острови Макдоналд",
   "@hm": {
     "description": "text"
   },
-  "hn": "Honduras",
+  "hn": "Хондурас",
   "@hn": {
     "description": "text"
   },
-  "hr": "Croatia",
+  "hr": "Хърватия",
   "@hr": {
     "description": "text"
   },
-  "cz": "Czech Republic",
+  "cz": "Чехия",
   "@cz": {
     "description": "text"
   },
-  "dj": "Djibouti",
+  "dj": "Джибути",
   "@dj": {
     "description": "text"
   },
-  "cy": "Cyprus",
+  "cy": "Кипър",
   "@cy": {
     "description": "text"
   },
-  "de": "Germany",
+  "de": "Германия",
   "@de": {
     "description": "text"
   },
-  "ht": "Haiti",
+  "ht": "Хаити",
   "@ht": {
     "description": "text"
   },
-  "hu": "Hungary",
+  "hu": "Унгария",
   "@hu": {
     "description": "text"
   },
-  "id": "Indonesia",
+  "id": "Индонезия",
   "@id": {
     "description": "text"
   },
-  "ie": "Ireland",
+  "ie": "Ирландия",
   "@ie": {
     "description": "text"
   },
-  "il": "Israel",
+  "il": "Израел",
   "@il": {
     "description": "text"
   },
-  "im": "Isle of Man",
+  "im": "Остров Ман",
   "@im": {
     "description": "text"
   },
-  "inZ": "India",
+  "inZ": "Индия",
   "@inZ": {
     "description": "text"
   },
-  "io": "British Indian Ocean Territory",
+  "io": "Британска територия в Индийския океан",
   "@io": {
     "description": "text"
   },
-  "iq": "Iraq",
+  "iq": "Ирак",
   "@iq": {
     "description": "text"
   },
-  "ir": "Iran",
+  "ir": "Иран",
   "@ir": {
     "description": "text"
   },
-  "isZ": "Iceland",
+  "isZ": "Исландия",
   "@isZ": {
     "description": "text"
   },
-  "it": "Italy",
+  "it": "Италия",
   "@it": {
     "description": "text"
   },
-  "je": "Jersey",
+  "je": "Джърси",
   "@je": {
     "description": "text"
   },
-  "jm": "Jamaica",
+  "jm": "Ямайка",
   "@jm": {
     "description": "text"
   },
-  "jo": "Jordan",
+  "jo": "Йордания",
   "@jo": {
     "description": "text"
   },
-  "jp": "Japan",
+  "jp": "Япония",
   "@jp": {
     "description": "text"
   },
-  "ke": "Kenya",
+  "ke": "Кения",
   "@ke": {
     "description": "text"
   },
-  "kg": "Kyrgyzstan",
+  "kg": "Киргизстан",
   "@kg": {
     "description": "text"
   },
-  "kh": "Cambodia",
+  "kh": "Камбоджа",
   "@kh": {
     "description": "text"
   },
-  "ki": "Kiribati",
+  "ki": "Кирибати",
   "@ki": {
     "description": "text"
   },
-  "km": "Comoros",
+  "km": "Коморски острови",
   "@km": {
     "description": "text"
   },
-  "kn": "Saint Kitts and Nevis",
+  "kn": "Сейнт Китс и Невис",
   "@kn": {
     "description": "text"
   },
-  "kp": "North Korea",
+  "kp": "Северна Корея",
   "@kp": {
     "description": "text"
   },
-  "kr": "South Korea",
+  "kr": "Южна Корея",
   "@kr": {
     "description": "text"
   },
-  "kw": "Kuwait",
+  "kw": "Кувейт",
   "@kw": {
     "description": "text"
   },
-  "ky": "Cayman Islands",
+  "ky": "Кайманови острови",
   "@ky": {
     "description": "text"
   },
-  "kz": "Kazakhstan",
+  "kz": "Казахстан",
   "@kz": {
     "description": "text"
   },
-  "la": "Laos",
+  "la": "Лаос",
   "@la": {
     "description": "text"
   },
-  "lb": "Lebanon",
+  "lb": "Ливан",
   "@lb": {
     "description": "text"
   },
-  "lc": "Saint Lucia",
+  "lc": "Сейнт Лусия",
   "@lc": {
     "description": "text"
   },
-  "li": "Liechtenstein",
+  "li": "Лихтенщайн",
   "@li": {
     "description": "text"
   },
-  "lk": "Sri Lanka",
+  "lk": "Шри Ланка",
   "@lk": {
     "description": "text"
   },
-  "lr": "Liberia",
+  "lr": "Либерия",
   "@lr": {
     "description": "text"
   },
-  "ls": "Lesotho",
+  "ls": "Лесото",
   "@ls": {
     "description": "text"
   },
-  "lt": "Lithuania",
+  "lt": "Литва",
   "@lt": {
     "description": "text"
   },
-  "lu": "Luxembourg",
+  "lu": "Люксембург",
   "@lu": {
     "description": "text"
   },
-  "lv": "Latvia",
+  "lv": "Латвия",
   "@lv": {
     "description": "text"
   },
-  "ly": "Libya",
+  "ly": "Либия",
   "@ly": {
     "description": "text"
   },
-  "ma": "Morocco",
+  "ma": "Мароко",
   "@ma": {
     "description": "text"
   },
-  "mc": "Monaco",
+  "mc": "Монако",
   "@mc": {
     "description": "text"
   },
-  "md": "Moldova",
+  "md": "Молдова",
   "@md": {
     "description": "text"
   },
-  "me": "Montenegro",
+  "me": "Черна гора",
   "@me": {
     "description": "text"
   },
-  "mf": "Saint Martin",
+  "mf": "Свети Мартин",
   "@mf": {
     "description": "text"
   },
-  "mg": "Madagascar",
+  "mg": "Мадагаскар",
   "@mg": {
     "description": "text"
   },
-  "mh": "Marshall Islands",
+  "mh": "Маршалови острови",
   "@mh": {
     "description": "text"
   },
-  "mk": "North Macedonia",
+  "mk": "Северна Македония",
   "@mk": {
     "description": "text"
   },
-  "ml": "Mali",
+  "ml": "Мали",
   "@ml": {
     "description": "text"
   },
-  "mm": "Myanmar [Burma]",
+  "mm": "Мианмар [Бирма]",
   "@mm": {
     "description": "text"
   },
-  "mn": "Mongolia",
+  "mn": "Монголия",
   "@mn": {
     "description": "text"
   },
-  "mo": "Macao",
+  "mo": "Макао",
   "@mo": {
     "description": "text"
   },
-  "mp": "Northern Mariana Islands",
+  "mp": "Северни Мариански острови",
   "@mp": {
     "description": "text"
   },
-  "mq": "Martinique",
+  "mq": "Мартиника",
   "@mq": {
     "description": "text"
   },
-  "mr": "Mauritania",
+  "mr": "Мавритания",
   "@mr": {
     "description": "text"
   },
-  "ms": "Montserrat",
+  "ms": "Монсерат",
   "@ms": {
     "description": "text"
   },
-  "mt": "Malta",
+  "mt": "Малта",
   "@mt": {
     "description": "text"
   },
-  "mu": "Mauritius",
+  "mu": "Мавриций",
   "@mu": {
     "description": "text"
   },
-  "mv": "Maldives",
+  "mv": "Малдивите",
   "@mv": {
     "description": "text"
   },
-  "mw": "Malawi",
+  "mw": "Малави",
   "@mw": {
     "description": "text"
   },
-  "mx": "Mexico",
+  "mx": "Мексико",
   "@mx": {
     "description": "text"
   },
-  "my": "Malaysia",
+  "my": "Малайзия",
   "@my": {
     "description": "text"
   },
-  "mz": "Mozambique",
+  "mz": "Мозамбик",
   "@mz": {
     "description": "text"
   },
-  "na": "Namibia",
+  "na": "Намибия",
   "@na": {
     "description": "text"
   },
-  "nc": "New Caledonia",
+  "nc": "Нова Каледония",
   "@nc": {
     "description": "text"
   },
-  "ne": "Niger",
+  "ne": "Нигер",
   "@ne": {
     "description": "text"
   },
-  "nf": "Norfolk Island",
+  "nf": "Остров Норфолк",
   "@nf": {
     "description": "text"
   },
-  "ng": "Nigeria",
+  "ng": "Нигерия",
   "@ng": {
     "description": "text"
   },
-  "ni": "Nicaragua",
+  "ni": "Никарагуа",
   "@ni": {
     "description": "text"
   },
-  "nl": "Netherlands",
+  "nl": "Холандия",
   "@nl": {
     "description": "text"
   },
-  "no": "Norway",
+  "no": "Норвегия",
   "@no": {
     "description": "text"
   },
-  "np": "Nepal",
+  "np": "Непал",
   "@np": {
     "description": "text"
   },
-  "nr": "Nauru",
+  "nr": "Науру",
   "@nr": {
     "description": "text"
   },
-  "nu": "Niue",
+  "nu": "Ниуе",
   "@nu": {
     "description": "text"
   },
-  "nz": "New Zealand",
+  "nz": "Нова Зеландия",
   "@nz": {
     "description": "text"
   },
-  "om": "Oman",
+  "om": "Оман",
   "@om": {
     "description": "text"
   },
-  "pa": "Panama",
+  "pa": "Панама",
   "@pa": {
     "description": "text"
   },
-  "pe": "Peru",
+  "pe": "Перу",
   "@pe": {
     "description": "text"
   },
-  "pf": "French Polynesia",
+  "pf": "Френска Полинезия",
   "@pf": {
     "description": "text"
   },
-  "pg": "Papua New Guinea",
+  "pg": "Папуа Нова Гвинея",
   "@pg": {
     "description": "text"
   },
-  "ph": "Philippines",
+  "ph": "Филипини",
   "@ph": {
     "description": "text"
   },
-  "pk": "Pakistan",
+  "pk": "Пакистан",
   "@pk": {
     "description": "text"
   },
-  "pl": "Poland",
+  "pl": "Полша",
   "@pl": {
     "description": "text"
   },
-  "pm": "Saint Pierre and Miquelon",
+  "pm": "Сен Пиер и Микелон",
   "@pm": {
     "description": "text"
   },
-  "pn": "Pitcairn Islands",
+  "pn": "Острови Питкерн",
   "@pn": {
     "description": "text"
   },
-  "pr": "Puerto Rico",
+  "pr": "Пуерто Рико",
   "@pr": {
     "description": "text"
   },
-  "ps": "Palestine",
+  "ps": "Палестина",
   "@ps": {
     "description": "text"
   },
-  "pt": "Portugal",
+  "pt": "Португалия",
   "@pt": {
     "description": "text"
   },
-  "pw": "Palau",
+  "pw": "Палау",
   "@pw": {
     "description": "text"
   },
-  "py": "Paraguay",
+  "py": "Парагвай",
   "@py": {
     "description": "text"
   },
-  "qa": "Qatar",
+  "qa": "Катар",
   "@qa": {
     "description": "text"
   },
-  "re": "Réunion",
+  "re": "Реюнион",
   "@re": {
     "description": "text"
   },
-  "ro": "Romania",
+  "ro": "Румъния",
   "@ro": {
     "description": "text"
   },
-  "rs": "Serbia",
+  "rs": "Сърбия",
   "@rs": {
     "description": "text"
   },
-  "ru": "Russia",
+  "ru": "Русия",
   "@ru": {
     "description": "text"
   },
-  "rw": "Rwanda",
+  "rw": "Руанда",
   "@rw": {
     "description": "text"
   },
-  "sa": "Saudi Arabia",
+  "sa": "Саудитска Арабия",
   "@sa": {
     "description": "text"
   },
-  "sb": "Solomon Islands",
+  "sb": "Соломонови острови",
   "@sb": {
     "description": "text"
   },
-  "sc": "Seychelles",
+  "sc": "Сейшели",
   "@sc": {
     "description": "text"
   },
-  "sd": "Sudan",
+  "sd": "Судан",
   "@sd": {
     "description": "text"
   },
-  "se": "Sweden",
+  "se": "Швеция",
   "@se": {
     "description": "text"
   },
-  "sg": "Singapore",
+  "sg": "Сингапур",
   "@sg": {
     "description": "text"
   },
-  "sh": "Saint Helena",
+  "sh": "Света Елена",
   "@sh": {
     "description": "text"
   },
-  "si": "Slovenia",
+  "si": "Словения",
   "@si": {
     "description": "text"
   },
-  "sj": "Svalbard and Jan Mayen",
+  "sj": "Свалбард и Ян Майен",
   "@sj": {
     "description": "text"
   },
-  "sk": "Slovakia",
+  "sk": "Словакия",
   "@sk": {
     "description": "text"
   },
-  "sl": "Sierra Leone",
+  "sl": "Сиера Леоне",
   "@sl": {
     "description": "text"
   },
-  "sm": "San Marino",
+  "sm": "Сан Марино",
   "@sm": {
     "description": "text"
   },
-  "sn": "Senegal",
+  "sn": "Сенегал",
   "@sn": {
     "description": "text"
   },
-  "so": "Somalia",
+  "so": "Сомалия",
   "@so": {
     "description": "text"
   },
-  "sr": "Suriname",
+  "sr": "Суринам",
   "@sr": {
     "description": "text"
   },
-  "ss": "South Sudan",
+  "ss": "Южен Судан",
   "@ss": {
     "description": "text"
   },
-  "st": "São Tomé and Príncipe",
+  "st": "Сао Томе и Принсипи",
   "@st": {
     "description": "text"
   },
-  "sv": "El Salvador",
+  "sv": "Ел Салвадор",
   "@sv": {
     "description": "text"
   },
-  "sx": "Sint Maarten",
+  "sx": "Синт Мартен",
   "@sx": {
     "description": "text"
   },
-  "sy": "Syria",
+  "sy": "Сирия",
   "@sy": {
     "description": "text"
   },
-  "sz": "Swaziland",
+  "sz": "Свазиленд",
   "@sz": {
     "description": "text"
   },
-  "tc": "Turks and Caicos Islands",
+  "tc": "Острови Търкс и Кайкос",
   "@tc": {
     "description": "text"
   },
-  "td": "Chad",
+  "td": "Чад",
   "@td": {
     "description": "text"
   },
-  "tf": "French Southern Territories",
+  "tf": "Френски южни територии",
   "@tf": {
     "description": "text"
   },
-  "tg": "Togo",
+  "tg": "Того",
   "@tg": {
     "description": "text"
   },
-  "th": "Thailand",
+  "th": "Тайланд",
   "@th": {
     "description": "text"
   },
-  "tj": "Tajikistan",
+  "tj": "Таджикистан",
   "@tj": {
     "description": "text"
   },
-  "tk": "Tokelau",
+  "tk": "Токелау",
   "@tk": {
     "description": "text"
   },
-  "tl": "East Timor",
+  "tl": "Източен Тимор",
   "@tl": {
     "description": "text"
   },
-  "tm": "Turkmenistan",
+  "tm": "Туркменистан",
   "@tm": {
     "description": "text"
   },
-  "tn": "Tunisia",
+  "tn": "Тунис",
   "@tn": {
     "description": "text"
   },
-  "to": "Tonga",
+  "to": "Тонга",
   "@to": {
     "description": "text"
   },
-  "tr": "Turkey",
+  "tr": "Турция",
   "@tr": {
     "description": "text"
   },
-  "tt": "Trinidad and Tobago",
+  "tt": "Тринидад и Тобаго",
   "@tt": {
     "description": "text"
   },
-  "tv": "Tuvalu",
+  "tv": "Тувалу",
   "@tv": {
     "description": "text"
   },
-  "tw": "Taiwan",
+  "tw": "Тайван",
   "@tw": {
     "description": "text"
   },
-  "tz": "Tanzania",
+  "tz": "Танзания",
   "@tz": {
     "description": "text"
   },
-  "ua": "Ukraine",
+  "ua": "Украйна",
   "@ua": {
     "description": "text"
   },
-  "ug": "Uganda",
+  "ug": "Уганда",
   "@ug": {
     "description": "text"
   },
-  "um": "U.S. Minor Outlying Islands",
+  "um": "Малки отдалечени острови на САЩ",
   "@um": {
     "description": "text"
   },
-  "us": "United States",
+  "us": "Съединени щати",
   "@us": {
     "description": "text"
   },
-  "uy": "Uruguay",
+  "uy": "Уругвай",
   "@uy": {
     "description": "text"
   },
-  "uz": "Uzbekistan",
+  "uz": "Узбекистан",
   "@uz": {
     "description": "text"
   },
-  "va": "Vatican City",
+  "va": "Ватикана",
   "@va": {
     "description": "text"
   },
-  "vc": "Saint Vincent and the Grenadines",
+  "vc": "Сейнт Винсент и Гренадини",
   "@vc": {
     "description": "text"
   },
-  "ve": "Venezuela",
+  "ve": "Венецуела",
   "@ve": {
     "description": "text"
   },
-  "vg": "British Virgin Islands",
+  "vg": "Британски Вирджински острови",
   "@vg": {
     "description": "text"
   },
-  "vi": "U.S. Virgin Islands",
+  "vi": "Вирджински острови на САЩ",
   "@vi": {
     "description": "text"
   },
-  "vn": "Vietnam",
+  "vn": "Виетнам",
   "@vn": {
     "description": "text"
   },
-  "vu": "Vanuatu",
+  "vu": "Вануату",
   "@vu": {
     "description": "text"
   },
-  "wf": "Wallis and Futuna",
+  "wf": "Уолис и Футуна",
   "@wf": {
     "description": "text"
   },
-  "ws": "Samoa",
+  "ws": "Самоа",
   "@ws": {
     "description": "text"
   },
-  "xk": "Kosovo",
+  "xk": "Косово",
   "@xk": {
     "description": "text"
   },
-  "ye": "Yemen",
+  "ye": "Йемен",
   "@ye": {
     "description": "text"
   },
-  "yt": "Mayotte",
+  "yt": "Майот",
   "@yt": {
     "description": "text"
   },
-  "za": "South Africa",
+  "za": "Южна Африка",
   "@za": {
     "description": "text"
   },
-  "zm": "Zambia",
+  "zm": "Замбия",
   "@zm": {
     "description": "text"
   },
-  "zw": "Zimbabwe",
+  "zw": "Зимбабве",
   "@zw": {
     "description": "text"
   }

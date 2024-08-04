@@ -1,1037 +1,1037 @@
 {
-  "selectRegion": "Select Region",
+  "selectRegion": "حدد المنطقة",
   "@selectRegion": {
     "description": "text"
   },
-  "all": "All",
+  "all": "جميع",
   "@all": {
     "description": "text"
   },
-  "europe": "Europe",
+  "europe": "أوروبا",
   "@europe": {
     "description": "text"
   },
-  "asia": "Asia",
+  "asia": "آسيا",
   "@asia": {
     "description": "text"
   },
-  "africa": "Africa",
+  "africa": "أفريقيا",
   "@africa": {
     "description": "text"
   },
-  "northAmerica": "North America",
+  "northAmerica": "أمريكا الشمالية",
   "@northAmerica": {
     "description": "text"
   },
-  "southAmerica": "South America",
+  "southAmerica": "أمريكا الجنوبية",
   "@southAmerica": {
     "description": "text"
   },
-  "oceania": "Oceania",
+  "oceania": "أوقيانوسيا",
   "@oceania": {
     "description": "text"
   },
-  "yourScore": "Your Score",
+  "yourScore": "النتيجة الخاصة بك",
   "@yourScore": {
     "description": "text"
   },
-  "ad": "Andorra",
+  "ad": "أندورا",
   "@ad": {
     "description": "text"
   },
-  "ae": "United Arab Emirates",
+  "ae": "الإمارات العربية المتحدة",
   "@ae": {
     "description": "text"
   },
-  "ag": "Antigua and Barbuda",
+  "ag": "أنتيغوا وباربودا",
   "@ag": {
     "description": "text"
   },
-  "ai": "Anguilla",
+  "ai": "أنغيلا",
   "@ai": {
     "description": "text"
   },
-  "af": "Afghanistan",
+  "af": "أفغانستان",
   "@af": {
     "description": "text"
   },
-  "al": "Albania",
+  "al": "ألبانيا",
   "@al": {
     "description": "text"
   },
-  "am": "Armenia",
+  "am": "أرمينيا",
   "@am": {
     "description": "text"
   },
-  "ao": "Angola",
+  "ao": "أنغولا",
   "@ao": {
     "description": "text"
   },
-  "aq": "Antarctica",
+  "aq": "القارة القطبية الجنوبية",
   "@aq": {
     "description": "text"
   },
-  "ar": "Argentina",
+  "ar": "الأرجنتين",
   "@ar": {
     "description": "text"
   },
-  "as": "American Samoa",
+  "as": "ساموا الأمريكية",
   "@as": {
     "description": "text"
   },
-  "at": "Austria",
+  "at": "النمسا",
   "@at": {
     "description": "text"
   },
-  "au": "Australia",
+  "au": "أستراليا",
   "@au": {
     "description": "text"
   },
-  "aw": "Aruba",
+  "aw": "أروبا",
   "@aw": {
     "description": "text"
   },
-  "ax": "Åland",
+  "ax": "أولاند",
   "@ax": {
     "description": "text"
   },
-  "az": "Azerbaijan",
+  "az": "أذربيجان",
   "@az": {
     "description": "text"
   },
-  "ba": "Bosnia and Herzegovina",
+  "ba": "البوسنة والهرسك",
   "@ba": {
     "description": "text"
   },
-  "bb": "Barbados",
+  "bb": "بربادوس",
   "@bb": {
     "description": "text"
   },
-  "bd": "Bangladesh",
+  "bd": "بنغلاديش",
   "@bd": {
     "description": "text"
   },
-  "be": "Belgium",
+  "be": "بلجيكا",
   "@be": {
     "description": "text"
   },
-  "bf": "Burkina Faso",
+  "bf": "بوركينا فاسو",
   "@bf": {
     "description": "text"
   },
-  "bg": "Bulgaria",
+  "bg": "بلغاريا",
   "@bg": {
     "description": "text"
   },
-  "bh": "Bahrain",
+  "bh": "البحرين",
   "@bh": {
     "description": "text"
   },
-  "bi": "Burundi",
+  "bi": "بوروندي",
   "@bi": {
     "description": "text"
   },
-  "bj": "Benin",
+  "bj": "بنين",
   "@bj": {
     "description": "text"
   },
-  "bl": "Saint Barthélemy",
+  "bl": "سانت بارتيليمي",
   "@bl": {
     "description": "text"
   },
-  "bm": "Bermuda",
+  "bm": "برمودا",
   "@bm": {
     "description": "text"
   },
-  "bn": "Brunei",
+  "bn": "بروناي",
   "@bn": {
     "description": "text"
   },
-  "bo": "Bolivia",
+  "bo": "بوليفيا",
   "@bo": {
     "description": "text"
   },
-  "bq": "Bonaire",
+  "bq": "بونير",
   "@bq": {
     "description": "text"
   },
-  "br": "Brazil",
+  "br": "البرازيل",
   "@br": {
     "description": "text"
   },
-  "bs": "Bahamas",
+  "bs": "الباهاما",
   "@bs": {
     "description": "text"
   },
-  "bt": "Bhutan",
+  "bt": "بوتان",
   "@bt": {
     "description": "text"
   },
-  "bv": "Bouvet Island",
+  "bv": "جزيرة بوفيت",
   "@bv": {
     "description": "text"
   },
-  "bw": "Botswana",
+  "bw": "بوتسوانا",
   "@bw": {
     "description": "text"
   },
-  "by": "Belarus",
+  "by": "روسيا البيضاء",
   "@by": {
     "description": "text"
   },
-  "bz": "Belize",
+  "bz": "بليز",
   "@bz": {
     "description": "text"
   },
-  "ca": "Canada",
+  "ca": "كندا",
   "@ca": {
     "description": "text"
   },
-  "cc": "Cocos [Keeling] Islands",
+  "cc": "جزر كوكوس [كيلينغ]",
   "@cc": {
     "description": "text"
   },
-  "cd": "Democratic Republic of the Congo",
+  "cd": "جمهورية الكونغو الديمقراطية",
   "@cd": {
     "description": "text"
   },
-  "cf": "Central African Republic",
+  "cf": "جمهورية أفريقيا الوسطى",
   "@cf": {
     "description": "text"
   },
-  "cg": "Republic of the Congo",
+  "cg": "جمهورية الكونغو",
   "@cg": {
     "description": "text"
   },
-  "ch": "Switzerland",
+  "ch": "سويسرا",
   "@ch": {
     "description": "text"
   },
-  "ci": "Ivory Coast",
+  "ci": "ساحل العاج",
   "@ci": {
     "description": "text"
   },
-  "ck": "Cook Islands",
+  "ck": "جزر كوك",
   "@ck": {
     "description": "text"
   },
-  "cl": "Chile",
+  "cl": "شيلي",
   "@cl": {
     "description": "text"
   },
-  "cm": "Cameroon",
+  "cm": "الكاميرون",
   "@cm": {
     "description": "text"
   },
-  "cn": "China",
+  "cn": "الصين",
   "@cn": {
     "description": "text"
   },
-  "co": "Colombia",
+  "co": "كولومبيا",
   "@co": {
     "description": "text"
   },
-  "cr": "Costa Rica",
+  "cr": "كوستا ريكا",
   "@cr": {
     "description": "text"
   },
-  "cu": "Cuba",
+  "cu": "كوبا",
   "@cu": {
     "description": "text"
   },
-  "cv": "Cape Verde",
+  "cv": "الرأس الأخضر",
   "@cv": {
     "description": "text"
   },
-  "cw": "Curacao",
+  "cw": "كوراكاو",
   "@cw": {
     "description": "text"
   },
-  "cx": "Christmas Island",
+  "cx": "جزيرة كريسماس",
   "@cx": {
     "description": "text"
   },
-  "dk": "Denmark",
+  "dk": "الدنمارك",
   "@dk": {
     "description": "text"
   },
-  "dm": "Dominica",
+  "dm": "دومينيكا",
   "@dm": {
     "description": "text"
   },
-  "doZ": "Dominican Republic",
+  "doZ": "جمهورية الدومينيكان",
   "@doZ": {
     "description": "text"
   },
-  "dz": "Algeria",
+  "dz": "الجزائر",
   "@dz": {
     "description": "text"
   },
-  "ec": "Ecuador",
+  "ec": "الإكوادور",
   "@ec": {
     "description": "text"
   },
-  "ee": "Estonia",
+  "ee": "استونيا",
   "@ee": {
     "description": "text"
   },
-  "eg": "Egypt",
+  "eg": "مصر",
   "@eg": {
     "description": "text"
   },
-  "eh": "Western Sahara",
+  "eh": "الصحراء الغربية",
   "@eh": {
     "description": "text"
   },
-  "er": "Eritrea",
+  "er": "إرتريا",
   "@er": {
     "description": "text"
   },
-  "es": "Spain",
+  "es": "إسبانيا",
   "@es": {
     "description": "text"
   },
-  "et": "Ethiopia",
+  "et": "أثيوبيا",
   "@et": {
     "description": "text"
   },
-  "fi": "Finland",
+  "fi": "فنلندا",
   "@fi": {
     "description": "text"
   },
-  "fj": "Fiji",
+  "fj": "فيجي",
   "@fj": {
     "description": "text"
   },
-  "fk": "Falkland Islands",
+  "fk": "جزر فوكلاند",
   "@fk": {
     "description": "text"
   },
-  "fm": "Micronesia",
+  "fm": "ميكرونيزيا",
   "@fm": {
     "description": "text"
   },
-  "fo": "Faroe Islands",
+  "fo": "جزر فارو",
   "@fo": {
     "description": "text"
   },
-  "fr": "France",
+  "fr": "فرنسا",
   "@fr": {
     "description": "text"
   },
-  "ga": "Gabon",
+  "ga": "الغابون",
   "@ga": {
     "description": "text"
   },
-  "gb": "United Kingdom",
+  "gb": "المملكة المتحدة",
   "@gb": {
     "description": "text"
   },
-  "gd": "Grenada",
+  "gd": "غرينادا",
   "@gd": {
     "description": "text"
   },
-  "ge": "Georgia",
+  "ge": "جورجيا",
   "@ge": {
     "description": "text"
   },
-  "gf": "French Guiana",
+  "gf": "غويانا الفرنسية",
   "@gf": {
     "description": "text"
   },
-  "gg": "Guernsey",
+  "gg": "غيرنزي",
   "@gg": {
     "description": "text"
   },
-  "gh": "Ghana",
+  "gh": "غانا",
   "@gh": {
     "description": "text"
   },
-  "gi": "Gibraltar",
+  "gi": "جبل طارق",
   "@gi": {
     "description": "text"
   },
-  "gl": "Greenland",
+  "gl": "جرينلاند",
   "@gl": {
     "description": "text"
   },
-  "gm": "Gambia",
+  "gm": "غامبيا",
   "@gm": {
     "description": "text"
   },
-  "gn": "Guinea",
+  "gn": "غينيا",
   "@gn": {
     "description": "text"
   },
-  "gp": "Guadeloupe",
+  "gp": "جوادلوب",
   "@gp": {
     "description": "text"
   },
-  "gq": "Equatorial Guinea",
+  "gq": "غينيا الاستوائية",
   "@gq": {
     "description": "text"
   },
-  "gr": "Greece",
+  "gr": "اليونان",
   "@gr": {
     "description": "text"
   },
-  "gs": "South Georgia and the South Sandwich Islands",
+  "gs": "جورجيا الجنوبية وجزر ساندويتش الجنوبية",
   "@gs": {
     "description": "text"
   },
-  "gt": "Guatemala",
+  "gt": "غواتيمالا",
   "@gt": {
     "description": "text"
   },
-  "gu": "Guam",
+  "gu": "غوام",
   "@gu": {
     "description": "text"
   },
-  "gw": "Guinea-Bissau",
+  "gw": "غينيا بيساو",
   "@gw": {
     "description": "text"
   },
-  "gy": "Guyana",
+  "gy": "غويانا",
   "@gy": {
     "description": "text"
   },
-  "hk": "Hong Kong",
+  "hk": "هونغ كونغ",
   "@hk": {
     "description": "text"
   },
-  "hm": "Heard Island and McDonald Islands",
+  "hm": "جزيرة هيرد وجزر ماكدونالد",
   "@hm": {
     "description": "text"
   },
-  "hn": "Honduras",
+  "hn": "هندوراس",
   "@hn": {
     "description": "text"
   },
-  "hr": "Croatia",
+  "hr": "كرواتيا",
   "@hr": {
     "description": "text"
   },
-  "cz": "Czech Republic",
+  "cz": "جمهورية التشيك",
   "@cz": {
     "description": "text"
   },
-  "dj": "Djibouti",
+  "dj": "جيبوتي",
   "@dj": {
     "description": "text"
   },
-  "cy": "Cyprus",
+  "cy": "قبرص",
   "@cy": {
     "description": "text"
   },
-  "de": "Germany",
+  "de": "ألمانيا",
   "@de": {
     "description": "text"
   },
-  "ht": "Haiti",
+  "ht": "هايتي",
   "@ht": {
     "description": "text"
   },
-  "hu": "Hungary",
+  "hu": "هنغاريا",
   "@hu": {
     "description": "text"
   },
-  "id": "Indonesia",
+  "id": "إندونيسيا",
   "@id": {
     "description": "text"
   },
-  "ie": "Ireland",
+  "ie": "أيرلندا",
   "@ie": {
     "description": "text"
   },
-  "il": "Israel",
+  "il": "إسرائيل",
   "@il": {
     "description": "text"
   },
-  "im": "Isle of Man",
+  "im": "جزيرة آيل أوف مان",
   "@im": {
     "description": "text"
   },
-  "inZ": "India",
+  "inZ": "الهند",
   "@inZ": {
     "description": "text"
   },
-  "io": "British Indian Ocean Territory",
+  "io": "إقليم المحيط الهندي البريطاني",
   "@io": {
     "description": "text"
   },
-  "iq": "Iraq",
+  "iq": "العراق",
   "@iq": {
     "description": "text"
   },
-  "ir": "Iran",
+  "ir": "إيران",
   "@ir": {
     "description": "text"
   },
-  "isZ": "Iceland",
+  "isZ": "أيسلندا",
   "@isZ": {
     "description": "text"
   },
-  "it": "Italy",
+  "it": "إيطاليا",
   "@it": {
     "description": "text"
   },
-  "je": "Jersey",
+  "je": "جيرسي",
   "@je": {
     "description": "text"
   },
-  "jm": "Jamaica",
+  "jm": "جامايكا",
   "@jm": {
     "description": "text"
   },
-  "jo": "Jordan",
+  "jo": "الأردن",
   "@jo": {
     "description": "text"
   },
-  "jp": "Japan",
+  "jp": "اليابان",
   "@jp": {
     "description": "text"
   },
-  "ke": "Kenya",
+  "ke": "كينيا",
   "@ke": {
     "description": "text"
   },
-  "kg": "Kyrgyzstan",
+  "kg": "قرغيزستان",
   "@kg": {
     "description": "text"
   },
-  "kh": "Cambodia",
+  "kh": "كمبوديا",
   "@kh": {
     "description": "text"
   },
-  "ki": "Kiribati",
+  "ki": "كيريباتي",
   "@ki": {
     "description": "text"
   },
-  "km": "Comoros",
+  "km": "جزر القمر",
   "@km": {
     "description": "text"
   },
-  "kn": "Saint Kitts and Nevis",
+  "kn": "سانت كيتس ونيفيس",
   "@kn": {
     "description": "text"
   },
-  "kp": "North Korea",
+  "kp": "كوريا الشمالية",
   "@kp": {
     "description": "text"
   },
-  "kr": "South Korea",
+  "kr": "كوريا الجنوبية",
   "@kr": {
     "description": "text"
   },
-  "kw": "Kuwait",
+  "kw": "الكويت",
   "@kw": {
     "description": "text"
   },
-  "ky": "Cayman Islands",
+  "ky": "جزر كايمان",
   "@ky": {
     "description": "text"
   },
-  "kz": "Kazakhstan",
+  "kz": "كازاخستان",
   "@kz": {
     "description": "text"
   },
-  "la": "Laos",
+  "la": "لاوس",
   "@la": {
     "description": "text"
   },
-  "lb": "Lebanon",
+  "lb": "لبنان",
   "@lb": {
     "description": "text"
   },
-  "lc": "Saint Lucia",
+  "lc": "سانت لوسيا",
   "@lc": {
     "description": "text"
   },
-  "li": "Liechtenstein",
+  "li": "ليختنشتاين",
   "@li": {
     "description": "text"
   },
-  "lk": "Sri Lanka",
+  "lk": "سيريلانكا",
   "@lk": {
     "description": "text"
   },
-  "lr": "Liberia",
+  "lr": "ليبيريا",
   "@lr": {
     "description": "text"
   },
-  "ls": "Lesotho",
+  "ls": "ليسوتو",
   "@ls": {
     "description": "text"
   },
-  "lt": "Lithuania",
+  "lt": "لتوانيا",
   "@lt": {
     "description": "text"
   },
-  "lu": "Luxembourg",
+  "lu": "لوكسمبورغ",
   "@lu": {
     "description": "text"
   },
-  "lv": "Latvia",
+  "lv": "لاتفيا",
   "@lv": {
     "description": "text"
   },
-  "ly": "Libya",
+  "ly": "ليبيا",
   "@ly": {
     "description": "text"
   },
-  "ma": "Morocco",
+  "ma": "المغرب",
   "@ma": {
     "description": "text"
   },
-  "mc": "Monaco",
+  "mc": "موناكو",
   "@mc": {
     "description": "text"
   },
-  "md": "Moldova",
+  "md": "مولدافيا",
   "@md": {
     "description": "text"
   },
-  "me": "Montenegro",
+  "me": "مونتينيغرو",
   "@me": {
     "description": "text"
   },
-  "mf": "Saint Martin",
+  "mf": "سانت مارتن",
   "@mf": {
     "description": "text"
   },
-  "mg": "Madagascar",
+  "mg": "مدغشقر",
   "@mg": {
     "description": "text"
   },
-  "mh": "Marshall Islands",
+  "mh": "جزر مارشال",
   "@mh": {
     "description": "text"
   },
-  "mk": "North Macedonia",
+  "mk": "مقدونيا الشمالية",
   "@mk": {
     "description": "text"
   },
-  "ml": "Mali",
+  "ml": "مالي",
   "@ml": {
     "description": "text"
   },
-  "mm": "Myanmar [Burma]",
+  "mm": "ميانمار [بورما]",
   "@mm": {
     "description": "text"
   },
-  "mn": "Mongolia",
+  "mn": "منغوليا",
   "@mn": {
     "description": "text"
   },
-  "mo": "Macao",
+  "mo": "ماكاو",
   "@mo": {
     "description": "text"
   },
-  "mp": "Northern Mariana Islands",
+  "mp": "جزر ماريانا الشمالية",
   "@mp": {
     "description": "text"
   },
-  "mq": "Martinique",
+  "mq": "مارتينيك",
   "@mq": {
     "description": "text"
   },
-  "mr": "Mauritania",
+  "mr": "موريتانيا",
   "@mr": {
     "description": "text"
   },
-  "ms": "Montserrat",
+  "ms": "مونتسيرات",
   "@ms": {
     "description": "text"
   },
-  "mt": "Malta",
+  "mt": "مالطا",
   "@mt": {
     "description": "text"
   },
-  "mu": "Mauritius",
+  "mu": "موريشيوس",
   "@mu": {
     "description": "text"
   },
-  "mv": "Maldives",
+  "mv": "مالديفز",
   "@mv": {
     "description": "text"
   },
-  "mw": "Malawi",
+  "mw": "مالاوي",
   "@mw": {
     "description": "text"
   },
-  "mx": "Mexico",
+  "mx": "المكسيك",
   "@mx": {
     "description": "text"
   },
-  "my": "Malaysia",
+  "my": "ماليزيا",
   "@my": {
     "description": "text"
   },
-  "mz": "Mozambique",
+  "mz": "موزمبيق",
   "@mz": {
     "description": "text"
   },
-  "na": "Namibia",
+  "na": "ناميبيا",
   "@na": {
     "description": "text"
   },
-  "nc": "New Caledonia",
+  "nc": "كاليدونيا الجديدة",
   "@nc": {
     "description": "text"
   },
-  "ne": "Niger",
+  "ne": "النيجر",
   "@ne": {
     "description": "text"
   },
-  "nf": "Norfolk Island",
+  "nf": "جزيرة نورفوك",
   "@nf": {
     "description": "text"
   },
-  "ng": "Nigeria",
+  "ng": "نيجيريا",
   "@ng": {
     "description": "text"
   },
-  "ni": "Nicaragua",
+  "ni": "نيكاراغوا",
   "@ni": {
     "description": "text"
   },
-  "nl": "Netherlands",
+  "nl": "هولندا",
   "@nl": {
     "description": "text"
   },
-  "no": "Norway",
+  "no": "النرويج",
   "@no": {
     "description": "text"
   },
-  "np": "Nepal",
+  "np": "نيبال",
   "@np": {
     "description": "text"
   },
-  "nr": "Nauru",
+  "nr": "ناورو",
   "@nr": {
     "description": "text"
   },
-  "nu": "Niue",
+  "nu": "نيوي",
   "@nu": {
     "description": "text"
   },
-  "nz": "New Zealand",
+  "nz": "نيوزيلندا",
   "@nz": {
     "description": "text"
   },
-  "om": "Oman",
+  "om": "عمان",
   "@om": {
     "description": "text"
   },
-  "pa": "Panama",
+  "pa": "بنما",
   "@pa": {
     "description": "text"
   },
-  "pe": "Peru",
+  "pe": "بيرو",
   "@pe": {
     "description": "text"
   },
-  "pf": "French Polynesia",
+  "pf": "بولينيزيا الفرنسية",
   "@pf": {
     "description": "text"
   },
-  "pg": "Papua New Guinea",
+  "pg": "بابوا غينيا الجديدة",
   "@pg": {
     "description": "text"
   },
-  "ph": "Philippines",
+  "ph": "الفلبين",
   "@ph": {
     "description": "text"
   },
-  "pk": "Pakistan",
+  "pk": "باكستان",
   "@pk": {
     "description": "text"
   },
-  "pl": "Poland",
+  "pl": "بولندا",
   "@pl": {
     "description": "text"
   },
-  "pm": "Saint Pierre and Miquelon",
+  "pm": "سانت بيير وميكلون",
   "@pm": {
     "description": "text"
   },
-  "pn": "Pitcairn Islands",
+  "pn": "جزر بيتكيرن",
   "@pn": {
     "description": "text"
   },
-  "pr": "Puerto Rico",
+  "pr": "بورتوريكو",
   "@pr": {
     "description": "text"
   },
-  "ps": "Palestine",
+  "ps": "فلسطين",
   "@ps": {
     "description": "text"
   },
-  "pt": "Portugal",
+  "pt": "البرتغال",
   "@pt": {
     "description": "text"
   },
-  "pw": "Palau",
+  "pw": "بالاو",
   "@pw": {
     "description": "text"
   },
-  "py": "Paraguay",
+  "py": "باراغواي",
   "@py": {
     "description": "text"
   },
-  "qa": "Qatar",
+  "qa": "دولة قطر",
   "@qa": {
     "description": "text"
   },
-  "re": "Réunion",
+  "re": "ريونيون",
   "@re": {
     "description": "text"
   },
-  "ro": "Romania",
+  "ro": "رومانيا",
   "@ro": {
     "description": "text"
   },
-  "rs": "Serbia",
+  "rs": "صربيا",
   "@rs": {
     "description": "text"
   },
-  "ru": "Russia",
+  "ru": "روسيا",
   "@ru": {
     "description": "text"
   },
-  "rw": "Rwanda",
+  "rw": "رواندا",
   "@rw": {
     "description": "text"
   },
-  "sa": "Saudi Arabia",
+  "sa": "المملكة العربية السعودية",
   "@sa": {
     "description": "text"
   },
-  "sb": "Solomon Islands",
+  "sb": "جزر سولومون",
   "@sb": {
     "description": "text"
   },
-  "sc": "Seychelles",
+  "sc": "سيشيل",
   "@sc": {
     "description": "text"
   },
-  "sd": "Sudan",
+  "sd": "سودان",
   "@sd": {
     "description": "text"
   },
-  "se": "Sweden",
+  "se": "السويد",
   "@se": {
     "description": "text"
   },
-  "sg": "Singapore",
+  "sg": "سنغافورة",
   "@sg": {
     "description": "text"
   },
-  "sh": "Saint Helena",
+  "sh": "سانت هيلينا",
   "@sh": {
     "description": "text"
   },
-  "si": "Slovenia",
+  "si": "سلوفينيا",
   "@si": {
     "description": "text"
   },
-  "sj": "Svalbard and Jan Mayen",
+  "sj": "سفالبارد وجان ماين",
   "@sj": {
     "description": "text"
   },
-  "sk": "Slovakia",
+  "sk": "سلوفاكيا",
   "@sk": {
     "description": "text"
   },
-  "sl": "Sierra Leone",
+  "sl": "سيراليون",
   "@sl": {
     "description": "text"
   },
-  "sm": "San Marino",
+  "sm": "سان مارينو",
   "@sm": {
     "description": "text"
   },
-  "sn": "Senegal",
+  "sn": "السنغال",
   "@sn": {
     "description": "text"
   },
-  "so": "Somalia",
+  "so": "الصومال",
   "@so": {
     "description": "text"
   },
-  "sr": "Suriname",
+  "sr": "سورينام",
   "@sr": {
     "description": "text"
   },
-  "ss": "South Sudan",
+  "ss": "جنوب السودان",
   "@ss": {
     "description": "text"
   },
-  "st": "São Tomé and Príncipe",
+  "st": "ساو تومي وبرينسيب",
   "@st": {
     "description": "text"
   },
-  "sv": "El Salvador",
+  "sv": "إلسلفادور",
   "@sv": {
     "description": "text"
   },
-  "sx": "Sint Maarten",
+  "sx": "سينت مارتن",
   "@sx": {
     "description": "text"
   },
-  "sy": "Syria",
+  "sy": "سوريا",
   "@sy": {
     "description": "text"
   },
-  "sz": "Swaziland",
+  "sz": "سوازيلاند",
   "@sz": {
     "description": "text"
   },
-  "tc": "Turks and Caicos Islands",
+  "tc": "جزر توركس وكايكوس",
   "@tc": {
     "description": "text"
   },
-  "td": "Chad",
+  "td": "تشاد",
   "@td": {
     "description": "text"
   },
-  "tf": "French Southern Territories",
+  "tf": "الأقاليم الجنوبية الفرنسية",
   "@tf": {
     "description": "text"
   },
-  "tg": "Togo",
+  "tg": "توغو",
   "@tg": {
     "description": "text"
   },
-  "th": "Thailand",
+  "th": "تايلاند",
   "@th": {
     "description": "text"
   },
-  "tj": "Tajikistan",
+  "tj": "طاجيكستان",
   "@tj": {
     "description": "text"
   },
-  "tk": "Tokelau",
+  "tk": "توكيلاو",
   "@tk": {
     "description": "text"
   },
-  "tl": "East Timor",
+  "tl": "تيمور الشرقية",
   "@tl": {
     "description": "text"
   },
-  "tm": "Turkmenistan",
+  "tm": "تركمانستان",
   "@tm": {
     "description": "text"
   },
-  "tn": "Tunisia",
+  "tn": "تونس",
   "@tn": {
     "description": "text"
   },
-  "to": "Tonga",
+  "to": "تونغا",
   "@to": {
     "description": "text"
   },
-  "tr": "Turkey",
+  "tr": "تركيا",
   "@tr": {
     "description": "text"
   },
-  "tt": "Trinidad and Tobago",
+  "tt": "ترينيداد وتوباجو",
   "@tt": {
     "description": "text"
   },
-  "tv": "Tuvalu",
+  "tv": "توفالو",
   "@tv": {
     "description": "text"
   },
-  "tw": "Taiwan",
+  "tw": "تايوان",
   "@tw": {
     "description": "text"
   },
-  "tz": "Tanzania",
+  "tz": "تنزانيا",
   "@tz": {
     "description": "text"
   },
-  "ua": "Ukraine",
+  "ua": "أوكرانيا",
   "@ua": {
     "description": "text"
   },
-  "ug": "Uganda",
+  "ug": "أوغندا",
   "@ug": {
     "description": "text"
   },
-  "um": "U.S. Minor Outlying Islands",
+  "um": "جزر الولايات المتحدة الصغيرة النائية",
   "@um": {
     "description": "text"
   },
-  "us": "United States",
+  "us": "الولايات المتحدة",
   "@us": {
     "description": "text"
   },
-  "uy": "Uruguay",
+  "uy": "الأوروغواي",
   "@uy": {
     "description": "text"
   },
-  "uz": "Uzbekistan",
+  "uz": "أوزبكستان",
   "@uz": {
     "description": "text"
   },
-  "va": "Vatican City",
+  "va": "مدينة الفاتيكان",
   "@va": {
     "description": "text"
   },
-  "vc": "Saint Vincent and the Grenadines",
+  "vc": "سانت فنسنت والجرينادينز",
   "@vc": {
     "description": "text"
   },
-  "ve": "Venezuela",
+  "ve": "فنزويلا",
   "@ve": {
     "description": "text"
   },
-  "vg": "British Virgin Islands",
+  "vg": "جزر فيرجن البريطانية",
   "@vg": {
     "description": "text"
   },
-  "vi": "U.S. Virgin Islands",
+  "vi": "جزر فيرجن الأمريكية",
   "@vi": {
     "description": "text"
   },
-  "vn": "Vietnam",
+  "vn": "فيتنام",
   "@vn": {
     "description": "text"
   },
-  "vu": "Vanuatu",
+  "vu": "فانواتو",
   "@vu": {
     "description": "text"
   },
-  "wf": "Wallis and Futuna",
+  "wf": "واليس وفوتونا",
   "@wf": {
     "description": "text"
   },
-  "ws": "Samoa",
+  "ws": "ساموا",
   "@ws": {
     "description": "text"
   },
-  "xk": "Kosovo",
+  "xk": "كوسوفو",
   "@xk": {
     "description": "text"
   },
-  "ye": "Yemen",
+  "ye": "اليمن",
   "@ye": {
     "description": "text"
   },
-  "yt": "Mayotte",
+  "yt": "مايوت",
   "@yt": {
     "description": "text"
   },
-  "za": "South Africa",
+  "za": "جنوب أفريقيا",
   "@za": {
     "description": "text"
   },
-  "zm": "Zambia",
+  "zm": "زامبيا",
   "@zm": {
     "description": "text"
   },
-  "zw": "Zimbabwe",
+  "zw": "زيمبابوي",
   "@zw": {
     "description": "text"
   }

@@ -1,0 +1,1038 @@
+{
+  "selectRegion": "ప్రాంతాన్ని ఎంచుకోండి",
+  "@selectRegion": {
+    "description": "text"
+  },
+  "all": "అన్నీ",
+  "@all": {
+    "description": "text"
+  },
+  "europe": "యూరోప్",
+  "@europe": {
+    "description": "text"
+  },
+  "asia": "ఆసియా",
+  "@asia": {
+    "description": "text"
+  },
+  "africa": "ఆఫ్రికా",
+  "@africa": {
+    "description": "text"
+  },
+  "northAmerica": "ఉత్తర అమెరికా",
+  "@northAmerica": {
+    "description": "text"
+  },
+  "southAmerica": "దక్షిణ అమెరికా",
+  "@southAmerica": {
+    "description": "text"
+  },
+  "oceania": "ఓషియానియా",
+  "@oceania": {
+    "description": "text"
+  },
+  "yourScore": "మీ స్కోరు",
+  "@yourScore": {
+    "description": "text"
+  },
+  "ad": "అండొర్రా",
+  "@ad": {
+    "description": "text"
+  },
+  "ae": "యునైటెడ్ అరబ్ ఎమిరే",
+  "@ae": {
+    "description": "text"
+  },
+  "ag": "ఆంటిగ్వా మరియు బార్బుడా",
+  "@ag": {
+    "description": "text"
+  },
+  "ai": "ఆంగ్విలా",
+  "@ai": {
+    "description": "text"
+  },
+  "af": "ఆఫ్గనిస్తాన్",
+  "@af": {
+    "description": "text"
+  },
+  "al": "అల్బేనియా",
+  "@al": {
+    "description": "text"
+  },
+  "am": "అర్మేనియా",
+  "@am": {
+    "description": "text"
+  },
+  "ao": "అన్గోలా",
+  "@ao": {
+    "description": "text"
+  },
+  "aq": "అంటార్కిటికా",
+  "@aq": {
+    "description": "text"
+  },
+  "ar": "అర్జెంటీనా",
+  "@ar": {
+    "description": "text"
+  },
+  "as": "అమెరికన్ సమోవా",
+  "@as": {
+    "description": "text"
+  },
+  "at": "ఆస్ట్రియా",
+  "@at": {
+    "description": "text"
+  },
+  "au": "ఆస్ట్రేలియా",
+  "@au": {
+    "description": "text"
+  },
+  "aw": "అరూబ",
+  "@aw": {
+    "description": "text"
+  },
+  "ax": "ఆలాండ్",
+  "@ax": {
+    "description": "text"
+  },
+  "az": "అజెర్బైజాన్",
+  "@az": {
+    "description": "text"
+  },
+  "ba": "బోస్నియా మరియు హెర్జెగోవి",
+  "@ba": {
+    "description": "text"
+  },
+  "bb": "బార్బడోస్",
+  "@bb": {
+    "description": "text"
+  },
+  "bd": "బంగ్లాదేశ్",
+  "@bd": {
+    "description": "text"
+  },
+  "be": "బెల్జియం",
+  "@be": {
+    "description": "text"
+  },
+  "bf": "బుర్కినా ఫాసో",
+  "@bf": {
+    "description": "text"
+  },
+  "bg": "బల్గేరియా",
+  "@bg": {
+    "description": "text"
+  },
+  "bh": "బహ్రెయిన్",
+  "@bh": {
+    "description": "text"
+  },
+  "bi": "బురుండి",
+  "@bi": {
+    "description": "text"
+  },
+  "bj": "బెనిన్",
+  "@bj": {
+    "description": "text"
+  },
+  "bl": "సెయింట్ బార్తేలెమీ",
+  "@bl": {
+    "description": "text"
+  },
+  "bm": "బెర్ముడా",
+  "@bm": {
+    "description": "text"
+  },
+  "bn": "బ్రూనై",
+  "@bn": {
+    "description": "text"
+  },
+  "bo": "బొలివియా",
+  "@bo": {
+    "description": "text"
+  },
+  "bq": "బోనైర్",
+  "@bq": {
+    "description": "text"
+  },
+  "br": "బ్రెజిల్",
+  "@br": {
+    "description": "text"
+  },
+  "bs": "బహ్మస్",
+  "@bs": {
+    "description": "text"
+  },
+  "bt": "భూటాన్",
+  "@bt": {
+    "description": "text"
+  },
+  "bv": "బౌవెట్ ద్వీపం",
+  "@bv": {
+    "description": "text"
+  },
+  "bw": "బోట్స్వానా",
+  "@bw": {
+    "description": "text"
+  },
+  "by": "బెలారస్",
+  "@by": {
+    "description": "text"
+  },
+  "bz": "బెలిజ్",
+  "@bz": {
+    "description": "text"
+  },
+  "ca": "కెనడా",
+  "@ca": {
+    "description": "text"
+  },
+  "cc": "కోకోస్ [కీలింగ్] దీవులు",
+  "@cc": {
+    "description": "text"
+  },
+  "cd": "డెమొక్రాటిక్ రిపబ్లిక్ ఆఫ్ కాంగో",
+  "@cd": {
+    "description": "text"
+  },
+  "cf": "మధ్య ఆఫ్రికన్ రిపబ్లిక్",
+  "@cf": {
+    "description": "text"
+  },
+  "cg": "కాంగో రిపబ్లిక్",
+  "@cg": {
+    "description": "text"
+  },
+  "ch": "స్విట్జర్లాండ్",
+  "@ch": {
+    "description": "text"
+  },
+  "ci": "ఐవరీ కోస్ట్",
+  "@ci": {
+    "description": "text"
+  },
+  "ck": "కుక్ దీవులు",
+  "@ck": {
+    "description": "text"
+  },
+  "cl": "చిలీ",
+  "@cl": {
+    "description": "text"
+  },
+  "cm": "కామెరూన్",
+  "@cm": {
+    "description": "text"
+  },
+  "cn": "చైనా",
+  "@cn": {
+    "description": "text"
+  },
+  "co": "కొలంబియా",
+  "@co": {
+    "description": "text"
+  },
+  "cr": "కోస్టా రికా",
+  "@cr": {
+    "description": "text"
+  },
+  "cu": "క్యూబా",
+  "@cu": {
+    "description": "text"
+  },
+  "cv": "కేప్ వర్దె",
+  "@cv": {
+    "description": "text"
+  },
+  "cw": "కురకావో",
+  "@cw": {
+    "description": "text"
+  },
+  "cx": "క్రిస్మస్ ద్వీపం",
+  "@cx": {
+    "description": "text"
+  },
+  "dk": "డెన్మార్క్",
+  "@dk": {
+    "description": "text"
+  },
+  "dm": "డొమినికా",
+  "@dm": {
+    "description": "text"
+  },
+  "doZ": "డొమినికన్ రిపబ్లి",
+  "@doZ": {
+    "description": "text"
+  },
+  "dz": "అల్జీరియా",
+  "@dz": {
+    "description": "text"
+  },
+  "ec": "ఈక్వడార్",
+  "@ec": {
+    "description": "text"
+  },
+  "ee": "ఎస్టోనియా",
+  "@ee": {
+    "description": "text"
+  },
+  "eg": "ఈజిప్ట్",
+  "@eg": {
+    "description": "text"
+  },
+  "eh": "పశ్చిమ సహారా",
+  "@eh": {
+    "description": "text"
+  },
+  "er": "ఎరిట్రియా",
+  "@er": {
+    "description": "text"
+  },
+  "es": "స్పెయిన్",
+  "@es": {
+    "description": "text"
+  },
+  "et": "ఇథియోపియా",
+  "@et": {
+    "description": "text"
+  },
+  "fi": "ఫిన్లాండ్",
+  "@fi": {
+    "description": "text"
+  },
+  "fj": "ఫిజీ",
+  "@fj": {
+    "description": "text"
+  },
+  "fk": "ఫాక్లాండ్ దీవులు",
+  "@fk": {
+    "description": "text"
+  },
+  "fm": "మైక్రోనేషియా",
+  "@fm": {
+    "description": "text"
+  },
+  "fo": "ఫారో దీవులు",
+  "@fo": {
+    "description": "text"
+  },
+  "fr": "ఫ్రాన్స్",
+  "@fr": {
+    "description": "text"
+  },
+  "ga": "గేబన్",
+  "@ga": {
+    "description": "text"
+  },
+  "gb": "యునైటెడ్ కింగ్డమ్",
+  "@gb": {
+    "description": "text"
+  },
+  "gd": "గ్రెనడా",
+  "@gd": {
+    "description": "text"
+  },
+  "ge": "జార్జియా",
+  "@ge": {
+    "description": "text"
+  },
+  "gf": "ఫ్రెంచ్ గయానా",
+  "@gf": {
+    "description": "text"
+  },
+  "gg": "గర్న్సీ",
+  "@gg": {
+    "description": "text"
+  },
+  "gh": "ఘనా",
+  "@gh": {
+    "description": "text"
+  },
+  "gi": "జిబ్రాల్టర్",
+  "@gi": {
+    "description": "text"
+  },
+  "gl": "గ్రీన్లాండ్",
+  "@gl": {
+    "description": "text"
+  },
+  "gm": "గాంబియా",
+  "@gm": {
+    "description": "text"
+  },
+  "gn": "గినియా",
+  "@gn": {
+    "description": "text"
+  },
+  "gp": "గ్వాడెలోప్",
+  "@gp": {
+    "description": "text"
+  },
+  "gq": "ఈక్వెటోరియల్ గినియా",
+  "@gq": {
+    "description": "text"
+  },
+  "gr": "గ్రీస్",
+  "@gr": {
+    "description": "text"
+  },
+  "gs": "దక్షిణ జార్జియా మరియు దక్షిణ శాండ్విచ్ దీవులు",
+  "@gs": {
+    "description": "text"
+  },
+  "gt": "గ్వాటెమాల",
+  "@gt": {
+    "description": "text"
+  },
+  "gu": "గ్వామ్",
+  "@gu": {
+    "description": "text"
+  },
+  "gw": "గినియా-బిస్సౌ",
+  "@gw": {
+    "description": "text"
+  },
+  "gy": "గుయానా",
+  "@gy": {
+    "description": "text"
+  },
+  "hk": "హాంకాంగ్",
+  "@hk": {
+    "description": "text"
+  },
+  "hm": "హర్డ్ ద్వీపం మరియు మెక్డొనాల్డ్",
+  "@hm": {
+    "description": "text"
+  },
+  "hn": "హోండురాస్",
+  "@hn": {
+    "description": "text"
+  },
+  "hr": "క్రొయేషియా",
+  "@hr": {
+    "description": "text"
+  },
+  "cz": "చెక్ రిపబ్లిక్",
+  "@cz": {
+    "description": "text"
+  },
+  "dj": "జైబూటీ",
+  "@dj": {
+    "description": "text"
+  },
+  "cy": "సైప్రస్",
+  "@cy": {
+    "description": "text"
+  },
+  "de": "జర్మనీ",
+  "@de": {
+    "description": "text"
+  },
+  "ht": "హైతీ",
+  "@ht": {
+    "description": "text"
+  },
+  "hu": "హంగేరి",
+  "@hu": {
+    "description": "text"
+  },
+  "id": "ఇండోనేషియా",
+  "@id": {
+    "description": "text"
+  },
+  "ie": "ఐర్లాండ్",
+  "@ie": {
+    "description": "text"
+  },
+  "il": "ఇజ్రాయెల్",
+  "@il": {
+    "description": "text"
+  },
+  "im": "ఐల్ ఆఫ్ మ్యాన్",
+  "@im": {
+    "description": "text"
+  },
+  "inZ": "భారతదేశం",
+  "@inZ": {
+    "description": "text"
+  },
+  "io": "బ్రిటిష్ హిందూ మహాసముద్ర భూభాగం",
+  "@io": {
+    "description": "text"
+  },
+  "iq": "ఇరాక్",
+  "@iq": {
+    "description": "text"
+  },
+  "ir": "ఇరాన్",
+  "@ir": {
+    "description": "text"
+  },
+  "isZ": "ఐస్లాండ్",
+  "@isZ": {
+    "description": "text"
+  },
+  "it": "ఇటలీ",
+  "@it": {
+    "description": "text"
+  },
+  "je": "జెర్సీ",
+  "@je": {
+    "description": "text"
+  },
+  "jm": "జమైకా",
+  "@jm": {
+    "description": "text"
+  },
+  "jo": "జోర్డాన్",
+  "@jo": {
+    "description": "text"
+  },
+  "jp": "జపాన్",
+  "@jp": {
+    "description": "text"
+  },
+  "ke": "కెన్యా",
+  "@ke": {
+    "description": "text"
+  },
+  "kg": "కిర్గిజ్స్తాన్",
+  "@kg": {
+    "description": "text"
+  },
+  "kh": "కంబోడియా",
+  "@kh": {
+    "description": "text"
+  },
+  "ki": "కిరిబాటి",
+  "@ki": {
+    "description": "text"
+  },
+  "km": "కొమొరోస్",
+  "@km": {
+    "description": "text"
+  },
+  "kn": "సెయింట్ కిట్స్ మరియు నెవిస్",
+  "@kn": {
+    "description": "text"
+  },
+  "kp": "ఉత్తర కొరియా",
+  "@kp": {
+    "description": "text"
+  },
+  "kr": "దక్షిణ కొరియా",
+  "@kr": {
+    "description": "text"
+  },
+  "kw": "కువైట్",
+  "@kw": {
+    "description": "text"
+  },
+  "ky": "కేమాన్ దీవులు",
+  "@ky": {
+    "description": "text"
+  },
+  "kz": "కజాఖ్స్తాన్",
+  "@kz": {
+    "description": "text"
+  },
+  "la": "లావోస్",
+  "@la": {
+    "description": "text"
+  },
+  "lb": "వరస",
+  "@lb": {
+    "description": "text"
+  },
+  "lc": "సెయింట్ లూసియా",
+  "@lc": {
+    "description": "text"
+  },
+  "li": "లీచ్టెన్స్టీన్",
+  "@li": {
+    "description": "text"
+  },
+  "lk": "శ్రీలంక",
+  "@lk": {
+    "description": "text"
+  },
+  "lr": "లైబీరియా",
+  "@lr": {
+    "description": "text"
+  },
+  "ls": "లెసోతో",
+  "@ls": {
+    "description": "text"
+  },
+  "lt": "లిథువేనియా",
+  "@lt": {
+    "description": "text"
+  },
+  "lu": "లక్సెంబర్గ్",
+  "@lu": {
+    "description": "text"
+  },
+  "lv": "లాట్వియా",
+  "@lv": {
+    "description": "text"
+  },
+  "ly": "లిబియా",
+  "@ly": {
+    "description": "text"
+  },
+  "ma": "మొరాకో",
+  "@ma": {
+    "description": "text"
+  },
+  "mc": "మొనాకో",
+  "@mc": {
+    "description": "text"
+  },
+  "md": "మోల్డోవా",
+  "@md": {
+    "description": "text"
+  },
+  "me": "మోంటెనెగ్రో",
+  "@me": {
+    "description": "text"
+  },
+  "mf": "సెయింట్ మార్టిన్",
+  "@mf": {
+    "description": "text"
+  },
+  "mg": "మడగాస్కర్",
+  "@mg": {
+    "description": "text"
+  },
+  "mh": "మార్షల్ దీవులు",
+  "@mh": {
+    "description": "text"
+  },
+  "mk": "ఉత్తర మాసిడోనియా",
+  "@mk": {
+    "description": "text"
+  },
+  "ml": "మాలి",
+  "@ml": {
+    "description": "text"
+  },
+  "mm": "మయన్మార్ [బర్మా]",
+  "@mm": {
+    "description": "text"
+  },
+  "mn": "మంగోలియా",
+  "@mn": {
+    "description": "text"
+  },
+  "mo": "మకావు",
+  "@mo": {
+    "description": "text"
+  },
+  "mp": "ఉత్తర మరియానా దీవులు",
+  "@mp": {
+    "description": "text"
+  },
+  "mq": "మార్టినిక్",
+  "@mq": {
+    "description": "text"
+  },
+  "mr": "మౌరిటానియా",
+  "@mr": {
+    "description": "text"
+  },
+  "ms": "మోంట్సిరాట్",
+  "@ms": {
+    "description": "text"
+  },
+  "mt": "మాల్ట",
+  "@mt": {
+    "description": "text"
+  },
+  "mu": "మారిషస్",
+  "@mu": {
+    "description": "text"
+  },
+  "mv": "మాల్దీవులు",
+  "@mv": {
+    "description": "text"
+  },
+  "mw": "మాలావి",
+  "@mw": {
+    "description": "text"
+  },
+  "mx": "మెక్సికో",
+  "@mx": {
+    "description": "text"
+  },
+  "my": "మలేషియాలో",
+  "@my": {
+    "description": "text"
+  },
+  "mz": "మొజాంబిక్",
+  "@mz": {
+    "description": "text"
+  },
+  "na": "నమీబియాలో",
+  "@na": {
+    "description": "text"
+  },
+  "nc": "న్యూ కాలెడోనియా",
+  "@nc": {
+    "description": "text"
+  },
+  "ne": "నైజీర్",
+  "@ne": {
+    "description": "text"
+  },
+  "nf": "నార్ఫోక్ ద్వీపం",
+  "@nf": {
+    "description": "text"
+  },
+  "ng": "నైజీరియాలో",
+  "@ng": {
+    "description": "text"
+  },
+  "ni": "నికరాగువా",
+  "@ni": {
+    "description": "text"
+  },
+  "nl": "నెదర్లాండ్స్",
+  "@nl": {
+    "description": "text"
+  },
+  "no": "నార్వే",
+  "@no": {
+    "description": "text"
+  },
+  "np": "నేపాల్",
+  "@np": {
+    "description": "text"
+  },
+  "nr": "నౌరు",
+  "@nr": {
+    "description": "text"
+  },
+  "nu": "నియూ",
+  "@nu": {
+    "description": "text"
+  },
+  "nz": "న్యూజిలాండ్",
+  "@nz": {
+    "description": "text"
+  },
+  "om": "ఒమన్",
+  "@om": {
+    "description": "text"
+  },
+  "pa": "పనామా",
+  "@pa": {
+    "description": "text"
+  },
+  "pe": "పెరు",
+  "@pe": {
+    "description": "text"
+  },
+  "pf": "ఫ్రెంచ్ పాలినేషియా",
+  "@pf": {
+    "description": "text"
+  },
+  "pg": "పాపువా న్యూ గినియా",
+  "@pg": {
+    "description": "text"
+  },
+  "ph": "ఫిలిప్పీన్స్",
+  "@ph": {
+    "description": "text"
+  },
+  "pk": "పాకిస్థాన్",
+  "@pk": {
+    "description": "text"
+  },
+  "pl": "పోలాండ్",
+  "@pl": {
+    "description": "text"
+  },
+  "pm": "సెయింట్ పియరీ మరియు మిక్వెలాన్",
+  "@pm": {
+    "description": "text"
+  },
+  "pn": "పిట్కైర్న్ దీవులు",
+  "@pn": {
+    "description": "text"
+  },
+  "pr": "ప్యూర్టో రికో",
+  "@pr": {
+    "description": "text"
+  },
+  "ps": "పాలస్తీనా",
+  "@ps": {
+    "description": "text"
+  },
+  "pt": "పోర్చుగల్",
+  "@pt": {
+    "description": "text"
+  },
+  "pw": "పలావు",
+  "@pw": {
+    "description": "text"
+  },
+  "py": "పరాగ్వే",
+  "@py": {
+    "description": "text"
+  },
+  "qa": "ఖతార్",
+  "@qa": {
+    "description": "text"
+  },
+  "re": "రీయూనియన్",
+  "@re": {
+    "description": "text"
+  },
+  "ro": "రొమేనియా",
+  "@ro": {
+    "description": "text"
+  },
+  "rs": "సెర్బియా",
+  "@rs": {
+    "description": "text"
+  },
+  "ru": "రష్యా",
+  "@ru": {
+    "description": "text"
+  },
+  "rw": "రువాండా",
+  "@rw": {
+    "description": "text"
+  },
+  "sa": "సౌదీ అరేబియా",
+  "@sa": {
+    "description": "text"
+  },
+  "sb": "సోలమన్ దీవులు",
+  "@sb": {
+    "description": "text"
+  },
+  "sc": "సీషెల్స్",
+  "@sc": {
+    "description": "text"
+  },
+  "sd": "సుడాన్",
+  "@sd": {
+    "description": "text"
+  },
+  "se": "స్వీడన్",
+  "@se": {
+    "description": "text"
+  },
+  "sg": "సింగపూర్",
+  "@sg": {
+    "description": "text"
+  },
+  "sh": "సెయింట్ హెలెనా",
+  "@sh": {
+    "description": "text"
+  },
+  "si": "స్లొవేనియా",
+  "@si": {
+    "description": "text"
+  },
+  "sj": "స్వాల్బార్డ్ మరియు జాన్ మాయెన్",
+  "@sj": {
+    "description": "text"
+  },
+  "sk": "స్లొవాకియా",
+  "@sk": {
+    "description": "text"
+  },
+  "sl": "సియెర్రా లియోన్",
+  "@sl": {
+    "description": "text"
+  },
+  "sm": "శాన్ మారినో",
+  "@sm": {
+    "description": "text"
+  },
+  "sn": "సెనెగల్",
+  "@sn": {
+    "description": "text"
+  },
+  "so": "సోమాలియా",
+  "@so": {
+    "description": "text"
+  },
+  "sr": "సురినామ్",
+  "@sr": {
+    "description": "text"
+  },
+  "ss": "దక్షిణ సూడాన్",
+  "@ss": {
+    "description": "text"
+  },
+  "st": "సావో టోమే మరియు ప్రిన్సిపీ",
+  "@st": {
+    "description": "text"
+  },
+  "sv": "ఎల్ సాల్వడార్",
+  "@sv": {
+    "description": "text"
+  },
+  "sx": "సెయింట్ మార్టెన్",
+  "@sx": {
+    "description": "text"
+  },
+  "sy": "సిరియా",
+  "@sy": {
+    "description": "text"
+  },
+  "sz": "స్వాజిలాండ్",
+  "@sz": {
+    "description": "text"
+  },
+  "tc": "టర్క్స్ మరియు కైకోస్ దీవులు",
+  "@tc": {
+    "description": "text"
+  },
+  "td": "చాడ్",
+  "@td": {
+    "description": "text"
+  },
+  "tf": "ఫ్రెంచ్ దక్షిణ భూభాగాలు",
+  "@tf": {
+    "description": "text"
+  },
+  "tg": "టోగో",
+  "@tg": {
+    "description": "text"
+  },
+  "th": "థాయిలాండ్",
+  "@th": {
+    "description": "text"
+  },
+  "tj": "తజికిస్తాన్",
+  "@tj": {
+    "description": "text"
+  },
+  "tk": "టోకెలావ్",
+  "@tk": {
+    "description": "text"
+  },
+  "tl": "తూర్పు తిమోర్",
+  "@tl": {
+    "description": "text"
+  },
+  "tm": "తుర్క్మెనిస్తాన్",
+  "@tm": {
+    "description": "text"
+  },
+  "tn": "ట్యునీషియా",
+  "@tn": {
+    "description": "text"
+  },
+  "to": "టోన్గా",
+  "@to": {
+    "description": "text"
+  },
+  "tr": "టర్కీ",
+  "@tr": {
+    "description": "text"
+  },
+  "tt": "ట్రినిడాడ్ మరియు టొబాగో",
+  "@tt": {
+    "description": "text"
+  },
+  "tv": "టువాలు",
+  "@tv": {
+    "description": "text"
+  },
+  "tw": "తైవాన్",
+  "@tw": {
+    "description": "text"
+  },
+  "tz": "టాంజానియా",
+  "@tz": {
+    "description": "text"
+  },
+  "ua": "ఉక్రెయిన్",
+  "@ua": {
+    "description": "text"
+  },
+  "ug": "ఉగాండా",
+  "@ug": {
+    "description": "text"
+  },
+  "um": "యుఎస్ మైనర్ అవుట్లైయింగ్ దీవులు",
+  "@um": {
+    "description": "text"
+  },
+  "us": "యునైటెడ్ స్టేట్స్",
+  "@us": {
+    "description": "text"
+  },
+  "uy": "ఉరుగ్వే",
+  "@uy": {
+    "description": "text"
+  },
+  "uz": "ఉజ్బెకిస్తాన్",
+  "@uz": {
+    "description": "text"
+  },
+  "va": "వాటికన్ సిటీ",
+  "@va": {
+    "description": "text"
+  },
+  "vc": "సెయింట్ విన్సెంట్ మరియు గ్రెనడైన్స్",
+  "@vc": {
+    "description": "text"
+  },
+  "ve": "వెనిజులా",
+  "@ve": {
+    "description": "text"
+  },
+  "vg": "బ్రిటిష్ వర్జిన్ దీవులు",
+  "@vg": {
+    "description": "text"
+  },
+  "vi": "యుఎస్ వర్జిన్ దీవులు",
+  "@vi": {
+    "description": "text"
+  },
+  "vn": "వియత్నాం",
+  "@vn": {
+    "description": "text"
+  },
+  "vu": "వనౌటు",
+  "@vu": {
+    "description": "text"
+  },
+  "wf": "వాలిస్ మరియు ఫుటునా",
+  "@wf": {
+    "description": "text"
+  },
+  "ws": "సమోవ",
+  "@ws": {
+    "description": "text"
+  },
+  "xk": "కొసావో",
+  "@xk": {
+    "description": "text"
+  },
+  "ye": "యెమెన్",
+  "@ye": {
+    "description": "text"
+  },
+  "yt": "మాయొట్టి",
+  "@yt": {
+    "description": "text"
+  },
+  "za": "దక్షిణాఫ్రికా",
+  "@za": {
+    "description": "text"
+  },
+  "zm": "జాంబియా",
+  "@zm": {
+    "description": "text"
+  },
+  "zw": "జింబాబ్వే",
+  "@zw": {
+    "description": "text"
+  }
+}

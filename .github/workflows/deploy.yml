@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Install dependencies
         run: flutter pub get
@@ -30,8 +32,11 @@ jobs:
           retention-days: 5
 
       - name: Bump Up version
+        id: version
         run: |
           sh ./version.sh bump_version ./pubspec.yaml
+          new_version=$(sh ./version.sh get_full_version ./pubspec.yaml)
+          echo "NEW_VERSION=$new_version" >> $GITHUB_ENV
 
       - name: Deploy iOS
         run: |
@@ -80,3 +85,15 @@ jobs:
           bundle exec fastlane beta
         env:
           MAC_OS_PACKAGE_NAME: ${{ secrets.MAC_OS_PACKAGE_NAME }}
+
+      - name: Commit and Tag New Version
+        run: |
+          git commit -am "Bump version to ${{ env.NEW_VERSION }}"
+          git tag -a "${{ env.NEW_VERSION }}" -m "Release version ${{ env.NEW_VERSION }}"
+          git push origin --tags
+
+      - name: Merge to Develop and Push
+        run: |
+          git checkout develop
+          git merge ${{ github.ref_name }} --no-ff -m "Merge ${{ github.ref_name }} into develop"
+          git push origin develop
