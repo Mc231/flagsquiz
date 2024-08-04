@@ -1,5 +1,5 @@
-import 'package:flagsquiz/models/continent.dart';
-import 'package:flagsquiz/models/country.dart';
+import 'package:flags_quiz/models/continent.dart';
+import 'package:flags_quiz/models/country.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

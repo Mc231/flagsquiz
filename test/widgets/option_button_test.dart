@@ -1,5 +1,5 @@
-import 'package:flagsquiz/ui/flags_quiz_app.dart';
-import 'package:flagsquiz/ui/option_button.dart';
+import 'package:flags_quiz/ui/flags_quiz_app.dart';
+import 'package:flags_quiz/ui/components/option_button.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

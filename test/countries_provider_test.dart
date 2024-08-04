@@ -1,6 +1,6 @@
-import 'package:flagsquiz/bussiness_logic/countries_provider.dart';
-import 'package:flagsquiz/foundation/asset_provider.dart';
-import 'package:flagsquiz/models/continent.dart';
+import 'package:flags_quiz/business_logic/countries_provider.dart';
+import 'package:flags_quiz/foundation/asset_provider.dart';
+import 'package:flags_quiz/models/continent.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 import 'package:mockito/annotations.dart';
