@@ -136,6 +136,5 @@ class GameBloc extends SingleSubscriptionBloc<GameState> {
     }
     var result = '$count / $_totalCount';
     gameOverCallback(result);
-    print('Your result is $result');
   }
 }

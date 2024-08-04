@@ -14,7 +14,6 @@ void main() {
 
       final continentButtonFinder =
           find.byKey(Key('continent_${continent.index}'));
-      print(continentButtonFinder);
       await tester.ensureVisible(continentButtonFinder);
       expect(continentButtonFinder, findsOneWidget);
       await tester.tap(continentButtonFinder);
@@ -57,7 +56,6 @@ void main() {
         }
 
         final countryCode = match.group(1)!;
-        print('Country code: $countryCode');
 
         // Find the corresponding button by constructing its key
         final buttonKey = Key('button_$countryCode');
@@ -67,10 +65,7 @@ void main() {
 
         // Verify that the button is found
         if (buttonFinder.evaluate().isEmpty) {
-          print('Button with key $buttonKey not found');
           fail('Button with key $buttonKey not found');
-        } else {
-          print('Button with key $buttonKey found');
         }
 
         expect(buttonFinder, findsOneWidget);
