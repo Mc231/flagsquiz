@@ -1,0 +1,1038 @@
+{
+  "selectRegion": "选择地区",
+  "@selectRegion": {
+    "description": "text"
+  },
+  "all": "全部",
+  "@all": {
+    "description": "text"
+  },
+  "europe": "欧洲",
+  "@europe": {
+    "description": "text"
+  },
+  "asia": "亚洲",
+  "@asia": {
+    "description": "text"
+  },
+  "africa": "非洲",
+  "@africa": {
+    "description": "text"
+  },
+  "northAmerica": "北美",
+  "@northAmerica": {
+    "description": "text"
+  },
+  "southAmerica": "南美洲",
+  "@southAmerica": {
+    "description": "text"
+  },
+  "oceania": "大洋洲",
+  "@oceania": {
+    "description": "text"
+  },
+  "yourScore": "你的分数",
+  "@yourScore": {
+    "description": "text"
+  },
+  "ad": "安道尔",
+  "@ad": {
+    "description": "text"
+  },
+  "ae": "阿拉伯联合酋长国",
+  "@ae": {
+    "description": "text"
+  },
+  "ag": "安提瓜和巴布达",
+  "@ag": {
+    "description": "text"
+  },
+  "ai": "安圭拉",
+  "@ai": {
+    "description": "text"
+  },
+  "af": "阿富汗",
+  "@af": {
+    "description": "text"
+  },
+  "al": "阿尔巴尼亚",
+  "@al": {
+    "description": "text"
+  },
+  "am": "亚美尼亚",
+  "@am": {
+    "description": "text"
+  },
+  "ao": "安哥拉",
+  "@ao": {
+    "description": "text"
+  },
+  "aq": "南极洲",
+  "@aq": {
+    "description": "text"
+  },
+  "ar": "阿根廷",
+  "@ar": {
+    "description": "text"
+  },
+  "as": "美属萨摩亚",
+  "@as": {
+    "description": "text"
+  },
+  "at": "奥地利",
+  "@at": {
+    "description": "text"
+  },
+  "au": "澳大利亚",
+  "@au": {
+    "description": "text"
+  },
+  "aw": "阿鲁巴",
+  "@aw": {
+    "description": "text"
+  },
+  "ax": "奥兰群岛",
+  "@ax": {
+    "description": "text"
+  },
+  "az": "阿塞拜疆",
+  "@az": {
+    "description": "text"
+  },
+  "ba": "波斯尼亚和黑塞哥维那",
+  "@ba": {
+    "description": "text"
+  },
+  "bb": "巴巴多斯",
+  "@bb": {
+    "description": "text"
+  },
+  "bd": "孟加拉国",
+  "@bd": {
+    "description": "text"
+  },
+  "be": "比利时",
+  "@be": {
+    "description": "text"
+  },
+  "bf": "布基纳法索",
+  "@bf": {
+    "description": "text"
+  },
+  "bg": "保加利亚",
+  "@bg": {
+    "description": "text"
+  },
+  "bh": "巴林",
+  "@bh": {
+    "description": "text"
+  },
+  "bi": "布隆迪",
+  "@bi": {
+    "description": "text"
+  },
+  "bj": "贝宁",
+  "@bj": {
+    "description": "text"
+  },
+  "bl": "圣巴泰勒米",
+  "@bl": {
+    "description": "text"
+  },
+  "bm": "百慕大",
+  "@bm": {
+    "description": "text"
+  },
+  "bn": "文莱",
+  "@bn": {
+    "description": "text"
+  },
+  "bo": "玻利维亚",
+  "@bo": {
+    "description": "text"
+  },
+  "bq": "博内尔岛",
+  "@bq": {
+    "description": "text"
+  },
+  "br": "巴西",
+  "@br": {
+    "description": "text"
+  },
+  "bs": "巴哈马",
+  "@bs": {
+    "description": "text"
+  },
+  "bt": "不丹",
+  "@bt": {
+    "description": "text"
+  },
+  "bv": "布维岛",
+  "@bv": {
+    "description": "text"
+  },
+  "bw": "博茨瓦纳",
+  "@bw": {
+    "description": "text"
+  },
+  "by": "白俄罗斯",
+  "@by": {
+    "description": "text"
+  },
+  "bz": "伯利兹",
+  "@bz": {
+    "description": "text"
+  },
+  "ca": "加拿大",
+  "@ca": {
+    "description": "text"
+  },
+  "cc": "科科斯 [基林] 群岛",
+  "@cc": {
+    "description": "text"
+  },
+  "cd": "刚果民主共和国",
+  "@cd": {
+    "description": "text"
+  },
+  "cf": "中非共和国",
+  "@cf": {
+    "description": "text"
+  },
+  "cg": "刚果共和国",
+  "@cg": {
+    "description": "text"
+  },
+  "ch": "瑞士",
+  "@ch": {
+    "description": "text"
+  },
+  "ci": "象牙海岸",
+  "@ci": {
+    "description": "text"
+  },
+  "ck": "库克群岛",
+  "@ck": {
+    "description": "text"
+  },
+  "cl": "智利",
+  "@cl": {
+    "description": "text"
+  },
+  "cm": "喀麦隆",
+  "@cm": {
+    "description": "text"
+  },
+  "cn": "中国",
+  "@cn": {
+    "description": "text"
+  },
+  "co": "哥伦比亚",
+  "@co": {
+    "description": "text"
+  },
+  "cr": "哥斯达黎加",
+  "@cr": {
+    "description": "text"
+  },
+  "cu": "古巴",
+  "@cu": {
+    "description": "text"
+  },
+  "cv": "佛得角",
+  "@cv": {
+    "description": "text"
+  },
+  "cw": "库拉索",
+  "@cw": {
+    "description": "text"
+  },
+  "cx": "圣诞岛",
+  "@cx": {
+    "description": "text"
+  },
+  "dk": "丹麦",
+  "@dk": {
+    "description": "text"
+  },
+  "dm": "多米尼加",
+  "@dm": {
+    "description": "text"
+  },
+  "doZ": "多米尼加共和国",
+  "@doZ": {
+    "description": "text"
+  },
+  "dz": "阿尔及利亚",
+  "@dz": {
+    "description": "text"
+  },
+  "ec": "厄瓜多尔",
+  "@ec": {
+    "description": "text"
+  },
+  "ee": "爱沙尼亚",
+  "@ee": {
+    "description": "text"
+  },
+  "eg": "埃及",
+  "@eg": {
+    "description": "text"
+  },
+  "eh": "西撒哈拉",
+  "@eh": {
+    "description": "text"
+  },
+  "er": "厄立特里亚",
+  "@er": {
+    "description": "text"
+  },
+  "es": "西班牙",
+  "@es": {
+    "description": "text"
+  },
+  "et": "埃塞俄比亚",
+  "@et": {
+    "description": "text"
+  },
+  "fi": "芬兰",
+  "@fi": {
+    "description": "text"
+  },
+  "fj": "斐济",
+  "@fj": {
+    "description": "text"
+  },
+  "fk": "福克兰群岛",
+  "@fk": {
+    "description": "text"
+  },
+  "fm": "密克罗尼西亚",
+  "@fm": {
+    "description": "text"
+  },
+  "fo": "法罗群岛",
+  "@fo": {
+    "description": "text"
+  },
+  "fr": "法国",
+  "@fr": {
+    "description": "text"
+  },
+  "ga": "加蓬",
+  "@ga": {
+    "description": "text"
+  },
+  "gb": "英国",
+  "@gb": {
+    "description": "text"
+  },
+  "gd": "格林纳达",
+  "@gd": {
+    "description": "text"
+  },
+  "ge": "格鲁吉亚",
+  "@ge": {
+    "description": "text"
+  },
+  "gf": "法属圭亚那",
+  "@gf": {
+    "description": "text"
+  },
+  "gg": "根西岛",
+  "@gg": {
+    "description": "text"
+  },
+  "gh": "加纳",
+  "@gh": {
+    "description": "text"
+  },
+  "gi": "直布罗陀",
+  "@gi": {
+    "description": "text"
+  },
+  "gl": "格陵兰岛",
+  "@gl": {
+    "description": "text"
+  },
+  "gm": "冈比亚",
+  "@gm": {
+    "description": "text"
+  },
+  "gn": "几内亚",
+  "@gn": {
+    "description": "text"
+  },
+  "gp": "瓜德罗普岛",
+  "@gp": {
+    "description": "text"
+  },
+  "gq": "赤道几内亚",
+  "@gq": {
+    "description": "text"
+  },
+  "gr": "希腊",
+  "@gr": {
+    "description": "text"
+  },
+  "gs": "南乔治亚岛和南桑威奇群岛",
+  "@gs": {
+    "description": "text"
+  },
+  "gt": "危地马拉",
+  "@gt": {
+    "description": "text"
+  },
+  "gu": "关岛",
+  "@gu": {
+    "description": "text"
+  },
+  "gw": "几内亚比",
+  "@gw": {
+    "description": "text"
+  },
+  "gy": "圭亚那",
+  "@gy": {
+    "description": "text"
+  },
+  "hk": "香港",
+  "@hk": {
+    "description": "text"
+  },
+  "hm": "赫德岛和麦克唐纳群岛",
+  "@hm": {
+    "description": "text"
+  },
+  "hn": "洪都拉斯",
+  "@hn": {
+    "description": "text"
+  },
+  "hr": "克罗地亚",
+  "@hr": {
+    "description": "text"
+  },
+  "cz": "捷克共和国",
+  "@cz": {
+    "description": "text"
+  },
+  "dj": "吉布提",
+  "@dj": {
+    "description": "text"
+  },
+  "cy": "塞浦路斯",
+  "@cy": {
+    "description": "text"
+  },
+  "de": "德国",
+  "@de": {
+    "description": "text"
+  },
+  "ht": "海地",
+  "@ht": {
+    "description": "text"
+  },
+  "hu": "匈牙利",
+  "@hu": {
+    "description": "text"
+  },
+  "id": "印度尼西亚",
+  "@id": {
+    "description": "text"
+  },
+  "ie": "爱尔兰",
+  "@ie": {
+    "description": "text"
+  },
+  "il": "以色列",
+  "@il": {
+    "description": "text"
+  },
+  "im": "马恩岛",
+  "@im": {
+    "description": "text"
+  },
+  "inZ": "印度",
+  "@inZ": {
+    "description": "text"
+  },
+  "io": "英属印度洋领地",
+  "@io": {
+    "description": "text"
+  },
+  "iq": "伊拉克",
+  "@iq": {
+    "description": "text"
+  },
+  "ir": "伊朗",
+  "@ir": {
+    "description": "text"
+  },
+  "isZ": "冰岛",
+  "@isZ": {
+    "description": "text"
+  },
+  "it": "意大利",
+  "@it": {
+    "description": "text"
+  },
+  "je": "泽西",
+  "@je": {
+    "description": "text"
+  },
+  "jm": "牙买加",
+  "@jm": {
+    "description": "text"
+  },
+  "jo": "乔丹",
+  "@jo": {
+    "description": "text"
+  },
+  "jp": "日本",
+  "@jp": {
+    "description": "text"
+  },
+  "ke": "肯尼亚",
+  "@ke": {
+    "description": "text"
+  },
+  "kg": "吉尔吉斯斯坦",
+  "@kg": {
+    "description": "text"
+  },
+  "kh": "柬埔寨",
+  "@kh": {
+    "description": "text"
+  },
+  "ki": "基里巴斯",
+  "@ki": {
+    "description": "text"
+  },
+  "km": "科摩罗",
+  "@km": {
+    "description": "text"
+  },
+  "kn": "圣基茨和尼维斯",
+  "@kn": {
+    "description": "text"
+  },
+  "kp": "朝鲜",
+  "@kp": {
+    "description": "text"
+  },
+  "kr": "韩国",
+  "@kr": {
+    "description": "text"
+  },
+  "kw": "科威特",
+  "@kw": {
+    "description": "text"
+  },
+  "ky": "开曼群岛",
+  "@ky": {
+    "description": "text"
+  },
+  "kz": "哈萨克斯坦",
+  "@kz": {
+    "description": "text"
+  },
+  "la": "老挝",
+  "@la": {
+    "description": "text"
+  },
+  "lb": "黎巴嫩",
+  "@lb": {
+    "description": "text"
+  },
+  "lc": "圣卢西亚",
+  "@lc": {
+    "description": "text"
+  },
+  "li": "列支敦士登",
+  "@li": {
+    "description": "text"
+  },
+  "lk": "斯里兰卡",
+  "@lk": {
+    "description": "text"
+  },
+  "lr": "利比里亚",
+  "@lr": {
+    "description": "text"
+  },
+  "ls": "莱索托",
+  "@ls": {
+    "description": "text"
+  },
+  "lt": "立陶宛",
+  "@lt": {
+    "description": "text"
+  },
+  "lu": "卢森堡",
+  "@lu": {
+    "description": "text"
+  },
+  "lv": "拉脱维亚",
+  "@lv": {
+    "description": "text"
+  },
+  "ly": "利比亚",
+  "@ly": {
+    "description": "text"
+  },
+  "ma": "摩洛哥",
+  "@ma": {
+    "description": "text"
+  },
+  "mc": "摩纳哥",
+  "@mc": {
+    "description": "text"
+  },
+  "md": "摩尔多瓦",
+  "@md": {
+    "description": "text"
+  },
+  "me": "黑山",
+  "@me": {
+    "description": "text"
+  },
+  "mf": "圣马丁",
+  "@mf": {
+    "description": "text"
+  },
+  "mg": "马达加斯加",
+  "@mg": {
+    "description": "text"
+  },
+  "mh": "马绍尔群岛",
+  "@mh": {
+    "description": "text"
+  },
+  "mk": "北马其顿",
+  "@mk": {
+    "description": "text"
+  },
+  "ml": "马里",
+  "@ml": {
+    "description": "text"
+  },
+  "mm": "缅甸 [缅甸]",
+  "@mm": {
+    "description": "text"
+  },
+  "mn": "蒙古",
+  "@mn": {
+    "description": "text"
+  },
+  "mo": "澳门",
+  "@mo": {
+    "description": "text"
+  },
+  "mp": "北马里亚纳群岛",
+  "@mp": {
+    "description": "text"
+  },
+  "mq": "马提尼克岛",
+  "@mq": {
+    "description": "text"
+  },
+  "mr": "毛里塔尼亚",
+  "@mr": {
+    "description": "text"
+  },
+  "ms": "蒙特塞拉特",
+  "@ms": {
+    "description": "text"
+  },
+  "mt": "马耳他",
+  "@mt": {
+    "description": "text"
+  },
+  "mu": "毛里求斯",
+  "@mu": {
+    "description": "text"
+  },
+  "mv": "马尔代夫",
+  "@mv": {
+    "description": "text"
+  },
+  "mw": "马拉维",
+  "@mw": {
+    "description": "text"
+  },
+  "mx": "墨西哥",
+  "@mx": {
+    "description": "text"
+  },
+  "my": "马来西亚",
+  "@my": {
+    "description": "text"
+  },
+  "mz": "莫桑比克",
+  "@mz": {
+    "description": "text"
+  },
+  "na": "纳米比亚",
+  "@na": {
+    "description": "text"
+  },
+  "nc": "新喀里多尼亚",
+  "@nc": {
+    "description": "text"
+  },
+  "ne": "尼日尔",
+  "@ne": {
+    "description": "text"
+  },
+  "nf": "诺福克岛",
+  "@nf": {
+    "description": "text"
+  },
+  "ng": "尼日利亚",
+  "@ng": {
+    "description": "text"
+  },
+  "ni": "尼加拉瓜",
+  "@ni": {
+    "description": "text"
+  },
+  "nl": "荷兰",
+  "@nl": {
+    "description": "text"
+  },
+  "no": "挪威",
+  "@no": {
+    "description": "text"
+  },
+  "np": "尼泊尔",
+  "@np": {
+    "description": "text"
+  },
+  "nr": "瑙鲁",
+  "@nr": {
+    "description": "text"
+  },
+  "nu": "纽埃",
+  "@nu": {
+    "description": "text"
+  },
+  "nz": "新西兰",
+  "@nz": {
+    "description": "text"
+  },
+  "om": "阿曼",
+  "@om": {
+    "description": "text"
+  },
+  "pa": "巴拿马",
+  "@pa": {
+    "description": "text"
+  },
+  "pe": "秘鲁",
+  "@pe": {
+    "description": "text"
+  },
+  "pf": "法属波利尼西亚",
+  "@pf": {
+    "description": "text"
+  },
+  "pg": "巴布亚新几内亚",
+  "@pg": {
+    "description": "text"
+  },
+  "ph": "菲律宾",
+  "@ph": {
+    "description": "text"
+  },
+  "pk": "巴基斯坦",
+  "@pk": {
+    "description": "text"
+  },
+  "pl": "波兰",
+  "@pl": {
+    "description": "text"
+  },
+  "pm": "圣皮埃尔和密克隆",
+  "@pm": {
+    "description": "text"
+  },
+  "pn": "皮特凯恩群岛",
+  "@pn": {
+    "description": "text"
+  },
+  "pr": "波多黎各",
+  "@pr": {
+    "description": "text"
+  },
+  "ps": "巴勒斯坦",
+  "@ps": {
+    "description": "text"
+  },
+  "pt": "葡萄牙",
+  "@pt": {
+    "description": "text"
+  },
+  "pw": "帕劳",
+  "@pw": {
+    "description": "text"
+  },
+  "py": "巴拉圭",
+  "@py": {
+    "description": "text"
+  },
+  "qa": "卡塔尔",
+  "@qa": {
+    "description": "text"
+  },
+  "re": "留尼汪岛",
+  "@re": {
+    "description": "text"
+  },
+  "ro": "罗马尼亚",
+  "@ro": {
+    "description": "text"
+  },
+  "rs": "塞尔维亚",
+  "@rs": {
+    "description": "text"
+  },
+  "ru": "俄国",
+  "@ru": {
+    "description": "text"
+  },
+  "rw": "卢旺达",
+  "@rw": {
+    "description": "text"
+  },
+  "sa": "沙特阿拉伯",
+  "@sa": {
+    "description": "text"
+  },
+  "sb": "所罗门群岛",
+  "@sb": {
+    "description": "text"
+  },
+  "sc": "塞舌尔",
+  "@sc": {
+    "description": "text"
+  },
+  "sd": "苏丹",
+  "@sd": {
+    "description": "text"
+  },
+  "se": "瑞典",
+  "@se": {
+    "description": "text"
+  },
+  "sg": "新加坡",
+  "@sg": {
+    "description": "text"
+  },
+  "sh": "圣海伦娜",
+  "@sh": {
+    "description": "text"
+  },
+  "si": "斯洛文尼亚",
+  "@si": {
+    "description": "text"
+  },
+  "sj": "斯瓦尔巴群岛和扬马延岛",
+  "@sj": {
+    "description": "text"
+  },
+  "sk": "斯洛伐克",
+  "@sk": {
+    "description": "text"
+  },
+  "sl": "塞拉利昂",
+  "@sl": {
+    "description": "text"
+  },
+  "sm": "圣马力诺",
+  "@sm": {
+    "description": "text"
+  },
+  "sn": "塞内加尔",
+  "@sn": {
+    "description": "text"
+  },
+  "so": "索马里",
+  "@so": {
+    "description": "text"
+  },
+  "sr": "苏里南",
+  "@sr": {
+    "description": "text"
+  },
+  "ss": "南苏丹",
+  "@ss": {
+    "description": "text"
+  },
+  "st": "圣多美和普林西比",
+  "@st": {
+    "description": "text"
+  },
+  "sv": "萨尔瓦多",
+  "@sv": {
+    "description": "text"
+  },
+  "sx": "荷属圣马丁",
+  "@sx": {
+    "description": "text"
+  },
+  "sy": "叙利亚",
+  "@sy": {
+    "description": "text"
+  },
+  "sz": "斯威士兰",
+  "@sz": {
+    "description": "text"
+  },
+  "tc": "特克斯和凯科斯群岛",
+  "@tc": {
+    "description": "text"
+  },
+  "td": "乍得",
+  "@td": {
+    "description": "text"
+  },
+  "tf": "法属南部领地",
+  "@tf": {
+    "description": "text"
+  },
+  "tg": "多哥",
+  "@tg": {
+    "description": "text"
+  },
+  "th": "泰国",
+  "@th": {
+    "description": "text"
+  },
+  "tj": "塔吉克斯坦",
+  "@tj": {
+    "description": "text"
+  },
+  "tk": "托克劳",
+  "@tk": {
+    "description": "text"
+  },
+  "tl": "东帝汶",
+  "@tl": {
+    "description": "text"
+  },
+  "tm": "土库曼斯坦",
+  "@tm": {
+    "description": "text"
+  },
+  "tn": "突尼斯",
+  "@tn": {
+    "description": "text"
+  },
+  "to": "汤加",
+  "@to": {
+    "description": "text"
+  },
+  "tr": "土耳其",
+  "@tr": {
+    "description": "text"
+  },
+  "tt": "特里尼达和多巴哥",
+  "@tt": {
+    "description": "text"
+  },
+  "tv": "图瓦卢",
+  "@tv": {
+    "description": "text"
+  },
+  "tw": "台湾",
+  "@tw": {
+    "description": "text"
+  },
+  "tz": "坦桑尼亚",
+  "@tz": {
+    "description": "text"
+  },
+  "ua": "乌克兰",
+  "@ua": {
+    "description": "text"
+  },
+  "ug": "乌干达",
+  "@ug": {
+    "description": "text"
+  },
+  "um": "美国本土外小岛屿",
+  "@um": {
+    "description": "text"
+  },
+  "us": "美国",
+  "@us": {
+    "description": "text"
+  },
+  "uy": "乌拉圭",
+  "@uy": {
+    "description": "text"
+  },
+  "uz": "乌兹别克斯坦",
+  "@uz": {
+    "description": "text"
+  },
+  "va": "梵蒂冈城",
+  "@va": {
+    "description": "text"
+  },
+  "vc": "圣文森特和格林纳丁斯",
+  "@vc": {
+    "description": "text"
+  },
+  "ve": "委内瑞拉",
+  "@ve": {
+    "description": "text"
+  },
+  "vg": "英属维尔京群岛",
+  "@vg": {
+    "description": "text"
+  },
+  "vi": "美属维尔京群岛",
+  "@vi": {
+    "description": "text"
+  },
+  "vn": "越南",
+  "@vn": {
+    "description": "text"
+  },
+  "vu": "瓦努阿图",
+  "@vu": {
+    "description": "text"
+  },
+  "wf": "瓦利斯和富图纳群岛",
+  "@wf": {
+    "description": "text"
+  },
+  "ws": "萨摩亚",
+  "@ws": {
+    "description": "text"
+  },
+  "xk": "科索沃",
+  "@xk": {
+    "description": "text"
+  },
+  "ye": "也门",
+  "@ye": {
+    "description": "text"
+  },
+  "yt": "马约特",
+  "@yt": {
+    "description": "text"
+  },
+  "za": "南非",
+  "@za": {
+    "description": "text"
+  },
+  "zm": "赞比亚",
+  "@zm": {
+    "description": "text"
+  },
+  "zw": "津巴布韦",
+  "@zw": {
+    "description": "text"
+  }
+}

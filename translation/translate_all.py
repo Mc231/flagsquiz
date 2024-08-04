@@ -6,7 +6,7 @@ languages = [
     "nl", "et", "fi", "fr", "ka", "de", "el", "gu", "he", "hi", "hu", "is",
     "id", "it", "ja", "kn", "kk", "ko", "lv", "lt", "ms", "ml", "mt", "mr",
     "mn", "no", "fa", "pl", "pt", "pa", "ro", "sr", "si", "sk", "sl", "es",
-    "sw", "sv", "tl", "ta", "te", "th", "tr", "uk", "ur", "uz", "vi", "cy"
+    "sw", "sv", "tl", "ta", "te", "th", "tr", "uk", "ur", "uz", "vi", "cy", "zh"
 ]
 
 # Source and target file templates
