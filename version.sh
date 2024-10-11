@@ -66,9 +66,9 @@ bump_version() {
   # shellcheck disable=SC2034
   patch=${version_parts[2]}
 
-  new_major=$((major + 1))
-  new_version_name="$new_major.0.0"
-  new_version_code=$new_major
+  new_minor=$((major + 1))
+  new_version_name="0.0.$new_minor"
+  new_version_code=$new_minor
 
   set_version "$file_path" "$new_version_name" "$new_version_code"
 }

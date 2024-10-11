@@ -1,0 +1,39 @@
+name: Deploy Android
+
+on:
+  workflow_dispatch:
+
+env:
+  ANDROID_KEYSTORE_FILE_PATH: ${{ github.workspace }}/android/app/release-key.jks
+
+jobs:
+  android_deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Create Android Keystore
+        run: |
+          echo $ANDROID_BASE_64_KEY_STORE | base64 --decode > $ANDROID_KEYSTORE_FILE_PATH
+        env:
+          ANDROID_BASE_64_KEY_STORE: ${{ secrets.ANDROID_BASE_64_KEY_STORE }}
+
+      - name: Deploy Android
+        run: |
+          cd android
+          bundle install
+          bundle exec fastlane android test_track track:internal
+        env:
+          ANDROID_PACKAGE_NAME: ${{ secrets.ANDROID_PACKAGE_NAME }}
+          GOOGLE_PLAY_JSON: ${{ secrets.GOOGLE_PLAY_JSON }}
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+
+      - name: Remove Android Keystore
+        run: rm -f $ANDROID_KEYSTORE_FILE_PATH

@@ -1,0 +1,23 @@
+name: Deploy macOS
+
+on:
+  workflow_dispatch:
+
+jobs:
+  macos_deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Deploy macOS
+        run: |
+          cd macos
+          bundle install
+          bundle exec fastlane beta
+        env:
+          MAC_OS_PACKAGE_NAME: ${{ secrets.MAC_OS_PACKAGE_NAME }}
