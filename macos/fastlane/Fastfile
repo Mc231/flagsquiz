@@ -13,19 +13,22 @@
 # Uncomment the line if you want fastlane to automatically update itself
 # update_fastlane
 
-default_platform(:ios)
+default_platform(:macos)
 
-platform :ios do
-  desc "Push a new beta build to TestFlight"
-  lane :beta do
+platform :macos do
+  desc "Submit a new macOS app to the Mac App Store"
+  lane :release do
     sh("flutter clean -v")
     sh("flutter build macos --release")
-     deliver(
-        app_identifier: ENV["MAC_OS_PACKAGE_NAME"],
-        pkg: "../build/macos/Build/Products/Release/flagsquiz.app",
-        team_id: ENV["IOS_TEAM_ID"],
-        submit_for_review: false,
-        automatic_release: false
-     )
+
+    sh("productbuild --component ../build/macos/Build/Products/Release/flagsquiz.app /Applications --sign 'Developer ID Installer: Your Name (#{ENV['IOS_TEAM_ID']})' --product ../build/macos/Build/Products/Release/flagsquiz.app/Contents/Info.plist ../build/macos/Build/Products/Release/flagsquiz.pkg")
+
+    deliver(
+      app_identifier: ENV["MAC_OS_PACKAGE_NAME"],
+      pkg: "../build/macos/Build/Products/Release/flagsquiz.pkg",  # Use the .pkg file here
+      team_id: ENV["IOS_TEAM_ID"],
+      submit_for_review: true,
+      automatic_release: false
+    )
   end
 end
