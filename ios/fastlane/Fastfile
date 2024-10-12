@@ -20,6 +20,6 @@ platform :ios do
   lane :beta do
     sh("flutter clean -v")
     sh("flutter build ipa -v")
-    upload_to_testflight(team_id: ENV["IOS_TEAM_ID"], ipa: "../build/ios/flagsquiz.ipa")
+    upload_to_testflight(team_id: ENV["IOS_TEAM_ID"], ipa: "./build/ios/flagsquiz.ipa")
   end
 end
