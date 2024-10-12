@@ -13,11 +13,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Debug - Print runner info
-        run: |
-          echo "Runner labels: ${{ runner.labels }}"
-          echo "Running on: ${{ runner.os }}"
-
       - name: Set up Flutter
         run: echo "Flutter is already installed on the self-hosted runner"
 
