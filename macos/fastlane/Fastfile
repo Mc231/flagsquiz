@@ -20,6 +20,6 @@ platform :ios do
   lane :beta do
     sh("flutter clean -v")
     sh("flutter build macos --release")
-  #  upload_to_testflight
+    upload_to_testflight
   end
 end
