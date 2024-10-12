@@ -11,7 +11,7 @@ jobs:
     runs-on: self-hosted
     env:
       ANDROID_PACKAGE_NAME: ${{ secrets.ANDROID_PACKAGE_NAME }}
-      GOOGLE_PLAY_JSON: ${{ secrets.GOOGLE_PLAY_JSON }}
+      GOOGLE_PLAY_JSON: ${{ secrets.GOOGLE_PLAY_KEY }}
       ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
       ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
       ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
@@ -40,9 +40,6 @@ jobs:
           echo $ANDROID_BASE_64_KEY_STORE | base64 --decode > $ANDROID_KEYSTORE_FILE_PATH
         env:
           ANDROID_BASE_64_KEY_STORE: ${{ secrets.ANDROID_BASE_64_KEY_STORE }}
-
-      - name: Debug JSON Secret
-        run: echo $GOOGLE_PLAY_JSON
 
       - name: Deploy Android
         run: |
