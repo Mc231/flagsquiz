@@ -14,6 +14,18 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
+      - name: Run tests with coverage
+        run: |
+          flutter test --coverage
+          genhtml coverage/lcov.info -o coverage/html
+
+      - name: Archive test results
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-results
+          path: coverage/html
+          retention-days: 5
+
       - name: Deploy iOS
         run: |
           cd ios
