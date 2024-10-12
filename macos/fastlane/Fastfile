@@ -20,6 +20,12 @@ platform :ios do
   lane :beta do
     sh("flutter clean -v")
     sh("flutter build macos --release")
-    upload_to_testflight(team_id: ENV["IOS_TEAM_ID"], ipa: "../build/macos/ipa/flagsquiz.ipa")
+     deliver(
+        app_identifier: ENV["MAC_OS_PACKAGE_NAME"],
+        ipa: "../build/macos/Build/Products/Release/flagsquiz.app",
+        team_id: ENV["IOS_TEAM_ID"],
+        submit_for_review: false,
+        automatic_release: false
+     )
   end
 end
