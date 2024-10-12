@@ -5,7 +5,7 @@
 get_full_version() {
   file_path=$1
   if [ "$file_path" ]; then
-    full_version=$(grep 'version:' "$file_path")
+    full_version=$(grep 'version:' "$file_path" | awk '{print $2}')
     if [ -n "$full_version" ]; then
       echo "$full_version"
     else
