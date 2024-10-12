@@ -41,6 +41,9 @@ jobs:
         env:
           ANDROID_BASE_64_KEY_STORE: ${{ secrets.ANDROID_BASE_64_KEY_STORE }}
 
+      - name: Debug JSON Secret
+        run: echo $GOOGLE_PLAY_JSON
+
       - name: Deploy Android
         run: |
           cd android
