@@ -22,7 +22,7 @@ platform :ios do
     sh("flutter build macos --release")
      deliver(
         app_identifier: ENV["MAC_OS_PACKAGE_NAME"],
-        ipa: "../build/macos/Build/Products/Release/flagsquiz.app",
+        pkg: "../build/macos/Build/Products/Release/flagsquiz.app",
         team_id: ENV["IOS_TEAM_ID"],
         submit_for_review: false,
         automatic_release: false
