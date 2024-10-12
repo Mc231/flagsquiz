@@ -36,4 +36,4 @@ jobs:
         run: |
           cd macos
           bundle install
-          bundle exec fastlane beta
+          bundle exec fastlane release

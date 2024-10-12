@@ -13,9 +13,9 @@
 # Uncomment the line if you want fastlane to automatically update itself
 # update_fastlane
 
-default_platform(:macos)
+default_platform(:mac)
 
-platform :macos do
+platform :mac do
   desc "Submit a new macOS app to the Mac App Store"
   lane :release do
     sh("flutter clean -v")
