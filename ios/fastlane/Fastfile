@@ -22,8 +22,7 @@ platform :ios do
     sh("flutter build ipa -v")
   upload_to_testflight(
     username: ENV['FASTLANE_APPLE_ID'],
-    app_identifier: ENV['IOS_PACKAGE_NAME'],
-    app_specific_password: ENV['FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD']
+    app_identifier: ENV['IOS_PACKAGE_NAME']
   )
   end
 end
