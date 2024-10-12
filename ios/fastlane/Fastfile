@@ -20,6 +20,6 @@ platform :ios do
   lane :beta do
     sh("flutter clean -v")
     sh("flutter build ipa -v")
-  #  upload_to_testflight
+    upload_to_testflight
   end
 end
