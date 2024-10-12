@@ -34,7 +34,7 @@ platform :android do
 
     upload_to_play_store(
       track: track,
-       json_key: '../google_play_key.json',
+       json_key_data: ENV['GOOGLE_PLAY_JSON'],
       aab: '../build/app/outputs/bundle/release/app-release.aab',
     )
   end

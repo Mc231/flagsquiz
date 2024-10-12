@@ -35,12 +35,6 @@ jobs:
         env:
           ANDROID_BASE_64_KEY_STORE: ${{ secrets.ANDROID_BASE_64_KEY_STORE }}
 
-      - name: Create Google Play JSON Key
-        run: |
-          echo $GOOGLE_PLAY_JSON | base64 --decode > ${{ github.workspace }}/google_play_key.json
-        env:
-          GOOGLE_PLAY_JSON: ${{ secrets.GOOGLE_PLAY_JSON }}
-
       - name: Deploy Android
         run: |
           cd android
@@ -52,9 +46,6 @@ jobs:
           ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
           ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
           ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
-          GOOGLE_PLAY_JSON_KEY_FILE: ${{ github.workspace }}/google_play_key.json
 
-      - name: Remove Android Keystore and Google Play Key
-        run: |
-          rm -f $ANDROID_KEYSTORE_FILE_PATH
-          rm -f ${{ github.workspace }}/google_play_key.json
+      - name: Remove Android Keystore
+        run: rm -f $ANDROID_KEYSTORE_FILE_PATH
