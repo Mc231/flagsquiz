@@ -32,5 +32,6 @@ jobs:
           bundle install
           bundle exec fastlane beta
         env:
+          FASTLANE_APPLE_ID: ${{ secrets.FASTLANE_APPLE_ID }}
           IOS_PACKAGE_NAME: ${{ secrets.IOS_PACKAGE_NAME }}
           FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD: ${{ secrets.FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD }}
