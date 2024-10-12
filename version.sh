@@ -51,25 +51,31 @@ set_version() {
 bump_version() {
   file_path=$1
   full_version=$(get_full_version "$file_path")
-  # shellcheck disable=SC2181
+
+  # Exit if the get_full_version function fails
   if [ $? -ne 0 ]; then
     exit 1
   fi
+
+  # Extract version name and version code from the current version
   trimmed_version="${full_version##* }"
   version_name="${trimmed_version%+*}"
   version_code="${trimmed_version##*+}"
 
+  # Split the version name into major, minor, and patch parts
   IFS='.' read -r -a version_parts <<< "$version_name"
   major=${version_parts[0]}
-  # shellcheck disable=SC2034
   minor=${version_parts[1]}
-  # shellcheck disable=SC2034
   patch=${version_parts[2]}
 
-  new_minor=$((major + 1))
-  new_version_name="0.0.$new_minor"
-  new_version_code=$new_minor
+  # Increment the major version and version code
+  new_major=$((major + 1))
+  new_version_code=$((version_code + 2))
 
+  # Construct the new version string
+  new_version_name="$new_major.$minor.$patch"
+
+  # Update the version in the file
   set_version "$file_path" "$new_version_name" "$new_version_code"
 }
 
