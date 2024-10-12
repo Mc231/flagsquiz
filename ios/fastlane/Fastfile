@@ -20,6 +20,10 @@ platform :ios do
   lane :beta do
     sh("flutter clean -v")
     sh("flutter build ipa -v")
-    upload_to_testflight
+  upload_to_testflight(
+    username: ENV['FASTLANE_APPLE_ID'],
+    app_identifier: ENV['IOS_PACKAGE_NAME'],
+    app_specific_password: ENV['FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD']
+  )
   end
 end
