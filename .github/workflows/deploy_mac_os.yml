@@ -42,6 +42,6 @@ jobs:
           xcrun altool --upload-app \
             --file "flagsquiz.pkg" \
             --type osx \
-            --apiKey ${{ env.API_KEY }} \
-            --apiIssuer ${{ env.API_ISSUER }} \
+            --apiKey ${{ env.OSX_API_KEY }} \
+            --apiIssuer ${{ env.OSX_API_ISSUER }} \
             --asc-provider ${{ env.OSX_TEAM_ID }}
