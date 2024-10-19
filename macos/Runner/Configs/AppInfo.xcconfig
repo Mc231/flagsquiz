@@ -8,7 +8,7 @@
 PRODUCT_NAME = flagsquiz
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.quasarius.flagsquiz
+PRODUCT_BUNDLE_IDENTIFIER = com.volodymyrs.flagsquiz
 
 // The copyright displayed in application information
 PRODUCT_COPYRIGHT = Copyright © 2024 com.quasarius. All rights reserved.
