@@ -29,15 +29,10 @@ jobs:
         run: |
           productbuild --component "build/macos/Build/Products/Release/flagsquiz.app" /Applications "flagsquiz.pkg"
 
-#      - name: Notarize .pkg (optional)
-#        run: |
-#          xcrun notarytool submit "flagsquiz.pkg" \
-#            --apple-id ${{ env.OSX_APPLE_ID }} \
-#            --password ${{ env.OSX_APP_SPECIFIC_PASSWORD }} \
-#            --team-id ${{ env.OSX_TEAM_ID }} \
-#            --wait
       - name: Save AuthKey file
-        run: echo "${{ secrets.OSX_APP_STORE_CONNECT_PRIVATE_KEY }}" > AuthKey_8U392483W2.p8
+        run: |
+          mkdir -p ~/.private_keys
+          echo "${{ secrets.OSX_APP_STORE_CONNECT_PRIVATE_KEY }}" > ~/.private_keys/AuthKey_8U392483W2.p8
 
       - name: Upload to App Store
         run: |
