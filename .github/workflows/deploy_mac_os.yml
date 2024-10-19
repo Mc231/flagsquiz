@@ -29,13 +29,13 @@ jobs:
         run: |
           productbuild --component "build/macos/Build/Products/Release/flagsquiz.app" /Applications "flagsquiz.pkg"
 
-      - name: Notarize .pkg (optional)
-        run: |
-          xcrun notarytool submit "flagsquiz.pkg" \
-            --apple-id ${{ env.OSX_APPLE_ID }} \
-            --password ${{ env.OSX_APP_SPECIFIC_PASSWORD }} \
-            --team-id ${{ env.OSX_TEAM_ID }} \
-            --wait
+#      - name: Notarize .pkg (optional)
+#        run: |
+#          xcrun notarytool submit "flagsquiz.pkg" \
+#            --apple-id ${{ env.OSX_APPLE_ID }} \
+#            --password ${{ env.OSX_APP_SPECIFIC_PASSWORD }} \
+#            --team-id ${{ env.OSX_TEAM_ID }} \
+#            --wait
 
       - name: Upload to App Store
         run: |
