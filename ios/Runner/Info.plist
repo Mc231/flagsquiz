@@ -12,12 +12,73 @@
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
-	<key>CFBundleLocalizations</key>
-	<array>
-		<string>en</string>
-	</array>
+    <key>CFBundleLocalizations</key>
+    <array>
+        <string>af</string> <!-- Afrikaans -->
+        <string>am</string> <!-- Amharic -->
+        <string>ar</string> <!-- Arabic -->
+        <string>az</string> <!-- Azerbaijani -->
+        <string>bg</string> <!-- Bulgarian -->
+        <string>bn</string> <!-- Bengali -->
+        <string>bs</string> <!-- Bosnian -->
+        <string>ca</string> <!-- Catalan -->
+        <string>cs</string> <!-- Czech -->
+        <string>cy</string> <!-- Welsh -->
+        <string>da</string> <!-- Danish -->
+        <string>de</string> <!-- German -->
+        <string>el</string> <!-- Greek -->
+        <string>en</string> <!-- English -->
+        <string>es</string> <!-- Spanish -->
+        <string>et</string> <!-- Estonian -->
+        <string>fa</string> <!-- Persian -->
+        <string>fi</string> <!-- Finnish -->
+        <string>fr</string> <!-- French -->
+        <string>gu</string> <!-- Gujarati -->
+        <string>he</string> <!-- Hebrew -->
+        <string>hi</string> <!-- Hindi -->
+        <string>hr</string> <!-- Croatian -->
+        <string>hu</string> <!-- Hungarian -->
+        <string>id</string> <!-- Indonesian -->
+        <string>is</string> <!-- Icelandic -->
+        <string>it</string> <!-- Italian -->
+        <string>ja</string> <!-- Japanese -->
+        <string>ka</string> <!-- Georgian -->
+        <string>kk</string> <!-- Kazakh -->
+        <string>kn</string> <!-- Kannada -->
+        <string>ko</string> <!-- Korean -->
+        <string>lt</string> <!-- Lithuanian -->
+        <string>lv</string> <!-- Latvian -->
+        <string>ml</string> <!-- Malayalam -->
+        <string>mn</string> <!-- Mongolian -->
+        <string>mr</string> <!-- Marathi -->
+        <string>ms</string> <!-- Malay -->
+        <string>nl</string> <!-- Dutch -->
+        <string>no</string> <!-- Norwegian -->
+        <string>pa</string> <!-- Punjabi -->
+        <string>pl</string> <!-- Polish -->
+        <string>pt</string> <!-- Portuguese -->
+        <string>ro</string> <!-- Romanian -->
+        <string>si</string> <!-- Sinhala -->
+        <string>sk</string> <!-- Slovak -->
+        <string>sl</string> <!-- Slovenian -->
+        <string>sr</string> <!-- Serbian -->
+        <string>sv</string> <!-- Swedish -->
+        <string>sw</string> <!-- Swahili -->
+        <string>ta</string> <!-- Tamil -->
+        <string>te</string> <!-- Telugu -->
+        <string>th</string> <!-- Thai -->
+        <string>tl</string> <!-- Tagalog -->
+        <string>tr</string> <!-- Turkish -->
+        <string>uk</string> <!-- Ukrainian -->
+        <string>ur</string> <!-- Urdu -->
+        <string>uz</string> <!-- Uzbek -->
+        <string>vi</string> <!-- Vietnamese -->
+        <string>zh</string> <!-- Chinese -->
+    </array>
 	<key>CFBundleName</key>
 	<string>flagsquiz</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>

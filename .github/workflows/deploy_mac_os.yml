@@ -6,6 +6,13 @@ on:
 jobs:
   macos_deploy:
     runs-on: self-hosted
+    env:
+      OSX_APPLE_ID: ${{ secrets.FASTLANE_APPLE_ID }}
+      OSX_APP_SPECIFIC_PASSWORD: ${{ secrets.FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD }}
+      OSX_TEAM_ID: ${{ secrets.IOS_TEAM_ID }}
+      OSX_API_KEY: ${{ secrets.OSX_API_KEY }}
+      OSX_API_ISSUER: ${{ secrets.OSX_API_ISSUER }}
+      OSX_CERT_NAME: ${{ secrets.OSX_CERT_NAME }}
 
     steps:
       - name: Checkout repository
@@ -14,22 +21,37 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
-      - name: Run tests with coverage
+      - name: Build macOS release
         run: |
-          flutter test --coverage
-          genhtml coverage/lcov.info -o coverage/html
+          flutter clean -v
+          flutter build macos --release
 
-      - name: Archive test results
-        uses: actions/upload-artifact@v3
-        with:
-          name: test-results
-          path: coverage/html
-          retention-days: 5
-
-      - name: Deploy macOS
+      - name: Verify dSYM Generation
         run: |
-          cd macos
-          bundle install
-          bundle exec fastlane beta
-        env:
-          MAC_OS_PACKAGE_NAME: ${{ secrets.MAC_OS_PACKAGE_NAME }}
+          if [ ! -d "build/macos/Build/Products/Release/flagsquiz.app.dSYM" ]; then
+            echo "Error: dSYM files not found. Ensure dSYM generation is enabled."
+            exit 1
+          fi
+
+      - name: Create .pkg file
+        run: |
+          productbuild --component "build/macos/Build/Products/Release/flagsquiz.app" /Applications "flagsquiz.pkg"
+
+      - name: Sign .pkg file
+        run: |
+          productsign --sign "$OSX_CERT_NAME" flagsquiz.pkg signed-flagsquiz.pkg
+
+      - name: Save AuthKey file
+        run: |
+          mkdir -p ~/.private_keys
+          echo "${{ secrets.OSX_APP_STORE_CONNECT_PRIVATE_KEY }}" > ~/.private_keys/AuthKey_8U392483W2.p8
+          chmod 600 ~/.private_keys/AuthKey_8U392483W2.p8
+
+      - name: Upload to App Store
+        run: |
+          xcrun altool --upload-app \
+            --file "signed-flagsquiz.pkg" \
+            --type osx \
+            --apiKey ${{ env.OSX_API_KEY }} \
+            --apiIssuer ${{ env.OSX_API_ISSUER }} \
+            --asc-provider ${{ env.OSX_TEAM_ID }}

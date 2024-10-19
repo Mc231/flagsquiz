@@ -6,6 +6,12 @@ on:
 jobs:
   ios_deploy:
     runs-on: self-hosted
+    env:
+      FASTLANE_APPLE_ID: ${{ secrets.FASTLANE_APPLE_ID }}
+      FASTLANE_USER: ${{ secrets.FASTLANE_USER }}
+      IOS_PACKAGE_NAME: ${{ secrets.IOS_PACKAGE_NAME }}
+      IOS_TEAM_ID: ${{ secrets.IOS_TEAM_ID }}
+      FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD: ${{ secrets.FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD }}
 
     steps:
       - name: Checkout repository
@@ -31,6 +37,3 @@ jobs:
           cd ios
           bundle install
           bundle exec fastlane beta
-        env:
-          IOS_PACKAGE_NAME: ${{ secrets.IOS_PACKAGE_NAME }}
-          FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD: ${{ secrets.FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD }}

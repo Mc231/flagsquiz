@@ -34,7 +34,8 @@ platform :android do
 
     upload_to_play_store(
       track: track,
-      aab: '../../flags_quiz/build/app/outputs/bundle/release/app-release.aab',
+      aab: '../build/app/outputs/bundle/release/app-release.aab',
+      json_key_data: ENV['GOOGLE_PLAY_JSON']
     )
   end
 

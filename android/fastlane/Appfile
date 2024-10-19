@@ -1,2 +1,1 @@
-json_key_file(ENV["GOOGLE_PLAY_JSON"])
 package_name(ENV["ANDROID_PACKAGE_NAME"])
