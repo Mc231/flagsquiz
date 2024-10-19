@@ -26,6 +26,13 @@ jobs:
           flutter clean -v
           flutter build macos --release
 
+      - name: Verify dSYM Generation
+        run: |
+          if [ ! -d "build/macos/Build/Products/Release/flagsquiz.app.dSYM" ]; then
+            echo "Error: dSYM files not found. Ensure dSYM generation is enabled."
+            exit 1
+          fi
+
       - name: Create .pkg file
         run: |
           productbuild --component "build/macos/Build/Products/Release/flagsquiz.app" /Applications "flagsquiz.pkg"
@@ -38,6 +45,7 @@ jobs:
         run: |
           mkdir -p ~/.private_keys
           echo "${{ secrets.OSX_APP_STORE_CONNECT_PRIVATE_KEY }}" > ~/.private_keys/AuthKey_8U392483W2.p8
+          chmod 600 ~/.private_keys/AuthKey_8U392483W2.p8
 
       - name: Upload to App Store
         run: |
