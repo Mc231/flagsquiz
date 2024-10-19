@@ -36,6 +36,8 @@ jobs:
 #            --password ${{ env.OSX_APP_SPECIFIC_PASSWORD }} \
 #            --team-id ${{ env.OSX_TEAM_ID }} \
 #            --wait
+      - name: Save AuthKey file
+        run: echo "${{ secrets.OSX_APP_STORE_CONNECT_PRIVATE_KEY }}" > AuthKey_8U392483W2.p8
 
       - name: Upload to App Store
         run: |
