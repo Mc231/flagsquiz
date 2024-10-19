@@ -7,11 +7,11 @@ jobs:
   macos_deploy:
     runs-on: self-hosted
     env:
-      FASTLANE_APPLE_ID: ${{ secrets.FASTLANE_APPLE_ID }}
-      FASTLANE_USER: ${{ secrets.FASTLANE_USER }}
-      MAC_OS_PACKAGE_NAME: ${{ secrets.MAC_OS_PACKAGE_NAME }}
-      IOS_TEAM_ID: ${{ secrets.IOS_TEAM_ID }}
-      FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD: ${{ secrets.FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD }}
+      OSX_APPLE_ID: ${{ secrets.FASTLANE_APPLE_ID }}
+      OSX_APP_SPECIFIC_PASSWORD: ${{ secrets.FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD }}
+      OSX_TEAM_ID: ${{ secrets.IOS_TEAM_ID }}
+      OSX_API_KEY: ${{ secrets.OSX_API_KEY }}
+      OSX_API_ISSUER: ${{ secrets.OSX_API_ISSUER }}
 
     steps:
       - name: Checkout repository
@@ -20,20 +20,28 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
-      - name: Run tests with coverage
+      - name: Build macOS release
         run: |
-          flutter test --coverage
-          genhtml coverage/lcov.info -o coverage/html
+          flutter clean -v
+          flutter build macos --release
 
-      - name: Archive test results
-        uses: actions/upload-artifact@v3
-        with:
-          name: test-results
-          path: coverage/html
-          retention-days: 5
-
-      - name: Deploy macOS
+      - name: Create .pkg file
         run: |
-          cd macos
-          bundle install
-          bundle exec fastlane release
+          productbuild --component "build/macos/Build/Products/Release/flagsquiz.app" /Applications "flagsquiz.pkg"
+
+      - name: Notarize .pkg (optional)
+        run: |
+          xcrun notarytool submit "flagsquiz.pkg" \
+            --apple-id ${{ env.OSX_APPLE_ID }} \
+            --password ${{ env.OSX_APP_SPECIFIC_PASSWORD }} \
+            --team-id ${{ env.OSX_TEAM_ID }} \
+            --wait
+
+      - name: Upload to App Store
+        run: |
+          xcrun altool --upload-app \
+            --file "flagsquiz.pkg" \
+            --type osx \
+            --apiKey ${{ env.API_KEY }} \
+            --apiIssuer ${{ env.API_ISSUER }} \
+            --asc-provider ${{ env.OSX_TEAM_ID }}
