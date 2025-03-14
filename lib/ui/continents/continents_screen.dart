@@ -85,7 +85,8 @@ class ContinentsScreen extends StatelessWidget {
     final bloc = GameBloc<Country>.standard(
       'assets/Countries.json',
       Country.fromJson,
-      filter: (country) => country.continent == continent,
+      filter: (country) =>
+          continent == Continent.all ? true : country.continent == continent,
     );
     Navigator.push(
         context,
