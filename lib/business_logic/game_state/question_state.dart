@@ -1,5 +1,5 @@
 import 'package:flags_quiz/models/country.dart';
-import '../../foundation/question.dart';
+import '../../foundation/model/question.dart';
 import 'game_state.dart';
 
 /// A state representing the question phase of the game.

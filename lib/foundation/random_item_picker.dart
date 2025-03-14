@@ -1,4 +1,4 @@
-import 'package:flags_quiz/foundation/random_pick_result.dart';
+import 'package:flags_quiz/foundation/model/random_pick_result.dart';
 
 /// A utility class for randomly selecting items from a list.
 ///

@@ -1,4 +1,4 @@
-import 'package:flags_quiz/foundation/question.dart';
+import 'package:flags_quiz/foundation/model/question.dart';
 import 'package:flags_quiz/ui/flags_quiz_app.dart';
 import 'package:flags_quiz/ui/game/game_answers_widget.dart';
 import 'package:flags_quiz/ui/game/game_image_widget.dart';

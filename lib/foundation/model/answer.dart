@@ -1,4 +1,4 @@
-import 'package:flags_quiz/foundation/question.dart';
+import 'package:flags_quiz/foundation/model/question.dart';
 
 /// Represents an answer to a quiz question.
 ///

@@ -1,4 +1,5 @@
 import 'dart:async';
+
 import 'bloc.dart';
 
 /// A base class for implementing BLoC components with single subscription streams.

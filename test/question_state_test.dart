@@ -1,5 +1,5 @@
 import 'package:flags_quiz/business_logic/game_state/question_state.dart';
-import 'package:flags_quiz/foundation/question.dart';
+import 'package:flags_quiz/foundation/model/question.dart';
 import 'package:flags_quiz/models/country.dart';
 import 'package:flutter_test/flutter_test.dart';
 

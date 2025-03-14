@@ -1,9 +1,9 @@
 import 'package:flags_quiz/business_logic/countries_provider.dart';
 import 'package:flags_quiz/business_logic/game_bloc.dart';
-import 'package:flags_quiz/foundation/bloc_provider.dart';
-import 'package:flags_quiz/foundation/question.dart';
+import 'package:flags_quiz/foundation/bloc/bloc_provider.dart';
+import 'package:flags_quiz/foundation/model/question.dart';
 import 'package:flags_quiz/foundation/random_item_picker.dart';
-import 'package:flags_quiz/foundation/random_pick_result.dart';
+import 'package:flags_quiz/foundation/model/random_pick_result.dart';
 import 'package:flags_quiz/models/continent.dart';
 import 'package:flags_quiz/models/country.dart';
 import 'package:flags_quiz/ui/flags_quiz_app.dart';

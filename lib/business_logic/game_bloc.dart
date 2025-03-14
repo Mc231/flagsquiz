@@ -1,12 +1,12 @@
 import 'package:flags_quiz/foundation/random_item_picker.dart';
 import 'package:flags_quiz/business_logic/countries_data_source.dart';
-import 'package:flags_quiz/foundation/random_pick_result.dart';
-import 'package:flags_quiz/foundation/single_subscription_bloc.dart';
-import 'package:flags_quiz/foundation/answer.dart';
+import 'package:flags_quiz/foundation/model/random_pick_result.dart';
+import 'package:flags_quiz/foundation/bloc/single_subscription_bloc.dart';
+import 'package:flags_quiz/foundation/model/answer.dart';
 import 'package:flags_quiz/models/continent.dart';
 import 'package:flags_quiz/models/country.dart';
 
-import '../foundation/question.dart';
+import '../foundation/model/question.dart';
 import 'countries_provider.dart';
 import 'game_state/game_state.dart';
 import 'game_state/loading_state.dart';

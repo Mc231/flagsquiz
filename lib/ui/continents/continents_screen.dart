@@ -1,5 +1,5 @@
 import 'package:flags_quiz/business_logic/game_bloc.dart';
-import 'package:flags_quiz/foundation/bloc_provider.dart';
+import 'package:flags_quiz/foundation/bloc/bloc_provider.dart';
 import 'package:flags_quiz/models/continent.dart';
 import 'package:flags_quiz/ui/components/option_button.dart';
 import 'package:flutter/material.dart';
