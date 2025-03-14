@@ -6,6 +6,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flags_quiz/extensions/continent_additions.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import '../../foundation/business_logic/game_bloc.dart';
+import '../../models/country.dart';
 import '../game/game_screen.dart';
 
 /// A stateless widget that displays a screen for selecting a continent.
@@ -40,7 +41,7 @@ class ContinentsScreen extends StatelessWidget {
               return GridView.count(
                   shrinkWrap: true,
                   childAspectRatio:
-                  getGridChildAspectRatio(context, information),
+                      getGridChildAspectRatio(context, information),
                   crossAxisCount: getGridAxisCount(context),
                   children: _getContinentOptions(context));
             }),
@@ -81,21 +82,26 @@ class ContinentsScreen extends StatelessWidget {
   /// [continent] is the selected `Continent`.
   /// [context] is the `BuildContext` used for navigation.
   void _handleItemClick(Continent continent, BuildContext context) {
-    var bloc = GameBloc.standard(continent);
+    final bloc = GameBloc<Country>.standard(
+      'assets/Countries.json',
+      Country.fromJson,
+      filter: (country) => country.continent == continent,
+    );
     Navigator.push(
         context,
         MaterialPageRoute(
             builder: (context) => BlocProvider(
-              bloc: bloc,
-              child: GameScreen(),
-            )));
+                  bloc: bloc,
+                  child:
+                      GameScreen(title: continent.localizedName(context) ?? ""),
+                )));
   }
 }
 
 /// Extension on `ContinentsScreen` to provide responsive layout utilities.
 extension on ContinentsScreen {
   static const _buttonMargin =
-  EdgeInsets.only(left: 16.0, right: 16.0, bottom: 16);
+      EdgeInsets.only(left: 16.0, right: 16.0, bottom: 16);
 
   /// Returns the button margin based on the screen size.
   ///

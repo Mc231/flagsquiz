@@ -1,5 +1,5 @@
 import 'package:flags_quiz/foundation/bloc/bloc_provider.dart';
-import 'package:flags_quiz/foundation/business_logic/countries_provider.dart';
+import 'package:flags_quiz/foundation/business_logic/quiz_data_provider.dart';
 import 'package:flags_quiz/foundation/business_logic/game_bloc.dart';
 import 'package:flags_quiz/foundation/model/question.dart';
 import 'package:flags_quiz/foundation/random_item_picker.dart';
@@ -14,20 +14,20 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 import 'package:mockito/annotations.dart';
 
-@GenerateNiceMocks([MockSpec<CountriesProvider>(), MockSpec<RandomItemPicker<Country>>()])
+@GenerateNiceMocks([MockSpec<QuizDataProvider<Country>>(), MockSpec<RandomItemPicker<Country>>()])
 import 'game_screen_test.mocks.dart';
 
 void main() {
   late Continent continent;
-  late CountriesProvider countriesProvider;
+  late QuizDataProvider<Country> countriesProvider;
   late RandomItemPicker<Country> randomItemPicker;
-  late GameBloc bloc;
+  late GameBloc<Country> bloc;
 
   setUp(() {
     continent = Continent.sa;
-    countriesProvider = MockCountriesProvider();
+    countriesProvider = MockQuizDataProvider<Country>();
     randomItemPicker = MockRandomItemPicker();
-    bloc = GameBloc(continent, countriesProvider, randomItemPicker);
+    bloc = GameBloc<Country>(countriesProvider, randomItemPicker, filter: (country) => country.continent == continent);
   });
 
   testWidgets('Question showing', (WidgetTester tester) async {
@@ -43,7 +43,7 @@ void main() {
     when(countriesProvider.provide())
         .thenAnswer((_) => Future.value(countries));
     await tester.pumpWidget(
-      FlagsQuizApp(homeWidget: BlocProvider(bloc: bloc, child: GameScreen())),
+      FlagsQuizApp(homeWidget: BlocProvider(bloc: bloc, child: GameScreen(title: "Test",))),
     );
     await tester.pump();
     await tester.pump();
@@ -60,13 +60,13 @@ void main() {
         {'name': 'Argentina', 'continent': 'SA', 'code': 'AR'}),
       Country.fromJson({'name': 'Bolivia', 'continent': 'SA', 'code': 'BO'})
     ];
-    bloc.currentQuestion = Question(countries.first, countries);
+    bloc.currentQuestion = Question<Country>(countries.first, countries);
     // When
     when(randomItemPicker.replaceItems([])).thenAnswer((_) => countries);
     when(countriesProvider.provide())
         .thenAnswer((_) => Future.value(countries));
     await tester.pumpWidget(
-      FlagsQuizApp(homeWidget: BlocProvider(bloc: bloc, child: GameScreen())),
+      FlagsQuizApp(homeWidget: BlocProvider(bloc: bloc, child: GameScreen(title: "Test",))),
     );
     await tester.pump();
     await tester.pump();

@@ -13,7 +13,7 @@ void main() {
   group('GameLayout', () {
     Country mockCountry =
         Country.fromJson({"name": "Test", "continent": "EU", "code": "ua"});
-    QuestionState mockQuestionState =
+    QuestionState<Country> mockQuestionState =
         QuestionState(Question<Country>(mockCountry, [mockCountry]), 1, 1);
 
     testWidgets('displays correctly in landscape orientation',

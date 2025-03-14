@@ -1,8 +1,8 @@
 import 'package:flags_quiz/foundation/bloc/bloc_provider.dart';
 import 'package:flags_quiz/foundation/business_logic/quiz_state/quiz_state.dart';
+import 'package:flags_quiz/models/country.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
-import 'package:flags_quiz/extensions/continent_additions.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 import '../../foundation/business_logic/game_bloc.dart';
@@ -21,9 +21,14 @@ import 'game_layout.dart';
 /// The `GameScreen` uses a responsive design to adapt to different screen sizes and orientations,
 /// ensuring a consistent experience across devices.
 ///
+///
 class GameScreen extends StatefulWidget {
   /// Key used for identifying the OK button in the game over dialog.
   static const okButtonKey = Key("ok_button");
+
+  final String title;
+
+  const GameScreen({super.key, required this.title});
 
   @override
   State<StatefulWidget> createState() {
@@ -34,11 +39,11 @@ class GameScreen extends StatefulWidget {
 /// The state for the `GameScreen`, managing the game logic and UI updates.
 class GameScreenState extends State<GameScreen> {
   /// The BLoC managing the game logic and state transitions.
-  late GameBloc _bloc;
+  late GameBloc<Country> _bloc;
 
   @override
   void initState() {
-    _bloc = BlocProvider.of(context);
+    _bloc = BlocProvider.of<GameBloc<Country>>(context);
     _bloc.performInitialLoad();
     _bloc.gameOverCallback = (String result) {
       _showGameOverDialog(result);
@@ -50,7 +55,7 @@ class GameScreenState extends State<GameScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(_bloc.continent.localizedName(context) ?? ""),
+        title: Text(widget.title),
       ),
       body: Container(
         padding: getContainerPadding(context),
@@ -65,7 +70,7 @@ class GameScreenState extends State<GameScreen> {
                     child: CircularProgressIndicator(),
                   );
                 }
-                final questionState = state as QuestionState;
+                final questionState = state as QuestionState<Country>;
                 return ResponsiveBuilder(builder: (context, information) {
                   return GameLayout(
                       questionState: questionState,

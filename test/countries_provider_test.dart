@@ -1,6 +1,7 @@
 import 'package:flags_quiz/foundation/asset_provider.dart';
-import 'package:flags_quiz/foundation/business_logic/countries_provider.dart';
+import 'package:flags_quiz/foundation/business_logic/quiz_data_provider.dart';
 import 'package:flags_quiz/models/continent.dart';
+import 'package:flags_quiz/models/country.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 import 'package:mockito/annotations.dart';
@@ -10,15 +11,16 @@ import 'countries_provider_test.mocks.dart';
 
 void main() {
   late AssetProvider assetProvider;
-  late CountriesProvider countriesProvider;
+  late QuizDataProvider countriesProvider;
 
   setUp(() {
     assetProvider = MockAssetProvider();
-    countriesProvider = CountriesProvider(assetProvider);
+    countriesProvider = QuizDataProvider(assetProvider, Country.fromJson);
   });
 
   test('default provider', () {
-    var provider = CountriesProvider.standard();
+    var provider =
+        QuizDataProvider.standard('assets/Countries.json', Country.fromJson);
     expect(provider, isNotNull);
   });
 

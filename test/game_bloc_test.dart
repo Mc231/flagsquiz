@@ -1,4 +1,4 @@
-import 'package:flags_quiz/foundation/business_logic/countries_provider.dart';
+import 'package:flags_quiz/foundation/business_logic/quiz_data_provider.dart';
 import 'package:flags_quiz/foundation/business_logic/game_bloc.dart';
 import 'package:flags_quiz/foundation/business_logic/quiz_state/quiz_state.dart';
 import 'package:flags_quiz/foundation/model/question.dart';
@@ -11,20 +11,25 @@ import 'package:mockito/mockito.dart';
 
 import 'package:mockito/annotations.dart';
 
-@GenerateNiceMocks([MockSpec<CountriesProvider>(), MockSpec<RandomItemPicker<Country>>()])
+@GenerateNiceMocks([MockSpec<QuizDataProvider>(), MockSpec<RandomItemPicker<Country>>()])
 import 'game_bloc_test.mocks.dart';
 
 void main() {
+  TestWidgetsFlutterBinding.ensureInitialized();
   late GameBloc bloc;
-  late CountriesProvider provider;
+  late QuizDataProvider provider;
   late RandomItemPicker<Country> randomItemPicker;
 
   List<Country> countries = [];
 
   setUp(() {
-    provider = MockCountriesProvider();
+    provider = MockQuizDataProvider();
     randomItemPicker = MockRandomItemPicker();
-    bloc = GameBloc(Continent.all, provider, randomItemPicker);
+    bloc = GameBloc<Country>.standard(
+      'assets/Countries.json',
+      Country.fromJson,
+      filter: (country) => country.continent == Continent.all,
+    );
     countries = [
       Country.fromJson({'name': 'Ukraine', 'continent': 'EU', 'code': 'UK'}),
       Country.fromJson({'name': 'Poland', 'continent': 'EU', 'code': 'PL'}),
@@ -42,7 +47,11 @@ void main() {
     // Given
     final continent = Continent.af;
     // When
-    final result = GameBloc.standard(continent);
+    final result = GameBloc<Country>.standard(
+      'assets/Countries.json',
+      Country.fromJson,
+      filter: (country) => country.continent == continent,
+    );
     // Then
     expect(result, isNotNull);
   });
@@ -62,7 +71,7 @@ void main() {
 
   test('process answer', () {
     // Given
-    final question = Question(countries.first, countries);
+    final question = Question<Country>(countries.first, countries);
     bloc.currentQuestion = question;
     countries.removeLast();
     final randomPickResult = RandomPickResult(countries.first, countries);
@@ -78,7 +87,7 @@ void main() {
     // Given
     final answer = countries.first;
     final expectedScore = '0 / 0';
-    bloc.currentQuestion = Question(countries.last, countries);
+    bloc.currentQuestion = Question<Country>(countries.last, countries);
     bloc.gameOverCallback = (score) {
       // Then
       expect(score, equals(expectedScore));

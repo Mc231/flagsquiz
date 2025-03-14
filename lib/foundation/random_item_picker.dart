@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'package:flags_quiz/foundation/model/random_pick_result.dart';
 
 /// A utility class for randomly selecting items from a list.
@@ -41,9 +42,10 @@ class RandomItemPicker<T> {
   /// This method clears the existing list of items and replaces it with
   /// the provided [items]. It is useful for resetting the item pool between
   /// rounds or sessions.
-  void replaceItems(List<T> items) {
-    this.items.clear();
-    this.items.addAll(items);
+  void replaceItems(List<T> newItems) {
+    items.clear();
+    items.addAll(newItems);
+    _answeredItems.clear();
   }
 
   /// Picks a random item and its options from the list.
@@ -54,22 +56,28 @@ class RandomItemPicker<T> {
   /// Returns a `RandomPickResult` containing the answer and options, or `null`
   /// if there are no items available for picking.
   RandomPickResult<T>? pick() {
-    if (count >= items.length) {
-      if (items.isEmpty) {
-        return null;
-      }
-      items.shuffle();
-      var answer = (items..shuffle()).first;
-      _answeredItems.shuffle();
-      var options = _answeredItems.sublist(0, count - 1);
-      options.add(answer);
-      options.shuffle();
-      return _createResult(answer, options);
+    if (items.isEmpty) {
+      return null;
     }
+
     items.shuffle();
-    var options = items.sublist(0, _defaultCount);
-    var answer = (options..shuffle()).first;
+    var answer = items.first; // Pick first item as the answer
+
+    // Get valid options ensuring we don't exceed available elements
+    int optionCount = min(count - 1, items.length - 1);
+    var options = items.sublist(1, 1 + optionCount);
+
+    // If not enough options from items, use answered items
+    if (options.length < count - 1 && _answeredItems.isNotEmpty) {
+      _answeredItems.shuffle();
+      int needed = count - 1 - options.length;
+      options.addAll(_answeredItems.take(needed));
+    }
+
+    // Ensure answer is included and shuffle
+    options.add(answer);
     options.shuffle();
+
     return _createResult(answer, options);
   }
 

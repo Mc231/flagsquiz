@@ -25,7 +25,7 @@ import 'game_image_widget.dart';
 /// - `processAnswer`: The callback function to process an answer when an option is selected.
 class GameLayout extends StatelessWidget {
   /// The current state of the question, including the question details and progress.
-  final QuestionState questionState;
+  final QuestionState<Country> questionState;
 
   /// The sizing information for the current screen, used to adjust the layout.
   final SizingInformation information;
@@ -73,7 +73,7 @@ class GameLayout extends StatelessWidget {
   ///
   /// Returns a list of `Widget` representing the image and answer buttons.
   List<Widget> _imageAndButtons(
-      QuestionState state, SizingInformation information) {
+      QuestionState<Country> state, SizingInformation information) {
     var country = state.question.answer;
     final imageSize = getImageSize(information);
     return [
