@@ -1,5 +1,4 @@
-import 'package:flags_quiz/models/country.dart';
-import 'package:flags_quiz/models/question.dart';
+import 'package:flags_quiz/foundation/question.dart';
 
 /// Represents an answer to a quiz question.
 ///
@@ -17,16 +16,16 @@ import 'package:flags_quiz/models/question.dart';
 /// Answer answer = Answer(selectedCountry, question);
 /// print('Is the answer correct? ${answer.isCorrect}'); // Output: Is the answer correct? true
 /// ```
-class Answer {
+class Answer<T> {
   /// The option selected by the user.
-  final Country selectedOption;
+  final T selectedOption;
 
   /// The question for which the answer is provided.
-  final Question question;
+  final Question<T> question;
 
-  /// Creates an `Answer` with the given [selectedOption] and [question].
+  /// Creates an `Answer<T>` with the given [selectedOption] and [question].
   ///
-  /// [selectedOption] is the country chosen by the user as their answer.
+  /// [selectedOption] is the choice made by the user.
   /// [question] is the question object that includes the correct answer
   /// and other options.
   Answer(this.selectedOption, this.question);

@@ -2,11 +2,11 @@ import 'package:flags_quiz/business_logic/countries_provider.dart';
 import 'package:flags_quiz/business_logic/game_bloc.dart';
 import 'package:flags_quiz/business_logic/game_state/loading_state.dart';
 import 'package:flags_quiz/business_logic/game_state/question_state.dart';
+import 'package:flags_quiz/foundation/question.dart';
 import 'package:flags_quiz/foundation/random_item_picker.dart';
 import 'package:flags_quiz/foundation/random_pick_result.dart';
 import 'package:flags_quiz/models/continent.dart';
 import 'package:flags_quiz/models/country.dart';
-import 'package:flags_quiz/models/question.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 
