@@ -25,8 +25,7 @@ class OptionButton extends StatelessWidget {
   /// [title] is the text displayed on the button.
   /// [onClickListener] is the function called when the button is pressed.
   const OptionButton(
-      {Key? key, required this.title, required this.onClickListener})
-      : super(key: key);
+      {super.key, required this.title, required this.onClickListener});
 
   @override
   Widget build(BuildContext context) {

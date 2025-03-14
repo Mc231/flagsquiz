@@ -57,8 +57,6 @@ extension ContinentAdditions on Continent {
         return strings?.southAmerica;
       case Continent.oc:
         return strings?.oceania;
-      default:
-        return null;
-    }
+      }
   }
 }

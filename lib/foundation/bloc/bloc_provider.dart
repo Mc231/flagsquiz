@@ -35,8 +35,7 @@ class BlocProvider<T extends Bloc> extends StatefulWidget {
   ///
   /// [bloc] is the BLoC instance that will be provided to the widget tree.
   /// [child] is the widget that will be the root of the widget subtree that can access the BLoC.
-  const BlocProvider({Key? key, required this.bloc, required this.child})
-      : super(key: key);
+  const BlocProvider({super.key, required this.bloc, required this.child});
 
   /// Retrieves the BLoC instance from the nearest ancestor `BlocProvider` of the specified type.
   ///

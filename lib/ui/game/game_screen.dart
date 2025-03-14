@@ -1,13 +1,11 @@
-import 'package:flags_quiz/business_logic/game_bloc.dart';
-import 'package:flags_quiz/business_logic/game_state/game_state.dart';
-import 'package:flags_quiz/business_logic/game_state/loading_state.dart';
-import 'package:flags_quiz/business_logic/game_state/question_state.dart';
 import 'package:flags_quiz/foundation/bloc/bloc_provider.dart';
+import 'package:flags_quiz/foundation/business_logic/quiz_state/quiz_state.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flags_quiz/extensions/continent_additions.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
+import '../../foundation/business_logic/game_bloc.dart';
 import 'game_layout.dart';
 
 /// A screen that displays the game interface, handling questions and user interaction.
@@ -57,7 +55,7 @@ class GameScreenState extends State<GameScreen> {
       body: Container(
         padding: getContainerPadding(context),
         child: SafeArea(
-            child: StreamBuilder<GameState>(
+            child: StreamBuilder<QuizState>(
               initialData: _bloc.initialState,
               stream: _bloc.stream,
               builder: (context, snapshot) {

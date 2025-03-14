@@ -4,9 +4,8 @@
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'dart:async' as _i4;
-
-import 'package:flags_quiz/business_logic/countries_provider.dart' as _i3;
 import 'package:flags_quiz/foundation/asset_provider.dart' as _i2;
+import 'package:flags_quiz/foundation/business_logic/countries_provider.dart' as _i3;
 import 'package:flags_quiz/foundation/random_item_picker.dart' as _i6;
 import 'package:flags_quiz/models/country.dart' as _i5;
 import 'package:mockito/mockito.dart' as _i1;

@@ -5,7 +5,7 @@ import 'package:flags_quiz/models/country.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
-import '../../business_logic/game_state/question_state.dart';
+import '../../foundation/business_logic/quiz_state/quiz_state.dart';
 import 'game_answers_widget.dart';
 import 'game_image_widget.dart';
 
@@ -40,11 +40,10 @@ class GameLayout extends StatelessWidget {
   /// [information] supplies screen size and orientation information.
   /// [processAnswer] is called to process the selected answer.
   const GameLayout(
-      {Key? key,
+      {super.key,
         required this.questionState,
         required this.information,
-        required this.processAnswer})
-      : super(key: key);
+        required this.processAnswer});
 
   @override
   Widget build(BuildContext context) {

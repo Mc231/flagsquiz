@@ -1,6 +1,24 @@
-import 'package:flags_quiz/models/country.dart';
-import '../../foundation/model/question.dart';
-import 'game_state.dart';
+import '../../../models/country.dart';
+import '../../model/question.dart';
+
+/// An abstract class representing the state of a game.
+///
+/// This class is intended to be extended by various concrete game states
+/// that implement specific game behaviors. It serves as a base type for
+/// managing different states within a game, such as loading, playing,
+/// or answering questions.
+sealed class QuizState {
+  factory QuizState.loading() = LoadingState;
+  factory QuizState.question(Question<Country> question, int progress, int total) = QuestionState;
+  const QuizState();
+}
+
+/// A state representing the loading phase of the game.
+///
+/// This class extends `GameState` and represents the initial phase where
+/// game assets or data are being loaded. Once loading is complete, the
+/// game can transition to another state, such as `QuestionState`.
+class LoadingState extends QuizState {}
 
 /// A state representing the question phase of the game.
 ///
@@ -12,7 +30,7 @@ import 'game_state.dart';
 /// through the questions, which can be used for displaying a progress bar
 /// or other UI elements.
 ///
-class QuestionState extends GameState {
+class QuestionState extends QuizState {
   /// The current question being presented to the player.
   final Question<Country> question;
 

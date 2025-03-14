@@ -1,4 +1,3 @@
-import 'package:flags_quiz/business_logic/game_bloc.dart';
 import 'package:flags_quiz/foundation/bloc/bloc_provider.dart';
 import 'package:flags_quiz/models/continent.dart';
 import 'package:flags_quiz/ui/components/option_button.dart';
@@ -6,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flags_quiz/extensions/continent_additions.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+import '../../foundation/business_logic/game_bloc.dart';
 import '../game/game_screen.dart';
 
 /// A stateless widget that displays a screen for selecting a continent.

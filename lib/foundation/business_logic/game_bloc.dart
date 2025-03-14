@@ -1,16 +1,14 @@
+import 'package:flags_quiz/foundation/business_logic/quiz_state/quiz_state.dart';
 import 'package:flags_quiz/foundation/random_item_picker.dart';
-import 'package:flags_quiz/business_logic/countries_data_source.dart';
 import 'package:flags_quiz/foundation/model/random_pick_result.dart';
 import 'package:flags_quiz/foundation/bloc/single_subscription_bloc.dart';
 import 'package:flags_quiz/foundation/model/answer.dart';
 import 'package:flags_quiz/models/continent.dart';
 import 'package:flags_quiz/models/country.dart';
 
-import '../foundation/model/question.dart';
+import '../model/question.dart';
+import 'countries_data_source.dart';
 import 'countries_provider.dart';
-import 'game_state/game_state.dart';
-import 'game_state/loading_state.dart';
-import 'game_state/question_state.dart';
 
 /// A business logic component (BLoC) that manages the state of a flag quiz game.
 ///
@@ -31,7 +29,7 @@ import 'game_state/question_state.dart';
 ///
 /// Usage involves initializing the BLoC, performing initial data load,
 /// processing user answers, and handling game completion.
-class GameBloc extends SingleSubscriptionBloc<GameState> {
+class GameBloc extends SingleSubscriptionBloc<QuizState> {
   /// The continent used to filter countries for the game.
   final Continent continent;
 
@@ -73,7 +71,7 @@ class GameBloc extends SingleSubscriptionBloc<GameState> {
 
   /// The initial state of the game, set to loading.
   @override
-  GameState get initialState => LoadingState();
+  QuizState get initialState => QuizState.loading();
 
   /// Performs the initial data load when the screen is loaded.
   ///
@@ -109,13 +107,13 @@ class GameBloc extends SingleSubscriptionBloc<GameState> {
     var randomResult = randomItemPicker.pick();
     if (_isGameOver(randomResult)) {
       var state =
-      QuestionState(currentQuestion, _currentProgress, _totalCount);
+      QuizState.question(currentQuestion, _currentProgress, _totalCount);
       dispatchState(state);
       _notifyGameOver();
     } else {
       var question = Question.fromRandomResult(randomResult!);
       currentQuestion = question;
-      var state = QuestionState(question, _currentProgress, _totalCount);
+      var state = QuizState.question(question, _currentProgress, _totalCount);
       dispatchState(state);
     }
   }

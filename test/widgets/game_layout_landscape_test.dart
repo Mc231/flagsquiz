@@ -1,3 +1,4 @@
+import 'package:flags_quiz/foundation/business_logic/quiz_state/quiz_state.dart';
 import 'package:flags_quiz/foundation/model/question.dart';
 import 'package:flags_quiz/ui/flags_quiz_app.dart';
 import 'package:flags_quiz/ui/game/game_answers_widget.dart';
@@ -6,7 +7,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:flags_quiz/models/country.dart';
-import 'package:flags_quiz/business_logic/game_state/question_state.dart';
 import 'package:flags_quiz/ui/game/game_layout.dart';
 
 void main() {

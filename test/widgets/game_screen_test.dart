@@ -1,6 +1,6 @@
-import 'package:flags_quiz/business_logic/countries_provider.dart';
-import 'package:flags_quiz/business_logic/game_bloc.dart';
 import 'package:flags_quiz/foundation/bloc/bloc_provider.dart';
+import 'package:flags_quiz/foundation/business_logic/countries_provider.dart';
+import 'package:flags_quiz/foundation/business_logic/game_bloc.dart';
 import 'package:flags_quiz/foundation/model/question.dart';
 import 'package:flags_quiz/foundation/random_item_picker.dart';
 import 'package:flags_quiz/foundation/model/random_pick_result.dart';
