@@ -1,3 +1,5 @@
+
+
 plugins {
     id "com.android.application"
     id "kotlin-android"
@@ -24,10 +26,15 @@ if (flutterVersionName == null) {
 }
 
 android {
-    compileSdkVersion 34
+    compileSdkVersion 35
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_21
+        targetCompatibility JavaVersion.VERSION_21
     }
 
     lintOptions {
@@ -37,7 +44,7 @@ android {
     defaultConfig {
         applicationId "com.quasarius.flagsquiz"
         minSdkVersion flutter.minSdkVersion
-        targetSdkVersion 34
+        targetSdkVersion 35
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
 
@@ -62,6 +69,7 @@ android {
             signingConfig signingConfigs.release
         }
     }
+    namespace 'com.quasarius.flagsquiz'
 }
 
 flutter {
@@ -69,5 +77,5 @@ flutter {
 }
 
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10"
+
 }

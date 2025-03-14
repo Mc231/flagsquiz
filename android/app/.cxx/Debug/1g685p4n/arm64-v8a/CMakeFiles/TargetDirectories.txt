@@ -1,0 +1,2 @@
+/Users/volodymyrshyrochuk/pet/flagsquiz/android/app/.cxx/Debug/1g685p4n/arm64-v8a/CMakeFiles/edit_cache.dir
+/Users/volodymyrshyrochuk/pet/flagsquiz/android/app/.cxx/Debug/1g685p4n/arm64-v8a/CMakeFiles/rebuild_cache.dir
