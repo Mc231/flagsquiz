@@ -1,15 +1,15 @@
 import 'package:flags_quiz/ui/flags_quiz_app.dart';
-import 'package:flags_quiz/ui/game/game_answers_widget.dart';
-import 'package:flags_quiz/ui/game/game_image_widget.dart';
+import 'package:flags_quiz/ui/quiz/quiz_answers_widget.dart';
+import 'package:flags_quiz/ui/quiz/quiz_image_widget.dart';
+import 'package:flags_quiz/ui/quiz/quiz_layout.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:quiz_engine_core/quiz_engine_core.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:flags_quiz/models/country.dart';
-import 'package:flags_quiz/ui/game/game_layout.dart';
 
 void main() {
-  group('GameLayout', () {
+  group('QuizLayout', () {
     Country mockCountry =
     Country.fromJson({"name": "Test", "continent": "EU", "code": "UA"});
     QuestionState<Country> mockQuestionState =
@@ -25,15 +25,15 @@ void main() {
           );
 
           await tester.pumpWidget(FlagsQuizApp(
-            homeWidget: GameLayout(
+            homeWidget: QuizLayout(
               questionState: mockQuestionState,
               information: sizingInformation,
               processAnswer: (_) {},
             ),
           ));
 
-          expect(find.byType(GameImageWidget), findsOneWidget);
-          expect(find.byType(GameAnswersWidget), findsOneWidget);
+          expect(find.byType(QuizImageWidget), findsOneWidget);
+          expect(find.byType(QuizAnswersWidget), findsOneWidget);
         });
   });
 }

@@ -1,13 +1,12 @@
-import 'package:flags_quiz/foundation/bloc/bloc_provider.dart';
+import 'package:flags_quiz/l10n/app_localizations.dart';
 import 'package:flags_quiz/models/continent.dart';
 import 'package:flags_quiz/ui/components/option_button.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flags_quiz/extensions/continent_additions.dart';
+import 'package:quiz_engine_core/quiz_engine_core.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-import '../../foundation/business_logic/game_bloc.dart';
 import '../../models/country.dart';
-import '../game/game_screen.dart';
+import '../quiz/quiz_screen.dart';
 
 /// A stateless widget that displays a screen for selecting a continent.
 ///
@@ -82,7 +81,7 @@ class ContinentsScreen extends StatelessWidget {
   /// [continent] is the selected `Continent`.
   /// [context] is the `BuildContext` used for navigation.
   void _handleItemClick(Continent continent, BuildContext context) {
-    final bloc = GameBloc<Country>.standard(
+    final bloc = QuizBloc<Country>.standard(
       'assets/Countries.json',
       Country.fromJson,
       filter: (country) =>
@@ -94,7 +93,7 @@ class ContinentsScreen extends StatelessWidget {
             builder: (context) => BlocProvider(
                   bloc: bloc,
                   child:
-                      GameScreen(title: continent.localizedName(context) ?? ""),
+                      QuizScreen(title: continent.localizedName(context) ?? ""),
                 )));
   }
 }

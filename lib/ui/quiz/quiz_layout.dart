@@ -3,15 +3,14 @@ import 'dart:math';
 import 'package:flags_quiz/extensions/sizing_information_extension.dart';
 import 'package:flags_quiz/models/country.dart';
 import 'package:flutter/material.dart';
+import 'package:quiz_engine_core/quiz_engine_core.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+import 'quiz_answers_widget.dart';
+import 'quiz_image_widget.dart';
 
-import '../../foundation/business_logic/quiz_state/quiz_state.dart';
-import 'game_answers_widget.dart';
-import 'game_image_widget.dart';
-
-/// A widget that displays the layout for a game screen, including the question image and answer options.
+/// A widget that displays the layout for a quiz screen, including the question image and answer options.
 ///
-/// The `GameLayout` class is a stateless widget that presents the UI components for a game question,
+/// The `QuizLayout` class is a stateless widget that presents the UI components for a quiz question,
 /// including an image of the country flag and a set of answer options. The layout adapts to the screen
 /// orientation (portrait or landscape) using responsive design principles, and it also displays a progress
 /// indicator at the bottom of the screen.
@@ -23,7 +22,7 @@ import 'game_image_widget.dart';
 /// - `questionState`: The current state of the question, including the question details and progress.
 /// - `information`: The sizing information for the current screen, used to adjust the layout.
 /// - `processAnswer`: The callback function to process an answer when an option is selected.
-class GameLayout extends StatelessWidget {
+class QuizLayout extends StatelessWidget {
   /// The current state of the question, including the question details and progress.
   final QuestionState<Country> questionState;
 
@@ -33,13 +32,13 @@ class GameLayout extends StatelessWidget {
   /// The callback function to process an answer when an option is selected.
   final Function(Country) processAnswer;
 
-  /// Creates a `GameLayout` with the specified question state, sizing information, and answer processor.
+  /// Creates a `QuizLayout` with the specified question state, sizing information, and answer processor.
   ///
   /// [key] is the unique key for this widget.
   /// [questionState] provides the current question and progress state.
   /// [information] supplies screen size and orientation information.
   /// [processAnswer] is called to process the selected answer.
-  const GameLayout(
+  const QuizLayout(
       {super.key,
         required this.questionState,
         required this.information,
@@ -77,7 +76,7 @@ class GameLayout extends StatelessWidget {
     var country = state.question.answer;
     final imageSize = getImageSize(information);
     return [
-      GameImageWidget(
+      QuizImageWidget(
         country: country,
         width: imageSize,
         height: imageSize,
@@ -85,7 +84,7 @@ class GameLayout extends StatelessWidget {
       ),
       SizedBox(width: 16),
       Expanded(
-          child: GameAnswersWidget(
+          child: QuizAnswersWidget(
             options: state.question.options,
             sizingInformation: information,
             answerClickListener: processAnswer,
@@ -96,7 +95,7 @@ class GameLayout extends StatelessWidget {
 
   /// Builds the progress display including the progress text and linear progress indicator.
   ///
-  /// This method creates the layout for displaying the current progress of the game, showing
+  /// This method creates the layout for displaying the current progress of the quiz, showing
   /// the number of questions completed and a progress bar.
   ///
   /// [context] is the `BuildContext` for accessing theme and localization.
@@ -119,8 +118,8 @@ class GameLayout extends StatelessWidget {
   }
 }
 
-/// Extension on `GameLayout` to provide responsive layout utilities.
-extension GameLayoutSized on GameLayout {
+/// Extension on `QuizLayout` to provide responsive layout utilities.
+extension QuizLayoutSized on QuizLayout {
   static const _imageWatchCof = 0.7;
   static const _imageNormalCof = 0.62;
 

@@ -1,13 +1,13 @@
 import 'package:flags_quiz/models/country.dart';
 import 'package:flags_quiz/ui/flags_quiz_app.dart';
-import 'package:flags_quiz/ui/game/game_answers_widget.dart';
 import 'package:flags_quiz/ui/components/option_button.dart';
+import 'package:flags_quiz/ui/quiz/quiz_answers_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 void main() {
-  testWidgets('Game answers widget handle tap', (WidgetTester tester) async {
+  testWidgets('Quiz answers widget handle tap', (WidgetTester tester) async {
     // Given
     final expectedAnswer = Country.fromJson(
         {'name': 'Antigua and Barbuda', 'continent': 'NA', 'code': 'AG'});
@@ -20,7 +20,7 @@ void main() {
     Country? tappedAnswer;
     await tester.pumpWidget(
       FlagsQuizApp(
-          homeWidget: GameAnswersWidget(
+          homeWidget: QuizAnswersWidget(
               options: options,
               sizingInformation: sizingInformation,
               answerClickListener: (answer) {

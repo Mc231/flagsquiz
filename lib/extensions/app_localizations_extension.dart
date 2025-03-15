@@ -1,4 +1,4 @@
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:flags_quiz/l10n/app_localizations.dart';
 
 /// An extension on `AppLocalizations` to facilitate dynamic string resolution.
 ///

@@ -1,15 +1,15 @@
 import 'package:flags_quiz/extensions/app_localizations_extension.dart';
+import 'package:flags_quiz/l10n/app_localizations.dart';
 import 'package:flags_quiz/models/country.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flags_quiz/extensions/sizing_information_extension.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import '../components/option_button.dart';
 
-/// A widget that displays answer options for a game question.
+/// A widget that displays answer options for a quiz question.
 ///
-/// The `GameAnswersWidget` is a stateless widget that presents a grid
+/// The `QuizAnswersWidget` is a stateless widget that presents a grid
 /// of answer options to the user. Each option is represented by a button
 /// displaying the name of a country. When a button is clicked, it triggers
 /// the provided callback function with the selected answer.
@@ -19,7 +19,7 @@ import '../components/option_button.dart';
 /// package. It supports both portrait and landscape orientations and
 /// adjusts the grid layout accordingly.
 ///
-class GameAnswersWidget extends StatelessWidget {
+class QuizAnswersWidget extends StatelessWidget {
   /// The list of country options to display.
   final List<Country> options;
 
@@ -29,13 +29,13 @@ class GameAnswersWidget extends StatelessWidget {
   /// Callback function to be invoked when an option is clicked.
   final Function(Country answer) answerClickListener;
 
-  /// Creates a `GameAnswersWidget`.
+  /// Creates a `QuizAnswersWidget`.
   ///
   /// [key] is the key for this widget.
   /// [options] is the list of countries to display as answer options.
   /// [sizingInformation] provides screen size and orientation information.
   /// [answerClickListener] is called when an option button is clicked.
-  const GameAnswersWidget(
+  const QuizAnswersWidget(
       {required Key key,
         required this.options,
         required this.sizingInformation,
@@ -78,8 +78,8 @@ class GameAnswersWidget extends StatelessWidget {
   }
 }
 
-/// Extension on `GameAnswersWidget` to provide responsive layout utilities.
-extension on GameAnswersWidget {
+/// Extension on `QuizAnswersWidget` to provide responsive layout utilities.
+extension on QuizAnswersWidget {
   static const _defaultButtonMargin = EdgeInsets.only(bottom: 8);
   static const _verySmallScreen = 300;
 

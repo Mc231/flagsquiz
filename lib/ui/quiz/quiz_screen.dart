@@ -1,52 +1,49 @@
-import 'package:flags_quiz/foundation/bloc/bloc_provider.dart';
-import 'package:flags_quiz/foundation/business_logic/quiz_state/quiz_state.dart';
+import 'package:flags_quiz/l10n/app_localizations.dart';
 import 'package:flags_quiz/models/country.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
+import 'package:quiz_engine_core/quiz_engine_core.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+import 'quiz_layout.dart';
 
-import '../../foundation/business_logic/game_bloc.dart';
-import 'game_layout.dart';
-
-/// A screen that displays the game interface, handling questions and user interaction.
+/// A screen that displays the quiz interface, handling questions and user interaction.
 ///
-/// The `GameScreen` class is a `StatefulWidget` that provides the main interface for the quiz or game.
-/// It manages the game state using a BLoC (Business Logic Component) pattern and updates the UI
+/// The `QuizScreen` class is a `StatefulWidget` that provides the main interface for the quiz or quiz.
+/// It manages the quiz state using a BLoC (Business Logic Component) pattern and updates the UI
 /// based on the current state. The screen includes a question display, answer options, and a progress indicator.
-/// It also shows a game over dialog when the quiz is complete.
+/// It also shows a quiz over dialog when the quiz is complete.
 ///
-/// The widget relies on `GameBloc` to manage the game logic and state transitions. The `BlocProvider`
+/// The widget relies on `QuizBloc` to manage the quiz logic and state transitions. The `BlocProvider`
 /// is used to access the BLoC instance and manage its lifecycle.
 ///
-/// The `GameScreen` uses a responsive design to adapt to different screen sizes and orientations,
+/// The `QuizScreen` uses a responsive design to adapt to different screen sizes and orientations,
 /// ensuring a consistent experience across devices.
 ///
 ///
-class GameScreen extends StatefulWidget {
-  /// Key used for identifying the OK button in the game over dialog.
+class QuizScreen extends StatefulWidget {
+  /// Key used for identifying the OK button in the quiz over dialog.
   static const okButtonKey = Key("ok_button");
 
   final String title;
 
-  const GameScreen({super.key, required this.title});
+  const QuizScreen({super.key, required this.title});
 
   @override
   State<StatefulWidget> createState() {
-    return GameScreenState();
+    return QuizScreenState();
   }
 }
 
-/// The state for the `GameScreen`, managing the game logic and UI updates.
-class GameScreenState extends State<GameScreen> {
-  /// The BLoC managing the game logic and state transitions.
-  late GameBloc<Country> _bloc;
+/// The state for the `QuizScreen`, managing the quiz logic and UI updates.
+class QuizScreenState extends State<QuizScreen> {
+  /// The BLoC managing the quiz logic and state transitions.
+  late QuizBloc<Country> _bloc;
 
   @override
   void initState() {
-    _bloc = BlocProvider.of<GameBloc<Country>>(context);
+    _bloc = BlocProvider.of<QuizBloc<Country>>(context);
     _bloc.performInitialLoad();
     _bloc.gameOverCallback = (String result) {
-      _showGameOverDialog(result);
+      _showQuizOverDialog(result);
     };
     super.initState();
   }
@@ -72,7 +69,7 @@ class GameScreenState extends State<GameScreen> {
                 }
                 final questionState = state as QuestionState<Country>;
                 return ResponsiveBuilder(builder: (context, information) {
-                  return GameLayout(
+                  return QuizLayout(
                       questionState: questionState,
                       information: information,
                       processAnswer: _bloc.processAnswer);
@@ -83,14 +80,14 @@ class GameScreenState extends State<GameScreen> {
     );
   }
 
-  /// Displays a dialog indicating the game is over, showing the final score.
+  /// Displays a dialog indicating the quiz is over, showing the final score.
   ///
-  /// This method is called when the game is completed, presenting a dialog
+  /// This method is called when the quiz is completed, presenting a dialog
   /// with the user's score. The dialog is non-dismissible, requiring the user
   /// to tap the OK button to close it.
   ///
   /// [message] is the score message to display in the dialog.
-  void _showGameOverDialog(String message) async {
+  void _showQuizOverDialog(String message) async {
     await showDialog<void>(
       context: context,
       barrierDismissible: false, // user must tap button!
@@ -107,7 +104,7 @@ class GameScreenState extends State<GameScreen> {
           actions: <Widget>[
             TextButton(
               child: Text(MaterialLocalizations.of(context).okButtonLabel,
-                  key: GameScreen.okButtonKey),
+                  key: QuizScreen.okButtonKey),
               onPressed: () {
                 Navigator.of(context).pop();
               },
@@ -120,11 +117,11 @@ class GameScreenState extends State<GameScreen> {
   }
 }
 
-/// Extension on `GameScreenState` to provide responsive layout utilities.
-extension GameScreenSizes on GameScreenState {
+/// Extension on `QuizScreenState` to provide responsive layout utilities.
+extension QuizScreenSizes on QuizScreenState {
   /// Returns the container padding based on the screen size.
   ///
-  /// This method calculates padding for the game screen using `getValueForScreenType`,
+  /// This method calculates padding for the quiz screen using `getValueForScreenType`,
   /// adjusting the padding for mobile, tablet, desktop, and watch screen sizes.
   ///
   /// [context] is the `BuildContext` used to determine the screen size.

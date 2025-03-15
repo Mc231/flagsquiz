@@ -1,5 +1,5 @@
+import 'package:flags_quiz/l10n/app_localizations.dart';
 import 'package:flags_quiz/models/continent.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter/cupertino.dart';
 
 /// An extension on the `Continent` enum to provide localized names.

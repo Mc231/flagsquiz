@@ -1,8 +1,8 @@
 import 'package:flags_quiz/models/continent.dart';
 import 'package:flags_quiz/models/country.dart';
 import 'package:flags_quiz/ui/flags_quiz_app.dart';
-import 'package:flags_quiz/ui/game/game_screen.dart';
 import 'package:flags_quiz/ui/components/option_button.dart';
+import 'package:flags_quiz/ui/quiz/quiz_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
@@ -10,7 +10,7 @@ import 'package:mockito/annotations.dart';
 import 'package:quiz_engine_core/quiz_engine_core.dart';
 
 @GenerateNiceMocks([MockSpec<QuizDataProvider<Country>>(), MockSpec<RandomItemPicker<Country>>()])
-import 'game_screen_test.mocks.dart';
+import 'quiz_screen_test.mocks.dart';
 
 void main() {
   late Continent continent;
@@ -38,7 +38,7 @@ void main() {
     when(countriesProvider.provide())
         .thenAnswer((_) => Future.value(countries));
     await tester.pumpWidget(
-      FlagsQuizApp(homeWidget: BlocProvider(bloc: bloc, child: GameScreen(title: "Test",))),
+      FlagsQuizApp(homeWidget: BlocProvider(bloc: bloc, child: QuizScreen(title: "Test",))),
     );
     await tester.pump();
     await tester.pump();
@@ -49,7 +49,7 @@ void main() {
     expect(imageFinder, findsOneWidget);
   });
 
-  testWidgets('Game over dialog', (WidgetTester tester) async {
+  testWidgets('Quiz over dialog', (WidgetTester tester) async {
     // Given
     final countries = [Country.fromJson(
         {'name': 'Argentina', 'continent': 'SA', 'code': 'AR'}),
@@ -61,7 +61,7 @@ void main() {
     when(countriesProvider.provide())
         .thenAnswer((_) => Future.value(countries));
     await tester.pumpWidget(
-      FlagsQuizApp(homeWidget: BlocProvider(bloc: bloc, child: GameScreen(title: "Test",))),
+      FlagsQuizApp(homeWidget: BlocProvider(bloc: bloc, child: QuizScreen(title: "Test",))),
     );
     await tester.pump();
     await tester.pump();

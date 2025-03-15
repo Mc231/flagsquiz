@@ -3,15 +3,15 @@ import 'package:flutter/material.dart';
 
 /// A widget that displays a country's flag image.
 ///
-/// The `GameImageWidget` class is a stateless widget that renders the flag
+/// The `QuizImageWidget` class is a stateless widget that renders the flag
 /// image of a given country. It uses the country's local asset image file
 /// and displays it with specified dimensions. This widget is particularly
-/// useful in quiz or game applications where flags need to be displayed
+/// useful in quiz or quiz applications where flags need to be displayed
 /// prominently.
 ///
 /// The flag image is expected to be stored in the assets/images directory
 /// with a filename that matches the country's code followed by `.png`.
-class GameImageWidget extends StatelessWidget {
+class QuizImageWidget extends StatelessWidget {
   /// The country whose flag image is to be displayed.
   final Country country;
 
@@ -21,13 +21,13 @@ class GameImageWidget extends StatelessWidget {
   /// The height of the flag image.
   final double height;
 
-  /// Creates a `GameImageWidget` with the specified country and dimensions.
+  /// Creates a `QuizImageWidget` with the specified country and dimensions.
   ///
   /// [key] is the unique key for this widget.
   /// [country] is the `Country` object containing information about the country.
   /// [width] is the width of the image to be displayed.
   /// [height] is the height of the image to be displayed.
-  const GameImageWidget(
+  const QuizImageWidget(
       {required Key key,
         required this.country,
         required this.width,
