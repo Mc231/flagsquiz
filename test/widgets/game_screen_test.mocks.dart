@@ -5,13 +5,12 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'dart:async' as _i5;
 
-import 'package:flags_quiz/foundation/asset_provider.dart' as _i2;
-import 'package:flags_quiz/foundation/business_logic/quiz_data_provider.dart'
-    as _i3;
-import 'package:flags_quiz/foundation/random_item_picker.dart' as _i6;
-import 'package:flags_quiz/models/country.dart' as _i7;
+import 'package:flags_quiz/models/country.dart' as _i3;
 import 'package:mockito/mockito.dart' as _i1;
-import 'package:mockito/src/dummies.dart' as _i4;
+import 'package:quiz_engine_core/src/asset_provider.dart' as _i2;
+import 'package:quiz_engine_core/src/business_logic/quiz_data_provider.dart'
+    as _i4;
+import 'package:quiz_engine_core/src/random_item_picker.dart' as _i6;
 
 // ignore_for_file: type=lint
 // ignore_for_file: avoid_redundant_argument_values
@@ -32,11 +31,16 @@ class _FakeAssetProvider_0 extends _i1.SmartFake implements _i2.AssetProvider {
     : super(parent, parentInvocation);
 }
 
+class _FakeCountry_1 extends _i1.SmartFake implements _i3.Country {
+  _FakeCountry_1(Object parent, Invocation parentInvocation)
+    : super(parent, parentInvocation);
+}
+
 /// A class which mocks [QuizDataProvider].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockQuizDataProvider<T> extends _i1.Mock
-    implements _i3.QuizDataProvider<T> {
+class MockQuizDataProvider extends _i1.Mock
+    implements _i4.QuizDataProvider<_i3.Country> {
   @override
   _i2.AssetProvider get provider =>
       (super.noSuchMethod(
@@ -53,41 +57,43 @@ class MockQuizDataProvider<T> extends _i1.Mock
           as _i2.AssetProvider);
 
   @override
-  T Function(Map<String, dynamic>) get fromJson =>
+  _i3.Country Function(Map<String, dynamic>) get fromJson =>
       (super.noSuchMethod(
             Invocation.getter(#fromJson),
             returnValue:
                 (Map<String, dynamic> __p0) =>
-                    _i4.dummyValue<T>(this, Invocation.getter(#fromJson)),
+                    _FakeCountry_1(this, Invocation.getter(#fromJson)),
             returnValueForMissingStub:
                 (Map<String, dynamic> __p0) =>
-                    _i4.dummyValue<T>(this, Invocation.getter(#fromJson)),
+                    _FakeCountry_1(this, Invocation.getter(#fromJson)),
           )
-          as T Function(Map<String, dynamic>));
+          as _i3.Country Function(Map<String, dynamic>));
 
   @override
-  _i5.Future<List<T>> provide() =>
+  _i5.Future<List<_i3.Country>> provide() =>
       (super.noSuchMethod(
             Invocation.method(#provide, []),
-            returnValue: _i5.Future<List<T>>.value(<T>[]),
-            returnValueForMissingStub: _i5.Future<List<T>>.value(<T>[]),
+            returnValue: _i5.Future<List<_i3.Country>>.value(<_i3.Country>[]),
+            returnValueForMissingStub: _i5.Future<List<_i3.Country>>.value(
+              <_i3.Country>[],
+            ),
           )
-          as _i5.Future<List<T>>);
+          as _i5.Future<List<_i3.Country>>);
 }
 
 /// A class which mocks [RandomItemPicker].
 ///
 /// See the documentation for Mockito's code generation for more information.
 class MockRandomItemPicker extends _i1.Mock
-    implements _i6.RandomItemPicker<_i7.Country> {
+    implements _i6.RandomItemPicker<_i3.Country> {
   @override
-  List<_i7.Country> get items =>
+  List<_i3.Country> get items =>
       (super.noSuchMethod(
             Invocation.getter(#items),
-            returnValue: <_i7.Country>[],
-            returnValueForMissingStub: <_i7.Country>[],
+            returnValue: <_i3.Country>[],
+            returnValueForMissingStub: <_i3.Country>[],
           )
-          as List<_i7.Country>);
+          as List<_i3.Country>);
 
   @override
   int get count =>
@@ -99,8 +105,8 @@ class MockRandomItemPicker extends _i1.Mock
           as int);
 
   @override
-  void replaceItems(List<_i7.Country>? items) => super.noSuchMethod(
-    Invocation.method(#replaceItems, [items]),
+  void replaceItems(List<_i3.Country>? newItems) => super.noSuchMethod(
+    Invocation.method(#replaceItems, [newItems]),
     returnValueForMissingStub: null,
   );
 }

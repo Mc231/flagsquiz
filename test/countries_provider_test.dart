@@ -1,10 +1,9 @@
-import 'package:flags_quiz/foundation/asset_provider.dart';
-import 'package:flags_quiz/foundation/business_logic/quiz_data_provider.dart';
 import 'package:flags_quiz/models/continent.dart';
 import 'package:flags_quiz/models/country.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 import 'package:mockito/annotations.dart';
+import 'package:quiz_engine_core/quiz_engine_core.dart';
 
 @GenerateNiceMocks([MockSpec<AssetProvider>()])
 import 'countries_provider_test.mocks.dart';

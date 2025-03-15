@@ -1,9 +1,3 @@
-import 'package:flags_quiz/foundation/bloc/bloc_provider.dart';
-import 'package:flags_quiz/foundation/business_logic/quiz_data_provider.dart';
-import 'package:flags_quiz/foundation/business_logic/game_bloc.dart';
-import 'package:flags_quiz/foundation/model/question.dart';
-import 'package:flags_quiz/foundation/random_item_picker.dart';
-import 'package:flags_quiz/foundation/model/random_pick_result.dart';
 import 'package:flags_quiz/models/continent.dart';
 import 'package:flags_quiz/models/country.dart';
 import 'package:flags_quiz/ui/flags_quiz_app.dart';
@@ -13,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 import 'package:mockito/annotations.dart';
+import 'package:quiz_engine_core/quiz_engine_core.dart';
 
 @GenerateNiceMocks([MockSpec<QuizDataProvider<Country>>(), MockSpec<RandomItemPicker<Country>>()])
 import 'game_screen_test.mocks.dart';
@@ -21,13 +16,13 @@ void main() {
   late Continent continent;
   late QuizDataProvider<Country> countriesProvider;
   late RandomItemPicker<Country> randomItemPicker;
-  late GameBloc<Country> bloc;
+  late QuizBloc<Country> bloc;
 
   setUp(() {
     continent = Continent.sa;
-    countriesProvider = MockQuizDataProvider<Country>();
+    countriesProvider = MockQuizDataProvider();
     randomItemPicker = MockRandomItemPicker();
-    bloc = GameBloc<Country>(countriesProvider, randomItemPicker, filter: (country) => country.continent == continent);
+    bloc = QuizBloc<Country>(countriesProvider, randomItemPicker, filter: (country) => country.continent == continent);
   });
 
   testWidgets('Question showing', (WidgetTester tester) async {
