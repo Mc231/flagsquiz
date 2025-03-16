@@ -2,12 +2,13 @@ import 'package:flags_quiz/extensions/app_localizations_extension.dart';
 import 'package:flags_quiz/l10n/app_localizations.dart';
 import 'package:flags_quiz/models/continent.dart';
 import 'package:flags_quiz/ui/components/option_button.dart';
+import 'package:flags_quiz/ui/quiz_widget.dart';
+import 'package:flags_quiz/ui/quiz_widget_entry.dart';
 import 'package:flutter/material.dart';
 import 'package:flags_quiz/extensions/continent_additions.dart';
 import 'package:quiz_engine_core/quiz_engine_core.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import '../../models/country.dart';
-import '../quiz/quiz_screen.dart';
 
 /// A stateless widget that displays a screen for selecting a continent.
 ///
@@ -82,26 +83,24 @@ class ContinentsScreen extends StatelessWidget {
   /// [continent] is the selected `Continent`.
   /// [context] is the `BuildContext` used for navigation.
   void _handleItemClick(Continent continent, BuildContext context) {
-    final bloc = QuizBloc(
-      () async => loadCountriesForContinent(context, continent),
-      RandomItemPicker([]),
-    );
+    final appLocalizations = AppLocalizations.of(context)!;
+    final quizEntry = QuizWidgetEntry(
+        title: continent.localizedName(context) ?? "",
+        gameOverText: appLocalizations.yourScore,
+        dataProvider: () async =>
+            loadCountriesForContinent(appLocalizations, continent));
     Navigator.push(
         context,
         MaterialPageRoute(
-            builder: (context) => BlocProvider(
-                  bloc: bloc,
-                  child:
-                      QuizScreen(title: continent.localizedName(context) ?? ""),
-                )));
+            builder: (context) => QuizWidget(quizEntry: quizEntry)));
   }
 
   Future<List<QuestionEntry>> loadCountriesForContinent(
-      BuildContext context, Continent continent) async {
-    final appLocalizations = AppLocalizations.of(context)!;
-    final provider = QuizDataProvider<Country>.standard('assets/Countries.json',
-        (data) => Country.fromJson(data, (key) => appLocalizations.resolveKey(key.toLowerCase())));
-
+      AppLocalizations appLocalizations, Continent continent) async {
+    final provider = QuizDataProvider<Country>.standard(
+        'assets/Countries.json',
+        (data) => Country.fromJson(
+            data, (key) => appLocalizations.resolveKey(key.toLowerCase())));
     final countries = await provider.provide();
     return (continent == Continent.all
             ? countries

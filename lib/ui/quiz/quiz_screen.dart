@@ -1,4 +1,3 @@
-import 'package:flags_quiz/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:quiz_engine_core/quiz_engine_core.dart';
 import 'package:responsive_builder/responsive_builder.dart';
@@ -23,8 +22,9 @@ class QuizScreen extends StatefulWidget {
   static const okButtonKey = Key("ok_button");
 
   final String title;
+  final String gameOverTitle;
 
-  const QuizScreen({super.key, required this.title});
+  const QuizScreen({super.key, required this.title, required this.gameOverTitle});
 
   @override
   State<StatefulWidget> createState() {
@@ -92,7 +92,7 @@ class QuizScreenState extends State<QuizScreen> {
       barrierDismissible: false, // user must tap button!
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text(AppLocalizations.of(context)?.yourScore ?? ""),
+          title: Text(widget.gameOverTitle),
           content: SingleChildScrollView(
             child: ListBody(
               children: <Widget>[

@@ -54,6 +54,7 @@ void main() {
               bloc: bloc,
               child: QuizScreen(
                 title: "Test",
+                gameOverTitle: "Game Over",
               ))),
     );
     await tester.pump();
@@ -82,6 +83,7 @@ void main() {
               bloc: bloc2,
               child: QuizScreen(
                 title: "Test",
+                gameOverTitle: "Game Over",
               ))),
     );
     await tester.pump();
