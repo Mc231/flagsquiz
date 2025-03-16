@@ -1,7 +1,6 @@
 import 'dart:math';
 
 import 'package:flags_quiz/extensions/sizing_information_extension.dart';
-import 'package:flags_quiz/models/country.dart';
 import 'package:flutter/material.dart';
 import 'package:quiz_engine_core/quiz_engine_core.dart';
 import 'package:responsive_builder/responsive_builder.dart';
@@ -24,13 +23,13 @@ import 'quiz_image_widget.dart';
 /// - `processAnswer`: The callback function to process an answer when an option is selected.
 class QuizLayout extends StatelessWidget {
   /// The current state of the question, including the question details and progress.
-  final QuestionState<Country> questionState;
+  final QuestionState questionState;
 
   /// The sizing information for the current screen, used to adjust the layout.
   final SizingInformation information;
 
   /// The callback function to process an answer when an option is selected.
-  final Function(Country) processAnswer;
+  final Function(QuestionEntry) processAnswer;
 
   /// Creates a `QuizLayout` with the specified question state, sizing information, and answer processor.
   ///
@@ -72,15 +71,16 @@ class QuizLayout extends StatelessWidget {
   ///
   /// Returns a list of `Widget` representing the image and answer buttons.
   List<Widget> _imageAndButtons(
-      QuestionState<Country> state, SizingInformation information) {
+      QuestionState state, SizingInformation information) {
     var country = state.question.answer;
+    final code = country.otherOptions["code"] as String;
     final imageSize = getImageSize(information);
     return [
       QuizImageWidget(
-        country: country,
+        entry: country,
         width: imageSize,
         height: imageSize,
-        key: Key(country.code),
+        key: Key(code),
       ),
       SizedBox(width: 16),
       Expanded(

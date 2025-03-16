@@ -10,10 +10,10 @@ import 'package:flags_quiz/models/country.dart';
 
 void main() {
   group('QuizLayout', () {
-    Country mockCountry =
-    Country.fromJson({"name": "Test", "continent": "EU", "code": "UA"});
-    QuestionState<Country> mockQuestionState =
-    QuestionState(Question<Country>(mockCountry, [mockCountry]), 1, 1);
+    QuestionEntry mockCountry =
+    Country.fromJson({"name": "Test", "continent": "EU", "code": "UA"}).toQuestionEntry;
+    QuestionState mockQuestionState =
+    QuestionState(Question(mockCountry, [mockCountry]), 1, 1);
 
     testWidgets('displays correctly in landscape orientation',
             (WidgetTester tester) async {

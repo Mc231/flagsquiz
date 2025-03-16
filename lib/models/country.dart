@@ -1,5 +1,6 @@
 import 'package:flags_quiz/extensions/iterable_extension.dart';
 import 'package:flags_quiz/models/continent.dart';
+import 'package:quiz_engine_core/quiz_engine_core.dart';
 
 /// Represents a country with its name, continent, and country code.
 ///
@@ -46,4 +47,15 @@ class Country {
         continent = getEnumFromString(
             Continent.values, (json[_keyContinent] as String).toLowerCase(), Continent.all),
         code = json[_keyCode] as String;
+
+  QuestionEntry get toQuestionEntry => QuestionEntry(
+    type: TextQuestion("What country does this flag belong to?"),
+    otherOptions: {
+      "flagImage": flagLocalImage,
+      "correctAnswer": name,
+      "continent": continent.name,
+      "code": code,
+      "name": name,
+    },
+  );
 }

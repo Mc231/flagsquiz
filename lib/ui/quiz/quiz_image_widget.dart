@@ -1,5 +1,5 @@
-import 'package:flags_quiz/models/country.dart';
 import 'package:flutter/material.dart';
+import 'package:quiz_engine_core/quiz_engine_core.dart';
 
 /// A widget that displays a country's flag image.
 ///
@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 /// with a filename that matches the country's code followed by `.png`.
 class QuizImageWidget extends StatelessWidget {
   /// The country whose flag image is to be displayed.
-  final Country country;
+  final QuestionEntry entry;
 
   /// The width of the flag image.
   final double width;
@@ -24,20 +24,22 @@ class QuizImageWidget extends StatelessWidget {
   /// Creates a `QuizImageWidget` with the specified country and dimensions.
   ///
   /// [key] is the unique key for this widget.
-  /// [country] is the `Country` object containing information about the country.
+  /// [entry] is the `Country` object containing information about the country.
   /// [width] is the width of the image to be displayed.
   /// [height] is the height of the image to be displayed.
   const QuizImageWidget(
       {required Key key,
-        required this.country,
+        required this.entry,
         required this.width,
         required this.height})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Image.asset(country.flagLocalImage,
-        key: Key("image_${country.code.toLowerCase()}"),
+    final flagImage = entry.otherOptions["flagImage"] as String;
+    final code = (entry.otherOptions["code"] as String).toLowerCase();
+    return Image.asset(flagImage,
+        key: Key("image_$code"),
         width: width,
         height: height);
   }

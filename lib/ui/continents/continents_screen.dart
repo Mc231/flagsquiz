@@ -1,3 +1,4 @@
+
 import 'package:flags_quiz/l10n/app_localizations.dart';
 import 'package:flags_quiz/models/continent.dart';
 import 'package:flags_quiz/ui/components/option_button.dart';
@@ -81,11 +82,9 @@ class ContinentsScreen extends StatelessWidget {
   /// [continent] is the selected `Continent`.
   /// [context] is the `BuildContext` used for navigation.
   void _handleItemClick(Continent continent, BuildContext context) {
-    final bloc = QuizBloc<Country>.standard(
-      'assets/Countries.json',
-      Country.fromJson,
-      filter: (country) =>
-          continent == Continent.all ? true : country.continent == continent,
+    final bloc = QuizBloc(
+      () async => loadCountriesForContinent(continent),
+      RandomItemPicker([]),
     );
     Navigator.push(
         context,
@@ -95,6 +94,22 @@ class ContinentsScreen extends StatelessWidget {
                   child:
                       QuizScreen(title: continent.localizedName(context) ?? ""),
                 )));
+  }
+
+  Future<List<QuestionEntry>> loadCountriesForContinent(
+      Continent continent) async {
+    final provider = QuizDataProvider<Country>.standard(
+        'assets/Countries.json', Country.fromJson);
+
+    final countries = await provider.provide();
+
+    return (continent == Continent.all
+            ? countries
+            : countries
+                .where((country) => country.continent == continent)
+                .toList())
+        .map((country) => country.toQuestionEntry)
+        .toList();
   }
 }
 

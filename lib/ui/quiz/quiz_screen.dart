@@ -1,5 +1,4 @@
 import 'package:flags_quiz/l10n/app_localizations.dart';
-import 'package:flags_quiz/models/country.dart';
 import 'package:flutter/material.dart';
 import 'package:quiz_engine_core/quiz_engine_core.dart';
 import 'package:responsive_builder/responsive_builder.dart';
@@ -36,11 +35,11 @@ class QuizScreen extends StatefulWidget {
 /// The state for the `QuizScreen`, managing the quiz logic and UI updates.
 class QuizScreenState extends State<QuizScreen> {
   /// The BLoC managing the quiz logic and state transitions.
-  late QuizBloc<Country> _bloc;
+  late QuizBloc _bloc;
 
   @override
   void initState() {
-    _bloc = BlocProvider.of<QuizBloc<Country>>(context);
+    _bloc = BlocProvider.of<QuizBloc>(context);
     _bloc.performInitialLoad();
     _bloc.gameOverCallback = (String result) {
       _showQuizOverDialog(result);
@@ -67,7 +66,7 @@ class QuizScreenState extends State<QuizScreen> {
                     child: CircularProgressIndicator(),
                   );
                 }
-                final questionState = state as QuestionState<Country>;
+                final questionState = state as QuestionState;
                 return ResponsiveBuilder(builder: (context, information) {
                   return QuizLayout(
                       questionState: questionState,

@@ -4,20 +4,21 @@ import 'package:flags_quiz/ui/components/option_button.dart';
 import 'package:flags_quiz/ui/quiz/quiz_answers_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:quiz_engine_core/quiz_engine_core.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 void main() {
   testWidgets('Quiz answers widget handle tap', (WidgetTester tester) async {
     // Given
     final expectedAnswer = Country.fromJson(
-        {'name': 'Antigua and Barbuda', 'continent': 'NA', 'code': 'AG'});
+        {'name': 'Antigua and Barbuda', 'continent': 'NA', 'code': 'AG'}).toQuestionEntry;
     final options = [expectedAnswer];
     final sizingInformation = SizingInformation(
         deviceScreenType: DeviceScreenType.mobile,
         screenSize: Size.square(200),
         localWidgetSize: Size.square(200),
         refinedSize: RefinedSize.small);
-    Country? tappedAnswer;
+    QuestionEntry? tappedAnswer;
     await tester.pumpWidget(
       FlagsQuizApp(
           homeWidget: QuizAnswersWidget(

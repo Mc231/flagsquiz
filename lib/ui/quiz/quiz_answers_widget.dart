@@ -1,9 +1,9 @@
 import 'package:flags_quiz/extensions/app_localizations_extension.dart';
 import 'package:flags_quiz/l10n/app_localizations.dart';
-import 'package:flags_quiz/models/country.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flags_quiz/extensions/sizing_information_extension.dart';
+import 'package:quiz_engine_core/quiz_engine_core.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import '../components/option_button.dart';
 
@@ -21,13 +21,13 @@ import '../components/option_button.dart';
 ///
 class QuizAnswersWidget extends StatelessWidget {
   /// The list of country options to display.
-  final List<Country> options;
+  final List<QuestionEntry> options;
 
   /// The sizing information for the current screen, used to determine layout.
   final SizingInformation sizingInformation;
 
   /// Callback function to be invoked when an option is clicked.
-  final Function(Country answer) answerClickListener;
+  final Function(QuestionEntry answer) answerClickListener;
 
   /// Creates a `QuizAnswersWidget`.
   ///
@@ -65,14 +65,15 @@ class QuizAnswersWidget extends StatelessWidget {
   /// [context] is the build context for accessing localization.
   ///
   /// Returns a `Widget` representing the option button.
-  Widget _createOptionButton(Country option, BuildContext context) {
-    final localizedCountryName = AppLocalizations.of(context)!.resolveKey(option.code.toLowerCase());
+  Widget _createOptionButton(QuestionEntry option, BuildContext context) {
+    final code = (option.otherOptions["code"] as String).toLowerCase();
+    final localizedCountryName = AppLocalizations.of(context)!.resolveKey(code);
     return Container(
       margin: getButtonMargin(context),
       child: OptionButton(
         title: localizedCountryName,
         onClickListener: () => answerClickListener(option),
-        key: Key("button_${option.code.toLowerCase()}"),
+        key: Key("button_$code"),
       ),
     );
   }

@@ -9,36 +9,52 @@ import 'package:mockito/mockito.dart';
 import 'package:mockito/annotations.dart';
 import 'package:quiz_engine_core/quiz_engine_core.dart';
 
-@GenerateNiceMocks([MockSpec<QuizDataProvider<Country>>(), MockSpec<RandomItemPicker<Country>>()])
+@GenerateNiceMocks([MockSpec<RandomItemPicker>()])
 import 'quiz_screen_test.mocks.dart';
 
 void main() {
-  late Continent continent;
-  late QuizDataProvider<Country> countriesProvider;
-  late RandomItemPicker<Country> randomItemPicker;
-  late QuizBloc<Country> bloc;
+  late RandomItemPicker randomItemPicker;
+  late QuizBloc bloc;
+
+  Future<List<QuestionEntry>> loadCountriesForContinent(
+      Continent continent) async {
+    final provider = QuizDataProvider<Country>.standard(
+        'assets/Countries.json', Country.fromJson);
+
+    final countries = await provider.provide();
+
+    return (continent == Continent.all
+            ? countries
+            : countries
+                .where((country) => country.continent == continent)
+                .toList())
+        .map((country) => country.toQuestionEntry)
+        .toList();
+  }
 
   setUp(() {
-    continent = Continent.sa;
-    countriesProvider = MockQuizDataProvider();
     randomItemPicker = MockRandomItemPicker();
-    bloc = QuizBloc<Country>(countriesProvider, randomItemPicker, filter: (country) => country.continent == continent);
+    bloc = QuizBloc(
+        () => loadCountriesForContinent(Continent.sa), randomItemPicker);
   });
 
   testWidgets('Question showing', (WidgetTester tester) async {
     // Given
     final country1 = Country.fromJson(
-        {'name': 'Argentina', 'continent': 'SA', 'code': 'AR'});
+        {'name': 'Argentina', 'continent': 'SA', 'code': 'AR'}).toQuestionEntry;
     final country2 =
-    Country.fromJson({'name': 'Bolivia', 'continent': 'SA', 'code': 'BO'});
+        Country.fromJson({'name': 'Bolivia', 'continent': 'SA', 'code': 'BO'}).toQuestionEntry;
     final countries = [country1, country2];
     final randomPickResult = RandomPickResult(countries.first, countries);
     // When
     when(randomItemPicker.pick()).thenReturn(randomPickResult);
-    when(countriesProvider.provide())
-        .thenAnswer((_) => Future.value(countries));
     await tester.pumpWidget(
-      FlagsQuizApp(homeWidget: BlocProvider(bloc: bloc, child: QuizScreen(title: "Test",))),
+      FlagsQuizApp(
+          homeWidget: BlocProvider(
+              bloc: bloc,
+              child: QuizScreen(
+                title: "Test",
+              ))),
     );
     await tester.pump();
     await tester.pump();
@@ -51,17 +67,22 @@ void main() {
 
   testWidgets('Quiz over dialog', (WidgetTester tester) async {
     // Given
-    final countries = [Country.fromJson(
-        {'name': 'Argentina', 'continent': 'SA', 'code': 'AR'}),
-      Country.fromJson({'name': 'Bolivia', 'continent': 'SA', 'code': 'BO'})
+    final countries = [
+      Country.fromJson({'name': 'Argentina', 'continent': 'SA', 'code': 'AR'}).toQuestionEntry,
+      Country.fromJson({'name': 'Bolivia', 'continent': 'SA', 'code': 'BO'}).toQuestionEntry
     ];
-    bloc.currentQuestion = Question<Country>(countries.first, countries);
+    final bloc2 = QuizBloc(
+            () => Future.value(countries), randomItemPicker);
+    bloc2.currentQuestion = Question(countries.first, countries);
     // When
-    when(randomItemPicker.replaceItems([])).thenAnswer((_) => countries);
-    when(countriesProvider.provide())
-        .thenAnswer((_) => Future.value(countries));
+    when(randomItemPicker.pick()).thenReturn(null);
     await tester.pumpWidget(
-      FlagsQuizApp(homeWidget: BlocProvider(bloc: bloc, child: QuizScreen(title: "Test",))),
+      FlagsQuizApp(
+          homeWidget: BlocProvider(
+              bloc: bloc2,
+              child: QuizScreen(
+                title: "Test",
+              ))),
     );
     await tester.pump();
     await tester.pump();
