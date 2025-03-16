@@ -11,7 +11,7 @@ import 'package:flags_quiz/models/country.dart';
 void main() {
   group('GameLayout', () {
     QuestionEntry mockCountry =
-        Country.fromJson({"name": "Test", "continent": "EU", "code": "ua"}).toQuestionEntry;
+        Country.fromJson({"name": "Test", "continent": "EU", "code": "ua"}, (_) => "Ukraine").toQuestionEntry;
     QuestionState mockQuestionState =
         QuestionState(Question(mockCountry, [mockCountry]), 1, 1);
 

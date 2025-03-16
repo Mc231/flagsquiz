@@ -36,8 +36,8 @@ class QuizImageWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final flagImage = entry.otherOptions["flagImage"] as String;
-    final code = (entry.otherOptions["code"] as String).toLowerCase();
+    final flagImage = entry.otherOptions["image"] as String;
+    final code = (entry.otherOptions["id"] as String).toLowerCase();
     return Image.asset(flagImage,
         key: Key("image_$code"),
         width: width,

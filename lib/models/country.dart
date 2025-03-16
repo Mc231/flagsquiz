@@ -27,6 +27,9 @@ class Country {
   /// The ISO 3166-1 alpha-2 country code.
   final String code;
 
+  /// Localized country name
+  final String localizedCountryName;
+
   /// Returns the local asset path for the country's flag image.
   ///
   /// This property constructs the path to the flag image based on the
@@ -42,20 +45,23 @@ class Country {
   ///
   /// [json] is a map containing the country's data with keys 'name',
   /// 'continent', and 'code'.
-  Country.fromJson(Map json)
+  Country.fromJson(Map json, String Function(String) resolveKey)
       : name = json[_keyName] as String,
-        continent = getEnumFromString(
-            Continent.values, (json[_keyContinent] as String).toLowerCase(), Continent.all),
-        code = json[_keyCode] as String;
+        continent = getEnumFromString(Continent.values,
+            (json[_keyContinent] as String).toLowerCase(), Continent.all),
+        code = json[_keyCode] as String,
+        localizedCountryName = resolveKey(json[_keyCode] as String);
 
-  QuestionEntry get toQuestionEntry => QuestionEntry(
-    type: TextQuestion("What country does this flag belong to?"),
-    otherOptions: {
-      "flagImage": flagLocalImage,
-      "correctAnswer": name,
-      "continent": continent.name,
-      "code": code,
-      "name": name,
-    },
-  );
+  QuestionEntry get toQuestionEntry {
+    return QuestionEntry(
+      type: TextQuestion(localizedCountryName),
+      otherOptions: {
+        "image": flagLocalImage,
+        "correctAnswer": name,
+        "continent": continent.name,
+        "id": code,
+        "name": name,
+      },
+    );
+  }
 }

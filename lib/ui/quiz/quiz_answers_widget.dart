@@ -1,5 +1,3 @@
-import 'package:flags_quiz/extensions/app_localizations_extension.dart';
-import 'package:flags_quiz/l10n/app_localizations.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flags_quiz/extensions/sizing_information_extension.dart';
@@ -66,12 +64,12 @@ class QuizAnswersWidget extends StatelessWidget {
   ///
   /// Returns a `Widget` representing the option button.
   Widget _createOptionButton(QuestionEntry option, BuildContext context) {
-    final code = (option.otherOptions["code"] as String).toLowerCase();
-    final localizedCountryName = AppLocalizations.of(context)!.resolveKey(code);
+    final title = option.type as TextQuestion;
+    final code = (option.otherOptions["id"] as String).toLowerCase();
     return Container(
       margin: getButtonMargin(context),
       child: OptionButton(
-        title: localizedCountryName,
+        title: title.text,
         onClickListener: () => answerClickListener(option),
         key: Key("button_$code"),
       ),

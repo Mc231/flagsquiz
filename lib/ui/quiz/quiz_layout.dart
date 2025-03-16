@@ -73,7 +73,7 @@ class QuizLayout extends StatelessWidget {
   List<Widget> _imageAndButtons(
       QuestionState state, SizingInformation information) {
     var country = state.question.answer;
-    final code = country.otherOptions["code"] as String;
+    final code = country.otherOptions["id"] as String;
     final imageSize = getImageSize(information);
     return [
       QuizImageWidget(

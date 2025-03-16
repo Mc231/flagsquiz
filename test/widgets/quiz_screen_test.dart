@@ -19,7 +19,7 @@ void main() {
   Future<List<QuestionEntry>> loadCountriesForContinent(
       Continent continent) async {
     final provider = QuizDataProvider<Country>.standard(
-        'assets/Countries.json', Country.fromJson);
+        'assets/Countries.json', (data) => Country.fromJson(data, (_) => "Test"));
 
     final countries = await provider.provide();
 
@@ -41,9 +41,9 @@ void main() {
   testWidgets('Question showing', (WidgetTester tester) async {
     // Given
     final country1 = Country.fromJson(
-        {'name': 'Argentina', 'continent': 'SA', 'code': 'AR'}).toQuestionEntry;
+        {'name': 'Argentina', 'continent': 'SA', 'code': 'AR'}, (_) => "Argentina").toQuestionEntry;
     final country2 =
-        Country.fromJson({'name': 'Bolivia', 'continent': 'SA', 'code': 'BO'}).toQuestionEntry;
+        Country.fromJson({'name': 'Bolivia', 'continent': 'SA', 'code': 'BO'}, (_) => "Bolivia").toQuestionEntry;
     final countries = [country1, country2];
     final randomPickResult = RandomPickResult(countries.first, countries);
     // When
@@ -68,8 +68,8 @@ void main() {
   testWidgets('Quiz over dialog', (WidgetTester tester) async {
     // Given
     final countries = [
-      Country.fromJson({'name': 'Argentina', 'continent': 'SA', 'code': 'AR'}).toQuestionEntry,
-      Country.fromJson({'name': 'Bolivia', 'continent': 'SA', 'code': 'BO'}).toQuestionEntry
+      Country.fromJson({'name': 'Argentina', 'continent': 'SA', 'code': 'AR'}, (_) => "Argentina").toQuestionEntry,
+      Country.fromJson({'name': 'Bolivia', 'continent': 'SA', 'code': 'BO'}, (_) => "Bolivia").toQuestionEntry
     ];
     final bloc2 = QuizBloc(
             () => Future.value(countries), randomItemPicker);

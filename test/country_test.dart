@@ -13,7 +13,7 @@ void main() {
       'name': expectedName,
       'continent': expectedContinent,
       'code': expectedCode
-    });
+    }, (_) => "Antigua and Barbuda");
     // Then
     expect(country.name, equals(expectedName));
     expect(country.continent, equals(Continent.na));

@@ -14,12 +14,12 @@ void main() {
 
   setUp(() {
     assetProvider = MockAssetProvider();
-    countriesProvider = QuizDataProvider(assetProvider, Country.fromJson);
+    countriesProvider = QuizDataProvider(assetProvider,  (data) => Country.fromJson(data, (_) => "Test"));
   });
 
   test('default provider', () {
     var provider =
-        QuizDataProvider.standard('assets/Countries.json', Country.fromJson);
+        QuizDataProvider.standard('assets/Countries.json',  (data) => Country.fromJson(data, (_) => "Test"));
     expect(provider, isNotNull);
   });
 

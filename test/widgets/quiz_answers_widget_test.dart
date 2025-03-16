@@ -11,7 +11,7 @@ void main() {
   testWidgets('Quiz answers widget handle tap', (WidgetTester tester) async {
     // Given
     final expectedAnswer = Country.fromJson(
-        {'name': 'Antigua and Barbuda', 'continent': 'NA', 'code': 'AG'}).toQuestionEntry;
+        {'name': 'Antigua and Barbuda', 'continent': 'NA', 'code': 'AG'}, (_) => "Ukraine").toQuestionEntry;
     final options = [expectedAnswer];
     final sizingInformation = SizingInformation(
         deviceScreenType: DeviceScreenType.mobile,
