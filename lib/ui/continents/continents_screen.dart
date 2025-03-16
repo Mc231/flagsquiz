@@ -1,11 +1,9 @@
 import 'package:flags_quiz/extensions/app_localizations_extension.dart';
 import 'package:flags_quiz/l10n/app_localizations.dart';
 import 'package:flags_quiz/models/continent.dart';
-import 'package:flags_quiz/ui/components/option_button.dart';
-import 'package:flags_quiz/ui/quiz_widget.dart';
-import 'package:flags_quiz/ui/quiz_widget_entry.dart';
 import 'package:flutter/material.dart';
 import 'package:flags_quiz/extensions/continent_additions.dart';
+import 'package:quiz_engine/quiz_engine.dart';
 import 'package:quiz_engine_core/quiz_engine_core.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import '../../models/country.dart';

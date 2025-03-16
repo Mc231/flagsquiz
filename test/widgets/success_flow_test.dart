@@ -1,7 +1,6 @@
 import 'package:flags_quiz/models/continent.dart';
 import 'package:flags_quiz/ui/continents/continents_screen.dart';
 import 'package:flags_quiz/ui/flags_quiz_app.dart';
-import 'package:flags_quiz/ui/quiz/quiz_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
@@ -79,7 +78,7 @@ void main() {
 
       final dialog = find.byType(Dialog);
       expect(dialog, findsOneWidget);
-      final okFinder = find.byKey(QuizScreen.okButtonKey);
+      final okFinder = find.byKey(Key("ok_button"));
       expect(okFinder, findsOneWidget);
       expect(find.text('$totalIterations / $totalIterations'), findsAny);
       await tester.tap(okFinder);

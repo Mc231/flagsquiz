@@ -1,9 +1,9 @@
 import 'package:flags_quiz/models/continent.dart';
 import 'package:flags_quiz/ui/continents/continents_screen.dart';
 import 'package:flags_quiz/ui/flags_quiz_app.dart';
-import 'package:flags_quiz/ui/components/option_button.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:quiz_engine/quiz_engine.dart';
 
 void main() {
   testWidgets('Continents screen contains all continents',
