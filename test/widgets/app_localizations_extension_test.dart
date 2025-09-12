@@ -1,7 +1,7 @@
 import 'package:flags_quiz/extensions/app_localizations_extension.dart';
+import 'package:flags_quiz/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 void main() {
   testWidgets('AppLocalizationsExtension resolveKey returns correct values', (WidgetTester tester) async {

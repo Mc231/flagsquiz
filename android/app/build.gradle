@@ -24,28 +24,30 @@ if (flutterVersionName == null) {
 }
 
 android {
-    compileSdkVersion 34
+    namespace "com.flagsquiz"
+    compileSdkVersion 36
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
 
-    lintOptions {
-        disable 'InvalidPackage'
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
 
     defaultConfig {
         applicationId "com.quasarius.flagsquiz"
         minSdkVersion flutter.minSdkVersion
-        targetSdkVersion 34
+        targetSdkVersion 36
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
+        resourceConfigurations += ['en', 'af', 'am', 'ar', 'az', 'bg', 'bn', 'bs', 'ca', 'hr', 'cs', 'da', 'nl', 'et', 'fi', 'fr', 'ka', 'de', 'el', 'gu', 'he', 'hi', 'hu', 'is', 'id', 'it', 'ja', 'kn', 'kk', 'ko', 'lv', 'lt', 'ms', 'ml', 'mt', 'mr', 'mn', 'no', 'fa', 'pl', 'pt', 'pa', 'ro', 'sr', 'si', 'sk', 'sl', 'es', 'sw', 'sv', 'tl', 'ta', 'te', 'th', 'tr', 'uk', 'ur', 'uz', 'vi', 'cy', 'zh']
 
-        resConfigs "en", "af", "am", "ar", "az", "bg", "bn", "bs", "ca", "hr", "cs", "da",
-                "nl", "et", "fi", "fr", "ka", "de", "el", "gu", "he", "hi", "hu", "is",
-                "id", "it", "ja", "kn", "kk", "ko", "lv", "lt", "ms", "ml", "mt", "mr",
-                "mn", "no", "fa", "pl", "pt", "pa", "ro", "sr", "si", "sk", "sl", "es",
-                "sw", "sv", "tl", "ta", "te", "th", "tr", "uk", "ur", "uz", "vi", "cy", "zh"
     }
 
     signingConfigs {
@@ -62,12 +64,11 @@ android {
             signingConfig signingConfigs.release
         }
     }
+    lint {
+        disable 'InvalidPackage'
+    }
 }
 
 flutter {
     source '../..'
-}
-
-dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10"
 }
