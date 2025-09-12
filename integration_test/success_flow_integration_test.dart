@@ -1,3 +1,4 @@
+import 'package:flags_quiz/l10n/app_localizations.dart';
 import 'package:flags_quiz/models/continent.dart';
 import 'package:flags_quiz/ui/continents/continents_screen.dart';
 import 'package:flags_quiz/ui/flags_quiz_app.dart';
@@ -5,7 +6,6 @@ import 'package:flags_quiz/ui/game/game_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
