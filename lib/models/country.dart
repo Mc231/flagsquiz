@@ -54,13 +54,12 @@ class Country {
 
   QuestionEntry get toQuestionEntry {
     return QuestionEntry(
-      type: TextQuestion(localizedCountryName),
+      type: ImageQuestion(flagLocalImage),
       otherOptions: {
-        "image": flagLocalImage,
         "correctAnswer": name,
         "continent": continent.name,
         "id": code,
-        "name": name,
+        "name": localizedCountryName,
       },
     );
   }
